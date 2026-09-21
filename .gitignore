@@ -20,3 +20,6 @@ veille/lots-traduction/
 __pycache__/
 *.pyc
 .DS_Store
+
+# worktrees des agents
+.claude/worktrees/
