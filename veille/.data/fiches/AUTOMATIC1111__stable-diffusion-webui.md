@@ -9,7 +9,7 @@ maturite: éprouvé
 gouvernance: une personne
 alertes: [licence copyleft, mainteneur unique]
 verdict: surveiller
-source_readme_sha: bd853b26858ab8f5
+source_readme_sha: ccd77e6115afe8cb
 ecrite_le: 2026-09-21
 ---
 

@@ -1,7 +1,7 @@
 ---
 schema: 1
 depot: iptv-org/database
-source_readme_sha: 3d091e970817813d
+source_readme_sha: 9b68adaeb78a6336
 ecrite_le: 2026-09-21
 nature: dataset
 deploiement: rien à installer
@@ -15,51 +15,43 @@ verdict: ignorer
 
 # iptv-org/database
 
-> Base de données éditable par les utilisateurs recensant les chaînes de télévision.
+> Base éditable des chaînes de télévision, stockée en CSV et modifiable au tableur.
 
 ## Le problème
-Les métadonnées de chaînes TV (identifiants, pays, langues, catégories) sont dispersées et
-propriétaires, sans source communautaire facile à corriger.
+Décrire des milliers de chaînes de télévision — nom, pays, langue, catégorie — demande une
+source unique que des contributeurs non développeurs puissent corriger.
 
 ## Ce que ça fait vraiment
-Le README est court. Toutes les données sont stockées dans le dossier `/data` en fichiers CSV,
-donc éditables avec n'importe quel tableur — Google Sheets, LibreOffice. Les mêmes données
-sont exposées via une API, dont la documentation vit dans le dépôt `iptv-org/api`. Les
-contributions passent par des issues et des pull requests, avec un guide de contribution à
-lire au préalable. Un onglet Discussions sert aux questions et aux idées. Un badge de workflow
-GitHub Actions `update.yml` figure en tête du README, ce qui suggère une mise à jour
-automatisée, mais le README n'en dit rien de plus. Des ressources IPTV complémentaires sont
-listées dans `iptv-org/awesome-iptv`.
+Range toutes les données dans `/data` en fichiers CSV, éditables avec n'importe quel tableur
+(Google Sheets, LibreOffice). Les mêmes données sont exposées par API, documentée dans le dépôt
+`iptv-org/api`. Un workflow CI (`update.yml`) tient le dépôt à jour. C'est la source dont
+`iptv-org/iptv` tire les métadonnées de ses playlists.
 
 ## Comment c'est branché
 ```mermaid
 flowchart TD
-  CONTRIB["Contributeurs (issues / PR)"] --> DATA["/data (fichiers CSV)"]
-  SHEET["Tableur (Sheets, LibreOffice)"] --> DATA
-  DATA --> WF["workflows/update.yml"]
-  DATA --> API["iptv-org/api"]
-  API --> CONS["Consommateurs"]
-  AWE["iptv-org/awesome-iptv"] --> CONS
+  csv["data/*.csv"] --> ci[".github/workflows/update.yml"]
+  ci --> api["iptv-org/api"]
+  api --> iptv["iptv-org/iptv"]
+  contrib["contributeurs (tableur)"] --> csv
 ```
 
 ## Essayer
-Aucune commande documentée : le dépôt se consulte, se télécharge ou s'interroge via l'API du
-dépôt `iptv-org/api`.
+Aucune commande documentée dans le README : les fichiers de `/data` se lisent et s'éditent
+directement, et l'accès programmatique passe par le dépôt `iptv-org/api`.
 
 ## Coût et pièges
-Gratuit. Le README ne dit rien de la licence des données, de leur volumétrie, de leur fraîcheur
-ni de leur exactitude — ce sont des contributions communautaires libres. Il ne s'agit pas de
-flux vidéo mais de métadonnées ; la question des droits sur les flux associés est hors sujet
-ici mais réelle en aval.
+Gratuit et sans dépendance, mais le README est très court : ni schéma des colonnes, ni licence,
+ni garantie de fraîcheur. Il faut ouvrir les CSV pour savoir ce qu'ils contiennent.
 
 ## Ce que ce n'est pas
-Ce n'est pas une liste de flux IPTV et ce n'est pas un lecteur : c'est un référentiel de
-métadonnées en CSV. Ce n'est pas non plus l'API : celle-ci est un dépôt séparé. Le README est
-trop mince pour aller plus loin — matière insuffisante.
+Ce n'est pas une liste de flux : aucune URL de stream ici, elles sont dans `iptv-org/iptv`.
+Ce n'est pas une API — c'est le magasin derrière, l'API est un dépôt distinct. Et ce n'est pas
+un référentiel officiel des diffuseurs, seulement une base communautaire.
 
 ## Alternatives
-- `iptv-org/api`, si tu veux consommer plutôt qu'éditer.
-- `iptv-org/awesome-iptv`, pour les ressources liées.
+- `iptv-org/api` — si on veut interroger ces données au lieu de lire des CSV.
+- `iptv-org/iptv` — si ce sont les flux qu'on cherche, pas les métadonnées.
 
 ## Pour toi
-Rien à en tirer pour un profil data / IA / MLOps, sauf comme jeu de données CSV de démonstration.
+Un CSV public propre, correct comme jeu de test ; aucun intérêt métier data ou MLOps.

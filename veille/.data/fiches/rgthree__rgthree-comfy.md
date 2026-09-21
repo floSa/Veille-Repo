@@ -1,7 +1,7 @@
 ---
 schema: 1
 depot: rgthree/rgthree-comfy
-source_readme_sha: 2b9fa27599dc7458
+source_readme_sha: 3f7b13903fe815f0
 ecrite_le: 2026-09-21
 nature: extension
 deploiement: autre
@@ -15,29 +15,29 @@ verdict: surveiller
 
 # rgthree/rgthree-comfy
 
-> Collection de nœuds et d'améliorations d'interface pour ComfyUI, pour utilisateurs avancés de workflows.
+> Collection de nœuds pour ComfyUI qui nettoie les workflows et évite le calcul inutile.
 
 ## Le problème
-Un workflow ComfyUI devient vite illisible : spaghettis de liens, branches à activer/désactiver à la main.
-Les switches des autres suites laissent tourner les branches inutiles et gaspillent du GPU.
+Un workflow ComfyUI qui grossit devient un plat de spaghettis, et les aiguillages classiques
+laissent tourner les branches qu'on croyait coupées : du GPU brûlé pour rien.
 
 ## Ce que ça fait vraiment
-Nœuds de contrôle : Seed, Reroute, Bookmark, Context / Context Big, Context Switch, Any Switch.
-Panneaux de pilotage : Fast Muter, Fast Bypasser, Fast Groups Muter, Fast Actions Button, Repeater/Relay.
-Power Lora Loader (plusieurs LoRA en un nœud), Power Prompt (dropdowns embeddings/loras), Power Puter
-(expressions multi-lignes, lecture des widgets d'un autre nœud via `node(5).inputs`).
-Hors nœuds : barre de progression, « Queue Selected Output Nodes », Link Fixer sur `/rgthree/link_fixer`.
+Fournit un `Context` / `Context Switch` qui fait passer le premier contexte non vide, un
+`Fast Muter` / `Fast Bypasser` servant de tableau de bord pour couper des nœuds ou des groupes
+d'un clic, un `Power Lora Loader` qui empile plusieurs LoRA dans un seul nœud, et un
+`Power Puter` qui évalue des expressions multi-lignes pour produire un entier, un flottant, une
+chaîne ou un booléen. Ajoute aussi une barre de progression, l'exécution des seuls nœuds de
+sortie sélectionnés, et un correcteur de liens cassés servi sur `/rgthree/link_fixer`.
 
 ## Comment c'est branché
 ```mermaid
-flowchart LR
-  A[Context] --> B[Context Switch]
-  C[Upscale Out] --> B
-  D[Fast Muter] -->|mute| C
-  E[Node Collector] --> D
-  B --> F[KSampler / VAE Decode]
-  F --> G[Save Image]
-  H[rgthree_config.json] --> I[Settings]
+flowchart TD
+  inst["ComfyUI/custom_nodes/rgthree-comfy"] --> conf["rgthree_config.json"]
+  inst --> ctx["Context / Context Switch"]
+  ctx --> muter["Fast Muter / Fast Bypasser"]
+  muter --> rep["Mute / Bypass Repeater"]
+  inst --> puter["Power Puter"]
+  inst --> fixer["/rgthree/link_fixer"]
 ```
 
 ## Essayer
@@ -45,19 +45,21 @@ flowchart LR
 cd ComfyUI/custom_nodes
 git clone https://github.com/rgthree/rgthree-comfy.git
 ```
+Puis démarrer ComfyUI. Réglages par clic droit sur le fond du graphe, `rgthree-comfy > Settings`.
 
 ## Coût et pièges
-Gratuit. Réglages dans `rgthree_config.json` (copier depuis `rgthree_config.json.default`).
-L'auteur écrit explicitement l'avoir fait pour ses propres cas d'usage ; certaines options sont
-désactivées par défaut « pendant l'expérimentation ».
+Gratuit, sans clé ni service tiers, mais dépend entièrement de ComfyUI : l'auteur prévient
+qu'un changement de ComfyUI peut casser l'extension, d'où l'interrupteur par fonctionnalité.
 
 ## Ce que ce n'est pas
-Ce n'est pas un moteur de génération : rien ne tourne sans ComfyUI installé à côté.
-Ce n'est pas indépendant des évolutions de ComfyUI — le README prévoit qu'une mise à jour puisse casser
-l'extension, d'où les interrupteurs de désactivation. Le Lora Loader Stack est déprécié.
+Ce n'est pas un projet d'équipe : l'auteur écrit l'avoir fait pour ses propres usages. Ce n'est
+pas une couche de compatibilité universelle — plusieurs nœuds sont marqués dépréciés ou
+expérimentaux, et certaines fonctions sont désactivées par défaut. Le README ne déclare
+aucune licence.
 
 ## Alternatives
-Aucun dépôt concurrent nommé ; le README parle d'« autres suites » sans les citer.
+- ComfyUI seul — la version récente a corrigé la récursion d'exécution que ce dépôt compensait.
+- `Power Lora Loader` remplace le `Lora Loader Stack` du même dépôt, déprécié.
 
 ## Pour toi
-Utile seulement si tu passes du temps dans ComfyUI ; sans intérêt pour un pipeline data/MLOps.
+À connaître si tu touches à ComfyUI ; hors de ça, aucun apport pour une chaîne data ou MLOps.

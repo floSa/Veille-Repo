@@ -9,7 +9,7 @@ maturite: éprouvé
 gouvernance: une personne
 alertes: [mainteneur unique]
 verdict: surveiller
-source_readme_sha: ca702fe3611bf21b
+source_readme_sha: bf154e4720efa7d7
 ecrite_le: 2026-09-21
 ---
 

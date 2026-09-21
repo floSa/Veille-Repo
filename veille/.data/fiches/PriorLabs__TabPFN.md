@@ -9,7 +9,7 @@ prerequis: [GPU, compte à créer, version de Python]
 cout: freemium
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence à clauses commerciales, compte à créer]
+alertes: [licence à clauses commerciales]
 verdict: adopter
 ---
 
