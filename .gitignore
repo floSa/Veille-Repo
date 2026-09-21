@@ -1,0 +1,22 @@
+# Ce qui se régénère en quelques minutes ne se versionne pas. Ce qui a coûté un appel de
+# modèle, une passe réseau longue, ou ta décision, se versionne toujours.
+
+# --- régénérable en 2 minutes : la page et ses pièces jointes
+veille/catalogue.html
+veille/catalogue-details.js
+veille/readmes/
+veille/fiches/
+veille/diagrammes/
+
+# --- retéléchargeable en 111 s, 80 Mo
+veille/.data/readmes/
+
+# --- sorties de travail
+veille/.data/lots/
+veille/.apercu/
+veille/lots-traduction/
+
+# --- divers
+__pycache__/
+*.pyc
+.DS_Store
