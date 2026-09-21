@@ -11,6 +11,9 @@ veille/diagrammes/
 # --- retéléchargeable en 111 s, 80 Mo
 veille/.data/readmes/
 
+# --- régénérable gratuitement par preparer.py depuis le magasin et les README
+veille/.data/blocs/
+
 # --- sorties de travail
 veille/.data/lots/
 veille/.apercu/
