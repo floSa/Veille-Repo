@@ -42,7 +42,7 @@ pip install -r requirements.txt
 python 案例与源码-2-LangChain框架/01-helloworld/StandardDesc.py
 ```
 
-## Coût et périles
+## Coût et pièges
 Clés d'API de fournisseurs (Qwen, DeepSeek…) à ta charge, ou Ollama en local. Lancer depuis la racine, sinon `.env` est introuvable.
 
 ## Ce que ce n'est pas

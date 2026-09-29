@@ -26,7 +26,7 @@ Stratégies d'entraînement : distillation, SimMIM, MAE, Dino, EsViT, prédictio
 Wrappers `Recorder` (cartes d'attention) et `Extractor` (embeddings).
 Pas de poids pré-entraînés : le README renvoie ailleurs pour cela.
 
-## Comment c'est branched
+## Comment c'est branché
 ```mermaid
 flowchart LR
   PT[PyTorch] --> VIT[vit.py]

@@ -44,7 +44,7 @@ Aucune commande documentée dans le README (renvoi vers le Quick Start).
 Il faut un cluster Kubernetes avec des droits pour déployer le traffic-manager.
 
 ## Ce que ce n'est pas
-Pas un outil de déploiement ni de CI.
+Pas un outil de déploiement ni de CI : rien n'est livré dans le cluster, on y branche seulement son poste le temps du développement. Et il faut un accès au cluster pour y injecter son agent.
 
 ## Alternatives
 Aucune alternative nommée dans le README.
