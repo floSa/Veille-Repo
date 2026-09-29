@@ -311,3 +311,12 @@ MG1937/ASC	ok
 Marker-Inc-Korea/AutoRAG	ok
 Mebus/cupp	ok
 MemoriLabs/Memori	ok
+MightyMoud/sidekick	ok
+Mirrowel/LLM-API-Key-Proxy	ok
+MohamedRadwan-DevOps/devops-step-by-step	ok
+Mr-Homeless/waldo	ok
+MsLolita/grass	ok
+NVIDIA-NeMo/NeMo	ok
+NVIDIA/TensorRT-LLM	ok
+NVIDIA/TensorRT-Model-Optimizer	ok
+NVlabs/Eagle	ok
