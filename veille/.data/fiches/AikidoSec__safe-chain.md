@@ -42,7 +42,7 @@ npm safe-chain-verify
 npm install safe-chain-test
 ```
 
-## Coût et périphérie
+## Coût et pièges
 Gratuit, sans jeton ; il faut redémarrer le terminal. Le proxy fait du MITM local : `PIP_CONFIG_FILE` doit être défini pour conserver ta config pip.
 
 ## Ce que ce n'est pas
