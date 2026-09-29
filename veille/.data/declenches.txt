@@ -229,3 +229,6 @@ zereight/gitlab-mcp	ok
 zizifn/edgetunnel	ok
 shirou/gopsutil	ok
 yuruotong1/autoMate	ok
+TNT-Likely/PanWatch	ok
+sandeco/reversa	ok
+uzairansaruzi/hermex	ok

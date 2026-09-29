@@ -39,6 +39,7 @@ StanfordVL/BEHAVIOR-1K
 Superalgos/Superalgos
 THU-MIG/yolov10
 THUDM/slime
+TNT-Likely/PanWatch
 TheBeastLT/torrentio-scraper
 ToolJet/ToolJet
 UseInterstellar/Interstellar
@@ -196,6 +197,7 @@ rspeer/wordfreq
 run-llama/llama_index
 runkids/skillshare
 sampotts/plyr
+sandeco/reversa
 sashabaranov/go-openai
 scikit-image/scikit-image
 seakee/CPA-Manager-Plus
@@ -216,6 +218,7 @@ terrastruct/d2
 thomaspoignant/go-feature-flag
 tonquer/JMComic-qt
 toptal/gitignore.io
+uzairansaruzi/hermex
 velero-io/velero
 vercel/next.js
 vllm-project/aibrix
