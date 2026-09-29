@@ -8,7 +8,7 @@ deploiement: docker
 prerequis: [clé d'API, Docker]
 cout: clé d'API à ta charge
 maturite: utilisable
-gouvernance: communauté
+gouvernance: une personne
 alertes: []
 verdict: ignorer
 ---

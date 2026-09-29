@@ -8,7 +8,7 @@ deploiement: binaire
 prerequis: [aucun]
 cout: gratuit
 maturite: utilisable
-gouvernance: communauté
+gouvernance: une personne
 alertes: []
 verdict: adopter
 ---

@@ -8,7 +8,7 @@ deploiement: autre
 prerequis: [service tiers]
 cout: gratuit
 maturite: utilisable
-gouvernance: communauté
+gouvernance: une personne
 alertes: []
 verdict: ignorer
 ---
