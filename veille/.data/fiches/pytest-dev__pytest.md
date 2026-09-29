@@ -1,0 +1,54 @@
+---
+schema: 1
+depot: pytest-dev/pytest
+source_readme_sha: 37c713f12b48774c
+ecrite_le: 2026-09-29
+nature: bibliothèque
+deploiement: pip
+prerequis: [version de Python]
+cout: gratuit
+maturite: éprouvé
+gouvernance: communauté
+alertes: []
+verdict: adopter
+---
+
+# pytest-dev/pytest
+
+> Framework de tests Python : assertions simples, fixtures modulaires, découverte automatique, plugins.
+
+## Le problème
+Écrire des tests avec du code lourd (`self.assert*`) et des messages d'erreur pauvres, sans gestion propre des ressources partagées.
+
+## Ce que ça fait vraiment
+Découvre les fichiers et fonctions de test, réécrit les `assert` pour afficher le détail de l'échec, fournit des fixtures paramétrables, des marqueurs de sélection, un cache entre exécutions et des adaptateurs pour `unittest` et `doctest`. Plus de 1 300 plugins externes selon le README. Python 3.10+ ou PyPy3.
+
+## Comment c'est branché
+```mermaid
+flowchart LR
+  E["CLI (__main__.py)"] --> K["Configuration + Plugin Manager"]
+  K --> S["Session (main.py)"]
+  S --> Q["Collectors (python.py)"]
+  Q --> R["Runner (runner.py)"]
+  R --> F["Fixtures + assertion rewriting"]
+  R --> T["Reports + terminal reporter"]
+```
+
+## Essayer
+```bash
+pytest
+```
+Le README montre un exemple de fichier `test_sample.py` avec `assert inc(3) == 5` et l'échec affiché.
+
+## Coût et pièges
+Gratuit. L'installation n'est pas détaillée dans le README (renvoi à la documentation). 819 issues ouvertes ; la réécriture des assertions peut surprendre lors d'un débogage.
+
+## Ce que ce n'est pas
+Ce n'est pas un outil d'évaluation de modèles ni de tests de charge ; il exécute des tests et rend compte, le reste vient des plugins.
+
+## Alternatives
+Le README cite `unittest` et `trial`, dont il exécute directement les suites.
+
+## Pour toi
+Adopter : standard de fait pour tester code de données, pipelines et API de modèles, avec un écosystème de plugins très riche et une maintenance active.
+

@@ -1,0 +1,58 @@
+---
+schema: 1
+depot: ElectricAlexis/NotaGen
+source_readme_sha: 18e6c077d082e833
+ecrite_le: 2026-09-29
+nature: modèle
+deploiement: pip
+prerequis: [GPU, version de Python]
+cout: gratuit
+maturite: expérimental
+gouvernance: une personne
+alertes: [dernier commit ancien]
+verdict: surveiller
+---
+
+# ElectricAlexis/NotaGen
+
+> Modèles de génération de partitions classiques en notation ABC, entraînés en trois étapes dont un RL sans annotation.
+
+## Le problème
+Générer de la musique symbolique de qualité, avec une période, un compositeur et une instrumentation choisis.
+
+## Ce que ça fait vraiment
+Trois tailles (110M, 244M, 516M de paramètres), pré-entraînées sur 1,6 M de pièces, affinées sur environ 9 000 œuvres, puis optimisées par CLaMP-DPO (préférences fondées sur les scores CLaMP 2). NotaGen-X ajoute une étape de post-entraînement. Démo Gradio locale et en ligne, conversion ABC/MusicXML, exemple sur des lieder de Schubert.
+
+## Comment c'est branché
+```mermaid
+graph LR
+A["data ABC"] --> B["pretrain train-gen.py"]
+B --> C["finetune train-gen.py"]
+C --> D["inference.py"]
+D --> E["clamp2 extract_clamp2.py"]
+E --> F["RL data.py puis train.py"]
+F --> D
+```
+
+## Essayer
+```bash
+conda create --name notagen python=3.10
+conda activate notagen
+conda install pytorch==2.3.0 pytorch-cuda=11.8 -c pytorch -c nvidia
+pip install accelerate optimum
+pip install -r requirements.txt
+cd finetune/ && CUDA_VISIBLE_DEVICES=0 python train-gen.py
+```
+
+## Coût et pièges
+NotaGen-large exige au moins 24 Go de GPU pour affiner et inférer ; environ 8 Go pour NotaGen-X en local. Poids à télécharger séparément, ainsi que ceux de CLaMP 2. Dernier push en avril 2025.
+
+## Ce que ce n'est pas
+Les poids pré-entraînés seuls ne savent pas générer sur consigne « période-compositeur-instrumentation ». L'exemple de Schubert n'utilise pas ce conditionnement.
+
+## Alternatives
+Aucune alternative nommée dans le README.
+
+## Pour toi
+Surveiller : recette claire de RL sans récompense manuelle à transposer à d'autres modèles génératifs, mais dépôt figé depuis avril 2025.
+

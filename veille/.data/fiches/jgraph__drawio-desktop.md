@@ -1,0 +1,55 @@
+---
+schema: 1
+depot: jgraph/drawio-desktop
+source_readme_sha: cfcfa9efb63df551
+ecrite_le: 2026-09-29
+nature: app
+deploiement: binaire
+prerequis: [aucun]
+cout: gratuit
+maturite: éprouvé
+gouvernance: entreprise
+alertes: []
+verdict: adopter
+---
+
+# jgraph/drawio-desktop
+
+> Application de bureau Electron autour de l'éditeur de diagrammes draw.io, utilisable hors ligne.
+
+## Le problème
+Dessiner des schémas d'architecture sans envoyer ses données à un service en ligne.
+
+## Ce que ça fait vraiment
+Le dépôt emballe l'éditeur draw.io (sous-module git) dans Electron pour Windows (installateur, MSI, portable, ARM64), macOS et Linux (AppImage). Le README affirme qu'aucune donnée de diagramme ni statistique d'usage n'est envoyée ; seule une vérification de mise à jour interroge github.com, désactivable (`DRAWIO_DISABLE_UPDATE=true`).
+
+## Comment c'est branché
+```mermaid
+graph LR
+    A[Processus principal electron.js] --> B[preload.js]
+    B --> C[Processus de rendu]
+    C --> D[Éditeur draw.io]
+    A --> E[Vérification de mise à jour]
+    E --> F[GitHub et AWS S3]
+    D --> G[Stockage local AppData]
+```
+
+## Essayer
+```bash
+git clone --recursive https://github.com/jgraph/drawio-desktop.git
+npm install
+npm start
+```
+
+## Coût et pièges
+Gratuit sous Apache-2.0. Installateur NSIS : droits administrateur ; MSI ou version portable sinon. Les binaires Windows x64 non signés peuvent déclencher un avertissement SmartScreen (selon un autre document de la fiche : à vérifier).
+
+## Ce que ce n'est pas
+Ce n'est pas ouvert aux contributions : le README l'indique. Le support n'est pas contractuel et se fait via le dépôt.
+
+## Alternatives
+Aucune alternative nommée dans le README.
+
+## Pour toi
+Adopter : outil sobre pour documenter tes architectures de données ou de MLOps, sans compte ni cloud.
+

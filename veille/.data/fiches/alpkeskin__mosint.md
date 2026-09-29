@@ -1,0 +1,57 @@
+---
+schema: 1
+depot: alpkeskin/mosint
+source_readme_sha: 7b69ba439ead6de1
+ecrite_le: 2026-09-29
+nature: outil
+deploiement: binaire
+prerequis: [clé d'API]
+cout: clé d'API à ta charge
+maturite: utilisable
+gouvernance: une personne
+alertes: [dernier commit ancien, mainteneur unique, dépend d'un SaaS]
+verdict: surveiller
+---
+
+# alpkeskin/mosint
+
+> Outil Go en ligne de commande qui agrège des sources ouvertes autour d'une adresse e-mail.
+
+## Le problème
+Vérifier ce qui est public autour d'une adresse (fuites, comptes, domaines liés) oblige à interroger plusieurs services séparément.
+
+## Ce que ça fait vraiment
+À partir d'une adresse, Mosint lance en parallèle des modules qui interrogent des services externes : vérification d'e-mail, fuites de données et de mots de passe (Intelligence X, BreachDirectory, HaveIBeenPwned), dumps Pastebin, e-mails et domaines liés (hunter.io), informations IP/DNS, recherche Google et présence sur des réseaux sociaux (Twitter, Instagram, Spotify). Le tout est consolidé en console ou en JSON. Les clés d'API se déclarent dans `$HOME/.mosint.yaml`.
+
+## Comment c'est branché
+```mermaid
+graph LR
+  CLI[cmd/mosint] --> Cfg[internal/config]
+  Cfg --> Run[internal/runner]
+  Run --> Eng[pkg/engine]
+  Eng --> Svc[pkg/services et social]
+  Svc --> Out[internal/output]
+```
+
+## Essayer
+```bash
+go install -v github.com/alpkeskin/mosint/v3/cmd/mosint@latest
+mosint example@email.com
+mosint -h
+docker build -t mosint .
+docker run mosint --help
+```
+Le README exige un fichier de configuration (`--config` pour un autre emplacement).
+
+## Coût et pièges
+Logiciel gratuit, mais plusieurs services demandent une clé d'API, parfois payante. Le service scylla.so est marqué en travaux. Dernier push en février 2024 : des intégrations peuvent avoir cessé de fonctionner. Enquêter sur une personne sans base légale peut relever du RGPD : réserver aux adresses que l'on a le droit d'investiguer (les siennes, un périmètre d'audit autorisé).
+
+## Ce que ce n'est pas
+Ce n'est pas une source de données : c'est un agrégateur de services tiers, dont il dépend. Il ne garantit ni exhaustivité ni exactitude.
+
+## Alternatives
+- HaveIBeenPwned : service cité par le README, pour ne vérifier que les fuites de ses propres adresses.
+
+## Pour toi
+Surveiller : de l'OSINT e-mail hors du cœur data/IA, dont la maintenance est en sommeil ; utile seulement pour un audit d'exposition de ses propres adresses.
+

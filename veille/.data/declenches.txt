@@ -320,3 +320,11 @@ NVIDIA-NeMo/NeMo	ok
 NVIDIA/TensorRT-LLM	ok
 NVIDIA/TensorRT-Model-Optimizer	ok
 NVlabs/Eagle	ok
+NVlabs/LongLive	ok
+NVlabs/alpasim	ok
+Nanako0129/TokenBar	ok
+Nanako0129/syrtis	ok
+NexaAI/nexa-sdk	ok
+NodeBB/NodeBB	ok
+Octane0411/open-vibe-island	ok
+OpenBMB/MiniCPM-V-Apps	ok
