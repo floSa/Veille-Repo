@@ -50,4 +50,4 @@ Pas un outil de développement ni de MLOps : orienté conversation et jeu de rô
 Aucune alternative nommée dans le README.
 
 ## Pour toi
-Hors périmètre data/IA pro.
+Une interface de discussion grand public pour LLM, pensée pour le jeu de rôle, pas pour un usage pro data ou MLOps. À ignorer.

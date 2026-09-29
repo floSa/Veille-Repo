@@ -46,4 +46,4 @@ Pas une documentation à jour ni exhaustive ; rien sur la data ou le ML au-delà
 Aucune nommée dans le README.
 
 ## Pour toi
-Hors cible data/IA : à ignorer.
+Des aide-mémoire généralistes, sans rien de spécifique à la data ou à l'IA : un moteur de recherche fait aussi bien. À ignorer.

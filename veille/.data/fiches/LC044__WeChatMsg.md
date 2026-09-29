@@ -43,4 +43,4 @@ Pas un exportateur de messages WeChat, malgré le nom et les étoiles.
 Aucune nommée.
 
 ## Pour toi
-À ignorer.
+Le dépôt ne contient plus de code, seulement des renvois vers d'autres projets : rien à récupérer. À ignorer.

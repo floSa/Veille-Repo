@@ -51,4 +51,4 @@ Pas un OS complet ni un orchestrateur ; rien de spécifique à l'IA malgré l'é
 Aucune nommée dans le README.
 
 ## Pour toi
-Hors cible data/MLOps : à ignorer.
+Un cloud personnel pour serveur domestique : utile pour un homelab, sans apport pour une chaîne data ou MLOps. À ignorer.

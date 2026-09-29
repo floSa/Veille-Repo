@@ -59,4 +59,4 @@ Pas un outil de supervision ni d'alerte. Pas pertinent pour le travail data/IA.
 Aucune alternative nommée dans le README.
 
 ## Pour toi
-Hors périmètre, sauf pour ton homelab.
+Un tableau de bord pour services auto-hébergés : pratique pour ton homelab, mais sans rôle dans une chaîne data ou MLOps.
