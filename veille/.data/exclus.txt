@@ -1,0 +1,8 @@
+# Repos jamais mis en bloc : la rédaction de leur fiche a été refusée par le filtre de
+# sécurité (outils offensifs). Ils restent au catalogue avec README, graphe et description.
+Ed1s0nZ/CyberStrikeAI
+shuvonsec/claude-bug-bounty
+sammwyy/MikuMikuBeam
+sooryathejas/METATRON
+samugit83/redamon
+Armur-Ai/Pentest-Swarm-AI
