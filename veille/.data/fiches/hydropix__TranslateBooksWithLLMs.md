@@ -9,7 +9,7 @@ prerequis: [clé d'API]
 cout: freemium
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence copyleft, mainteneur unique, télémétrie?]
+alertes: [licence copyleft, mainteneur unique, télémétrie]
 verdict: surveiller
 ---
 

@@ -20,9 +20,6 @@ verdict: surveiller
 ## Le problème
 Améliorer un agent sur une tâche demande des cycles manuels d'essais, d'analyse des logs et de réécriture.
 
-## Ce que ce n'est pas
-Voir plus bas.
-
 ## Ce que ça fait vraiment
 Trois rôles : un méta-agent crée l'agent cible à partir de la description de tâche, l'agent cible tente la tâche et journalise, un agent de retour analyse les logs et le corrige. Chaque génération est notée par `evaluate.py` sur des données privées. Quatre tâches fournies (gpqa, lawbench, longcot-chess, spaceship-titanic) ou tâche perso. Tableau de bord web local. Implémentation officielle d'un article de 2026 dont les gains sont ceux des auteurs.
 

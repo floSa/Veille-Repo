@@ -5,7 +5,7 @@ source_readme_sha: 02a5273e1d8b729f
 ecrite_le: 2026-09-29
 nature: outil
 deploiement: docker
-prerequis: [GPU, Docker, Python]
+prerequis: [GPU, Docker, version de Python]
 cout: gratuit
 maturite: expérimental
 gouvernance: une personne

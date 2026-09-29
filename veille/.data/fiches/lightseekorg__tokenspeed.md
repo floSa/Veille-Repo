@@ -5,7 +5,7 @@ source_readme_sha: ed4a0136e74ee006
 ecrite_le: 2026-09-29
 nature: outil
 deploiement: pip
-prerequis: [GPU, Python]
+prerequis: [GPU, version de Python]
 cout: gratuit
 maturite: expérimental
 gouvernance: fondation

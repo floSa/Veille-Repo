@@ -5,7 +5,7 @@ source_readme_sha: 85ffcb664e3d76a3
 ecrite_le: 2026-09-29
 nature: doc
 deploiement: docker
-prerequis: [Docker, Docker, service tiers]
+prerequis: [Docker, service tiers]
 cout: gratuit
 maturite: expérimental
 gouvernance: une personne
