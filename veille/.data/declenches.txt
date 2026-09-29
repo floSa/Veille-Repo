@@ -302,3 +302,12 @@ KruxAI/ragbuilder	ok
 Ksuriuri/index-tts-vllm	ok
 LC044/WeChatMsg	ok
 Layr-Labs/d-inference	ok
+LeCAR-Lab/ASAP	ok
+LiLittleCat/awesome-free-chatgpt	ok
+LibreTranslate/LibreTranslate	ok
+Light-Heart-Labs/DreamServer	ok
+LimeSurvey/LimeSurvey	ok
+MG1937/ASC	ok
+Marker-Inc-Korea/AutoRAG	ok
+Mebus/cupp	ok
+MemoriLabs/Memori	ok
