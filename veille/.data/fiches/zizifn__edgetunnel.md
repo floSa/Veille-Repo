@@ -7,7 +7,7 @@ prerequis: [Node]
 cout: gratuit
 maturite: expérimental
 gouvernance: une personne
-alertes: [matière insuffisante, licence copyleft, mainteneur unique]
+alertes: [licence copyleft, dernier commit ancien, matière insuffisante, mainteneur unique]
 verdict: surveiller
 source_readme_sha: c025ebe1bad19d76
 ecrite_le: 2026-09-21

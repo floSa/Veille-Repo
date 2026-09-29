@@ -7,7 +7,7 @@ prerequis: [service tiers, Node]
 cout: gratuit
 maturite: éprouvé
 gouvernance: communauté
-alertes: [licence copyleft, licence non déclarée]
+alertes: [licence à vérifier]
 verdict: surveiller
 source_readme_sha: 53ac7a16931eff5b
 ecrite_le: 2026-09-21

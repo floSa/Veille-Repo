@@ -9,7 +9,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: expérimental
 gouvernance: communauté
-alertes: [matière insuffisante, licence non déclarée]
+alertes: [matière insuffisante]
 verdict: surveiller
 ---
 

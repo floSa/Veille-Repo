@@ -9,7 +9,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: éprouvé
 gouvernance: fondation
-alertes: []
+alertes: [licence à vérifier]
 verdict: adopter
 ---
 

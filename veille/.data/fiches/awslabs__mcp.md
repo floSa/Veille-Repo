@@ -9,7 +9,7 @@ prerequis: [clé d'API, compte à créer, service tiers]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: entreprise
-alertes: [dépend d'un SaaS, licence non déclarée]
+alertes: [dépend d'un SaaS]
 verdict: surveiller
 ---
 

@@ -9,7 +9,7 @@ prerequis: [GPU, Docker, compte à créer, version de Python, beaucoup de RAM]
 cout: gratuit
 maturite: expérimental
 gouvernance: entreprise
-alertes: [dernier commit ancien]
+alertes: []
 verdict: ignorer
 ---
 

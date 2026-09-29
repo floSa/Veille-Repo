@@ -9,7 +9,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: expérimental
 gouvernance: une personne
-alertes: [matière insuffisante, mainteneur unique, licence non déclarée]
+alertes: [matière insuffisante, mainteneur unique]
 verdict: ignorer
 ---
 

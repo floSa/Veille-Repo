@@ -9,7 +9,7 @@ prerequis: [compte à créer, Node]
 cout: freemium
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence à vérifier, licence à clauses commerciales, dépend d'un SaaS]
+alertes: [licence à vérifier, dépend d'un SaaS]
 verdict: surveiller
 ---
 

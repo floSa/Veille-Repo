@@ -9,7 +9,7 @@ prerequis: [compte à créer]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [mainteneur unique, licence non déclarée, télémétrie]
+alertes: [mainteneur unique, télémétrie]
 verdict: ignorer
 ---
 

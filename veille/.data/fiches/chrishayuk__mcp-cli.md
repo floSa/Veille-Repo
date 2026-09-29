@@ -9,7 +9,7 @@ prerequis: [version de Python]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence non déclarée]
+alertes: []
 verdict: surveiller
 ---
 

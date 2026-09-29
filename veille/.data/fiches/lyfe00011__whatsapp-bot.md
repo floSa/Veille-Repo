@@ -7,7 +7,7 @@ prerequis: [compte à créer, service tiers]
 cout: gratuit
 maturite: expérimental
 gouvernance: une personne
-alertes: [licence non déclarée, mainteneur unique, dépend d'un SaaS]
+alertes: [licence non déclarée, archivé, dernier commit ancien, mainteneur unique, dépend d'un SaaS]
 verdict: ignorer
 source_readme_sha: 1d360fafe1820f8e
 ecrite_le: 2026-09-21

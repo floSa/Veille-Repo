@@ -9,7 +9,7 @@ prerequis: [clé d'API, version de Python]
 cout: clé d'API à ta charge
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [dépend d'un SaaS]
+alertes: [licence à vérifier, dépend d'un SaaS]
 verdict: ignorer
 ---
 

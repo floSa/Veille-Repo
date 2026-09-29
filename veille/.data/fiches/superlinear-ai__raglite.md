@@ -9,7 +9,7 @@ prerequis: [version de Python, service tiers]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: entreprise
-alertes: []
+alertes: [licence copyleft]
 verdict: adopter
 ---
 

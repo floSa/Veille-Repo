@@ -7,7 +7,7 @@ prerequis: [aucun]
 cout: freemium
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence à clauses commerciales]
+alertes: [licence à vérifier]
 verdict: surveiller
 source_readme_sha: 1387457e67870730
 ecrite_le: 2026-09-21

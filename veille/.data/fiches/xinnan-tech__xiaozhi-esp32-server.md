@@ -9,7 +9,7 @@ prerequis: [Docker, clé d'API, beaucoup de RAM, service tiers]
 cout: freemium
 maturite: expérimental
 gouvernance: communauté
-alertes: [licence non déclarée, dépend d'un SaaS]
+alertes: [dépend d'un SaaS]
 verdict: ignorer
 ---
 

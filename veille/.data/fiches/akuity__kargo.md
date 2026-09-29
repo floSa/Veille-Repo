@@ -9,7 +9,7 @@ prerequis: [service tiers]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
-alertes: [matière insuffisante, licence non déclarée]
+alertes: [matière insuffisante]
 verdict: surveiller
 ---
 

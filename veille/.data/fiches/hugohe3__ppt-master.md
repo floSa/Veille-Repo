@@ -9,7 +9,7 @@ prerequis: [version de Python, clé d'API]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: une personne
-alertes: [mainteneur unique, licence copyleft]
+alertes: [mainteneur unique]
 verdict: surveiller
 ---
 

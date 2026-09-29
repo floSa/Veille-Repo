@@ -9,7 +9,7 @@ prerequis: [version de Python]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence non déclarée, télémétrie]
+alertes: [télémétrie]
 verdict: adopter
 ---
 

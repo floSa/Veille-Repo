@@ -9,7 +9,7 @@ prerequis: [compte à créer]
 cout: freemium
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence copyleft, licence à vérifier, dépend d'un SaaS, télémétrie]
+alertes: [licence copyleft, dépend d'un SaaS, télémétrie]
 verdict: ignorer
 ---
 

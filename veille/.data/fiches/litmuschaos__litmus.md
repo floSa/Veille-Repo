@@ -9,7 +9,7 @@ prerequis: [Docker]
 cout: gratuit
 maturite: éprouvé
 gouvernance: fondation
-alertes: [licence non déclarée]
+alertes: []
 verdict: surveiller
 ---
 

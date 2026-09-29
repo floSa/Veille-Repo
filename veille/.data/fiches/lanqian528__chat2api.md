@@ -9,7 +9,7 @@ prerequis: [compte à créer, service tiers]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [mainteneur unique, dépend d'un SaaS, dernier commit ancien]
+alertes: [dernier commit ancien, mainteneur unique, dépend d'un SaaS]
 verdict: ignorer
 ---
 

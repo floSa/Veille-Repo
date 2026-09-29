@@ -9,7 +9,7 @@ prerequis: [Docker, clé d'API]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence non déclarée, télémétrie]
+alertes: [télémétrie]
 verdict: surveiller
 ---
 

@@ -9,7 +9,7 @@ prerequis: [Node, clé d'API, compte à créer]
 cout: clé d'API à ta charge
 maturite: expérimental
 gouvernance: entreprise
-alertes: [licence non déclarée, dépend d'un SaaS]
+alertes: [dépend d'un SaaS]
 verdict: ignorer
 ---
 

@@ -7,7 +7,7 @@ prerequis: [service tiers]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence non déclarée, mainteneur unique]
+alertes: [mainteneur unique]
 verdict: surveiller
 source_readme_sha: 29770d3e007021e8
 ecrite_le: 2026-09-21

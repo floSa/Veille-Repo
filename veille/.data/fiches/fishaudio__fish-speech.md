@@ -9,7 +9,7 @@ prerequis: [GPU]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence à vérifier, licence à clauses commerciales]
+alertes: [licence à vérifier]
 verdict: surveiller
 ---
 

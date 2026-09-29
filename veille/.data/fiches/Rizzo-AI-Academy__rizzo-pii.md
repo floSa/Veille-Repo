@@ -9,7 +9,7 @@ prerequis: [version de Python, Docker]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence copyleft]
+alertes: []
 verdict: adopter
 ---
 

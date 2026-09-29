@@ -7,7 +7,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: éprouvé
 gouvernance: communauté
-alertes: [licence non déclarée]
+alertes: [licence à vérifier]
 verdict: ignorer
 source_readme_sha: 3da375b25ba2df05
 ecrite_le: 2026-09-21

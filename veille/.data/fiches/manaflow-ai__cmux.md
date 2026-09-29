@@ -9,7 +9,7 @@ prerequis: [aucun]
 cout: freemium
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence à vérifier, licence copyleft]
+alertes: [licence à vérifier]
 verdict: surveiller
 ---
 

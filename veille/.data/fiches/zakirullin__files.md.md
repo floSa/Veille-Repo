@@ -9,7 +9,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [mainteneur unique, licence non déclarée, dépend d'un SaaS]
+alertes: [mainteneur unique, dépend d'un SaaS]
 verdict: surveiller
 ---
 

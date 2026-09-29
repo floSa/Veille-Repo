@@ -7,7 +7,7 @@ prerequis: [service tiers]
 cout: gratuit
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence non déclarée]
+alertes: [licence à vérifier]
 verdict: surveiller
 source_readme_sha: d592f95d34e4417f
 ecrite_le: 2026-09-21

@@ -9,7 +9,7 @@ prerequis: [compte à créer]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence non déclarée, mainteneur unique, matière insuffisante]
+alertes: [mainteneur unique, matière insuffisante]
 verdict: ignorer
 ---
 

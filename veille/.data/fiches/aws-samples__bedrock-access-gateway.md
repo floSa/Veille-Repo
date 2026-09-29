@@ -9,7 +9,7 @@ prerequis: [compte à créer, service tiers, Docker]
 cout: payant
 maturite: utilisable
 gouvernance: entreprise
-alertes: [archivé, dépend d'un SaaS]
+alertes: [licence à vérifier, archivé, dépend d'un SaaS]
 verdict: ignorer
 ---
 

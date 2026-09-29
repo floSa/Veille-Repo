@@ -7,7 +7,7 @@ prerequis: [service tiers]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
-alertes: [archivé, licence non déclarée, matière insuffisante]
+alertes: [matière insuffisante]
 verdict: ignorer
 source_readme_sha: 66d5ff4f658b6c7e
 ecrite_le: 2026-09-21

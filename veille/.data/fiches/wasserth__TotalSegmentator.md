@@ -9,7 +9,7 @@ prerequis: [version de Python]
 cout: freemium
 maturite: éprouvé
 gouvernance: fondation
-alertes: [licence à clauses commerciales, télémétrie]
+alertes: [télémétrie]
 verdict: surveiller
 ---
 

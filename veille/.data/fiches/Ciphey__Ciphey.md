@@ -7,7 +7,7 @@ prerequis: [compte à créer]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence non déclarée, archivé, mainteneur unique]
+alertes: [mainteneur unique]
 verdict: surveiller
 source_readme_sha: 28882fd42b4e1bb4
 ecrite_le: 2026-09-21

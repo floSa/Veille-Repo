@@ -7,7 +7,7 @@ prerequis: [version de Python]
 cout: gratuit
 maturite: éprouvé
 gouvernance: fondation
-alertes: [licence non déclarée]
+alertes: []
 verdict: adopter
 source_readme_sha: 5950d181200b01f5
 ecrite_le: 2026-09-21

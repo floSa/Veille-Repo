@@ -7,7 +7,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence à clauses commerciales, licence non déclarée]
+alertes: [licence à vérifier]
 verdict: ignorer
 source_readme_sha: 208ddd46b6917f27
 ecrite_le: 2026-09-21

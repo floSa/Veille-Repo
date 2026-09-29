@@ -9,7 +9,7 @@ prerequis: [Node]
 cout: freemium
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence à vérifier, licence à clauses commerciales]
+alertes: [licence à vérifier]
 verdict: ignorer
 ---
 

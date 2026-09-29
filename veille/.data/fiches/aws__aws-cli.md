@@ -7,7 +7,7 @@ prerequis: [compte à créer]
 cout: clé d'API à ta charge
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence non déclarée, dépend d'un SaaS]
+alertes: [licence à vérifier, dépend d'un SaaS]
 verdict: adopter
 source_readme_sha: 6cd0bdeade1257cb
 ecrite_le: 2026-09-21

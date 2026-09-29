@@ -7,7 +7,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: éprouvé
 gouvernance: une personne
-alertes: [licence non déclarée, licence à clauses commerciales, mainteneur unique]
+alertes: [licence à vérifier, mainteneur unique]
 verdict: surveiller
 source_readme_sha: 5b7d75b43483bbf4
 ecrite_le: 2026-09-21

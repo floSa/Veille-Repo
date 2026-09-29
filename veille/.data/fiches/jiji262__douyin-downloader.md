@@ -9,7 +9,7 @@ prerequis: [version de Python, compte à créer]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [mainteneur unique, dépend d'un SaaS, licence non déclarée]
+alertes: [mainteneur unique, dépend d'un SaaS]
 verdict: ignorer
 ---
 

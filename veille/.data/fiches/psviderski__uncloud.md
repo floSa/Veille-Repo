@@ -9,7 +9,7 @@ prerequis: [Docker, service tiers]
 cout: gratuit
 maturite: expérimental
 gouvernance: une personne
-alertes: [licence non déclarée, mainteneur unique, dépend d'un SaaS]
+alertes: [mainteneur unique, dépend d'un SaaS]
 verdict: surveiller
 ---
 

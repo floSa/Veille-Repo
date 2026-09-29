@@ -9,7 +9,7 @@ prerequis: [Docker]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
-alertes: []
+alertes: [licence copyleft]
 verdict: surveiller
 ---
 

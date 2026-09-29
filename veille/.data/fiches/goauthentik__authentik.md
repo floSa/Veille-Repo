@@ -7,7 +7,7 @@ prerequis: [Docker]
 cout: freemium
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence non déclarée, licence à clauses commerciales]
+alertes: [licence à vérifier]
 verdict: adopter
 source_readme_sha: 59eee8719a079898
 ecrite_le: 2026-09-21

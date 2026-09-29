@@ -7,7 +7,7 @@ prerequis: [Docker]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
-alertes: [archivé, licence non déclarée]
+alertes: [licence à vérifier, archivé, dernier commit ancien]
 verdict: surveiller
 source_readme_sha: 0314fa4f0681ccdf
 ecrite_le: 2026-09-21

@@ -9,7 +9,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence à clauses commerciales, licence non déclarée]
+alertes: []
 verdict: surveiller
 ---
 

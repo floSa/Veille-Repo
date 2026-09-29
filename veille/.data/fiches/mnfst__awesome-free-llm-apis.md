@@ -9,7 +9,7 @@ prerequis: [clé d'API, compte à créer]
 cout: gratuit
 maturite: utilisable
 gouvernance: communauté
-alertes: [licence non déclarée]
+alertes: []
 verdict: adopter
 ---
 

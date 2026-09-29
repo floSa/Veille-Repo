@@ -7,7 +7,7 @@ prerequis: [aucun]
 cout: freemium
 maturite: éprouvé
 gouvernance: une personne
-alertes: [licence copyleft, mainteneur unique]
+alertes: [mainteneur unique]
 verdict: adopter
 source_readme_sha: ad08c06351ad4748
 ecrite_le: 2026-09-21

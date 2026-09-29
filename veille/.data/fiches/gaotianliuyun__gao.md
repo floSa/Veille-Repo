@@ -7,7 +7,7 @@ prerequis: [service tiers]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence non déclarée, mainteneur unique]
+alertes: [licence non déclarée, dernier commit ancien, mainteneur unique]
 verdict: ignorer
 source_readme_sha: 9ae3719ad39f5f12
 ecrite_le: 2026-09-21

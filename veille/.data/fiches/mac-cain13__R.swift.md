@@ -7,7 +7,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: éprouvé
 gouvernance: une personne
-alertes: [mainteneur unique]
+alertes: [dernier commit ancien, mainteneur unique]
 verdict: ignorer
 source_readme_sha: eb1cfd19e28660aa
 ecrite_le: 2026-09-21

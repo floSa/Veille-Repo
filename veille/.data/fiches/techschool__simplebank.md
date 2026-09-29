@@ -9,7 +9,7 @@ prerequis: [Docker]
 cout: gratuit
 maturite: éprouvé
 gouvernance: une personne
-alertes: [mainteneur unique, dernier commit ancien]
+alertes: [dernier commit ancien, mainteneur unique]
 verdict: ignorer
 ---
 

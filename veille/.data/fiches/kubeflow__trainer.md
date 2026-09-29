@@ -9,7 +9,7 @@ prerequis: [service tiers, GPU]
 cout: gratuit
 maturite: expérimental
 gouvernance: fondation
-alertes: [licence non déclarée]
+alertes: []
 verdict: surveiller
 ---
 

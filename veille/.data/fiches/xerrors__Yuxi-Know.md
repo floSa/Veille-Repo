@@ -9,7 +9,7 @@ prerequis: [Docker, clé d'API, beaucoup de RAM]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence non déclarée, mainteneur unique]
+alertes: [mainteneur unique]
 verdict: surveiller
 ---
 

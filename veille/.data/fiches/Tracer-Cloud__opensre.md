@@ -9,7 +9,7 @@ prerequis: [compte à créer, clé d'API]
 cout: clé d'API à ta charge
 maturite: expérimental
 gouvernance: entreprise
-alertes: [télémétrie, dépend d'un SaaS, licence non déclarée]
+alertes: [télémétrie, dépend d'un SaaS]
 verdict: surveiller
 ---
 

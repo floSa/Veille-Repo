@@ -9,7 +9,7 @@ prerequis: [clé d'API]
 cout: clé d'API à ta charge
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence non déclarée]
+alertes: []
 verdict: adopter
 ---
 

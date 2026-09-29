@@ -9,7 +9,7 @@ prerequis: [GPU, version de Python]
 cout: gratuit
 maturite: éprouvé
 gouvernance: communauté
-alertes: [licence non déclarée]
+alertes: []
 verdict: adopter
 ---
 

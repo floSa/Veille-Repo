@@ -7,7 +7,7 @@ prerequis: [beaucoup de RAM]
 cout: gratuit
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [dernier commit ancien]
+alertes: []
 verdict: surveiller
 source_readme_sha: d418eed16817435b
 ecrite_le: 2026-09-21

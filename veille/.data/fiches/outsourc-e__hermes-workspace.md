@@ -9,7 +9,7 @@ prerequis: [Node, clé d'API]
 cout: gratuit
 maturite: expérimental
 gouvernance: une personne
-alertes: [mainteneur unique, dernier commit ancien]
+alertes: [mainteneur unique]
 verdict: ignorer
 ---
 

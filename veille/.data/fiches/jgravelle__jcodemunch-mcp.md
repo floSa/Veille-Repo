@@ -9,7 +9,7 @@ prerequis: [version de Python]
 cout: freemium
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence à vérifier, licence à clauses commerciales, mainteneur unique, télémétrie]
+alertes: [licence à vérifier, mainteneur unique, télémétrie]
 verdict: surveiller
 ---
 

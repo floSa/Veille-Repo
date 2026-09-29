@@ -7,7 +7,7 @@ prerequis: [clé d'API]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: entreprise
-alertes: [archivé, licence non déclarée, dépend d'un SaaS]
+alertes: [licence non déclarée, archivé, dépend d'un SaaS]
 verdict: ignorer
 source_readme_sha: 64e6d049c62c8731
 ecrite_le: 2026-09-21

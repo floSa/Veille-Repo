@@ -9,7 +9,7 @@ prerequis: [Node, clé d'API, service tiers]
 cout: clé d'API à ta charge
 maturite: expérimental
 gouvernance: communauté
-alertes: [licence non déclarée, dépend d'un SaaS]
+alertes: [dépend d'un SaaS]
 verdict: surveiller
 ---
 

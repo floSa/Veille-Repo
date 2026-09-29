@@ -7,7 +7,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [matière insuffisante]
+alertes: [dernier commit ancien, matière insuffisante]
 verdict: adopter
 source_readme_sha: b388eaa4f44d7786
 ecrite_le: 2026-09-21

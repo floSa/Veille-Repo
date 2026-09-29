@@ -9,7 +9,7 @@ prerequis: [GPU, compte à créer]
 cout: freemium
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence copyleft, mainteneur unique, dépend d'un SaaS, dernier commit ancien]
+alertes: [licence copyleft, dernier commit ancien, mainteneur unique, dépend d'un SaaS]
 verdict: ignorer
 ---
 

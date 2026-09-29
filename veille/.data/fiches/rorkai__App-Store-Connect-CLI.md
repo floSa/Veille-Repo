@@ -9,7 +9,7 @@ prerequis: [compte à créer, clé d'API]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [télémétrie, mainteneur unique, licence non déclarée]
+alertes: [télémétrie, mainteneur unique]
 verdict: ignorer
 ---
 

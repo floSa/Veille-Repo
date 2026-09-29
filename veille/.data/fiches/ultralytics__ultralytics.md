@@ -9,7 +9,7 @@ prerequis: [version de Python]
 cout: gratuit
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence copyleft, licence à clauses commerciales]
+alertes: [licence copyleft]
 verdict: adopter
 ---
 

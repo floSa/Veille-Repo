@@ -7,7 +7,7 @@ prerequis: [Docker]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence non déclarée, mainteneur unique]
+alertes: [mainteneur unique]
 verdict: surveiller
 source_readme_sha: c3a66efa91d85115
 ecrite_le: 2026-09-21

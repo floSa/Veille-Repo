@@ -9,7 +9,7 @@ prerequis: [Docker, service tiers, compte à créer]
 cout: freemium
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence non déclarée, dépend d'un SaaS]
+alertes: [dépend d'un SaaS]
 verdict: surveiller
 ---
 

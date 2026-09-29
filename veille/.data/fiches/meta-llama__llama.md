@@ -9,7 +9,7 @@ prerequis: [GPU, compte à créer]
 cout: gratuit
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence non déclarée, dernier commit ancien]
+alertes: [licence à vérifier, dernier commit ancien]
 verdict: ignorer
 ---
 

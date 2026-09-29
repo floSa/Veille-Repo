@@ -9,7 +9,7 @@ prerequis: [Docker, compte à créer]
 cout: gratuit
 maturite: expérimental
 gouvernance: une personne
-alertes: [mainteneur unique, licence non déclarée, dépend d'un SaaS]
+alertes: [mainteneur unique, dépend d'un SaaS]
 verdict: ignorer
 ---
 

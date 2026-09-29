@@ -9,7 +9,7 @@ prerequis: [version de Python, Node]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence non déclarée, licence copyleft, mainteneur unique]
+alertes: [licence à vérifier, mainteneur unique]
 verdict: adopter
 ---
 

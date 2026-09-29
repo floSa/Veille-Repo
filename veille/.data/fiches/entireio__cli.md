@@ -9,7 +9,7 @@ prerequis: [compte à créer, service tiers]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence non déclarée, dépend d'un SaaS, télémétrie]
+alertes: [dépend d'un SaaS, télémétrie]
 verdict: surveiller
 ---
 

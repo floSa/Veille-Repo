@@ -7,7 +7,7 @@ prerequis: [Node]
 cout: freemium
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence copyleft, licence à clauses commerciales]
+alertes: [licence à vérifier]
 verdict: surveiller
 source_readme_sha: cd1280a0a168417b
 ecrite_le: 2026-09-21

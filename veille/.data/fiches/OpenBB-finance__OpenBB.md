@@ -9,7 +9,7 @@ prerequis: [version de Python]
 cout: freemium
 maturite: éprouvé
 gouvernance: entreprise
-alertes: []
+alertes: [licence à vérifier]
 verdict: surveiller
 ---
 

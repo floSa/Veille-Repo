@@ -7,7 +7,7 @@ prerequis: [clé d'API, version de Python, Node]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence non déclarée, dépend d'un SaaS]
+alertes: [dépend d'un SaaS]
 verdict: surveiller
 source_readme_sha: c3fc0ecd674161a7
 ecrite_le: 2026-09-21

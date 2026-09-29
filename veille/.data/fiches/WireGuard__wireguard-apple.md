@@ -7,7 +7,7 @@ prerequis: [compte à créer]
 cout: gratuit
 maturite: éprouvé
 gouvernance: communauté
-alertes: [matière insuffisante]
+alertes: [dernier commit ancien, matière insuffisante]
 verdict: surveiller
 source_readme_sha: ebf1344c6549855a
 ecrite_le: 2026-09-21

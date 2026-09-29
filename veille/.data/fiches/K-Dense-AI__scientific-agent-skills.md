@@ -9,7 +9,7 @@ prerequis: [version de Python, clé d'API]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence non déclarée]
+alertes: []
 verdict: surveiller
 ---
 

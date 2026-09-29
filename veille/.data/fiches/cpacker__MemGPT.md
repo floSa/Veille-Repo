@@ -7,7 +7,7 @@ prerequis: [Node]
 cout: freemium
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence non déclarée, archivé]
+alertes: []
 verdict: surveiller
 source_readme_sha: 1d624e8fd383c119
 ecrite_le: 2026-09-21

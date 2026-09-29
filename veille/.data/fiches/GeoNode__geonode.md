@@ -9,7 +9,7 @@ prerequis: [Docker, service tiers]
 cout: gratuit
 maturite: éprouvé
 gouvernance: fondation
-alertes: [licence à vérifier, licence copyleft]
+alertes: [licence à vérifier]
 verdict: surveiller
 ---
 

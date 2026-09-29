@@ -9,7 +9,7 @@ prerequis: [Docker, clé d'API, service tiers]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence non déclarée]
+alertes: [licence copyleft]
 verdict: adopter
 ---
 

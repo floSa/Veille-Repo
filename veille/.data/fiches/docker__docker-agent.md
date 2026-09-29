@@ -9,7 +9,7 @@ prerequis: [clé d'API]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence non déclarée, télémétrie]
+alertes: [télémétrie]
 verdict: surveiller
 ---
 

@@ -7,7 +7,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence non déclarée, licence copyleft]
+alertes: [licence copyleft]
 verdict: adopter
 source_readme_sha: 0e4cfd27e588214f
 ecrite_le: 2026-09-21

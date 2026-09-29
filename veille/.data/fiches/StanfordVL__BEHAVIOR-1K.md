@@ -9,7 +9,7 @@ prerequis: [GPU]
 cout: gratuit
 maturite: utilisable
 gouvernance: communauté
-alertes: [matière insuffisante, licence non déclarée]
+alertes: [matière insuffisante]
 verdict: surveiller
 ---
 

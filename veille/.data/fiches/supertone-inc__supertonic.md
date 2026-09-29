@@ -9,7 +9,7 @@ prerequis: [version de Python]
 cout: gratuit
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence non déclarée, archivé]
+alertes: [archivé]
 verdict: surveiller
 ---
 

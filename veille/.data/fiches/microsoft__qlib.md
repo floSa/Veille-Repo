@@ -7,7 +7,7 @@ prerequis: [version de Python]
 cout: gratuit
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [dernier commit ancien]
+alertes: []
 verdict: surveiller
 source_readme_sha: 75f4357305c367c4
 ecrite_le: 2026-09-21

@@ -7,7 +7,7 @@ prerequis: [clé d'API, Node, service tiers]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: communauté
-alertes: [licence non déclarée]
+alertes: []
 verdict: surveiller
 source_readme_sha: cc58f52ba9c1ffa0
 ecrite_le: 2026-09-21

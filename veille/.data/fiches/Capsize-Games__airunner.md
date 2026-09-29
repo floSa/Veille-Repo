@@ -9,7 +9,7 @@ prerequis: [GPU, Docker, beaucoup de RAM, version de Python]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [mainteneur unique, licence copyleft]
+alertes: [licence copyleft, mainteneur unique]
 verdict: surveiller
 ---
 

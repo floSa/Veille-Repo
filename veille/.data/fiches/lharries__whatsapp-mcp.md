@@ -9,7 +9,7 @@ prerequis: [service tiers, version de Python]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [mainteneur unique, dernier commit ancien]
+alertes: [dernier commit ancien, mainteneur unique]
 verdict: surveiller
 ---
 

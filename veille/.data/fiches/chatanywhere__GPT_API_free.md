@@ -9,7 +9,7 @@ prerequis: [compte à créer, clé d'API]
 cout: freemium
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence non déclarée, dépend d'un SaaS, licence à clauses commerciales]
+alertes: [dépend d'un SaaS]
 verdict: ignorer
 ---
 

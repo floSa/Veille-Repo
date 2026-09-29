@@ -9,7 +9,7 @@ prerequis: [compte à créer, Node]
 cout: gratuit
 maturite: utilisable
 gouvernance: communauté
-alertes: [licence non déclarée]
+alertes: []
 verdict: ignorer
 ---
 

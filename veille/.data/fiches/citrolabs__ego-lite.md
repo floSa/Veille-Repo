@@ -9,7 +9,7 @@ prerequis: [compte à créer]
 cout: gratuit
 maturite: expérimental
 gouvernance: entreprise
-alertes: [licence non déclarée, télémétrie]
+alertes: [télémétrie]
 verdict: surveiller
 ---
 

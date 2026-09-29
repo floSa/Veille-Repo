@@ -9,7 +9,7 @@ prerequis: [Docker]
 cout: gratuit
 maturite: éprouvé
 gouvernance: communauté
-alertes: [licence non déclarée, matière insuffisante]
+alertes: [matière insuffisante]
 verdict: adopter
 ---
 

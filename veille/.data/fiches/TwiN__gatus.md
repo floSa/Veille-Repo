@@ -9,7 +9,7 @@ prerequis: [Docker]
 cout: gratuit
 maturite: éprouvé
 gouvernance: une personne
-alertes: [mainteneur unique, licence non déclarée]
+alertes: [mainteneur unique]
 verdict: adopter
 ---
 

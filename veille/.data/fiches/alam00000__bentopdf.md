@@ -9,7 +9,7 @@ prerequis: [aucun]
 cout: freemium
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence copyleft, licence à clauses commerciales, mainteneur unique]
+alertes: [licence copyleft, mainteneur unique]
 verdict: surveiller
 ---
 

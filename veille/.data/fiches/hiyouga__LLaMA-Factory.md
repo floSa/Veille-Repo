@@ -7,7 +7,7 @@ prerequis: [GPU, version de Python]
 cout: gratuit
 maturite: éprouvé
 gouvernance: communauté
-alertes: [licence à clauses commerciales]
+alertes: []
 verdict: adopter
 source_readme_sha: 7c72bce01922b0ab
 ecrite_le: 2026-09-21

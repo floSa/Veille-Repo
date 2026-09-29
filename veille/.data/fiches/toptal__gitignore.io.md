@@ -7,7 +7,7 @@ prerequis: [Docker, Node]
 cout: gratuit
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [dépend d'un SaaS, télémétrie]
+alertes: [dernier commit ancien, dépend d'un SaaS, télémétrie]
 verdict: surveiller
 source_readme_sha: 785d5e149e76bf28
 ecrite_le: 2026-09-21

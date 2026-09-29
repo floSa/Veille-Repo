@@ -9,7 +9,7 @@ prerequis: [Docker]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [matière insuffisante, licence non déclarée, mainteneur unique]
+alertes: [matière insuffisante, mainteneur unique]
 verdict: ignorer
 ---
 

@@ -9,7 +9,7 @@ prerequis: [GPU]
 cout: gratuit
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [archivé, dernier commit ancien, licence à vérifier]
+alertes: [licence à vérifier, archivé, dernier commit ancien]
 verdict: ignorer
 ---
 

@@ -9,7 +9,7 @@ prerequis: [GPU, Docker]
 cout: gratuit
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence non déclarée, matière insuffisante]
+alertes: [matière insuffisante]
 verdict: adopter
 ---
 

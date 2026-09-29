@@ -7,7 +7,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence non déclarée]
+alertes: []
 verdict: adopter
 source_readme_sha: 3a626298d968b69a
 ecrite_le: 2026-09-21

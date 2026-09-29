@@ -9,7 +9,7 @@ prerequis: [clé d'API, service tiers]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: fondation
-alertes: [licence non déclarée]
+alertes: []
 verdict: surveiller
 ---
 

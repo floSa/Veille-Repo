@@ -7,7 +7,7 @@ prerequis: [Node]
 cout: gratuit
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence non déclarée]
+alertes: []
 verdict: adopter
 source_readme_sha: 6f8ef7a60672fbcd
 ecrite_le: 2026-09-21

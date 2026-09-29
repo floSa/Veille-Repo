@@ -9,7 +9,7 @@ prerequis: [GPU, Docker, clé d'API, service tiers]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence non déclarée]
+alertes: []
 verdict: surveiller
 ---
 

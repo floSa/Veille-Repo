@@ -9,7 +9,7 @@ prerequis: [clé d'API, service tiers]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence non déclarée]
+alertes: []
 verdict: adopter
 ---
 

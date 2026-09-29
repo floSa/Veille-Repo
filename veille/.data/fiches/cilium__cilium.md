@@ -9,7 +9,7 @@ prerequis: [service tiers]
 cout: gratuit
 maturite: éprouvé
 gouvernance: fondation
-alertes: [licence copyleft]
+alertes: []
 verdict: ignorer
 ---
 

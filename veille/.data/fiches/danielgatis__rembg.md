@@ -9,7 +9,7 @@ prerequis: [version de Python]
 cout: gratuit
 maturite: éprouvé
 gouvernance: une personne
-alertes: [licence à clauses commerciales, mainteneur unique]
+alertes: [mainteneur unique]
 verdict: adopter
 ---
 

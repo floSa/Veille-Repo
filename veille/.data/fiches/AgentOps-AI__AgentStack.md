@@ -9,7 +9,7 @@ prerequis: [version de Python, clé d'API]
 cout: clé d'API à ta charge
 maturite: expérimental
 gouvernance: entreprise
-alertes: [licence non déclarée, télémétrie]
+alertes: [dernier commit ancien, télémétrie]
 verdict: surveiller
 ---
 

@@ -9,7 +9,7 @@ prerequis: [compte à créer, clé d'API, version de Python, Node]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence non déclarée, mainteneur unique, dépend d'un SaaS]
+alertes: [mainteneur unique, dépend d'un SaaS]
 verdict: surveiller
 ---
 

@@ -9,7 +9,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: expérimental
 gouvernance: entreprise
-alertes: [licence non déclarée]
+alertes: []
 verdict: surveiller
 ---
 

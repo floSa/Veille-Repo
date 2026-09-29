@@ -9,7 +9,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: expérimental
 gouvernance: une personne
-alertes: [licence non déclarée, mainteneur unique, télémétrie]
+alertes: [mainteneur unique, télémétrie]
 verdict: surveiller
 ---
 

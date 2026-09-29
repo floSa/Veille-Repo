@@ -9,7 +9,7 @@ prerequis: [version de Python, clé d'API]
 cout: freemium
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence à clauses commerciales, dépend d'un SaaS]
+alertes: [dépend d'un SaaS]
 verdict: surveiller
 ---
 

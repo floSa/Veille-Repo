@@ -9,7 +9,7 @@ prerequis: [clé d'API, version de Python, Node]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: communauté
-alertes: [licence non déclarée]
+alertes: []
 verdict: surveiller
 ---
 

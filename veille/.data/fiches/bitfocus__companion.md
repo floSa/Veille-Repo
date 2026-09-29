@@ -7,7 +7,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence non déclarée, matière insuffisante]
+alertes: [licence à vérifier, matière insuffisante]
 verdict: surveiller
 source_readme_sha: b1415df74db06284
 ecrite_le: 2026-09-21

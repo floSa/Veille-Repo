@@ -7,7 +7,7 @@ prerequis: [Node]
 cout: gratuit
 maturite: éprouvé
 gouvernance: fondation
-alertes: [licence non déclarée]
+alertes: [licence à vérifier]
 verdict: ignorer
 source_readme_sha: 6562d57cd800bbe6
 ecrite_le: 2026-09-21

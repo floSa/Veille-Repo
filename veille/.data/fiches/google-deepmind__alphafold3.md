@@ -9,7 +9,7 @@ prerequis: [GPU, Docker, compte à créer]
 cout: gratuit
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence à clauses commerciales]
+alertes: []
 verdict: surveiller
 ---
 

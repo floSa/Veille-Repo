@@ -7,7 +7,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence non déclarée, mainteneur unique]
+alertes: [licence non déclarée, dernier commit ancien, mainteneur unique]
 verdict: ignorer
 source_readme_sha: 2cd40460393700c9
 ecrite_le: 2026-09-21

@@ -7,7 +7,7 @@ prerequis: [Docker, beaucoup de RAM, compte à créer]
 cout: freemium
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence non déclarée, licence à clauses commerciales, dépend d'un SaaS]
+alertes: [licence à vérifier, dépend d'un SaaS]
 verdict: adopter
 source_readme_sha: e71c65bb12c237dc
 ecrite_le: 2026-09-21

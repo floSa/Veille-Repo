@@ -7,7 +7,7 @@ prerequis: [GPU, version de Python]
 cout: gratuit
 maturite: utilisable
 gouvernance: communauté
-alertes: [licence copyleft]
+alertes: [licence copyleft, dernier commit ancien]
 verdict: surveiller
 source_readme_sha: 564e214fab99ea61
 ecrite_le: 2026-09-21

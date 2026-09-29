@@ -9,7 +9,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: expérimental
 gouvernance: une personne
-alertes: [mainteneur unique, licence copyleft]
+alertes: [licence copyleft, mainteneur unique]
 verdict: surveiller
 ---
 

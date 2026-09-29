@@ -7,7 +7,7 @@ prerequis: [compte à créer]
 cout: freemium
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence non déclarée, licence à clauses commerciales]
+alertes: [licence à vérifier]
 verdict: surveiller
 source_readme_sha: 48e486d6a6f26a7b
 ecrite_le: 2026-09-21

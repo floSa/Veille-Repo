@@ -7,7 +7,7 @@ prerequis: [Node, compte à créer]
 cout: freemium
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence non déclarée, dépend d'un SaaS]
+alertes: [licence à vérifier, dépend d'un SaaS]
 verdict: surveiller
 source_readme_sha: 41488503b9a825bc
 ecrite_le: 2026-09-21

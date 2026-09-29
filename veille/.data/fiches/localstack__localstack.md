@@ -9,7 +9,7 @@ prerequis: [Docker]
 cout: freemium
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [archivé]
+alertes: [licence à vérifier, archivé]
 verdict: ignorer
 ---
 

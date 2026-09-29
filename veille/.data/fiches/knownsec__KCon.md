@@ -7,7 +7,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
-alertes: [matière insuffisante, licence non déclarée]
+alertes: [licence non déclarée, dernier commit ancien, matière insuffisante]
 verdict: ignorer
 source_readme_sha: d3caf75d53d909c3
 ecrite_le: 2026-09-21

@@ -7,7 +7,7 @@ prerequis: [version de Python]
 cout: gratuit
 maturite: éprouvé
 gouvernance: une personne
-alertes: [mainteneur unique]
+alertes: [archivé, dernier commit ancien, mainteneur unique]
 verdict: adopter
 source_readme_sha: dfeef9bdd08e58f2
 ecrite_le: 2026-09-21

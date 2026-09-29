@@ -9,7 +9,7 @@ prerequis: [GPU, service tiers]
 cout: gratuit
 maturite: éprouvé
 gouvernance: une personne
-alertes: [licence copyleft, archivé, mainteneur unique]
+alertes: [licence copyleft, archivé, dernier commit ancien, mainteneur unique]
 verdict: ignorer
 ---
 

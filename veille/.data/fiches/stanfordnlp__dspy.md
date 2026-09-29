@@ -9,7 +9,7 @@ prerequis: [clé d'API]
 cout: clé d'API à ta charge
 maturite: éprouvé
 gouvernance: communauté
-alertes: [licence non déclarée, matière insuffisante]
+alertes: [matière insuffisante]
 verdict: adopter
 ---
 

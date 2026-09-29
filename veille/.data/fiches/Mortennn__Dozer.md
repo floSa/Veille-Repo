@@ -7,7 +7,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence copyleft, mainteneur unique]
+alertes: [licence copyleft, dernier commit ancien, mainteneur unique]
 verdict: surveiller
 source_readme_sha: 5a9607248e806662
 ecrite_le: 2026-09-21

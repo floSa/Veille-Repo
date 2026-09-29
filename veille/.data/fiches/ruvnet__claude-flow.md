@@ -9,7 +9,7 @@ prerequis: [Node, clé d'API]
 cout: clé d'API à ta charge
 maturite: expérimental
 gouvernance: une personne
-alertes: [licence non déclarée, mainteneur unique]
+alertes: [mainteneur unique]
 verdict: surveiller
 ---
 

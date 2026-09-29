@@ -9,7 +9,7 @@ prerequis: [version de Python, service tiers]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence non déclarée, mainteneur unique, télémétrie]
+alertes: [mainteneur unique, télémétrie]
 verdict: ignorer
 ---
 

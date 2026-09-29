@@ -7,7 +7,7 @@ prerequis: [Docker, Node, compte à créer]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence non déclarée, mainteneur unique, archivé, dernier commit ancien]
+alertes: [licence à vérifier, archivé, mainteneur unique]
 verdict: ignorer
 source_readme_sha: a23d8240cd8b776e
 ecrite_le: 2026-09-21

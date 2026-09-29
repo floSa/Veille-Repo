@@ -9,7 +9,7 @@ prerequis: [Node]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
-alertes: [télémétrie, licence non déclarée]
+alertes: [télémétrie]
 verdict: surveiller
 ---
 

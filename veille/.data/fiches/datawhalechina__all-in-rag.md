@@ -7,7 +7,7 @@ prerequis: [version de Python, Docker]
 cout: gratuit
 maturite: utilisable
 gouvernance: communauté
-alertes: [licence non déclarée, licence à clauses commerciales]
+alertes: [licence non déclarée]
 verdict: surveiller
 source_readme_sha: 952b0d52ecb30a1f
 ecrite_le: 2026-09-21

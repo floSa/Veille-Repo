@@ -9,7 +9,7 @@ prerequis: [Node, compte à créer]
 cout: freemium
 maturite: utilisable
 gouvernance: une personne
-alertes: [mainteneur unique, dépend d'un SaaS, licence non déclarée]
+alertes: [mainteneur unique, dépend d'un SaaS]
 verdict: surveiller
 ---
 

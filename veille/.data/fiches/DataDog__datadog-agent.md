@@ -9,7 +9,7 @@ prerequis: [compte à créer]
 cout: payant
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [matière insuffisante, dépend d'un SaaS, licence non déclarée]
+alertes: [matière insuffisante, dépend d'un SaaS]
 verdict: surveiller
 ---
 

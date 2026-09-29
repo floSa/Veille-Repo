@@ -9,7 +9,7 @@ prerequis: [Docker, version de Python]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence copyleft, mainteneur unique, licence non déclarée]
+alertes: [licence à vérifier, mainteneur unique]
 verdict: ignorer
 ---
 

@@ -7,7 +7,7 @@ prerequis: [Node]
 cout: gratuit
 maturite: éprouvé
 gouvernance: communauté
-alertes: [mainteneur unique]
+alertes: [dernier commit ancien, mainteneur unique]
 verdict: adopter
 source_readme_sha: 50017c6c940de8ac
 ecrite_le: 2026-09-21

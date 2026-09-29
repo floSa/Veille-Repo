@@ -9,7 +9,7 @@ prerequis: [clé d'API, compte à créer]
 cout: gratuit
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence non déclarée]
+alertes: []
 verdict: ignorer
 ---
 

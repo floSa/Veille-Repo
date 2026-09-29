@@ -7,7 +7,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: éprouvé
 gouvernance: communauté
-alertes: [dernier commit ancien]
+alertes: []
 verdict: adopter
 source_readme_sha: bba7596eb524aeb1
 ecrite_le: 2026-09-21

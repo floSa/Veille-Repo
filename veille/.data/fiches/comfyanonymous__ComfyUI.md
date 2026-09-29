@@ -9,7 +9,7 @@ prerequis: [GPU, version de Python, beaucoup de RAM]
 cout: gratuit
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence non déclarée]
+alertes: [licence copyleft]
 verdict: adopter
 ---
 

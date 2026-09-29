@@ -7,7 +7,7 @@ prerequis: [Node, compte à créer, service tiers]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence non déclarée, licence à clauses commerciales, mainteneur unique, dépend d'un SaaS]
+alertes: [licence à vérifier, mainteneur unique, dépend d'un SaaS]
 verdict: ignorer
 source_readme_sha: 6c475579f788e44c
 ecrite_le: 2026-09-21

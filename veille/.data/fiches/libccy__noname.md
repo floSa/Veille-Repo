@@ -7,7 +7,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: éprouvé
 gouvernance: communauté
-alertes: [licence copyleft, matière insuffisante]
+alertes: [licence copyleft, dernier commit ancien, matière insuffisante]
 verdict: ignorer
 source_readme_sha: 02f24eac069b1bd1
 ecrite_le: 2026-09-21

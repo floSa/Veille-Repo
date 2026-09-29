@@ -9,7 +9,7 @@ prerequis: [compte à créer]
 cout: gratuit
 maturite: utilisable
 gouvernance: communauté
-alertes: [licence non déclarée, dépend d'un SaaS]
+alertes: [dépend d'un SaaS]
 verdict: ignorer
 ---
 

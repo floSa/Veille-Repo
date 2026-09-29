@@ -9,7 +9,7 @@ prerequis: [version de Python, service tiers]
 cout: freemium
 maturite: utilisable
 gouvernance: communauté
-alertes: [licence non déclarée, dépend d'un SaaS]
+alertes: [licence copyleft, dépend d'un SaaS]
 verdict: adopter
 ---
 

@@ -9,7 +9,7 @@ prerequis: [clé d'API, Node]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence à vérifier, licence à clauses commerciales]
+alertes: [licence à vérifier]
 verdict: surveiller
 ---
 

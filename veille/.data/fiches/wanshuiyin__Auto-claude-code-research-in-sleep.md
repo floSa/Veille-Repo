@@ -9,7 +9,7 @@ prerequis: [compte à créer, service tiers]
 cout: clé d'API à ta charge
 maturite: expérimental
 gouvernance: une personne
-alertes: [licence non déclarée, mainteneur unique, dépend d'un SaaS]
+alertes: [mainteneur unique, dépend d'un SaaS]
 verdict: ignorer
 ---
 

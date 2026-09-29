@@ -7,7 +7,7 @@ prerequis: [version de Python, GPU]
 cout: gratuit
 maturite: éprouvé
 gouvernance: communauté
-alertes: [dernier commit ancien]
+alertes: []
 verdict: adopter
 source_readme_sha: d2e5fc20d5e97cf3
 ecrite_le: 2026-09-21

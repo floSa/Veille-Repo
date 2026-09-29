@@ -7,7 +7,7 @@ prerequis: [Node]
 cout: gratuit
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence copyleft]
+alertes: [licence à vérifier]
 verdict: adopter
 source_readme_sha: 02c359d337cc1a11
 ecrite_le: 2026-09-21

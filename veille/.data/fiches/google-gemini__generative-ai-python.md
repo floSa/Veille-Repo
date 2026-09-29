@@ -9,7 +9,7 @@ prerequis: [clé d'API, version de Python]
 cout: clé d'API à ta charge
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence non déclarée, matière insuffisante]
+alertes: [archivé, matière insuffisante]
 verdict: ignorer
 ---
 

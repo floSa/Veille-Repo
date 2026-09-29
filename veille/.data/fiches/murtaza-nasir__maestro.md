@@ -9,7 +9,7 @@ prerequis: [Docker, beaucoup de RAM, clé d'API]
 cout: clé d'API à ta charge
 maturite: expérimental
 gouvernance: une personne
-alertes: [mainteneur unique, licence copyleft]
+alertes: [licence copyleft, mainteneur unique]
 verdict: surveiller
 ---
 

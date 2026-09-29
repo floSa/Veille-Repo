@@ -9,7 +9,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: éprouvé
 gouvernance: une personne
-alertes: [licence à vérifier, mainteneur unique, dernier commit ancien]
+alertes: [licence à vérifier, dernier commit ancien, mainteneur unique]
 verdict: ignorer
 ---
 

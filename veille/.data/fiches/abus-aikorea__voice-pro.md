@@ -9,7 +9,7 @@ prerequis: [GPU, beaucoup de RAM]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence copyleft, licence à vérifier]
+alertes: [licence copyleft]
 verdict: ignorer
 ---
 

@@ -9,7 +9,7 @@ prerequis: [Node]
 cout: freemium
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence non déclarée, télémétrie, dépend d'un SaaS]
+alertes: [télémétrie, dépend d'un SaaS]
 verdict: ignorer
 ---
 

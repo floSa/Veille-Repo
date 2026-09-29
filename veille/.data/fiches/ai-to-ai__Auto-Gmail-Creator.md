@@ -9,7 +9,7 @@ prerequis: [version de Python, service tiers, compte à créer]
 cout: payant
 maturite: expérimental
 gouvernance: une personne
-alertes: [licence non déclarée, mainteneur unique, dernier commit ancien, dépend d'un SaaS]
+alertes: [licence non déclarée, dernier commit ancien, mainteneur unique, dépend d'un SaaS]
 verdict: ignorer
 ---
 

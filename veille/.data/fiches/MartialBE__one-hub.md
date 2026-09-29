@@ -9,7 +9,7 @@ prerequis: [Docker, clé d'API]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence copyleft]
+alertes: []
 verdict: surveiller
 ---
 

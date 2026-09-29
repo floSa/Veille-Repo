@@ -9,7 +9,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: éprouvé
 gouvernance: une personne
-alertes: [licence non déclarée]
+alertes: [licence à vérifier]
 verdict: surveiller
 ---
 

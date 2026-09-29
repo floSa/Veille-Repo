@@ -9,7 +9,7 @@ prerequis: [Node, Docker]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [mainteneur unique, télémétrie, licence non déclarée, dépend d'un SaaS]
+alertes: [mainteneur unique, télémétrie, dépend d'un SaaS]
 verdict: surveiller
 ---
 

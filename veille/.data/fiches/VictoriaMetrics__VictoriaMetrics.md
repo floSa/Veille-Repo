@@ -7,7 +7,7 @@ prerequis: [aucun]
 cout: freemium
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence à clauses commerciales]
+alertes: []
 verdict: adopter
 source_readme_sha: 6411c595be1cad0f
 ecrite_le: 2026-09-21

@@ -9,7 +9,7 @@ prerequis: [GPU, version de Python]
 cout: freemium
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence à clauses commerciales, dernier commit ancien, télémétrie]
+alertes: [dernier commit ancien, télémétrie]
 verdict: surveiller
 ---
 

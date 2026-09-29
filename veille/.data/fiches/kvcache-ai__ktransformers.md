@@ -9,7 +9,7 @@ prerequis: [GPU]
 cout: gratuit
 maturite: expérimental
 gouvernance: communauté
-alertes: [licence non déclarée]
+alertes: []
 verdict: surveiller
 ---
 

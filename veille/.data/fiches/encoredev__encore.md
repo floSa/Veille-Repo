@@ -9,7 +9,7 @@ prerequis: [Docker, compte à créer]
 cout: freemium
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [dépend d'un SaaS]
+alertes: [licence copyleft, dépend d'un SaaS]
 verdict: surveiller
 ---
 

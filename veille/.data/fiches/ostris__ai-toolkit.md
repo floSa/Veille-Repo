@@ -9,7 +9,7 @@ prerequis: [GPU, version de Python, Node]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [mainteneur unique, licence non déclarée]
+alertes: [mainteneur unique]
 verdict: surveiller
 ---
 

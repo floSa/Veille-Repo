@@ -9,7 +9,7 @@ prerequis: [version de Python, clé d'API]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence non déclarée, mainteneur unique]
+alertes: [mainteneur unique]
 verdict: adopter
 ---
 

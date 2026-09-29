@@ -9,7 +9,7 @@ prerequis: [version de Python, beaucoup de RAM]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [mainteneur unique, licence non déclarée]
+alertes: [mainteneur unique]
 verdict: adopter
 ---
 

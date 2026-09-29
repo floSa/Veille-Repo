@@ -9,7 +9,7 @@ prerequis: [Node, service tiers]
 cout: freemium
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence non déclarée, mainteneur unique]
+alertes: [mainteneur unique]
 verdict: surveiller
 ---
 

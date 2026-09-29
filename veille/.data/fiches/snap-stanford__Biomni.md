@@ -9,7 +9,7 @@ prerequis: [clé d'API, beaucoup de RAM]
 cout: clé d'API à ta charge
 maturite: expérimental
 gouvernance: communauté
-alertes: [licence à clauses commerciales]
+alertes: []
 verdict: surveiller
 ---
 

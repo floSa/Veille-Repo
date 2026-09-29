@@ -7,7 +7,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: éprouvé
 gouvernance: communauté
-alertes: [licence non déclarée, matière insuffisante]
+alertes: [licence à vérifier, matière insuffisante]
 verdict: adopter
 source_readme_sha: 14a7432321405990
 ecrite_le: 2026-09-21

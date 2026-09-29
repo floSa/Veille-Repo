@@ -9,7 +9,7 @@ prerequis: [Docker, service tiers]
 cout: gratuit
 maturite: expérimental
 gouvernance: une personne
-alertes: [mainteneur unique, dernier commit ancien]
+alertes: [dernier commit ancien, mainteneur unique]
 verdict: ignorer
 ---
 

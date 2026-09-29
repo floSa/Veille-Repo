@@ -9,7 +9,7 @@ prerequis: [clé d'API]
 cout: clé d'API à ta charge
 maturite: expérimental
 gouvernance: une personne
-alertes: [archivé]
+alertes: [archivé, dernier commit ancien]
 verdict: ignorer
 ---
 

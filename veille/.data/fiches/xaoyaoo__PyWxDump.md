@@ -7,7 +7,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: expérimental
 gouvernance: une personne
-alertes: [archivé, licence non déclarée, mainteneur unique, matière insuffisante]
+alertes: [licence non déclarée, mainteneur unique, matière insuffisante]
 verdict: ignorer
 source_readme_sha: 24691acbe0ddec97
 ecrite_le: 2026-09-21

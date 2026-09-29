@@ -9,7 +9,7 @@ prerequis: [GPU, Docker]
 cout: gratuit
 maturite: utilisable
 gouvernance: communauté
-alertes: [licence non déclarée]
+alertes: []
 verdict: surveiller
 ---
 

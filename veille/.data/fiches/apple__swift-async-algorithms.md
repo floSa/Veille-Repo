@@ -7,7 +7,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
-alertes: [dernier commit ancien]
+alertes: []
 verdict: ignorer
 source_readme_sha: d89eb0c5b61b84b9
 ecrite_le: 2026-09-21

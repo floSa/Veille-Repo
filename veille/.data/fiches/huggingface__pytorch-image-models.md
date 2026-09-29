@@ -7,7 +7,7 @@ prerequis: [GPU]
 cout: gratuit
 maturite: éprouvé
 gouvernance: une personne
-alertes: [mainteneur unique, licence à clauses commerciales]
+alertes: [mainteneur unique]
 verdict: adopter
 source_readme_sha: 69742305ea2bd528
 ecrite_le: 2026-09-21

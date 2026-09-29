@@ -9,7 +9,7 @@ prerequis: [Docker, clé d'API, compte à créer, Node]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: communauté
-alertes: [licence non déclarée, dépend d'un SaaS]
+alertes: [licence à vérifier, dépend d'un SaaS]
 verdict: surveiller
 ---
 

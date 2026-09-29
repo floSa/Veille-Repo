@@ -9,7 +9,7 @@ prerequis: [clé d'API, Docker]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence non déclarée, télémétrie, dépend d'un SaaS]
+alertes: [télémétrie, dépend d'un SaaS]
 verdict: surveiller
 ---
 

@@ -9,7 +9,7 @@ prerequis: [Node]
 cout: gratuit
 maturite: expérimental
 gouvernance: une personne
-alertes: [licence non déclarée, mainteneur unique, dernier commit ancien]
+alertes: [licence non déclarée, dernier commit ancien, mainteneur unique]
 verdict: surveiller
 ---
 

@@ -9,7 +9,7 @@ prerequis: [GPU, beaucoup de RAM, version de Python]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence à vérifier, mainteneur unique]
+alertes: [mainteneur unique]
 verdict: surveiller
 ---
 

@@ -9,7 +9,7 @@ prerequis: [aucun]
 cout: freemium
 maturite: éprouvé
 gouvernance: une personne
-alertes: [licence non déclarée, mainteneur unique]
+alertes: [mainteneur unique]
 verdict: ignorer
 ---
 

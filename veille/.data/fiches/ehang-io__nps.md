@@ -7,7 +7,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: éprouvé
 gouvernance: communauté
-alertes: [licence copyleft]
+alertes: [licence copyleft, dernier commit ancien]
 verdict: adopter
 source_readme_sha: c01a4924486814b2
 ecrite_le: 2026-09-21

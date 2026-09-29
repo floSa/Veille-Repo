@@ -9,7 +9,7 @@ prerequis: [clé d'API, Docker]
 cout: freemium
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence non déclarée, licence à clauses commerciales]
+alertes: [licence à vérifier]
 verdict: adopter
 ---
 

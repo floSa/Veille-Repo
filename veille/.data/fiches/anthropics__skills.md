@@ -9,7 +9,7 @@ prerequis: [compte à créer]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence non déclarée, licence à clauses commerciales]
+alertes: [licence non déclarée]
 verdict: adopter
 ---
 

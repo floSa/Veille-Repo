@@ -7,7 +7,7 @@ prerequis: [Docker, service tiers]
 cout: gratuit
 maturite: éprouvé
 gouvernance: communauté
-alertes: [licence non déclarée]
+alertes: [licence à vérifier]
 verdict: surveiller
 source_readme_sha: 102cc81db3546f19
 ecrite_le: 2026-09-21
