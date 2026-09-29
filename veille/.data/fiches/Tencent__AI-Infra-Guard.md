@@ -2,7 +2,7 @@
 schema: 1
 depot: Tencent/AI-Infra-Guard
 source_readme_sha: d78288961b51ed63
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker, clé d'API]

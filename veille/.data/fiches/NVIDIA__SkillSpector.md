@@ -2,7 +2,7 @@
 schema: 1
 depot: NVIDIA/SkillSpector
 source_readme_sha: f6e0386dec364424
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [aucun]

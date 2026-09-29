@@ -2,7 +2,7 @@
 schema: 1
 depot: vllm-project/aibrix
 source_readme_sha: f4461ddf152a49c3
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [GPU, Docker]

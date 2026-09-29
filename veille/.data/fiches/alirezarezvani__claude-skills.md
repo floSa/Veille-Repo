@@ -2,7 +2,7 @@
 schema: 1
 depot: alirezarezvani/claude-skills
 source_readme_sha: f7a1b881bc5abf37
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: liste
 deploiement: autre
 prerequis: [version de Python]

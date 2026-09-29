@@ -2,7 +2,7 @@
 schema: 1
 depot: Tracer-Cloud/opensre
 source_readme_sha: a45ab12691ab4c84
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [compte à créer, clé d'API]

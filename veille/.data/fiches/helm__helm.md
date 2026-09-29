@@ -2,7 +2,7 @@
 schema: 1
 depot: helm/helm
 source_readme_sha: 76795af9c4b1a2eb
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [service tiers]

@@ -2,7 +2,7 @@
 schema: 1
 depot: microsoft/mcp-for-beginners
 source_readme_sha: 6a8c9e4b8d6569b8
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: doc
 deploiement: rien à installer
 prerequis: [aucun]

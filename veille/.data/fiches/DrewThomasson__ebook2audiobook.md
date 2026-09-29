@@ -2,7 +2,7 @@
 schema: 1
 depot: DrewThomasson/ebook2audiobook
 source_readme_sha: 0a3ec1fa5dd91875
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Docker]

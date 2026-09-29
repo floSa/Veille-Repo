@@ -2,7 +2,7 @@
 schema: 1
 depot: psviderski/uncloud
 source_readme_sha: f123d8ba6636217a
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [Docker, service tiers]

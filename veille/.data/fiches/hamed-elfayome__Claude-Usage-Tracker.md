@@ -2,7 +2,7 @@
 schema: 1
 depot: hamed-elfayome/Claude-Usage-Tracker
 source_readme_sha: ce39f871f9a68e4b
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: binaire
 prerequis: [compte à créer]

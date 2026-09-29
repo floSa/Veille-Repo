@@ -2,7 +2,7 @@
 schema: 1
 depot: dapr/dapr
 source_readme_sha: 61f5164d12c3e95b
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker]

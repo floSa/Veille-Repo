@@ -2,7 +2,7 @@
 schema: 1
 depot: github/gh-aw
 source_readme_sha: 0032afe677890084
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: extension
 deploiement: binaire
 prerequis: [compte à créer, clé d'API]

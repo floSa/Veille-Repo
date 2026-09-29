@@ -2,7 +2,7 @@
 schema: 1
 depot: upstash/context7
 source_readme_sha: c513b9ec9c006a85
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: npm
 prerequis: [Node, clé d'API]

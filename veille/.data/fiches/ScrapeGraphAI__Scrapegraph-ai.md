@@ -2,7 +2,7 @@
 schema: 1
 depot: ScrapeGraphAI/Scrapegraph-ai
 source_readme_sha: f969db3320ffa997
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API]

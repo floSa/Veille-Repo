@@ -2,7 +2,7 @@
 schema: 1
 depot: langchain-ai/langgraph
 source_readme_sha: 3a13e257af121696
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API]

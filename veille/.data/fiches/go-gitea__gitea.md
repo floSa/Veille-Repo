@@ -2,7 +2,7 @@
 schema: 1
 depot: go-gitea/gitea
 source_readme_sha: 5d16370b0e38e4e8
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: docker
 prerequis: [Docker]

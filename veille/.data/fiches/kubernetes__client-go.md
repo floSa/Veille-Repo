@@ -2,7 +2,7 @@
 schema: 1
 depot: kubernetes/client-go
 source_readme_sha: 891d08d08069f810
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: compilation
 prerequis: [aucun]

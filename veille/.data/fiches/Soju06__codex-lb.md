@@ -2,7 +2,7 @@
 schema: 1
 depot: Soju06/codex-lb
 source_readme_sha: 8d8a5e6b1ca28b46
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [compte à créer]

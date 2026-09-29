@@ -2,7 +2,7 @@
 schema: 1
 depot: huangruiteng/loopx
 source_readme_sha: caf6992293a45a17
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [version de Python, Node]

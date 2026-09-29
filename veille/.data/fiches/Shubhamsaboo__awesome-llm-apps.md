@@ -2,7 +2,7 @@
 schema: 1
 depot: Shubhamsaboo/awesome-llm-apps
 source_readme_sha: 1ec02ce73515517f
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: liste
 deploiement: rien à installer
 prerequis: [clé d'API]

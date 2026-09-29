@@ -2,7 +2,7 @@
 schema: 1
 depot: lsdefine/GenericAgent
 source_readme_sha: 03a41644c55bd4a9
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [clé d'API, version de Python]

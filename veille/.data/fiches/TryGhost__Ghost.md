@@ -2,7 +2,7 @@
 schema: 1
 depot: TryGhost/Ghost
 source_readme_sha: 8c8ab5173564bf5c
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: npm
 prerequis: [Node]

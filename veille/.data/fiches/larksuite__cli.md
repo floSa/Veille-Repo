@@ -2,7 +2,7 @@
 schema: 1
 depot: larksuite/cli
 source_readme_sha: d31ae76aaca1a72a
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: npm
 prerequis: [Node, compte à créer]

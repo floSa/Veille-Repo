@@ -2,7 +2,7 @@
 schema: 1
 depot: huggingface/swift-transformers
 source_readme_sha: 0f93cc027a5678a6
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: compilation
 prerequis: [aucun]

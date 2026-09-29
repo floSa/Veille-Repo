@@ -2,7 +2,7 @@
 schema: 1
 depot: Vexa-ai/vexa
 source_readme_sha: 3312ad4c5a3ef8e0
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: docker
 prerequis: [Docker, clé d'API]

@@ -2,7 +2,7 @@
 schema: 1
 depot: TheBeastLT/torrentio-scraper
 source_readme_sha: adbbafd59f87d5f6
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: autre
 prerequis: [aucun]

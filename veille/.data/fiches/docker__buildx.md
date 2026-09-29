@@ -2,7 +2,7 @@
 schema: 1
 depot: docker/buildx
 source_readme_sha: 9593b1a6c30d8316
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: extension
 deploiement: binaire
 prerequis: [Docker]

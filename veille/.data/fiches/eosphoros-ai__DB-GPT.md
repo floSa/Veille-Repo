@@ -2,7 +2,7 @@
 schema: 1
 depot: eosphoros-ai/DB-GPT
 source_readme_sha: 52f50031b1c395e9
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: pip
 prerequis: [clé d'API]

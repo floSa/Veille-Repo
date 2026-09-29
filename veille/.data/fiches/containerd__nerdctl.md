@@ -2,7 +2,7 @@
 schema: 1
 depot: containerd/nerdctl
 source_readme_sha: 6a40910ff0d2d2fe
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

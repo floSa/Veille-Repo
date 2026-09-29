@@ -2,7 +2,7 @@
 schema: 1
 depot: dolthub/dolt
 source_readme_sha: 55ff3d345173eb8e
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

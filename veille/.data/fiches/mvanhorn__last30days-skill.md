@@ -2,7 +2,7 @@
 schema: 1
 depot: mvanhorn/last30days-skill
 source_readme_sha: cbfc7fcbd8e1ad5a
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: extension
 deploiement: npm
 prerequis: [clé d'API, compte à créer]

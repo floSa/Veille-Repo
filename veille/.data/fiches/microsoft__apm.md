@@ -2,7 +2,7 @@
 schema: 1
 depot: microsoft/apm
 source_readme_sha: 6ebbc4651a8845c4
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

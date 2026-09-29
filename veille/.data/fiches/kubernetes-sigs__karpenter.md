@@ -2,7 +2,7 @@
 schema: 1
 depot: kubernetes-sigs/karpenter
 source_readme_sha: bf16f0a3cf6d2246
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [service tiers]

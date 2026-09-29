@@ -2,7 +2,7 @@
 schema: 1
 depot: microsoft/SkillOpt
 source_readme_sha: f12d1ed3a41328fd
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [clé d'API]

@@ -2,7 +2,7 @@
 schema: 1
 depot: unslothai/unsloth
 source_readme_sha: 63526dff79f1bc41
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: binaire
 prerequis: [GPU, beaucoup de RAM]

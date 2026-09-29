@@ -2,7 +2,7 @@
 schema: 1
 depot: microsoft/generative-ai-with-javascript
 source_readme_sha: 9a5b7a6caaf7fbd7
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: doc
 deploiement: rien à installer
 prerequis: [compte à créer]

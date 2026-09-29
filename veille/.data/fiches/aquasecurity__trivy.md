@@ -2,7 +2,7 @@
 schema: 1
 depot: aquasecurity/trivy
 source_readme_sha: 217d4d9db626c98b
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

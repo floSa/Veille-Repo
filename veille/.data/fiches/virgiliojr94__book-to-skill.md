@@ -2,7 +2,7 @@
 schema: 1
 depot: virgiliojr94/book-to-skill
 source_readme_sha: 894a938a65176f2f
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: npm
 prerequis: [version de Python, Node]

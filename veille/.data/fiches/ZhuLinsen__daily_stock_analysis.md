@@ -2,7 +2,7 @@
 schema: 1
 depot: ZhuLinsen/daily_stock_analysis
 source_readme_sha: 846b0f2fe2749ebd
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [clé d'API, compte à créer]

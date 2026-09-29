@@ -2,7 +2,7 @@
 schema: 1
 depot: ml-explore/mlx-swift
 source_readme_sha: 7123ef6acadb5803
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: compilation
 prerequis: [aucun]

@@ -2,7 +2,7 @@
 schema: 1
 depot: jetify-com/devbox
 source_readme_sha: 7ea3452e30b63bc1
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

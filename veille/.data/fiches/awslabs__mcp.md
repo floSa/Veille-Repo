@@ -2,7 +2,7 @@
 schema: 1
 depot: awslabs/mcp
 source_readme_sha: 6ae181af0fde4fb7
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: liste
 deploiement: pip
 prerequis: [clé d'API, compte à créer, service tiers]

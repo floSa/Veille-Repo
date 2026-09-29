@@ -2,7 +2,7 @@
 schema: 1
 depot: moorcheh-ai/memanto
 source_readme_sha: 50bf1e0b3511a976
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [Docker, clé d'API]

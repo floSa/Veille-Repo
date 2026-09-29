@@ -2,7 +2,7 @@
 schema: 1
 depot: woodpecker-ci/woodpecker
 source_readme_sha: 5c50f5fa19d21adc
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: docker
 prerequis: [Docker]

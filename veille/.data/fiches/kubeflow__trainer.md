@@ -2,7 +2,7 @@
 schema: 1
 depot: kubeflow/trainer
 source_readme_sha: 0dc0e7206c9eb52f
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [service tiers, GPU]

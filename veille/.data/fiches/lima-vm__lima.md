@@ -2,7 +2,7 @@
 schema: 1
 depot: lima-vm/lima
 source_readme_sha: b1f921a59f492918
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

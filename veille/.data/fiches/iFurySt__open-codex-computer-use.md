@@ -2,7 +2,7 @@
 schema: 1
 depot: iFurySt/open-codex-computer-use
 source_readme_sha: 64ee1d9b0c847a92
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: npm
 prerequis: [Node]

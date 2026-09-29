@@ -2,7 +2,7 @@
 schema: 1
 depot: coreyhaines31/marketingskills
 source_readme_sha: 6f370f8f639f0dd4
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: liste
 deploiement: npm
 prerequis: [aucun]

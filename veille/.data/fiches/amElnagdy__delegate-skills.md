@@ -2,7 +2,7 @@
 schema: 1
 depot: amElnagdy/delegate-skills
 source_readme_sha: b71b3459a67cc227
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: liste
 deploiement: npm
 prerequis: [Node]

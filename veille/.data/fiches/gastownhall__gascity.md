@@ -2,7 +2,7 @@
 schema: 1
 depot: gastownhall/gascity
 source_readme_sha: 53410c489972eb66
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

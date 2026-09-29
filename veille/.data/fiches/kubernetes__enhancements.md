@@ -2,7 +2,7 @@
 schema: 1
 depot: kubernetes/enhancements
 source_readme_sha: ca1ee9f0faa3a7c5
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: doc
 deploiement: rien à installer
 prerequis: [aucun]

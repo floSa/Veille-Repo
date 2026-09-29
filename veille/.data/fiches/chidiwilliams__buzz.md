@@ -2,7 +2,7 @@
 schema: 1
 depot: chidiwilliams/buzz
 source_readme_sha: 4a8d1cf7c9dfb3f1
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: binaire
 prerequis: [aucun]

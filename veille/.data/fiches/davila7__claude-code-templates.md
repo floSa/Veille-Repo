@@ -2,7 +2,7 @@
 schema: 1
 depot: davila7/claude-code-templates
 source_readme_sha: e4b0e967737caca9
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: liste
 deploiement: npm
 prerequis: [Node]

@@ -2,7 +2,7 @@
 schema: 1
 depot: steipete/CodexBar
 source_readme_sha: 32960fac8f4f2390
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: binaire
 prerequis: [compte à créer]

@@ -2,7 +2,7 @@
 schema: 1
 depot: netbox-community/netbox
 source_readme_sha: 3674638ca1d51308
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: autre
 prerequis: [aucun]

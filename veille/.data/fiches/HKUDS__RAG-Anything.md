@@ -2,7 +2,7 @@
 schema: 1
 depot: HKUDS/RAG-Anything
 source_readme_sha: 9a1ab32b0cc42b1a
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API]

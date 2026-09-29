@@ -2,7 +2,7 @@
 schema: 1
 depot: NVIDIA/NeMo-Agent-Toolkit
 source_readme_sha: ff8fd02ba7a70aa5
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API, version de Python]

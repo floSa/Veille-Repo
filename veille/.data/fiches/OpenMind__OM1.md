@@ -2,7 +2,7 @@
 schema: 1
 depot: OpenMind/OM1
 source_readme_sha: 45f57c17c1bb770b
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [clé d'API, compte à créer]

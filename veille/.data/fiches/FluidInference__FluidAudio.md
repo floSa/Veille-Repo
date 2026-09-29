@@ -2,7 +2,7 @@
 schema: 1
 depot: FluidInference/FluidAudio
 source_readme_sha: db548cd1e60e2cf7
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: autre
 prerequis: [aucun]

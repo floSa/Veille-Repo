@@ -2,7 +2,7 @@
 schema: 1
 depot: thomaspoignant/go-feature-flag
 source_readme_sha: d8aba9f2a919ea36
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: docker
 prerequis: [aucun]

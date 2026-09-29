@@ -2,7 +2,7 @@
 schema: 1
 depot: topoteretes/cognee
 source_readme_sha: f89ea9f58197ea8e
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [version de Python, clé d'API]

@@ -2,7 +2,7 @@
 schema: 1
 depot: pingcap/tidb
 source_readme_sha: 4988138b06f27ec2
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: docker
 prerequis: [Docker, beaucoup de RAM]

@@ -2,7 +2,7 @@
 schema: 1
 depot: sirupsen/logrus
 source_readme_sha: 35b73d8ad1038723
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: compilation
 prerequis: [aucun]

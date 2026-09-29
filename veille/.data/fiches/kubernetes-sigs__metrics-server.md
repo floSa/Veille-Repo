@@ -2,7 +2,7 @@
 schema: 1
 depot: kubernetes-sigs/metrics-server
 source_readme_sha: 1268edb575b90e53
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [service tiers]

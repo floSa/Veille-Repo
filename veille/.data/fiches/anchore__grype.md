@@ -2,7 +2,7 @@
 schema: 1
 depot: anchore/grype
 source_readme_sha: c02a690ef6775b8a
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

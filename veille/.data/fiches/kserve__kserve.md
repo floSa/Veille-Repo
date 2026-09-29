@@ -2,7 +2,7 @@
 schema: 1
 depot: kserve/kserve
 source_readme_sha: 2eb3aa710d5621ae
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [Docker, GPU]

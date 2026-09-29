@@ -2,7 +2,7 @@
 schema: 1
 depot: aldinokemal/go-whatsapp-web-multidevice
 source_readme_sha: 0f85ee565cdf114a
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: binaire
 prerequis: [service tiers, Docker]

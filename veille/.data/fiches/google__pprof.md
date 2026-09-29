@@ -2,7 +2,7 @@
 schema: 1
 depot: google/pprof
 source_readme_sha: 63911f47716fdb9f
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: compilation
 prerequis: [aucun]

@@ -26,3 +26,7 @@ __pycache__/
 
 # worktrees des agents
 .claude/worktrees/
+
+# --- journal de travail du service de génération, regénéré à chaque passage
+veille/.data/declencher.log
+veille/.data/a-declencher-reste.txt

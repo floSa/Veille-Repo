@@ -2,7 +2,7 @@
 schema: 1
 depot: OpenHands/OpenHands
 source_readme_sha: 1b783460b1ec68ee
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: npm
 prerequis: [Docker, clé d'API, Node]

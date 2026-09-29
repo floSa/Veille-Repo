@@ -2,7 +2,7 @@
 schema: 1
 depot: abiosoft/colima
 source_readme_sha: 8f0f7b279fdc33b1
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

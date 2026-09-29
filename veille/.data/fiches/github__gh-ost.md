@@ -2,7 +2,7 @@
 schema: 1
 depot: github/gh-ost
 source_readme_sha: 07b6cf866971f100
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [service tiers]

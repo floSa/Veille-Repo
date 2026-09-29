@@ -2,7 +2,7 @@
 schema: 1
 depot: danielmiessler/fabric
 source_readme_sha: aa22bb727fe4fbf3
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [clé d'API]

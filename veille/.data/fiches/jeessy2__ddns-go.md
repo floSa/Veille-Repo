@@ -2,7 +2,7 @@
 schema: 1
 depot: jeessy2/ddns-go
 source_readme_sha: 9c217ac9ddee2047
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [aucun]

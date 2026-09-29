@@ -2,7 +2,7 @@
 schema: 1
 depot: docker/mcp-gateway
 source_readme_sha: f4da99dc742a72d2
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker]

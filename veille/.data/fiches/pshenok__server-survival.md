@@ -2,7 +2,7 @@
 schema: 1
 depot: pshenok/server-survival
 source_readme_sha: c56104be41d2c773
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: jeu
 deploiement: rien à installer
 prerequis: [aucun]

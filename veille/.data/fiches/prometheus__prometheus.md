@@ -2,7 +2,7 @@
 schema: 1
 depot: prometheus/prometheus
 source_readme_sha: 0d2f3f6f3d19ed74
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: binaire
 prerequis: [aucun]

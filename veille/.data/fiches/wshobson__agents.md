@@ -2,7 +2,7 @@
 schema: 1
 depot: wshobson/agents
 source_readme_sha: fb6944c10fd79bd4
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: liste
 deploiement: autre
 prerequis: [aucun]

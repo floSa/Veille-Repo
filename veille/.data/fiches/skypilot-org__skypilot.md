@@ -2,7 +2,7 @@
 schema: 1
 depot: skypilot-org/skypilot
 source_readme_sha: 02b7acf646787700
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [compte à créer, GPU, Docker]

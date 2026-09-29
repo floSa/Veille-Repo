@@ -2,7 +2,7 @@
 schema: 1
 depot: flyteorg/flyte
 source_readme_sha: d0c000540850e6ae
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [Docker, version de Python]

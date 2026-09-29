@@ -2,7 +2,7 @@
 schema: 1
 depot: temporalio/temporal
 source_readme_sha: 269838d3de5da90d
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

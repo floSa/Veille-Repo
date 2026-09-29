@@ -2,7 +2,7 @@
 schema: 1
 depot: facebookresearch/detectron2
 source_readme_sha: 54df9b531f350780
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [GPU]

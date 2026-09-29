@@ -2,7 +2,7 @@
 schema: 1
 depot: anthropics/claude-plugins-community
 source_readme_sha: a4e71cd7fc5b6b67
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: liste
 deploiement: rien à installer
 prerequis: [aucun]

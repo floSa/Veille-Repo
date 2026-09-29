@@ -2,7 +2,7 @@
 schema: 1
 depot: apurvsinghgautam/robin
 source_readme_sha: 1a7cb55ad2c610ac
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Docker, clé d'API, service tiers]

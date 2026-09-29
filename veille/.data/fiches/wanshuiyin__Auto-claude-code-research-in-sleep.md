@@ -2,7 +2,7 @@
 schema: 1
 depot: wanshuiyin/Auto-claude-code-research-in-sleep
 source_readme_sha: ca46f54e62ec7f9e
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: extension
 deploiement: npm
 prerequis: [compte à créer, service tiers]

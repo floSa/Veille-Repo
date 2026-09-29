@@ -2,7 +2,7 @@
 schema: 1
 depot: huggingface/accelerate
 source_readme_sha: c201cf5121bea21d
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [GPU, version de Python]

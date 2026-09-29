@@ -2,7 +2,7 @@
 schema: 1
 depot: OpenWhispr/openwhispr
 source_readme_sha: 280ef4134258a22d
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: binaire
 prerequis: [Node, clé d'API]

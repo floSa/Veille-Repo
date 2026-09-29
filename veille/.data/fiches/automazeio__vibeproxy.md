@@ -2,7 +2,7 @@
 schema: 1
 depot: automazeio/vibeproxy
 source_readme_sha: 41661db0aed0ecdd
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: binaire
 prerequis: [compte à créer]

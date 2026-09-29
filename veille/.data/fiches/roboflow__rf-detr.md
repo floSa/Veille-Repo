@@ -2,7 +2,7 @@
 schema: 1
 depot: roboflow/rf-detr
 source_readme_sha: 2626e785682875b6
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: modèle
 deploiement: pip
 prerequis: [GPU, version de Python]

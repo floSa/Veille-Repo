@@ -2,7 +2,7 @@
 schema: 1
 depot: ollama/ollama
 source_readme_sha: 09c456b8f3e2fca4
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [beaucoup de RAM]

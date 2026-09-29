@@ -2,7 +2,7 @@
 schema: 1
 depot: unclecode/crawl4ai
 source_readme_sha: 3de808095d5cb810
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [version de Python]

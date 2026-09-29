@@ -2,7 +2,7 @@
 schema: 1
 depot: VectifyAI/PageIndex
 source_readme_sha: fc08d3fad45b2881
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API]

@@ -2,7 +2,7 @@
 schema: 1
 depot: darkzOGx/youtube-automation-agent
 source_readme_sha: b18c387f615444ce
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: npm
 prerequis: [clé d'API, compte à créer, Node]

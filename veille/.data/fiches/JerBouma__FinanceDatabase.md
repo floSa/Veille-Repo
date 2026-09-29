@@ -2,7 +2,7 @@
 schema: 1
 depot: JerBouma/FinanceDatabase
 source_readme_sha: 4edf9ac0a8340c00
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: dataset
 deploiement: pip
 prerequis: [aucun]

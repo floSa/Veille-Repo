@@ -2,7 +2,7 @@
 schema: 1
 depot: marimo-team/marimo
 source_readme_sha: d017b1b939242ce8
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [aucun]

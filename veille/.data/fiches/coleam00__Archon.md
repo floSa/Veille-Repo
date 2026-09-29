@@ -2,7 +2,7 @@
 schema: 1
 depot: coleam00/Archon
 source_readme_sha: b88b895a9ad4030d
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [service tiers, clé d'API]

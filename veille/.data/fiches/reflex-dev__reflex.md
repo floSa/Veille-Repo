@@ -2,7 +2,7 @@
 schema: 1
 depot: reflex-dev/reflex
 source_readme_sha: cc61e948b2f482cb
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [aucun]

@@ -2,7 +2,7 @@
 schema: 1
 depot: github/spec-kit
 source_readme_sha: e00aa27eab1c43e6
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [version de Python]

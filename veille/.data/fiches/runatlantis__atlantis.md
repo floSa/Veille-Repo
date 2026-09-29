@@ -2,7 +2,7 @@
 schema: 1
 depot: runatlantis/atlantis
 source_readme_sha: e929c9c2818600b5
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [service tiers]

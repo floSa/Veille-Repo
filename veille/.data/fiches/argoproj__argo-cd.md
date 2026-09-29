@@ -2,7 +2,7 @@
 schema: 1
 depot: argoproj/argo-cd
 source_readme_sha: da0adc2587037597
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [service tiers]

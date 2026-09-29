@@ -2,7 +2,7 @@
 schema: 1
 depot: jundot/omlx
 source_readme_sha: 3c7ecfa6cbdc0a72
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [version de Python, beaucoup de RAM]

@@ -2,7 +2,7 @@
 schema: 1
 depot: Andyyyy64/whichllm
 source_readme_sha: 9f42bcaa722cfa10
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [version de Python]

@@ -2,7 +2,7 @@
 schema: 1
 depot: vllm-project/vllm
 source_readme_sha: 8d2e7cd8d120bcd9
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [GPU]

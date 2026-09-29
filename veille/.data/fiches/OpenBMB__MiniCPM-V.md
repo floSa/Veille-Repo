@@ -2,7 +2,7 @@
 schema: 1
 depot: OpenBMB/MiniCPM-V
 source_readme_sha: 978333665b038c2f
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: modèle
 deploiement: pip
 prerequis: [GPU, version de Python]

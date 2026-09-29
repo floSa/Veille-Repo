@@ -2,7 +2,7 @@
 schema: 1
 depot: hugohe3/ppt-master
 source_readme_sha: 8786b9f03585a73d
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [version de Python, clé d'API]

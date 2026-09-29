@@ -2,7 +2,7 @@
 schema: 1
 depot: rs/zerolog
 source_readme_sha: 1bd6e0eef76d6161
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: autre
 prerequis: [aucun]

@@ -2,7 +2,7 @@
 schema: 1
 depot: openai/openai-agents-python
 source_readme_sha: 00bf6db68509e021
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API, version de Python]

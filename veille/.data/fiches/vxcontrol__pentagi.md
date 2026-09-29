@@ -2,7 +2,7 @@
 schema: 1
 depot: vxcontrol/pentagi
 source_readme_sha: f91792dc299570b8
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker, clé d'API, beaucoup de RAM]

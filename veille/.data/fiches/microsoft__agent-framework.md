@@ -2,7 +2,7 @@
 schema: 1
 depot: microsoft/agent-framework
 source_readme_sha: 4a628aa224c014ff
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API, compte à créer]

@@ -2,7 +2,7 @@
 schema: 1
 depot: testcontainers/testcontainers-go
 source_readme_sha: bd1131e3e887b52b
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: autre
 prerequis: [Docker]

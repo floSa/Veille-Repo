@@ -2,7 +2,7 @@
 schema: 1
 depot: keploy/keploy
 source_readme_sha: 1572a854f5200990
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

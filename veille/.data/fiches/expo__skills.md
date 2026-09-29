@@ -2,7 +2,7 @@
 schema: 1
 depot: expo/skills
 source_readme_sha: 408f48949a75cd2a
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: liste
 deploiement: npm
 prerequis: [Node]

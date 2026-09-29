@@ -2,7 +2,7 @@
 schema: 1
 depot: Gentleman-Programming/gentle-ai
 source_readme_sha: 620040bc949937bf
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [compte à créer]

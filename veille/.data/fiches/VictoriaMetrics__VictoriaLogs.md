@@ -2,7 +2,7 @@
 schema: 1
 depot: VictoriaMetrics/VictoriaLogs
 source_readme_sha: c76b5e90f2649b1e
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [aucun]

@@ -2,7 +2,7 @@
 schema: 1
 depot: bytedance/deer-flow
 source_readme_sha: 24865b1bb81801b0
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker, clé d'API, beaucoup de RAM]

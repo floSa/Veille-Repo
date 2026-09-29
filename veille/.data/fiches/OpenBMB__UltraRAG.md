@@ -2,7 +2,7 @@
 schema: 1
 depot: OpenBMB/UltraRAG
 source_readme_sha: 5c60bf703691b68b
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [GPU, version de Python]

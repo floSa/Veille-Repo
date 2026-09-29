@@ -2,7 +2,7 @@
 schema: 1
 depot: NVIDIA/skills
 source_readme_sha: bb14e0d6e3616a11
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: liste
 deploiement: npm
 prerequis: [Node]

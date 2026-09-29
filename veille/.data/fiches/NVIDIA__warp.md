@@ -2,7 +2,7 @@
 schema: 1
 depot: NVIDIA/warp
 source_readme_sha: 3fbae17e1f4e05fa
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [GPU, version de Python]

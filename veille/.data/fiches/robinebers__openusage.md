@@ -2,7 +2,7 @@
 schema: 1
 depot: robinebers/openusage
 source_readme_sha: d6becb4b93c61249
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: binaire
 prerequis: [aucun]

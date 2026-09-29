@@ -2,7 +2,7 @@
 schema: 1
 depot: openai/openai-python
 source_readme_sha: aa5711850f1498b0
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API, version de Python]

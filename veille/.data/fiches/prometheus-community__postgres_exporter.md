@@ -2,7 +2,7 @@
 schema: 1
 depot: prometheus-community/postgres_exporter
 source_readme_sha: bc1a4e98c2c516e4
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker]

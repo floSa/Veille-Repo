@@ -2,7 +2,7 @@
 schema: 1
 depot: jacklandrin/OnlySwitch
 source_readme_sha: 14d3af6760cc5d2a
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: binaire
 prerequis: [aucun]

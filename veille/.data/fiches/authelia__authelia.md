@@ -2,7 +2,7 @@
 schema: 1
 depot: authelia/authelia
 source_readme_sha: 1e94142f20341233
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: docker
 prerequis: [Docker, service tiers]

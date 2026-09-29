@@ -2,7 +2,7 @@
 schema: 1
 depot: chatanywhere/GPT_API_free
 source_readme_sha: 7c392d4398f40f0a
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: SaaS
 prerequis: [compte à créer, clé d'API]

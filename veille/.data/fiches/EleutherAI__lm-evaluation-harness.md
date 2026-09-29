@@ -2,7 +2,7 @@
 schema: 1
 depot: EleutherAI/lm-evaluation-harness
 source_readme_sha: 57c5cf1db6edb203
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [GPU, version de Python]

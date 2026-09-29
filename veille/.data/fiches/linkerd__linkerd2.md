@@ -2,7 +2,7 @@
 schema: 1
 depot: linkerd/linkerd2
 source_readme_sha: c8aef5846a58a8b7
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [service tiers]

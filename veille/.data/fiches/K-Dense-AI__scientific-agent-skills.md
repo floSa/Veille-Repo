@@ -2,7 +2,7 @@
 schema: 1
 depot: K-Dense-AI/scientific-agent-skills
 source_readme_sha: d81f605b83c30fff
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: liste
 deploiement: autre
 prerequis: [version de Python, clé d'API]

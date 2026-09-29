@@ -2,7 +2,7 @@
 schema: 1
 depot: affaan-m/ECC
 source_readme_sha: 4af0d3294957ba7e
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: extension
 deploiement: npm
 prerequis: [Node]

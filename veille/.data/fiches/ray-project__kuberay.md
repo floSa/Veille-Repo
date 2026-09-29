@@ -2,7 +2,7 @@
 schema: 1
 depot: ray-project/kuberay
 source_readme_sha: 254da68f5bc9df29
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [service tiers]

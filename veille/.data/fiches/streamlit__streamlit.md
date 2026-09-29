@@ -2,7 +2,7 @@
 schema: 1
 depot: streamlit/streamlit
 source_readme_sha: 45b271be0490145d
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [aucun]

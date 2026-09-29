@@ -2,7 +2,7 @@
 schema: 1
 depot: voocel/ainovel-cli
 source_readme_sha: 31446ea5edb95631
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: binaire
 prerequis: [clé d'API]

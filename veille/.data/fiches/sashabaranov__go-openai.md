@@ -2,7 +2,7 @@
 schema: 1
 depot: sashabaranov/go-openai
 source_readme_sha: 26a71250800b71fd
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: autre
 prerequis: [clé d'API]

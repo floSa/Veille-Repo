@@ -2,7 +2,7 @@
 schema: 1
 depot: karmada-io/karmada
 source_readme_sha: db105938e17e898f
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [Docker]

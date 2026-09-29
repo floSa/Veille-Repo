@@ -2,7 +2,7 @@
 schema: 1
 depot: charmbracelet/huh
 source_readme_sha: 169ba3394d57a7db
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: compilation
 prerequis: [Go]

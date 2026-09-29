@@ -2,7 +2,7 @@
 schema: 1
 depot: jiji262/douyin-downloader
 source_readme_sha: 26e8f8ffd84be1cf
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [version de Python, compte à créer]

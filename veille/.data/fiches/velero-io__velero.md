@@ -2,7 +2,7 @@
 schema: 1
 depot: velero-io/velero
 source_readme_sha: f768ef31ffaf6650
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [Docker]

@@ -2,7 +2,7 @@
 schema: 1
 depot: dograh-hq/dograh
 source_readme_sha: 2dd94c4a412eacdd
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Docker]

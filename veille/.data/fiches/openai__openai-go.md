@@ -2,7 +2,7 @@
 schema: 1
 depot: openai/openai-go
 source_readme_sha: 2d9ce0c8a9e3c8d6
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: autre
 prerequis: [clé d'API]

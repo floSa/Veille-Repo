@@ -2,7 +2,7 @@
 schema: 1
 depot: getzep/graphiti
 source_readme_sha: ce1628c02b3c6fd5
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API, service tiers, version de Python]

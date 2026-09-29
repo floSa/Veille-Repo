@@ -2,7 +2,7 @@
 schema: 1
 depot: coroot/coroot
 source_readme_sha: 412583d9af67ae41
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker]

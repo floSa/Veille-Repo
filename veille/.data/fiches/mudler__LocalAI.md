@@ -2,7 +2,7 @@
 schema: 1
 depot: mudler/LocalAI
 source_readme_sha: ebb0b428c816cc72
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker, beaucoup de RAM]

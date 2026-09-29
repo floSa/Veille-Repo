@@ -2,7 +2,7 @@
 schema: 1
 depot: NVIDIA/TransformerEngine
 source_readme_sha: 064e3f2bc4f012c9
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [GPU]

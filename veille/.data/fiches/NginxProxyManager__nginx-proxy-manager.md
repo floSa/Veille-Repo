@@ -2,7 +2,7 @@
 schema: 1
 depot: NginxProxyManager/nginx-proxy-manager
 source_readme_sha: ea01c210af28e88a
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Docker]

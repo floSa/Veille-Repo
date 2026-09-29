@@ -2,7 +2,7 @@
 schema: 1
 depot: danielgatis/rembg
 source_readme_sha: d7aaa0ea9623c38c
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [version de Python]

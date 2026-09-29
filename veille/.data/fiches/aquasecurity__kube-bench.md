@@ -2,7 +2,7 @@
 schema: 1
 depot: aquasecurity/kube-bench
 source_readme_sha: 36c3849aeca75d8c
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [service tiers]

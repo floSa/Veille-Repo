@@ -2,7 +2,7 @@
 schema: 1
 depot: loft-sh/vcluster
 source_readme_sha: 4c71d37635ffb350
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [service tiers, Docker]

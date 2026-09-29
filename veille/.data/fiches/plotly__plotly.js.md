@@ -2,7 +2,7 @@
 schema: 1
 depot: plotly/plotly.js
 source_readme_sha: 71ed9453ba13f0c5
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: npm
 prerequis: [Node]

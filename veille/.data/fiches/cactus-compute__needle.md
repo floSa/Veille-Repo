@@ -2,7 +2,7 @@
 schema: 1
 depot: cactus-compute/needle
 source_readme_sha: 55083d2d71d86cae
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: modèle
 deploiement: pip
 prerequis: [aucun]

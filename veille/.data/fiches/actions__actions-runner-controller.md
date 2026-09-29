@@ -2,7 +2,7 @@
 schema: 1
 depot: actions/actions-runner-controller
 source_readme_sha: 84b633ca05bde598
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [service tiers, compte à créer]

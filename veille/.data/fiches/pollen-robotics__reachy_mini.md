@@ -2,7 +2,7 @@
 schema: 1
 depot: pollen-robotics/reachy_mini
 source_readme_sha: 9d11ffc341acce44
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [compte à créer]

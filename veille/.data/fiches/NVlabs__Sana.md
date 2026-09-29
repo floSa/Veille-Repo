@@ -2,7 +2,7 @@
 schema: 1
 depot: NVlabs/Sana
 source_readme_sha: 2a6d1b1e31b3b5c1
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: modèle
 deploiement: compilation
 prerequis: [GPU, beaucoup de RAM]

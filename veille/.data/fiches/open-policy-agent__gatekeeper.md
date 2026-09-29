@@ -2,7 +2,7 @@
 schema: 1
 depot: open-policy-agent/gatekeeper
 source_readme_sha: d709370072c62690
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [service tiers]

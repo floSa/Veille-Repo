@@ -2,7 +2,7 @@
 schema: 1
 depot: idinging/freemail
 source_readme_sha: 4447a64ce1ecb951
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: autre
 prerequis: [compte à créer, service tiers]

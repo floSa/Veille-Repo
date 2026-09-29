@@ -2,7 +2,7 @@
 schema: 1
 depot: mostlygeek/llama-swap
 source_readme_sha: 1aa3290daaca64f7
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [GPU]

@@ -2,7 +2,7 @@
 schema: 1
 depot: google-deepmind/alphafold3
 source_readme_sha: cc16ba436ea8a967
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: modèle
 deploiement: docker
 prerequis: [GPU, Docker, compte à créer]

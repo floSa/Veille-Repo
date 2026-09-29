@@ -2,7 +2,7 @@
 schema: 1
 depot: TecharoHQ/anubis
 source_readme_sha: e4ec1a21bf60964b
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [aucun]

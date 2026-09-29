@@ -2,7 +2,7 @@
 schema: 1
 depot: iptv-org/iptv
 source_readme_sha: 8daabaff0d74a553
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: liste
 deploiement: rien à installer
 prerequis: [aucun]

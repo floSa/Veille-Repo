@@ -2,7 +2,7 @@
 schema: 1
 depot: huggingface/speech-to-speech
 source_readme_sha: 95b05326cae65783
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [GPU, beaucoup de RAM, version de Python]

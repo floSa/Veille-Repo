@@ -2,7 +2,7 @@
 schema: 1
 depot: pixeltable/pixeltable
 source_readme_sha: 870981863ad6af4e
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API]

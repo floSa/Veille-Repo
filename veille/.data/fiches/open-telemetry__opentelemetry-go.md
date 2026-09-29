@@ -2,7 +2,7 @@
 schema: 1
 depot: open-telemetry/opentelemetry-go
 source_readme_sha: 69ce1826f08484d7
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: compilation
 prerequis: [Go]

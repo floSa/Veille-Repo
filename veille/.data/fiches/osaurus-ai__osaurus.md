@@ -2,7 +2,7 @@
 schema: 1
 depot: osaurus-ai/osaurus
 source_readme_sha: fb1dc9e0ed7c09f4
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: binaire
 prerequis: [beaucoup de RAM]

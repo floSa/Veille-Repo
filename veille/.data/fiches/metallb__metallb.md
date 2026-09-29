@@ -2,7 +2,7 @@
 schema: 1
 depot: metallb/metallb
 source_readme_sha: fb1b66b8c369b7f9
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [service tiers]

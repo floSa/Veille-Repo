@@ -2,7 +2,7 @@
 schema: 1
 depot: modelscope/FunASR
 source_readme_sha: 93c3d8c26b9b66e3
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [aucun]

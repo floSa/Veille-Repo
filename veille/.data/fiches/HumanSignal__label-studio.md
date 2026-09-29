@@ -2,7 +2,7 @@
 schema: 1
 depot: HumanSignal/label-studio
 source_readme_sha: 40700321776602f0
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker, version de Python]

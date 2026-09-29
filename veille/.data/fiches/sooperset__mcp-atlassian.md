@@ -2,7 +2,7 @@
 schema: 1
 depot: sooperset/mcp-atlassian
 source_readme_sha: cb86fb3967d142a2
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [clé d'API, service tiers]

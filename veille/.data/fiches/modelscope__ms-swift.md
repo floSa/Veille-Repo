@@ -2,7 +2,7 @@
 schema: 1
 depot: modelscope/ms-swift
 source_readme_sha: d6429ace8bd472bf
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [GPU, version de Python]

@@ -2,7 +2,7 @@
 schema: 1
 depot: home-assistant/operating-system
 source_readme_sha: 0806d2b494dd362a
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: compilation
 prerequis: [aucun]

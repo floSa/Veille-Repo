@@ -2,7 +2,7 @@
 schema: 1
 depot: IBM/mcp-context-forge
 source_readme_sha: 5b509529cb479dd9
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker, version de Python]

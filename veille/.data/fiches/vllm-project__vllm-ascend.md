@@ -2,7 +2,7 @@
 schema: 1
 depot: vllm-project/vllm-ascend
 source_readme_sha: ced8c71e5d77559b
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [version de Python]

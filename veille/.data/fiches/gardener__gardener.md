@@ -2,7 +2,7 @@
 schema: 1
 depot: gardener/gardener
 source_readme_sha: e6e9273c65312bbf
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [service tiers]

@@ -2,7 +2,7 @@
 schema: 1
 depot: SnailSploit/Claude-Red
 source_readme_sha: 6c7d43f1223a0b6c
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: liste
 deploiement: rien à installer
 prerequis: [aucun]

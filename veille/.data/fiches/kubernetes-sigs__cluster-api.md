@@ -2,7 +2,7 @@
 schema: 1
 depot: kubernetes-sigs/cluster-api
 source_readme_sha: 969967fd7f936f2a
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [service tiers]

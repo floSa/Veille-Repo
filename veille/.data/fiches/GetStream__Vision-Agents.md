@@ -2,7 +2,7 @@
 schema: 1
 depot: GetStream/Vision-Agents
 source_readme_sha: 4900448807c4473b
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API, GPU, compte à créer]

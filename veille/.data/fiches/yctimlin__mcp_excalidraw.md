@@ -2,7 +2,7 @@
 schema: 1
 depot: yctimlin/mcp_excalidraw
 source_readme_sha: f88d077cb26d8fb1
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: npm
 prerequis: [Node]

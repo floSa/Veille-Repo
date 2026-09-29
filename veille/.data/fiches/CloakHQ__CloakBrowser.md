@@ -2,7 +2,7 @@
 schema: 1
 depot: CloakHQ/CloakBrowser
 source_readme_sha: 916b24684c2edfb7
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [service tiers]

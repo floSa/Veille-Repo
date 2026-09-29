@@ -2,7 +2,7 @@
 schema: 1
 depot: feast-dev/feast
 source_readme_sha: c150196258165066
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [aucun]

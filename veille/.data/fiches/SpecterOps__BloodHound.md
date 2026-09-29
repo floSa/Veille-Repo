@@ -2,7 +2,7 @@
 schema: 1
 depot: SpecterOps/BloodHound
 source_readme_sha: 3ba7971d833fb40f
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Docker]

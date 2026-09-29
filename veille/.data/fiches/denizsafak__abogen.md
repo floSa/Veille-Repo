@@ -2,7 +2,7 @@
 schema: 1
 depot: denizsafak/abogen
 source_readme_sha: 1e79dcab0f81ed24
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: pip
 prerequis: [GPU, version de Python]

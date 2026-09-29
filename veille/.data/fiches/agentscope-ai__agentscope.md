@@ -2,7 +2,7 @@
 schema: 1
 depot: agentscope-ai/agentscope
 source_readme_sha: 8a28a77a0b1437e1
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API, version de Python]

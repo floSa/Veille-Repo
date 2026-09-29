@@ -2,7 +2,7 @@
 schema: 1
 depot: public-apis/public-apis
 source_readme_sha: a33209b240c586f7
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: liste
 deploiement: rien à installer
 prerequis: [aucun]

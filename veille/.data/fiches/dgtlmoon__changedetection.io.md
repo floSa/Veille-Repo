@@ -2,7 +2,7 @@
 schema: 1
 depot: dgtlmoon/changedetection.io
 source_readme_sha: d29cb6f8183b4c26
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Docker]

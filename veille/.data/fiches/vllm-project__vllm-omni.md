@@ -2,7 +2,7 @@
 schema: 1
 depot: vllm-project/vllm-omni
 source_readme_sha: 07f28d6237dc6c63
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [GPU, beaucoup de RAM]

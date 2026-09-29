@@ -2,7 +2,7 @@
 schema: 1
 depot: HKUDS/DeepTutor
 source_readme_sha: 498e8afc995b2bb7
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [clé d'API, Docker, version de Python, Node]

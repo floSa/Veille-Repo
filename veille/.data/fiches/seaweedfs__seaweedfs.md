@@ -2,7 +2,7 @@
 schema: 1
 depot: seaweedfs/seaweedfs
 source_readme_sha: 51181ea038cb3d23
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: binaire
 prerequis: [aucun]

@@ -2,7 +2,7 @@
 schema: 1
 depot: helm-unittest/helm-unittest
 source_readme_sha: e04d0d55dfd97393
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: extension
 deploiement: binaire
 prerequis: [aucun]

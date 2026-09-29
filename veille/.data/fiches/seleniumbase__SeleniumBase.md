@@ -2,7 +2,7 @@
 schema: 1
 depot: seleniumbase/SeleniumBase
 source_readme_sha: 654c5585fc190a78
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [aucun]

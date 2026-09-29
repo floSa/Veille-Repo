@@ -2,7 +2,7 @@
 schema: 1
 depot: THUDM/slime
 source_readme_sha: e76ca1f08c952c87
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: compilation
 prerequis: [GPU, beaucoup de RAM]

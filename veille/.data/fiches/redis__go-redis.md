@@ -2,7 +2,7 @@
 schema: 1
 depot: redis/go-redis
 source_readme_sha: ec82dce4b78e637b
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: autre
 prerequis: [service tiers]

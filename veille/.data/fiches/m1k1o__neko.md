@@ -2,7 +2,7 @@
 schema: 1
 depot: m1k1o/neko
 source_readme_sha: 9aa54e2876775bb6
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker]

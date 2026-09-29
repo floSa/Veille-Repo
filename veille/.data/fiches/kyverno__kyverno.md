@@ -2,7 +2,7 @@
 schema: 1
 depot: kyverno/kyverno
 source_readme_sha: 765646ef76113fd1
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [service tiers]

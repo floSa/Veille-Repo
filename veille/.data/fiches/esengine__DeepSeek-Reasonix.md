@@ -2,7 +2,7 @@
 schema: 1
 depot: esengine/DeepSeek-Reasonix
 source_readme_sha: a8d3e7d836bba124
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [clé d'API]

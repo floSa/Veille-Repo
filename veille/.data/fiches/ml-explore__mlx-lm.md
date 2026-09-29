@@ -2,7 +2,7 @@
 schema: 1
 depot: ml-explore/mlx-lm
 source_readme_sha: 625b4478800ad2fd
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [beaucoup de RAM]

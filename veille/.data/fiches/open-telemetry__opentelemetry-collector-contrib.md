@@ -2,7 +2,7 @@
 schema: 1
 depot: open-telemetry/opentelemetry-collector-contrib
 source_readme_sha: 0a719facc01f3627
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: autre
 prerequis: [aucun]

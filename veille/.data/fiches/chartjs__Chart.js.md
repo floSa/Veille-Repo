@@ -2,7 +2,7 @@
 schema: 1
 depot: chartjs/Chart.js
 source_readme_sha: 30418232ad2cc5a5
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: npm
 prerequis: [Node]

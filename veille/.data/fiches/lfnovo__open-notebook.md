@@ -2,7 +2,7 @@
 schema: 1
 depot: lfnovo/open-notebook
 source_readme_sha: 571e3a2fae66b4c4
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Docker, clé d'API]

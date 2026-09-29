@@ -2,7 +2,7 @@
 schema: 1
 depot: hatchet-dev/hatchet
 source_readme_sha: 556bd5fb646095bb
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: docker
 prerequis: [Docker]

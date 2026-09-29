@@ -2,7 +2,7 @@
 schema: 1
 depot: MemPalace/mempalace
 source_readme_sha: 5f117d3494ea2be2
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [version de Python, beaucoup de RAM]

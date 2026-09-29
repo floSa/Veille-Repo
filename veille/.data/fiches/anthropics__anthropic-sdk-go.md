@@ -2,7 +2,7 @@
 schema: 1
 depot: anthropics/anthropic-sdk-go
 source_readme_sha: 2726a15ce8c59d48
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: autre
 prerequis: [clé d'API]

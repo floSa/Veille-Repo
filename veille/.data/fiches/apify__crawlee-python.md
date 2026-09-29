@@ -2,7 +2,7 @@
 schema: 1
 depot: apify/crawlee-python
 source_readme_sha: 234755f5a585ab77
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [aucun]

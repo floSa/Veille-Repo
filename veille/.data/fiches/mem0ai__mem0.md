@@ -2,7 +2,7 @@
 schema: 1
 depot: mem0ai/mem0
 source_readme_sha: 7509347d34a767a2
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API]

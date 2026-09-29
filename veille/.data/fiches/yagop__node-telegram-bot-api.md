@@ -2,7 +2,7 @@
 schema: 1
 depot: yagop/node-telegram-bot-api
 source_readme_sha: b210549bfabfcb21
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: npm
 prerequis: [compte à créer, Node]

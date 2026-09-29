@@ -2,7 +2,7 @@
 schema: 1
 depot: wangrongding/wechat-bot
 source_readme_sha: 70cd03cb78052727
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: npm
 prerequis: [Node, clé d'API, compte à créer]

@@ -2,7 +2,7 @@
 schema: 1
 depot: cookiecutter/cookiecutter-django
 source_readme_sha: f7be880b59bfeffd
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [version de Python, Docker]

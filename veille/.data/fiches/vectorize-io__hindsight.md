@@ -2,7 +2,7 @@
 schema: 1
 depot: vectorize-io/hindsight
 source_readme_sha: ae770ac0fe98464e
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker, clé d'API]

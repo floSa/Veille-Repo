@@ -2,7 +2,7 @@
 schema: 1
 depot: ChristianLempa/boilerplates
 source_readme_sha: 3c51625df23433f4
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [aucun]

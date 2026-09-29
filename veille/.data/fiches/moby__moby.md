@@ -2,7 +2,7 @@
 schema: 1
 depot: moby/moby
 source_readme_sha: 97dff8df1c816b0c
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: compilation
 prerequis: [aucun]

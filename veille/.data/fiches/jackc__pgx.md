@@ -2,7 +2,7 @@
 schema: 1
 depot: jackc/pgx
 source_readme_sha: d6e1b491c8029910
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: autre
 prerequis: [service tiers]

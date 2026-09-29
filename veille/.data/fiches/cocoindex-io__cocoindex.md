@@ -2,7 +2,7 @@
 schema: 1
 depot: cocoindex-io/cocoindex
 source_readme_sha: 5f8d8409442b0321
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [service tiers]

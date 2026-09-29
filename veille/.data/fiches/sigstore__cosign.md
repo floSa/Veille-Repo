@@ -2,7 +2,7 @@
 schema: 1
 depot: sigstore/cosign
 source_readme_sha: 2c7402c7b6d72cfb
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

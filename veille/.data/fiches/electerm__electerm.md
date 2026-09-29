@@ -2,7 +2,7 @@
 schema: 1
 depot: electerm/electerm
 source_readme_sha: 5e0958b556d683c4
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: binaire
 prerequis: [aucun]

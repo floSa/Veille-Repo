@@ -2,7 +2,7 @@
 schema: 1
 depot: nesquena/hermes-webui
 source_readme_sha: d4b056ae903b19bd
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: autre
 prerequis: [service tiers]

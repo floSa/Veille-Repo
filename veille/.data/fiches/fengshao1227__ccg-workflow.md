@@ -2,7 +2,7 @@
 schema: 1
 depot: fengshao1227/ccg-workflow
 source_readme_sha: 7d83d25137ad4113
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: npm
 prerequis: [Node, service tiers]

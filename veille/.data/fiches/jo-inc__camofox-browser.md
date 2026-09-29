@@ -2,7 +2,7 @@
 schema: 1
 depot: jo-inc/camofox-browser
 source_readme_sha: 169ffc135c1cf59b
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: npm
 prerequis: [Node]

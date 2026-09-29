@@ -2,7 +2,7 @@
 schema: 1
 depot: parse-community/parse-server
 source_readme_sha: c12edefc63226ed4
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: npm
 prerequis: [Node, service tiers]

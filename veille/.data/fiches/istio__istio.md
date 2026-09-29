@@ -2,7 +2,7 @@
 schema: 1
 depot: istio/istio
 source_readme_sha: 9971928c4aa3cb36
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [Docker]

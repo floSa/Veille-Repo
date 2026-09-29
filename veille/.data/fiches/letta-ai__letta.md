@@ -2,7 +2,7 @@
 schema: 1
 depot: letta-ai/letta
 source_readme_sha: 1d624e8fd383c119
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: doc
 deploiement: npm
 prerequis: [Node]

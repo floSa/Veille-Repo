@@ -2,7 +2,7 @@
 schema: 1
 depot: getzep/zep
 source_readme_sha: 8afa05accfcc29ec
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: liste
 deploiement: pip
 prerequis: [clé d'API, compte à créer]

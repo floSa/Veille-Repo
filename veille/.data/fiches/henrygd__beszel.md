@@ -2,7 +2,7 @@
 schema: 1
 depot: henrygd/beszel
 source_readme_sha: 6ea91526c45ed9e6
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Docker]

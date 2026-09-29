@@ -2,7 +2,7 @@
 schema: 1
 depot: NVIDIA/gpu-operator
 source_readme_sha: c41223c5bf88a189
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [GPU]

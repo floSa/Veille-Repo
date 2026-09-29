@@ -2,7 +2,7 @@
 schema: 1
 depot: teng-lin/notebooklm-py
 source_readme_sha: 8b831ba175fc6bee
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [compte à créer]

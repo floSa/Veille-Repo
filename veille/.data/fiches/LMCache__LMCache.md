@@ -2,7 +2,7 @@
 schema: 1
 depot: LMCache/LMCache
 source_readme_sha: 60b8409940e9fd6a
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [GPU]

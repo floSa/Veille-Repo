@@ -2,7 +2,7 @@
 schema: 1
 depot: gpustack/gpustack
 source_readme_sha: d50cfef5b81a2ceb
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [GPU, Docker]

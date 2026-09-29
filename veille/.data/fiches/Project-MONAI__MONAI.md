@@ -2,7 +2,7 @@
 schema: 1
 depot: Project-MONAI/MONAI
 source_readme_sha: 97556de84bb73a38
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [GPU]

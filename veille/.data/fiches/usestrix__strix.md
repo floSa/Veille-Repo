@@ -2,7 +2,7 @@
 schema: 1
 depot: usestrix/strix
 source_readme_sha: f6d5cf80126692cf
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [Docker, clé d'API]

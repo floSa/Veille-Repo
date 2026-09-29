@@ -2,7 +2,7 @@
 schema: 1
 depot: soniqo/speech-swift
 source_readme_sha: 3ffefba9f1b7e357
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: compilation
 prerequis: [aucun]

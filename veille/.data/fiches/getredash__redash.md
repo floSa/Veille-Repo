@@ -2,7 +2,7 @@
 schema: 1
 depot: getredash/redash
 source_readme_sha: 3989c99aada63f02
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [service tiers]

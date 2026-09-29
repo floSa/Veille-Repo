@@ -2,7 +2,7 @@
 schema: 1
 depot: OpenBMB/VoxCPM
 source_readme_sha: f670fdf5f3faea03
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: modèle
 deploiement: pip
 prerequis: [GPU, version de Python]

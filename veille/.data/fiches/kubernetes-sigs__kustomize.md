@@ -2,7 +2,7 @@
 schema: 1
 depot: kubernetes-sigs/kustomize
 source_readme_sha: ca3b3c46994495cd
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

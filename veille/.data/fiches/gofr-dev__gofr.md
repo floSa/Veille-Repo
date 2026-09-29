@@ -2,7 +2,7 @@
 schema: 1
 depot: gofr-dev/gofr
 source_readme_sha: cc29232acb446d6c
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: autre
 prerequis: [aucun]

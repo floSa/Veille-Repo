@@ -2,7 +2,7 @@
 schema: 1
 depot: akuity/kargo
 source_readme_sha: f415789c53f4150e
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [service tiers]

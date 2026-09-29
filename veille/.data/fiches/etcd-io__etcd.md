@@ -2,7 +2,7 @@
 schema: 1
 depot: etcd-io/etcd
 source_readme_sha: d78b5f4555f76984
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: binaire
 prerequis: [aucun]

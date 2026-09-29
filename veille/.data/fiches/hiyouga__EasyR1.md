@@ -2,7 +2,7 @@
 schema: 1
 depot: hiyouga/EasyR1
 source_readme_sha: 6717092121e346ce
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [GPU, Docker]

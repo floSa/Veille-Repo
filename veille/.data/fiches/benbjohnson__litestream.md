@@ -2,7 +2,7 @@
 schema: 1
 depot: benbjohnson/litestream
 source_readme_sha: a035b73a4c439e16
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

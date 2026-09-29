@@ -2,7 +2,7 @@
 schema: 1
 depot: tirth8205/code-review-graph
 source_readme_sha: 9761446f34208446
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [version de Python]

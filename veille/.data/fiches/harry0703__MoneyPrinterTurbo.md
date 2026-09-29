@@ -2,7 +2,7 @@
 schema: 1
 depot: harry0703/MoneyPrinterTurbo
 source_readme_sha: b1fc2a8208ace27f
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [clé d'API, Docker, version de Python]

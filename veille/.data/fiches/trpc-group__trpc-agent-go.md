@@ -2,7 +2,7 @@
 schema: 1
 depot: trpc-group/trpc-agent-go
 source_readme_sha: 9fdf5f1f155e0535
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: compilation
 prerequis: [clé d'API]

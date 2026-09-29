@@ -2,7 +2,7 @@
 schema: 1
 depot: Dooy/chatgpt-web-midjourney-proxy
 source_readme_sha: 0e105599798c6b04
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [clé d'API, service tiers]

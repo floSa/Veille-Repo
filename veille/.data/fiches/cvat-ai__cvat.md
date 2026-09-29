@@ -2,7 +2,7 @@
 schema: 1
 depot: cvat-ai/cvat
 source_readme_sha: 4237a463860dd615
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Docker, compte à créer]

@@ -2,7 +2,7 @@
 schema: 1
 depot: neuml/txtai
 source_readme_sha: bb16e5a56ca961c7
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [version de Python]

@@ -2,7 +2,7 @@
 schema: 1
 depot: derailed/k9s
 source_readme_sha: 1f181fa0925f066f
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [service tiers]

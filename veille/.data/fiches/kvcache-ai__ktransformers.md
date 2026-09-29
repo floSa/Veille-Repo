@@ -2,7 +2,7 @@
 schema: 1
 depot: kvcache-ai/ktransformers
 source_readme_sha: 61831dccf4c35e9e
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: compilation
 prerequis: [GPU]

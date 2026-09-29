@@ -2,7 +2,7 @@
 schema: 1
 depot: huggingface/trl
 source_readme_sha: dcca5a59d5978ef5
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [GPU]

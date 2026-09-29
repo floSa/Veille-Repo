@@ -2,7 +2,7 @@
 schema: 1
 depot: compozy/compozy
 source_readme_sha: a5e698ea0c2f76f9
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

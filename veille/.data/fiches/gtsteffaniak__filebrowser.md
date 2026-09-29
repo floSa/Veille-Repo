@@ -2,7 +2,7 @@
 schema: 1
 depot: gtsteffaniak/filebrowser
 source_readme_sha: f99b130226817418
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [beaucoup de RAM]

@@ -2,7 +2,7 @@
 schema: 1
 depot: JanDeDobbeleer/oh-my-posh
 source_readme_sha: 4a1d5d5e17c5777b
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [aucun]

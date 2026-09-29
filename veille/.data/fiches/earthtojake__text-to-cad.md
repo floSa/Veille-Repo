@@ -2,7 +2,7 @@
 schema: 1
 depot: earthtojake/text-to-cad
 source_readme_sha: 3d70e115c6908a14
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: extension
 deploiement: npm
 prerequis: [aucun]

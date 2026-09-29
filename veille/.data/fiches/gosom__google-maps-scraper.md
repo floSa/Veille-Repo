@@ -2,7 +2,7 @@
 schema: 1
 depot: gosom/google-maps-scraper
 source_readme_sha: ebbc5df37f4de6f9
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker]

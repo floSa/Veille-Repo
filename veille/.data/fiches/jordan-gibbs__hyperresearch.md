@@ -2,7 +2,7 @@
 schema: 1
 depot: jordan-gibbs/hyperresearch
 source_readme_sha: 548f82e3e4a842a6
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [version de Python, clé d'API]

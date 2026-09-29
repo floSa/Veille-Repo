@@ -2,7 +2,7 @@
 schema: 1
 depot: shareAI-lab/learn-claude-code
 source_readme_sha: dd04e477feecf3c1
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: doc
 deploiement: pip
 prerequis: [clé d'API]

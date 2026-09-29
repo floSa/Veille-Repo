@@ -2,7 +2,7 @@
 schema: 1
 depot: apache/airflow
 source_readme_sha: 56475872e413d26d
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [version de Python, beaucoup de RAM]

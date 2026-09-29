@@ -2,7 +2,7 @@
 schema: 1
 depot: alibaba/open-code-review
 source_readme_sha: 9dd403b069e64856
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: npm
 prerequis: [clé d'API]

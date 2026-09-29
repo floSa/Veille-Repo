@@ -2,7 +2,7 @@
 schema: 1
 depot: wekan/wekan
 source_readme_sha: 901a10176956dbab
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Docker]

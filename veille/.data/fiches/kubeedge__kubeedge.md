@@ -2,7 +2,7 @@
 schema: 1
 depot: kubeedge/kubeedge
 source_readme_sha: 910e3094276fb96e
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [Docker]

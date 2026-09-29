@@ -2,7 +2,7 @@
 schema: 1
 depot: mudler/edgevpn
 source_readme_sha: 89faf33b0c985c6b
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

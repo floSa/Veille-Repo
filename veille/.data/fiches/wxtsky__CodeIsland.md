@@ -2,7 +2,7 @@
 schema: 1
 depot: wxtsky/CodeIsland
 source_readme_sha: 0518668d7e910975
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: binaire
 prerequis: [aucun]

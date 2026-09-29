@@ -2,7 +2,7 @@
 schema: 1
 depot: firecrawl/firecrawl-mcp-server
 source_readme_sha: f058d2a4bb9c243d
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: npm
 prerequis: [clé d'API, Node]

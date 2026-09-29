@@ -2,7 +2,7 @@
 schema: 1
 depot: GoogleCloudPlatform/microservices-demo
 source_readme_sha: bc00f3b549458838
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [compte à créer]

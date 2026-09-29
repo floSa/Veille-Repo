@@ -2,7 +2,7 @@
 schema: 1
 depot: langchain-ai/open-swe
 source_readme_sha: dbf42f91bdebf7b1
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Docker, clé d'API, compte à créer, service tiers]

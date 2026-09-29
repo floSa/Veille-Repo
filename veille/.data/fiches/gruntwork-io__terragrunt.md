@@ -2,7 +2,7 @@
 schema: 1
 depot: gruntwork-io/terragrunt
 source_readme_sha: a9dc773e9faf0472
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [aucun]

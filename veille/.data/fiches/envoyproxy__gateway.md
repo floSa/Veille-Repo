@@ -2,7 +2,7 @@
 schema: 1
 depot: envoyproxy/gateway
 source_readme_sha: af2bcd49349ea1dc
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [aucun]

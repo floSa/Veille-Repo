@@ -2,7 +2,7 @@
 schema: 1
 depot: k3s-io/k3s
 source_readme_sha: 975ad1416e11b9b0
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

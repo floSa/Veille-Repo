@@ -2,7 +2,7 @@
 schema: 1
 depot: Osmantic/ODS
 source_readme_sha: 2ad91366f7629490
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker, GPU]

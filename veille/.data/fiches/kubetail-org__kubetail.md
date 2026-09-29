@@ -2,7 +2,7 @@
 schema: 1
 depot: kubetail-org/kubetail
 source_readme_sha: a57ca5eaa10f1a61
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [service tiers]

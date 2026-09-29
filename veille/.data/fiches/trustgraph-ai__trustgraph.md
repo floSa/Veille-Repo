@@ -2,7 +2,7 @@
 schema: 1
 depot: trustgraph-ai/trustgraph
 source_readme_sha: 4da887680d3b17d1
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker]

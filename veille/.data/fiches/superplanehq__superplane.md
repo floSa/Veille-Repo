@@ -2,7 +2,7 @@
 schema: 1
 depot: superplanehq/superplane
 source_readme_sha: c257b0ca341ff5e3
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: autre
 prerequis: [clé d'API, compte à créer]

@@ -2,7 +2,7 @@
 schema: 1
 depot: swirlai/swirl-search
 source_readme_sha: b6648199b20bdbba
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker, clé d'API]

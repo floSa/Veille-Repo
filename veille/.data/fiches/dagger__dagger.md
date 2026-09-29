@@ -2,7 +2,7 @@
 schema: 1
 depot: dagger/dagger
 source_readme_sha: 88958ec1c1e8ad61
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [Docker]

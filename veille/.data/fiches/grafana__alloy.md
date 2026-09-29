@@ -2,7 +2,7 @@
 schema: 1
 depot: grafana/alloy
 source_readme_sha: 10eadb8efc7e4c81
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

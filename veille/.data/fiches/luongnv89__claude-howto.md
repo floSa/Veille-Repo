@@ -2,7 +2,7 @@
 schema: 1
 depot: luongnv89/claude-howto
 source_readme_sha: 0d618b6945c8ca76
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: doc
 deploiement: rien à installer
 prerequis: [aucun]

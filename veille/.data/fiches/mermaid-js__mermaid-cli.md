@@ -2,7 +2,7 @@
 schema: 1
 depot: mermaid-js/mermaid-cli
 source_readme_sha: a0fa2a91840049b2
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: npm
 prerequis: [Node]

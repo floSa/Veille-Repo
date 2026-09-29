@@ -2,7 +2,7 @@
 schema: 1
 depot: vitessio/vitess
 source_readme_sha: 85d77705aeb31ba2
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [service tiers]

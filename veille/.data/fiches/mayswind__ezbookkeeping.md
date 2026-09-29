@@ -2,7 +2,7 @@
 schema: 1
 depot: mayswind/ezbookkeeping
 source_readme_sha: b8f5156b9e818cdc
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Docker]

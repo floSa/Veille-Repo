@@ -2,7 +2,7 @@
 schema: 1
 depot: AsyncFuncAI/deepwiki-open
 source_readme_sha: afa5ea2d1b42c59d
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: autre
 prerequis: [aucun]

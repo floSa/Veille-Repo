@@ -2,7 +2,7 @@
 schema: 1
 depot: mvanhorn/cli-printing-press
 source_readme_sha: adc7eb2922a238a2
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [clé d'API, Node]

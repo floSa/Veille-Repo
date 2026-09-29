@@ -2,7 +2,7 @@
 schema: 1
 depot: wandb/wandb
 source_readme_sha: 49337696ace58685
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: pip
 prerequis: [compte à créer, clé d'API]

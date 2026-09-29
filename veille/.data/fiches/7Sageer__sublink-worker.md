@@ -2,7 +2,7 @@
 schema: 1
 depot: 7Sageer/sublink-worker
 source_readme_sha: a4da47818fa38739
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [compte à créer]

@@ -2,7 +2,7 @@
 schema: 1
 depot: Snailclimb/JavaGuide
 source_readme_sha: b57846f9955a275a
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: doc
 deploiement: rien à installer
 prerequis: [aucun]

@@ -2,7 +2,7 @@
 schema: 1
 depot: onnx/onnx
 source_readme_sha: 2573d7296850bb28
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [aucun]

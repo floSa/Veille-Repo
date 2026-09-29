@@ -2,7 +2,7 @@
 schema: 1
 depot: anthropics/claude-agent-sdk-python
 source_readme_sha: c38a933bf8fef263
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API, version de Python]

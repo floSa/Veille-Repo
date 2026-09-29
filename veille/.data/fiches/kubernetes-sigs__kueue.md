@@ -2,7 +2,7 @@
 schema: 1
 depot: kubernetes-sigs/kueue
 source_readme_sha: 1af4864a61b92741
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [aucun]

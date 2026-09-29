@@ -2,7 +2,7 @@
 schema: 1
 depot: anthropics/financial-services
 source_readme_sha: 52f689c6c32bd2a5
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: liste
 deploiement: rien à installer
 prerequis: [clé d'API, compte à créer, service tiers]

@@ -2,7 +2,7 @@
 schema: 1
 depot: MakazhanAlpamys/Soup
 source_readme_sha: 574a6818903ec82f
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [GPU, version de Python]

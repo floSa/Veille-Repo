@@ -2,7 +2,7 @@
 schema: 1
 depot: gocolly/colly
 source_readme_sha: 64ffe0b3e0b0d813
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: compilation
 prerequis: [aucun]

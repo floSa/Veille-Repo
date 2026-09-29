@@ -2,7 +2,7 @@
 schema: 1
 depot: langflow-ai/openrag
 source_readme_sha: e51da1343abafd5e
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Docker, clé d'API]

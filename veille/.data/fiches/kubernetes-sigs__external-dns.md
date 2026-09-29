@@ -2,7 +2,7 @@
 schema: 1
 depot: kubernetes-sigs/external-dns
 source_readme_sha: 2f21e7fe026b9648
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [service tiers]

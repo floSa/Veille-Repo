@@ -2,7 +2,7 @@
 schema: 1
 depot: miniflux/v2
 source_readme_sha: 1e6e14483f0e887f
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Docker, service tiers]

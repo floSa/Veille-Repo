@@ -2,7 +2,7 @@
 schema: 1
 depot: kitops-ml/kitops
 source_readme_sha: 2f2aac2908073f3e
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

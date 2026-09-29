@@ -2,7 +2,7 @@
 schema: 1
 depot: DietrichGebert/ponytail
 source_readme_sha: 7c36893a7cef4e42
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: extension
 deploiement: npm
 prerequis: [Node]

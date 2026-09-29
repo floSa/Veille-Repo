@@ -2,7 +2,7 @@
 schema: 1
 depot: deepset-ai/haystack
 source_readme_sha: 5397ea185aada9cb
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API]

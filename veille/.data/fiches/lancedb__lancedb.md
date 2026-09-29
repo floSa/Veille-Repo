@@ -2,7 +2,7 @@
 schema: 1
 depot: lancedb/lancedb
 source_readme_sha: c4dd477c2183dc83
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [aucun]

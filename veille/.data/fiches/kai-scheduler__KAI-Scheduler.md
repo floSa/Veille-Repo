@@ -2,7 +2,7 @@
 schema: 1
 depot: kai-scheduler/KAI-Scheduler
 source_readme_sha: f8447ee77bfd8685
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [GPU]

@@ -2,7 +2,7 @@
 schema: 1
 depot: louislam/uptime-kuma
 source_readme_sha: 99d14082acde75f5
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Docker]

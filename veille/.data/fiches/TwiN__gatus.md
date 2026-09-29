@@ -2,7 +2,7 @@
 schema: 1
 depot: TwiN/gatus
 source_readme_sha: e1156f61879dcac5
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: docker
 prerequis: [Docker]

@@ -2,7 +2,7 @@
 schema: 1
 depot: browser-use/browser-use
 source_readme_sha: 0cf61424017e5d88
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API, version de Python]

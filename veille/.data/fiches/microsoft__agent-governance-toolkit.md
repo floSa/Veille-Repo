@@ -2,7 +2,7 @@
 schema: 1
 depot: microsoft/agent-governance-toolkit
 source_readme_sha: 7b7bb810a4cfae27
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [version de Python]

@@ -2,7 +2,7 @@
 schema: 1
 depot: AlexxIT/go2rtc
 source_readme_sha: f7837bed3f21951a
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

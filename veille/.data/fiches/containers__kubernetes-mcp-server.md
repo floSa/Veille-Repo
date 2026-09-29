@@ -2,7 +2,7 @@
 schema: 1
 depot: containers/kubernetes-mcp-server
 source_readme_sha: 66636d4c0c01fec4
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: binaire
 prerequis: [service tiers]

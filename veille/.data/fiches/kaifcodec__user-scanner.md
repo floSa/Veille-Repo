@@ -2,7 +2,7 @@
 schema: 1
 depot: kaifcodec/user-scanner
 source_readme_sha: ceefa6200c6eec1a
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [aucun]

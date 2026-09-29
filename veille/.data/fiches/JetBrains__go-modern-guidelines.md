@@ -2,7 +2,7 @@
 schema: 1
 depot: JetBrains/go-modern-guidelines
 source_readme_sha: 20eacd817e9e34f8
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: doc
 deploiement: autre
 prerequis: [aucun]

@@ -2,7 +2,7 @@
 schema: 1
 depot: nguyenphutrong/quotio
 source_readme_sha: a116ee4b0529a948
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: binaire
 prerequis: [compte à créer]

@@ -2,7 +2,7 @@
 schema: 1
 depot: prometheus/blackbox_exporter
 source_readme_sha: 3e5dc4e9ce1bcba0
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

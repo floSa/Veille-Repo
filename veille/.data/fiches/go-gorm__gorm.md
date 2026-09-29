@@ -2,7 +2,7 @@
 schema: 1
 depot: go-gorm/gorm
 source_readme_sha: ed195cdc8909f53a
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: autre
 prerequis: [aucun]

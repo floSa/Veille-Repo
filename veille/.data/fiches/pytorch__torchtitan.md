@@ -2,7 +2,7 @@
 schema: 1
 depot: pytorch/torchtitan
 source_readme_sha: 891b3a24e2a7b3a9
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [GPU, version de Python]

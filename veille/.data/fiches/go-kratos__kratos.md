@@ -2,7 +2,7 @@
 schema: 1
 depot: go-kratos/kratos
 source_readme_sha: bb24bdba038380fd
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: compilation
 prerequis: [aucun]

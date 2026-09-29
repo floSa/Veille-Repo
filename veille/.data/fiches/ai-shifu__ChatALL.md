@@ -2,7 +2,7 @@
 schema: 1
 depot: ai-shifu/ChatALL
 source_readme_sha: f2f829c0f7a134d8
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: binaire
 prerequis: [compte à créer, clé d'API]

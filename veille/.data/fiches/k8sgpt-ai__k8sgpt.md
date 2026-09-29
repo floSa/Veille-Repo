@@ -2,7 +2,7 @@
 schema: 1
 depot: k8sgpt-ai/k8sgpt
 source_readme_sha: 79e6bb69f817ee9e
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [clé d'API, service tiers]

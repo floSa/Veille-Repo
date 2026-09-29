@@ -2,7 +2,7 @@
 schema: 1
 depot: iptv-org/database
 source_readme_sha: 9b68adaeb78a6336
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: dataset
 deploiement: rien à installer
 prerequis: [aucun]

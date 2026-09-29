@@ -2,7 +2,7 @@
 schema: 1
 depot: amir20/dozzle
 source_readme_sha: ff998a5129251944
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Docker]

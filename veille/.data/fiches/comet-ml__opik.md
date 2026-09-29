@@ -2,7 +2,7 @@
 schema: 1
 depot: comet-ml/opik
 source_readme_sha: e363ac59f8b31bae
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker]

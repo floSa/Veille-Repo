@@ -2,7 +2,7 @@
 schema: 1
 depot: isaac-sim/IsaacLab
 source_readme_sha: 92027cbc1596a6dd
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: autre
 prerequis: [GPU, service tiers]

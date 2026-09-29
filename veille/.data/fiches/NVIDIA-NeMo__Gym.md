@@ -2,7 +2,7 @@
 schema: 1
 depot: NVIDIA-NeMo/Gym
 source_readme_sha: 2bd445829d68af38
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: autre
 prerequis: [clé d'API, version de Python]

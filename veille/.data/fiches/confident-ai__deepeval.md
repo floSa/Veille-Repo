@@ -2,7 +2,7 @@
 schema: 1
 depot: confident-ai/deepeval
 source_readme_sha: 702c3c07d6585fe1
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API]

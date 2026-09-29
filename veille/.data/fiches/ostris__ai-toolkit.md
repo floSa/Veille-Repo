@@ -2,7 +2,7 @@
 schema: 1
 depot: ostris/ai-toolkit
 source_readme_sha: 33a0a8b7cf477981
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [GPU, version de Python, Node]

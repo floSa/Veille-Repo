@@ -2,7 +2,7 @@
 schema: 1
 depot: anthropics/knowledge-work-plugins
 source_readme_sha: 6db45ae725346e38
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: extension
 deploiement: autre
 prerequis: [compte à créer, service tiers]

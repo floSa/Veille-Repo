@@ -2,7 +2,7 @@
 schema: 1
 depot: langbot-app/LangBot
 source_readme_sha: 4cfe2939adb9d389
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [clé d'API]

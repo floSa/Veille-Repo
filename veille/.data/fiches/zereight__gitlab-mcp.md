@@ -2,7 +2,7 @@
 schema: 1
 depot: zereight/gitlab-mcp
 source_readme_sha: 76268e0f4fe34545
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: npm
 prerequis: [clé d'API, Node]

@@ -2,7 +2,7 @@
 schema: 1
 depot: GargantuaX/gemini-watermark-remover
 source_readme_sha: bbfa926c9144f9b6
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: npm
 prerequis: [Node]

@@ -2,7 +2,7 @@
 schema: 1
 depot: citrolabs/ego-lite
 source_readme_sha: 53206a82c84be65b
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: binaire
 prerequis: [compte à créer]

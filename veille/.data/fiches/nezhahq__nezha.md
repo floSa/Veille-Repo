@@ -2,7 +2,7 @@
 schema: 1
 depot: nezhahq/nezha
 source_readme_sha: c07dc5a4d214e2ad
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [aucun]

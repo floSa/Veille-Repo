@@ -2,7 +2,7 @@
 schema: 1
 depot: jaegertracing/jaeger-ui
 source_readme_sha: 18bb3c809eed458b
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: autre
 prerequis: [aucun]

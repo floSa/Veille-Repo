@@ -2,7 +2,7 @@
 schema: 1
 depot: conorbronsdon/avoid-ai-writing
 source_readme_sha: f0a5ac4d2f0c8690
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: extension
 deploiement: autre
 prerequis: [aucun]

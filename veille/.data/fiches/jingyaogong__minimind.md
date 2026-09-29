@@ -2,7 +2,7 @@
 schema: 1
 depot: jingyaogong/minimind
 source_readme_sha: 1af72ca8351d90c9
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: doc
 deploiement: pip
 prerequis: [GPU]

@@ -2,7 +2,7 @@
 schema: 1
 depot: snap-stanford/Biomni
 source_readme_sha: 22be688843a08a1f
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [clé d'API, beaucoup de RAM]

@@ -2,7 +2,7 @@
 schema: 1
 depot: modelscope/DiffSynth-Studio
 source_readme_sha: bc3e322dbdedac05
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [GPU, beaucoup de RAM]

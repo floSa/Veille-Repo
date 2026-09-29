@@ -2,7 +2,7 @@
 schema: 1
 depot: evcc-io/evcc
 source_readme_sha: 9c003de122ed7122
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: binaire
 prerequis: [service tiers]

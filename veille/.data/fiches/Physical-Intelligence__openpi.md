@@ -2,7 +2,7 @@
 schema: 1
 depot: Physical-Intelligence/openpi
 source_readme_sha: 567fc57766bd7366
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: modèle
 deploiement: pip
 prerequis: [GPU, Docker, beaucoup de RAM]

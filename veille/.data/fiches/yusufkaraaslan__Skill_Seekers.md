@@ -2,7 +2,7 @@
 schema: 1
 depot: yusufkaraaslan/Skill_Seekers
 source_readme_sha: a306c13254c85b1e
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [clé d'API, version de Python]

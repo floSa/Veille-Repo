@@ -2,7 +2,7 @@
 schema: 1
 depot: projectdiscovery/katana
 source_readme_sha: b166d55f270eecee
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

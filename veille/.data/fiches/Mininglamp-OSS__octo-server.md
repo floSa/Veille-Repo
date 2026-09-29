@@ -2,7 +2,7 @@
 schema: 1
 depot: Mininglamp-OSS/octo-server
 source_readme_sha: 2f5cc01ad71a5d4c
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: docker
 prerequis: [Docker, service tiers]

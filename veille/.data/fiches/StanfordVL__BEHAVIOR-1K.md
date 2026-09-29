@@ -2,7 +2,7 @@
 schema: 1
 depot: StanfordVL/BEHAVIOR-1K
 source_readme_sha: 79744543130b0748
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: dataset
 deploiement: autre
 prerequis: [GPU]

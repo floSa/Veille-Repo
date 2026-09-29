@@ -2,7 +2,7 @@
 schema: 1
 depot: langgenius/dify-sandbox
 source_readme_sha: 426d6b85bc1041e3
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: compilation
 prerequis: [Docker]

@@ -2,7 +2,7 @@
 schema: 1
 depot: rgthree/rgthree-comfy
 source_readme_sha: 3f7b13903fe815f0
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: extension
 deploiement: autre
 prerequis: [aucun]

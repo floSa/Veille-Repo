@@ -2,7 +2,7 @@
 schema: 1
 depot: open-compass/VLMEvalKit
 source_readme_sha: f86d93987acb476a
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [GPU, clé d'API]

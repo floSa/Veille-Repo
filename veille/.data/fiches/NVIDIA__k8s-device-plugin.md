@@ -2,7 +2,7 @@
 schema: 1
 depot: NVIDIA/k8s-device-plugin
 source_readme_sha: a5856c46df5dea9f
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [GPU, service tiers]

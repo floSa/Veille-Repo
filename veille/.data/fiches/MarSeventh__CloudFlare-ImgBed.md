@@ -2,7 +2,7 @@
 schema: 1
 depot: MarSeventh/CloudFlare-ImgBed
 source_readme_sha: a2499ff8ab88ba07
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [service tiers, compte à créer]

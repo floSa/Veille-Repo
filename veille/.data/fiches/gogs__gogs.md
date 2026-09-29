@@ -2,7 +2,7 @@
 schema: 1
 depot: gogs/gogs
 source_readme_sha: 605cd6912f2d771b
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: binaire
 prerequis: [aucun]

@@ -2,7 +2,7 @@
 schema: 1
 depot: dgraph-io/badger
 source_readme_sha: 1248537c63cc6955
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: compilation
 prerequis: [aucun]

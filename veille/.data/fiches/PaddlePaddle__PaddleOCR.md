@@ -2,7 +2,7 @@
 schema: 1
 depot: PaddlePaddle/PaddleOCR
 source_readme_sha: 63d76041f1dcb84e
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: modèle
 deploiement: pip
 prerequis: [GPU]

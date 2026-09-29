@@ -2,7 +2,7 @@
 schema: 1
 depot: xinnan-tech/xiaozhi-esp32-server
 source_readme_sha: 0442fab13f04e02d
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: docker
 prerequis: [Docker, clé d'API, beaucoup de RAM, service tiers]

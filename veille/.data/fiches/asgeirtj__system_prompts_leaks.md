@@ -2,7 +2,7 @@
 schema: 1
 depot: asgeirtj/system_prompts_leaks
 source_readme_sha: 4d49be418d228659
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: liste
 deploiement: rien à installer
 prerequis: [aucun]

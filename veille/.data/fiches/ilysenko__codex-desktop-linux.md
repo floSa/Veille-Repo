@@ -2,7 +2,7 @@
 schema: 1
 depot: ilysenko/codex-desktop-linux
 source_readme_sha: ff0ae8f15b9c6996
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: compilation
 prerequis: [Node]

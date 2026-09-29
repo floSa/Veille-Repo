@@ -2,7 +2,7 @@
 schema: 1
 depot: zylon-ai/private-gpt
 source_readme_sha: 3b4ae5d4ee0793b3
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: pip
 prerequis: [service tiers, beaucoup de RAM]

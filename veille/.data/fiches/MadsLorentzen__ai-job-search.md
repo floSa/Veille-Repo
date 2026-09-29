@@ -2,7 +2,7 @@
 schema: 1
 depot: MadsLorentzen/ai-job-search
 source_readme_sha: bade65f8d51ab2d1
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: autre
 prerequis: [compte à créer, clé d'API, version de Python, Node]

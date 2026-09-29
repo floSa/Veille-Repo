@@ -2,7 +2,7 @@
 schema: 1
 depot: trycua/cua
 source_readme_sha: 44e346af15e7f636
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [compte à créer, version de Python]

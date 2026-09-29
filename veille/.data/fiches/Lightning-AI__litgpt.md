@@ -2,7 +2,7 @@
 schema: 1
 depot: Lightning-AI/litgpt
 source_readme_sha: 744e606018a856ae
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [GPU, clé d'API]

@@ -2,7 +2,7 @@
 schema: 1
 depot: linyqh/NarratoAI
 source_readme_sha: cd3913d441ddce7b
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [clé d'API, beaucoup de RAM]

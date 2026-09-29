@@ -2,7 +2,7 @@
 schema: 1
 depot: uber-go/zap
 source_readme_sha: 7a112782cd047b71
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: autre
 prerequis: [aucun]

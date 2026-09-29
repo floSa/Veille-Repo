@@ -2,7 +2,7 @@
 schema: 1
 depot: hao-ai-lab/FastVideo
 source_readme_sha: 33ca24be1a91c2e6
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [GPU, version de Python]

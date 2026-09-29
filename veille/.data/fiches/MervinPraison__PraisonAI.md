@@ -2,7 +2,7 @@
 schema: 1
 depot: MervinPraison/PraisonAI
 source_readme_sha: 746c44db7b5610f3
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API]

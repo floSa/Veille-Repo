@@ -2,7 +2,7 @@
 schema: 1
 depot: arc53/DocsGPT
 source_readme_sha: 9716cbc38bac4485
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Docker, clé d'API]

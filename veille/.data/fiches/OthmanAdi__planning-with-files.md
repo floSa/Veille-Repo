@@ -2,7 +2,7 @@
 schema: 1
 depot: OthmanAdi/planning-with-files
 source_readme_sha: f5f4395cd8b5f039
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: extension
 deploiement: npm
 prerequis: [Node]

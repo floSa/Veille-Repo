@@ -2,7 +2,7 @@
 schema: 1
 depot: HKUDS/LightRAG
 source_readme_sha: 24a313f142b3c1b9
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API, Docker, beaucoup de RAM]

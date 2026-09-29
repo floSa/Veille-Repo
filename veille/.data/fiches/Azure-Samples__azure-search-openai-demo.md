@@ -2,7 +2,7 @@
 schema: 1
 depot: Azure-Samples/azure-search-openai-demo
 source_readme_sha: d0cd8b71927bb069
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: autre
 prerequis: [compte à créer, clé d'API, version de Python, Node]

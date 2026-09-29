@@ -2,7 +2,7 @@
 schema: 1
 depot: pbakaus/impeccable
 source_readme_sha: c59dc97249d53f5f
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: extension
 deploiement: npm
 prerequis: [aucun]

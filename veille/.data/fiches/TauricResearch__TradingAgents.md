@@ -2,7 +2,7 @@
 schema: 1
 depot: TauricResearch/TradingAgents
 source_readme_sha: 90528f3e90fa0c7e
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [clé d'API, version de Python]

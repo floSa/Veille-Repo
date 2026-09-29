@@ -2,7 +2,7 @@
 schema: 1
 depot: podman-container-tools/podman
 source_readme_sha: a4bd359952bca786
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

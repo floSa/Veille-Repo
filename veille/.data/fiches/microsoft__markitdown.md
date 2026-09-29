@@ -2,7 +2,7 @@
 schema: 1
 depot: microsoft/markitdown
 source_readme_sha: a0bc5d3345066248
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [version de Python]

@@ -2,7 +2,7 @@
 schema: 1
 depot: ModelTC/LightX2V
 source_readme_sha: abed942c771b5bd6
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [GPU]

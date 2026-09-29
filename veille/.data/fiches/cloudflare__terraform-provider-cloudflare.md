@@ -2,7 +2,7 @@
 schema: 1
 depot: cloudflare/terraform-provider-cloudflare
 source_readme_sha: 06df8539ea91cb47
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [clé d'API, compte à créer]

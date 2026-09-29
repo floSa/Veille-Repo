@@ -2,7 +2,7 @@
 schema: 1
 depot: freestylefly/awesome-gpt-image-2
 source_readme_sha: e60d642df4bb9ca1
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: liste
 deploiement: rien à installer
 prerequis: [clé d'API]

@@ -2,7 +2,7 @@
 schema: 1
 depot: ayghri/i-have-adhd
 source_readme_sha: 9874b7ae8333ae23
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: extension
 deploiement: autre
 prerequis: [aucun]

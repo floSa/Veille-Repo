@@ -2,7 +2,7 @@
 schema: 1
 depot: InternLM/lmdeploy
 source_readme_sha: ccce7062646133a4
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [GPU, version de Python]

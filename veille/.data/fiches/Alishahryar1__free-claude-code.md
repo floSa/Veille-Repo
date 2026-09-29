@@ -2,7 +2,7 @@
 schema: 1
 depot: Alishahryar1/free-claude-code
 source_readme_sha: ac650b6ba9b8ac2d
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [clé d'API, compte à créer]

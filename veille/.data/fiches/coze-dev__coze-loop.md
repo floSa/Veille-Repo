@@ -2,7 +2,7 @@
 schema: 1
 depot: coze-dev/coze-loop
 source_readme_sha: eefcc669bacb314f
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Docker, clé d'API]

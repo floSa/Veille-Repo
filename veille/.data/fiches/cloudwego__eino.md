@@ -2,7 +2,7 @@
 schema: 1
 depot: cloudwego/eino
 source_readme_sha: 9f357f5737206307
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: autre
 prerequis: [clé d'API]

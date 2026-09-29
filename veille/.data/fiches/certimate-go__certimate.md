@@ -2,7 +2,7 @@
 schema: 1
 depot: certimate-go/certimate
 source_readme_sha: 44cd81de9ede35a1
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [aucun]

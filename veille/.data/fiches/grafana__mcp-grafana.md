@@ -2,7 +2,7 @@
 schema: 1
 depot: grafana/mcp-grafana
 source_readme_sha: af5dd2f8dd033c53
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [clé d'API, service tiers]

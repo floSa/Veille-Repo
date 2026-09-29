@@ -2,7 +2,7 @@
 schema: 1
 depot: databus23/helm-diff
 source_readme_sha: ef8e656e74c222b6
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

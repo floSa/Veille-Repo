@@ -2,7 +2,7 @@
 schema: 1
 depot: google/langextract
 source_readme_sha: 2843b5f84b153f4b
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API]

@@ -2,7 +2,7 @@
 schema: 1
 depot: OpenSenseNova/SenseNova-Skills
 source_readme_sha: aef2ef06ce3aa582
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: liste
 deploiement: autre
 prerequis: [clé d'API, service tiers]

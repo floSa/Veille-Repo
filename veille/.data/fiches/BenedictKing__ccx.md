@@ -2,7 +2,7 @@
 schema: 1
 depot: BenedictKing/ccx
 source_readme_sha: 188a921a1d368966
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: docker
 prerequis: [clé d'API, Docker]

@@ -2,7 +2,7 @@
 schema: 1
 depot: infiniflow/ragflow
 source_readme_sha: e321e3b65b92b341
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: docker
 prerequis: [Docker, beaucoup de RAM, clé d'API]

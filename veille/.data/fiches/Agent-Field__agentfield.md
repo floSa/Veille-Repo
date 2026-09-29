@@ -2,7 +2,7 @@
 schema: 1
 depot: Agent-Field/agentfield
 source_readme_sha: da8167a9a1204320
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: docker
 prerequis: [clé d'API, Docker]

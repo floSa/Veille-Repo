@@ -2,7 +2,7 @@
 schema: 1
 depot: huggingface/transformers.js
 source_readme_sha: c290f59597c8e94f
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: npm
 prerequis: [Node]

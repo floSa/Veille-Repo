@@ -2,7 +2,7 @@
 schema: 1
 depot: Chainlit/chainlit
 source_readme_sha: a54d2dad1be5eea9
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: autre
 prerequis: [aucun]

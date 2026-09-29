@@ -2,7 +2,7 @@
 schema: 1
 depot: qdm12/ddns-updater
 source_readme_sha: d41ce69dd02fa8cc
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [compte à créer]

@@ -2,7 +2,7 @@
 schema: 1
 depot: usememos/memos
 source_readme_sha: 7fbb77317ca78cfa
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Docker]

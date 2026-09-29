@@ -2,7 +2,7 @@
 schema: 1
 depot: NVIDIA/garak
 source_readme_sha: 54a61bb985390ba9
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [clé d'API, version de Python]

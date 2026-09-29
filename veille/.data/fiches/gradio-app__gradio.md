@@ -2,7 +2,7 @@
 schema: 1
 depot: gradio-app/gradio
 source_readme_sha: 1c10a6a19ae8736e
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [version de Python]

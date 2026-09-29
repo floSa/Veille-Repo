@@ -2,7 +2,7 @@
 schema: 1
 depot: centrifugal/centrifugo
 source_readme_sha: 2f6534c86522a3fa
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: docker
 prerequis: [Docker]

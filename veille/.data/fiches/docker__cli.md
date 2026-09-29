@@ -2,7 +2,7 @@
 schema: 1
 depot: docker/cli
 source_readme_sha: 455e8580e7f49de8
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: compilation
 prerequis: [Docker]

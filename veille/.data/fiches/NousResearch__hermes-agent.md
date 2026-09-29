@@ -2,7 +2,7 @@
 schema: 1
 depot: NousResearch/hermes-agent
 source_readme_sha: 1d733df90c2836c1
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: binaire
 prerequis: [clé d'API, Node, version de Python]

@@ -2,7 +2,7 @@
 schema: 1
 depot: bojieli/ai-agent-book
 source_readme_sha: 21195bfba51235ee
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: doc
 deploiement: pip
 prerequis: [clé d'API, version de Python]

@@ -2,7 +2,7 @@
 schema: 1
 depot: tinygrad/tinygrad
 source_readme_sha: 8f69c27c87c36fd8
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: compilation
 prerequis: [aucun]

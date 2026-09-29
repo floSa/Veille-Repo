@@ -2,7 +2,7 @@
 schema: 1
 depot: Gentleman-Programming/engram
 source_readme_sha: 7ee7bdc19916d1a2
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

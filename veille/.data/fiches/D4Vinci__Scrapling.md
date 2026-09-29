@@ -2,7 +2,7 @@
 schema: 1
 depot: D4Vinci/Scrapling
 source_readme_sha: 1b20aad7aae634e9
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [version de Python]

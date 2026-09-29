@@ -2,7 +2,7 @@
 schema: 1
 depot: kgateway-dev/kgateway
 source_readme_sha: eeae8b7c4997733d
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [Docker]

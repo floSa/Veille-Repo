@@ -2,7 +2,7 @@
 schema: 1
 depot: containerd/containerd
 source_readme_sha: 2c02476d86fb7be0
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

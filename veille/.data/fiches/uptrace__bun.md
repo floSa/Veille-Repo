@@ -2,7 +2,7 @@
 schema: 1
 depot: uptrace/bun
 source_readme_sha: 8b7791a2d0a87450
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: autre
 prerequis: [aucun]

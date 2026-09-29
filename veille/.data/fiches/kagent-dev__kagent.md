@@ -2,7 +2,7 @@
 schema: 1
 depot: kagent-dev/kagent
 source_readme_sha: e7162053426861c5
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [clé d'API, service tiers]

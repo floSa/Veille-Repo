@@ -2,7 +2,7 @@
 schema: 1
 depot: aws/karpenter-provider-aws
 source_readme_sha: 291b986ae568cd1f
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [compte à créer]

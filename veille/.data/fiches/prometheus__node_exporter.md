@@ -2,7 +2,7 @@
 schema: 1
 depot: prometheus/node_exporter
 source_readme_sha: 596da9c08a087d2d
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

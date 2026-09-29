@@ -2,7 +2,7 @@
 schema: 1
 depot: tt-a1i/archify
 source_readme_sha: ebbdafe991d39edb
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: extension
 deploiement: npm
 prerequis: [Node]

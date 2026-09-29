@@ -2,7 +2,7 @@
 schema: 1
 depot: srbhr/Resume-Matcher
 source_readme_sha: 71c223ac23fa4d5b
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [version de Python, Node, clé d'API]

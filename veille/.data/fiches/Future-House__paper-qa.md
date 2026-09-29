@@ -2,7 +2,7 @@
 schema: 1
 depot: Future-House/paper-qa
 source_readme_sha: 1ebe76557cd4d5f9
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API, version de Python]

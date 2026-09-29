@@ -2,7 +2,7 @@
 schema: 1
 depot: GoogleContainerTools/skaffold
 source_readme_sha: 31b00390e0b998aa
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [Docker, service tiers]

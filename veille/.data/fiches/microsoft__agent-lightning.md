@@ -2,7 +2,7 @@
 schema: 1
 depot: microsoft/agent-lightning
 source_readme_sha: 80652c19f70d5f6d
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: autre
 prerequis: [GPU]

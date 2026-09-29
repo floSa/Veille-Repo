@@ -2,7 +2,7 @@
 schema: 1
 depot: kubernetes-sigs/controller-runtime
 source_readme_sha: 0788356b37bd683f
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: autre
 prerequis: [aucun]

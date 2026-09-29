@@ -2,7 +2,7 @@
 schema: 1
 depot: instaloader/instaloader
 source_readme_sha: 00be69a15a2c13a2
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [compte à créer]

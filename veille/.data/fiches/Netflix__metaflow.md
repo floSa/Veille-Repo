@@ -2,7 +2,7 @@
 schema: 1
 depot: Netflix/metaflow
 source_readme_sha: 1d3e61395c642b75
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [aucun]

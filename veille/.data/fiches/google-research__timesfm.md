@@ -2,7 +2,7 @@
 schema: 1
 depot: google-research/timesfm
 source_readme_sha: cd387ead54358c40
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: modèle
 deploiement: pip
 prerequis: [GPU]

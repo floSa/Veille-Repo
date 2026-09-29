@@ -2,7 +2,7 @@
 schema: 1
 depot: pollinations/pollinations
 source_readme_sha: 735307a3360d1eb1
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: SaaS
 prerequis: [clé d'API, compte à créer]

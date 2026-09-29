@@ -2,7 +2,7 @@
 schema: 1
 depot: HKUDS/DeepCode
 source_readme_sha: a1444d71c72928ad
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: pip
 prerequis: [clé d'API, version de Python, Node]

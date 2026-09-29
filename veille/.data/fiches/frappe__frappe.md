@@ -2,7 +2,7 @@
 schema: 1
 depot: frappe/frappe
 source_readme_sha: 53f0bf586e9a3203
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: docker
 prerequis: [Docker]

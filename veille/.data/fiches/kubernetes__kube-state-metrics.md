@@ -2,7 +2,7 @@
 schema: 1
 depot: kubernetes/kube-state-metrics
 source_readme_sha: 36e0ae3027061845
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [service tiers]

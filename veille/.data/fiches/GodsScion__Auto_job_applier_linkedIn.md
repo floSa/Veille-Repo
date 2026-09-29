@@ -2,7 +2,7 @@
 schema: 1
 depot: GodsScion/Auto_job_applier_linkedIn
 source_readme_sha: 29029ff08db61b59
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [aucun]

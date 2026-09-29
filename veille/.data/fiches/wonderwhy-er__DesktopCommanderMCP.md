@@ -2,7 +2,7 @@
 schema: 1
 depot: wonderwhy-er/DesktopCommanderMCP
 source_readme_sha: a2ceb9735738051a
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: npm
 prerequis: [Node, Docker]

@@ -2,7 +2,7 @@
 schema: 1
 depot: django/django
 source_readme_sha: 34c0989b01e1cb8e
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [aucun]

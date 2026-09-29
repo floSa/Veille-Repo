@@ -2,7 +2,7 @@
 schema: 1
 depot: meshery/meshery
 source_readme_sha: efc2ce77ec1c2984
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker, service tiers]

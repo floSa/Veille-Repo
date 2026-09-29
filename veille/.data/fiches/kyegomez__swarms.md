@@ -2,7 +2,7 @@
 schema: 1
 depot: kyegomez/swarms
 source_readme_sha: 4f4856f11a94a7ae
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API]

@@ -2,7 +2,7 @@
 schema: 1
 depot: HKUDS/Vibe-Trading
 source_readme_sha: 3394b0dd81e5f423
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [clé d'API, compte à créer]

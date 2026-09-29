@@ -2,7 +2,7 @@
 schema: 1
 depot: zakirullin/files.md
 source_readme_sha: 8c6d74bbf5dc95a8
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: rien à installer
 prerequis: [aucun]

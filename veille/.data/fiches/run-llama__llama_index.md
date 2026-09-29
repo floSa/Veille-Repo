@@ -2,7 +2,7 @@
 schema: 1
 depot: run-llama/llama_index
 source_readme_sha: c2738208d11688fc
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API]

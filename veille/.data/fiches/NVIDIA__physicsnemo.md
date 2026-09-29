@@ -2,7 +2,7 @@
 schema: 1
 depot: NVIDIA/physicsnemo
 source_readme_sha: 57c20ecf8ad79d4d
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [GPU]

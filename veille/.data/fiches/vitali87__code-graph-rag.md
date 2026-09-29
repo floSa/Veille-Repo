@@ -2,7 +2,7 @@
 schema: 1
 depot: vitali87/code-graph-rag
 source_readme_sha: 2dbdc7726a77cbb4
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [Docker, version de Python, clé d'API]

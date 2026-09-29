@@ -2,7 +2,7 @@
 schema: 1
 depot: autogluon/autogluon
 source_readme_sha: 93ecf7edc13ca41f
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [version de Python]

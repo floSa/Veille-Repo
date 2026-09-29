@@ -2,7 +2,7 @@
 schema: 1
 depot: potpie-ai/potpie
 source_readme_sha: c43b7052d458ee2f
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [version de Python, compte à créer]

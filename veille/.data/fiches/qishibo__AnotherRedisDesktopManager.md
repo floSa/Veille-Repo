@@ -2,7 +2,7 @@
 schema: 1
 depot: qishibo/AnotherRedisDesktopManager
 source_readme_sha: 0bfecce902ed2b2e
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: binaire
 prerequis: [aucun]

@@ -2,7 +2,7 @@
 schema: 1
 depot: zzet/gortex
 source_readme_sha: 24ab85a995dd1f33
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

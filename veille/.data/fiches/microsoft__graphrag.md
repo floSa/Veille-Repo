@@ -2,7 +2,7 @@
 schema: 1
 depot: microsoft/graphrag
 source_readme_sha: 36df9326f1e83343
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API]

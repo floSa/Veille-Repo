@@ -2,7 +2,7 @@
 schema: 1
 depot: OpenCSGs/csghub-server
 source_readme_sha: 21fa68b2c5bfb875
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: docker
 prerequis: [Docker, beaucoup de RAM]

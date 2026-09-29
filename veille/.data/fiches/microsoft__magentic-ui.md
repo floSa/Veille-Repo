@@ -2,7 +2,7 @@
 schema: 1
 depot: microsoft/magentic-ui
 source_readme_sha: 240e0c92b86c02d3
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: pip
 prerequis: [service tiers, version de Python]

@@ -2,7 +2,7 @@
 schema: 1
 depot: awslabs/diagram-as-code
 source_readme_sha: 7af368faa91f0429
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

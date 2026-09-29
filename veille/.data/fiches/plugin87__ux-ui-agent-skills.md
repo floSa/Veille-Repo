@@ -2,7 +2,7 @@
 schema: 1
 depot: plugin87/ux-ui-agent-skills
 source_readme_sha: 02cbd759f5fa345a
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: extension
 deploiement: npm
 prerequis: [Node]

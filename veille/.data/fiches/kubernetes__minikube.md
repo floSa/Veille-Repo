@@ -2,7 +2,7 @@
 schema: 1
 depot: kubernetes/minikube
 source_readme_sha: bf3aa3e287ebfebb
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

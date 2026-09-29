@@ -2,7 +2,7 @@
 schema: 1
 depot: open-compass/opencompass
 source_readme_sha: cb19a9b1f9e99bae
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [GPU, clé d'API, version de Python]

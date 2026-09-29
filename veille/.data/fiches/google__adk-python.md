@@ -2,7 +2,7 @@
 schema: 1
 depot: google/adk-python
 source_readme_sha: 084467083400d9e8
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [version de Python, clé d'API]

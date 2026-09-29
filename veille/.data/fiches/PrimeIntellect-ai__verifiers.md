@@ -2,7 +2,7 @@
 schema: 1
 depot: PrimeIntellect-ai/verifiers
 source_readme_sha: c9014d16fcb4d6ff
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [compte à créer]

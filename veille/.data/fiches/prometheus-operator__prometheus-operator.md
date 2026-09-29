@@ -2,7 +2,7 @@
 schema: 1
 depot: prometheus-operator/prometheus-operator
 source_readme_sha: 93f6f918e99f6215
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker]

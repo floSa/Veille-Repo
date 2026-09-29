@@ -2,7 +2,7 @@
 schema: 1
 depot: virattt/ai-hedge-fund
 source_readme_sha: e9f3f9cd6021e4aa
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: pip
 prerequis: [clé d'API]

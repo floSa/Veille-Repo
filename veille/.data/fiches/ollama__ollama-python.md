@@ -2,7 +2,7 @@
 schema: 1
 depot: ollama/ollama-python
 source_readme_sha: 446284c361f6756d
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [service tiers]

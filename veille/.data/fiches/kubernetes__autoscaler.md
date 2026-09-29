@@ -2,7 +2,7 @@
 schema: 1
 depot: kubernetes/autoscaler
 source_readme_sha: 620f551ceaf98f13
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [service tiers]

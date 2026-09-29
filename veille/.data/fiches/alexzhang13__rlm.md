@@ -2,7 +2,7 @@
 schema: 1
 depot: alexzhang13/rlm
 source_readme_sha: 1bcdd649790f6047
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API, version de Python]

@@ -2,7 +2,7 @@
 schema: 1
 depot: openai/whisper
 source_readme_sha: 38c180c2a8d8ba62
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: modèle
 deploiement: pip
 prerequis: [GPU, version de Python]

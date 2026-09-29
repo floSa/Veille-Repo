@@ -2,7 +2,7 @@
 schema: 1
 depot: axolotl-ai-cloud/axolotl
 source_readme_sha: a138f38d5c3bcd32
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [GPU, version de Python]

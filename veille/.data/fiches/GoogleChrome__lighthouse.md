@@ -2,7 +2,7 @@
 schema: 1
 depot: GoogleChrome/lighthouse
 source_readme_sha: cfd1a92933b2c90c
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: npm
 prerequis: [Node]

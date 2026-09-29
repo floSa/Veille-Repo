@@ -2,7 +2,7 @@
 schema: 1
 depot: FlagOpen/FlagEmbedding
 source_readme_sha: 46500109787496a7
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [aucun]

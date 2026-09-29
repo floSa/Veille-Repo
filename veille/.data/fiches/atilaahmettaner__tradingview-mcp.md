@@ -2,7 +2,7 @@
 schema: 1
 depot: atilaahmettaner/tradingview-mcp
 source_readme_sha: 2a74d6b86b861082
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: pip
 prerequis: [aucun]

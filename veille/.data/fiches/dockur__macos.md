@@ -2,7 +2,7 @@
 schema: 1
 depot: dockur/macos
 source_readme_sha: 6def2e8e139362af
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker, beaucoup de RAM]

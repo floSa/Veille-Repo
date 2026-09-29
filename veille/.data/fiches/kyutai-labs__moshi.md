@@ -2,7 +2,7 @@
 schema: 1
 depot: kyutai-labs/moshi
 source_readme_sha: e429032aab30c9db
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: modèle
 deploiement: pip
 prerequis: [GPU, version de Python]

@@ -2,7 +2,7 @@
 schema: 1
 depot: simular-ai/Agent-S
 source_readme_sha: e6762b5107deb65e
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [clé d'API, service tiers]

@@ -2,7 +2,7 @@
 schema: 1
 depot: astaxie/TokenHub
 source_readme_sha: 8db9b3b80d2dbc13
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: docker
 prerequis: [clé d'API, Docker]

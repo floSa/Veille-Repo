@@ -2,7 +2,7 @@
 schema: 1
 depot: DLR-RM/stable-baselines3
 source_readme_sha: ad3bef2a8c57b53d
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [version de Python]

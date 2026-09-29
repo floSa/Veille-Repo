@@ -2,7 +2,7 @@
 schema: 1
 depot: dlt-hub/dlt
 source_readme_sha: 136175c5ffad0b39
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [version de Python]

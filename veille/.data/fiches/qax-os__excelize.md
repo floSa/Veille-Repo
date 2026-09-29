@@ -2,7 +2,7 @@
 schema: 1
 depot: qax-os/excelize
 source_readme_sha: a8b1d1f688902348
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: autre
 prerequis: [aucun]

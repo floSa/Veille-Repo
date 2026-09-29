@@ -2,7 +2,7 @@
 schema: 1
 depot: kedacore/keda
 source_readme_sha: 416bf1ce1e56d2e2
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker]

@@ -2,7 +2,7 @@
 schema: 1
 depot: pydantic/pydantic-ai
 source_readme_sha: 8431167e51a8e408
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API]

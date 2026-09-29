@@ -2,7 +2,7 @@
 schema: 1
 depot: livekit/agents
 source_readme_sha: 0f030a55d0a741dd
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API, compte à créer, service tiers]

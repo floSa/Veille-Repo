@@ -2,7 +2,7 @@
 schema: 1
 depot: stanfordnlp/dspy
 source_readme_sha: 9b2fa5d078b4e4aa
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API]

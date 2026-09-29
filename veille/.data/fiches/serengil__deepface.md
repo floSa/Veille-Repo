@@ -2,7 +2,7 @@
 schema: 1
 depot: serengil/deepface
 source_readme_sha: 03ec2fc6dd12f433
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [aucun]

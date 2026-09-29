@@ -2,7 +2,7 @@
 schema: 1
 depot: decolua/9router
 source_readme_sha: 3144793f43cc19fa
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: npm
 prerequis: [Node, compte à créer]

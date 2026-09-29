@@ -2,7 +2,7 @@
 schema: 1
 depot: vllm-project/semantic-router
 source_readme_sha: 2c884ec0e69410e5
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

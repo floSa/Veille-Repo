@@ -2,7 +2,7 @@
 schema: 1
 depot: xpzouying/xiaohongshu-mcp
 source_readme_sha: e246fcadb79f508b
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: docker
 prerequis: [compte à créer, Docker]

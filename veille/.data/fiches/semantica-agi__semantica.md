@@ -2,7 +2,7 @@
 schema: 1
 depot: semantica-agi/semantica
 source_readme_sha: dae6fa2bfaa62830
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [aucun]

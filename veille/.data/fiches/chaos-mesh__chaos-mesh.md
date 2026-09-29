@@ -2,7 +2,7 @@
 schema: 1
 depot: chaos-mesh/chaos-mesh
 source_readme_sha: 12e3c31951491547
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker]

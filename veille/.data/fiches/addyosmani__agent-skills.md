@@ -2,7 +2,7 @@
 schema: 1
 depot: addyosmani/agent-skills
 source_readme_sha: 0956874d6ba30f65
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: extension
 deploiement: npm
 prerequis: [aucun]

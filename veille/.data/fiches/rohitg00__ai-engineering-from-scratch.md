@@ -2,7 +2,7 @@
 schema: 1
 depot: rohitg00/ai-engineering-from-scratch
 source_readme_sha: 7080d3cb0c0be997
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: doc
 deploiement: rien à installer
 prerequis: [aucun]

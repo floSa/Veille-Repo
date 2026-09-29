@@ -2,7 +2,7 @@
 schema: 1
 depot: chenyme/grok2api
 source_readme_sha: 973fe3637003b209
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: docker
 prerequis: [Docker, compte à créer]

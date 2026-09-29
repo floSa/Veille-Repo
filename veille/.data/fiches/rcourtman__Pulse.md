@@ -2,7 +2,7 @@
 schema: 1
 depot: rcourtman/Pulse
 source_readme_sha: 9bfc4f8173f7de8d
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Docker]

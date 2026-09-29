@@ -2,7 +2,7 @@
 schema: 1
 depot: galilai-group/stable-worldmodel
 source_readme_sha: 91b67fa5a1d68d6e
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [GPU, version de Python]

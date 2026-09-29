@@ -2,7 +2,7 @@
 schema: 1
 depot: triton-inference-server/server
 source_readme_sha: e8328f86ccc09688
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: docker
 prerequis: [Docker, GPU]

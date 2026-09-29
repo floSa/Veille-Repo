@@ -2,7 +2,7 @@
 schema: 1
 depot: OpenMOSS/MOSS-TTS
 source_readme_sha: 83c90c16f5550df5
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: modèle
 deploiement: pip
 prerequis: [GPU, version de Python]

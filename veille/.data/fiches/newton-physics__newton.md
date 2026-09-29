@@ -2,7 +2,7 @@
 schema: 1
 depot: newton-physics/newton
 source_readme_sha: f3038d8b68448111
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [GPU, version de Python]

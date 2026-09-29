@@ -2,7 +2,7 @@
 schema: 1
 depot: ray-project/ray
 source_readme_sha: 94df2acbdfdc95f8
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [beaucoup de RAM]

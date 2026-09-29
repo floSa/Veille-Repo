@@ -2,7 +2,7 @@
 schema: 1
 depot: ccfos/nightingale
 source_readme_sha: fbf2fbfc46cee708
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: binaire
 prerequis: [service tiers]

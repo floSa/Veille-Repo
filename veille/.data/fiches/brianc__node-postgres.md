@@ -2,7 +2,7 @@
 schema: 1
 depot: brianc/node-postgres
 source_readme_sha: bf2fd72244b306ff
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: npm
 prerequis: [service tiers]

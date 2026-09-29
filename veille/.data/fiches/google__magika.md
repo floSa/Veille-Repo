@@ -2,7 +2,7 @@
 schema: 1
 depot: google/magika
 source_readme_sha: 3eddd436fae2f409
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

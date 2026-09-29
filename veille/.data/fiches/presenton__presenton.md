@@ -2,7 +2,7 @@
 schema: 1
 depot: presenton/presenton
 source_readme_sha: 04ef9a584841ee71
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Docker, clé d'API, compte à créer]

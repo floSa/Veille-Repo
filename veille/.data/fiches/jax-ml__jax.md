@@ -2,7 +2,7 @@
 schema: 1
 depot: jax-ml/jax
 source_readme_sha: d87694b9a8f2c5ac
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [GPU]

@@ -2,7 +2,7 @@
 schema: 1
 depot: kangarooking/cangjie-skill
 source_readme_sha: 42fbce66febb2f7e
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: doc
 deploiement: rien à installer
 prerequis: [aucun]

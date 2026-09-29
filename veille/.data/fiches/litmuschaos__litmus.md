@@ -2,7 +2,7 @@
 schema: 1
 depot: litmuschaos/litmus
 source_readme_sha: 9c52eb9fbc8d5065
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [Docker]

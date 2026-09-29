@@ -2,7 +2,7 @@
 schema: 1
 depot: langflow-ai/langflow
 source_readme_sha: 4dcf55d872652176
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [version de Python, clé d'API]

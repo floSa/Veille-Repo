@@ -2,7 +2,7 @@
 schema: 1
 depot: infracost/infracost
 source_readme_sha: f1c49e0a99d09d14
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [compte à créer]

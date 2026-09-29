@@ -2,7 +2,7 @@
 schema: 1
 depot: QuentinFuxa/WhisperLiveKit
 source_readme_sha: d1267facfd1a7503
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [GPU, version de Python]

@@ -2,7 +2,7 @@
 schema: 1
 depot: OpenDCAI/DataFlow
 source_readme_sha: 0f7a13b9dc9e68a5
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API, GPU, version de Python]

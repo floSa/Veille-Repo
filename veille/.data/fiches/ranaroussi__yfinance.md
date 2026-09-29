@@ -2,7 +2,7 @@
 schema: 1
 depot: ranaroussi/yfinance
 source_readme_sha: bccd83214103e1ec
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [aucun]

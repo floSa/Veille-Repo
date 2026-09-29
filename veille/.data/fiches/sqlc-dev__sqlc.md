@@ -2,7 +2,7 @@
 schema: 1
 depot: sqlc-dev/sqlc
 source_readme_sha: ab348962d4e137b9
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

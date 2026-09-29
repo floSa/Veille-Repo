@@ -2,7 +2,7 @@
 schema: 1
 depot: JoshuaC215/agent-service-toolkit
 source_readme_sha: f8913d632250165c
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [clé d'API, Docker]

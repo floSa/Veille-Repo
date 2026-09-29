@@ -2,7 +2,7 @@
 schema: 1
 depot: Graphify-Labs/graphify
 source_readme_sha: 0a5f76b2c4e6cfee
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [version de Python]

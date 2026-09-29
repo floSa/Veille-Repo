@@ -2,7 +2,7 @@
 schema: 1
 depot: Robbyant/lingbot-map
 source_readme_sha: 11351d1d46f0e107
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: modèle
 deploiement: pip
 prerequis: [GPU, version de Python]

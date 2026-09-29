@@ -2,7 +2,7 @@
 schema: 1
 depot: icereed/paperless-gpt
 source_readme_sha: 8dd09347afc9b009
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker, service tiers, clé d'API]

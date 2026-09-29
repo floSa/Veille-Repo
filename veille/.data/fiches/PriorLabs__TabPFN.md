@@ -2,14 +2,14 @@
 schema: 1
 depot: PriorLabs/TabPFN
 source_readme_sha: f3a7821111accded
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: modèle
 deploiement: pip
 prerequis: [GPU, compte à créer, version de Python]
 cout: freemium
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence à clauses commerciales]
+alertes: [licence à clauses commerciales, compte à créer]
 verdict: adopter
 ---
 

@@ -2,7 +2,7 @@
 schema: 1
 depot: docker/docker-agent
 source_readme_sha: 29d8e1fe30c45400
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [clé d'API]

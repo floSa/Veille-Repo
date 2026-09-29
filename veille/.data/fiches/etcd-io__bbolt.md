@@ -2,7 +2,7 @@
 schema: 1
 depot: etcd-io/bbolt
 source_readme_sha: 519a594db71c56fd
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: compilation
 prerequis: [aucun]

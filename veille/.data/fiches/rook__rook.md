@@ -2,7 +2,7 @@
 schema: 1
 depot: rook/rook
 source_readme_sha: a87263a17e176898
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [Docker]

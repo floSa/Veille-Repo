@@ -2,7 +2,7 @@
 schema: 1
 depot: tavily-ai/tavily-mcp
 source_readme_sha: 86143098cdbe8812
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: npm
 prerequis: [clé d'API, compte à créer, Node]

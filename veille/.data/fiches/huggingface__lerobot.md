@@ -2,7 +2,7 @@
 schema: 1
 depot: huggingface/lerobot
 source_readme_sha: f90253af874ae95e
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [GPU]

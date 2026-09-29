@@ -2,7 +2,7 @@
 schema: 1
 depot: google/adk-go
 source_readme_sha: ab4fa889002e320b
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: autre
 prerequis: [clé d'API]

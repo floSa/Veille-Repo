@@ -2,7 +2,7 @@
 schema: 1
 depot: googleapis/mcp-toolbox
 source_readme_sha: c658ba06b285b7b5
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: binaire
 prerequis: [service tiers]

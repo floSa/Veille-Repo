@@ -2,7 +2,7 @@
 schema: 1
 depot: gotenberg/gotenberg
 source_readme_sha: f449ba471f410682
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: docker
 prerequis: [Docker]

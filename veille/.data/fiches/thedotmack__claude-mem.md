@@ -2,7 +2,7 @@
 schema: 1
 depot: thedotmack/claude-mem
 source_readme_sha: 1a1f647ee0826246
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: extension
 deploiement: npm
 prerequis: [Node, compte à créer]

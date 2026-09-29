@@ -2,7 +2,7 @@
 schema: 1
 depot: tbphp/gpt-load
 source_readme_sha: c6d027a3ed7e6eb0
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: docker
 prerequis: [Docker, clé d'API]

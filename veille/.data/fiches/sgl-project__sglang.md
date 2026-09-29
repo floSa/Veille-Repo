@@ -2,7 +2,7 @@
 schema: 1
 depot: sgl-project/sglang
 source_readme_sha: ee6908559f95fe54
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [GPU, beaucoup de RAM]

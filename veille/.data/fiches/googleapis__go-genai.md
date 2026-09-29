@@ -2,7 +2,7 @@
 schema: 1
 depot: googleapis/go-genai
 source_readme_sha: 2b979f8f089580b0
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: autre
 prerequis: [clé d'API]

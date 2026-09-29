@@ -2,7 +2,7 @@
 schema: 1
 depot: crestalnetwork/intentkit
 source_readme_sha: 6c0ceccc1457531d
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [clé d'API, service tiers]

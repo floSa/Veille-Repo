@@ -2,7 +2,7 @@
 schema: 1
 depot: RyanCodrai/turbovec
 source_readme_sha: d328d6e02b815793
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [aucun]

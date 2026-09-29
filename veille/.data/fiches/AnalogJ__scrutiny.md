@@ -2,7 +2,7 @@
 schema: 1
 depot: AnalogJ/scrutiny
 source_readme_sha: 60f93c341151309d
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Docker]

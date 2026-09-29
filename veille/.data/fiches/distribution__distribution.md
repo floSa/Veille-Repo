@@ -2,7 +2,7 @@
 schema: 1
 depot: distribution/distribution
 source_readme_sha: f53492a6ce94577a
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker]

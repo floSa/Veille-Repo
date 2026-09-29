@@ -2,7 +2,7 @@
 schema: 1
 depot: Automattic/mongoose
 source_readme_sha: 17ce2967f69f808f
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: npm
 prerequis: [Node, service tiers]

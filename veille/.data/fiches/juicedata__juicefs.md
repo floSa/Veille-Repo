@@ -2,7 +2,7 @@
 schema: 1
 depot: juicedata/juicefs
 source_readme_sha: 3879fa8e1def7ebf
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [service tiers]

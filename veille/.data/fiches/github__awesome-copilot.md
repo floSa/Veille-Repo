@@ -2,7 +2,7 @@
 schema: 1
 depot: github/awesome-copilot
 source_readme_sha: 925b9c1a32e739fb
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: liste
 deploiement: autre
 prerequis: [compte à créer]

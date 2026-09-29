@@ -2,7 +2,7 @@
 schema: 1
 depot: agno-agi/agno
 source_readme_sha: ee04510fcc6e82fa
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: docker
 prerequis: [Docker, clé d'API]

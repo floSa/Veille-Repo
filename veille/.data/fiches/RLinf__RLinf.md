@@ -2,7 +2,7 @@
 schema: 1
 depot: RLinf/RLinf
 source_readme_sha: 5845ba3e872ed77d
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [GPU, Docker]

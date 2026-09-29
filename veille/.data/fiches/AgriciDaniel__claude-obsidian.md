@@ -2,7 +2,7 @@
 schema: 1
 depot: AgriciDaniel/claude-obsidian
 source_readme_sha: 9ce6461bbac07728
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [aucun]

@@ -2,7 +2,7 @@
 schema: 1
 depot: github/github-mcp-server
 source_readme_sha: 0686b41067fd437a
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: docker
 prerequis: [Docker, compte à créer]

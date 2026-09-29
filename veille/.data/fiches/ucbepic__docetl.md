@@ -2,7 +2,7 @@
 schema: 1
 depot: ucbepic/docetl
 source_readme_sha: 13d3fc393ae971eb
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [clé d'API]

@@ -2,7 +2,7 @@
 schema: 1
 depot: entireio/cli
 source_readme_sha: e2027d52b71f37eb
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [compte à créer, service tiers]

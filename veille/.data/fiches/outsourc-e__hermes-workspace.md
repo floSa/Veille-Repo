@@ -2,7 +2,7 @@
 schema: 1
 depot: outsourc-e/hermes-workspace
 source_readme_sha: 72114091d80b86f5
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Node, clé d'API]

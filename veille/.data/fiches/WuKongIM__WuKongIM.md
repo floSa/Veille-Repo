@@ -2,7 +2,7 @@
 schema: 1
 depot: WuKongIM/WuKongIM
 source_readme_sha: 372fa4a2dd2f686b
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: binaire
 prerequis: [Docker]

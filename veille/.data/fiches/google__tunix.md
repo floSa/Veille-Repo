@@ -2,7 +2,7 @@
 schema: 1
 depot: google/tunix
 source_readme_sha: d234158ae4da53b8
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [GPU]

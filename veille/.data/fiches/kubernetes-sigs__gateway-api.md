@@ -2,7 +2,7 @@
 schema: 1
 depot: kubernetes-sigs/gateway-api
 source_readme_sha: 1dd96bbd2e77634f
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: doc
 deploiement: rien à installer
 prerequis: [aucun]

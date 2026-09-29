@@ -2,7 +2,7 @@
 schema: 1
 depot: stakater/Reloader
 source_readme_sha: 447eee90f3a8f152
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker]

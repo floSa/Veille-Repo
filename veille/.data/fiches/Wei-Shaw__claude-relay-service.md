@@ -2,7 +2,7 @@
 schema: 1
 depot: Wei-Shaw/claude-relay-service
 source_readme_sha: 408ba8c4a3552e8c
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: docker
 prerequis: [compte à créer, service tiers]

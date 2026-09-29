@@ -2,7 +2,7 @@
 schema: 1
 depot: Lightning-AI/pytorch-lightning
 source_readme_sha: f7cd2824fca50d07
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [GPU]

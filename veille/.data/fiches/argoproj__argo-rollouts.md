@@ -2,7 +2,7 @@
 schema: 1
 depot: argoproj/argo-rollouts
 source_readme_sha: ae84f67d16b901b6
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [service tiers]

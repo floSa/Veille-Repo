@@ -2,7 +2,7 @@
 schema: 1
 depot: multimodal-art-projection/YuE
 source_readme_sha: 9241a783c882f59f
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: modèle
 deploiement: pip
 prerequis: [GPU, version de Python, beaucoup de RAM]

@@ -2,7 +2,7 @@
 schema: 1
 depot: yuruotong1/autoMate
 source_readme_sha: 082a4eee0ee4ef2d
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: pip
 prerequis: [clé d'API]

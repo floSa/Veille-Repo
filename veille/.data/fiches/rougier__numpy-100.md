@@ -2,7 +2,7 @@
 schema: 1
 depot: rougier/numpy-100
 source_readme_sha: 279379a2f0128dba
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: doc
 deploiement: rien à installer
 prerequis: [aucun]

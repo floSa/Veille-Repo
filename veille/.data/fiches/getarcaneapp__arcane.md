@@ -2,7 +2,7 @@
 schema: 1
 depot: getarcaneapp/arcane
 source_readme_sha: 8554fb7454b4c748
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Docker]

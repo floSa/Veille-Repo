@@ -2,7 +2,7 @@
 schema: 1
 depot: simonw/llm
 source_readme_sha: c801b6780b738246
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [clé d'API]

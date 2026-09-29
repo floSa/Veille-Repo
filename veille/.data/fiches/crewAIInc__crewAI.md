@@ -2,7 +2,7 @@
 schema: 1
 depot: crewAIInc/crewAI
 source_readme_sha: b0f39843f93676b1
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [version de Python, clé d'API]

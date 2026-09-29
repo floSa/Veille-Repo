@@ -2,7 +2,7 @@
 schema: 1
 depot: Arindam200/awesome-ai-apps
 source_readme_sha: 8fb866efaa7e239e
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: liste
 deploiement: rien à installer
 prerequis: [clé d'API]

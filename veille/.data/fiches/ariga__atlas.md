@@ -2,7 +2,7 @@
 schema: 1
 depot: ariga/atlas
 source_readme_sha: 28d4afa722c20648
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [Docker]

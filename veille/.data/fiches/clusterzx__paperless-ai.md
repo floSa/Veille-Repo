@@ -2,7 +2,7 @@
 schema: 1
 depot: clusterzx/paperless-ai
 source_readme_sha: b96efe2c5d672c08
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: npm
 prerequis: [clé d'API, service tiers]

@@ -2,7 +2,7 @@
 schema: 1
 depot: obot-platform/obot
 source_readme_sha: 683499064e31fd87
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: docker
 prerequis: [Docker]

@@ -2,7 +2,7 @@
 schema: 1
 depot: oumi-ai/oumi
 source_readme_sha: 1155ebf4bdbdfc4f
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [GPU, clé d'API, compte à créer]

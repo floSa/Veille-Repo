@@ -2,7 +2,7 @@
 schema: 1
 depot: kenn-io/agentsview
 source_readme_sha: fb1c5033abb75591
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

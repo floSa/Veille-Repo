@@ -2,7 +2,7 @@
 schema: 1
 depot: Panniantong/Agent-Reach
 source_readme_sha: 7b723bcd4e5992c3
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [compte à créer]

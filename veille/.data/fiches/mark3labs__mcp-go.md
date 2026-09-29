@@ -2,7 +2,7 @@
 schema: 1
 depot: mark3labs/mcp-go
 source_readme_sha: f30204e0f9820d99
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: autre
 prerequis: [aucun]

@@ -2,7 +2,7 @@
 schema: 1
 depot: modelcontextprotocol/python-sdk
 source_readme_sha: 87df4643ed5cb0e9
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [version de Python]

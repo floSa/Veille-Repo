@@ -2,7 +2,7 @@
 schema: 1
 depot: gastownhall/beads
 source_readme_sha: a2f98e079bcfc37a
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [aucun]

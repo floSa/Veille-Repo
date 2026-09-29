@@ -2,7 +2,7 @@
 schema: 1
 depot: mukul975/Anthropic-Cybersecurity-Skills
 source_readme_sha: 1593e862b0997724
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: liste
 deploiement: rien à installer
 prerequis: [aucun]

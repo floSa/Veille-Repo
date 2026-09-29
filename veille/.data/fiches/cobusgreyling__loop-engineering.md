@@ -2,7 +2,7 @@
 schema: 1
 depot: cobusgreyling/loop-engineering
 source_readme_sha: 5c149fb336bc0e05
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: liste
 deploiement: npm
 prerequis: [Node]

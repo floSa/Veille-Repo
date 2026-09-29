@@ -2,7 +2,7 @@
 schema: 1
 depot: Superalgos/Superalgos
 source_readme_sha: ad97787c63595aec
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: compilation
 prerequis: [Node, compte à créer]

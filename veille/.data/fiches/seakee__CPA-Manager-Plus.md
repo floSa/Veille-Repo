@@ -2,7 +2,7 @@
 schema: 1
 depot: seakee/CPA-Manager-Plus
 source_readme_sha: 52e71902f85deb30
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: docker
 prerequis: [Docker, service tiers]

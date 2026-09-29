@@ -2,7 +2,7 @@
 schema: 1
 depot: hyperledger/fabric
 source_readme_sha: d6f28b32accd3a2a
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [Docker]

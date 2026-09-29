@@ -2,7 +2,7 @@
 schema: 1
 depot: zauberzeug/nicegui
 source_readme_sha: 31138fed1738e5f0
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [aucun]

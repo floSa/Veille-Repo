@@ -2,7 +2,7 @@
 schema: 1
 depot: Blaizzy/mlx-vlm
 source_readme_sha: 28730f4a3226ff61
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [beaucoup de RAM]

@@ -2,7 +2,7 @@
 schema: 1
 depot: jarrodwatts/claude-hud
 source_readme_sha: 71d4d397316a867b
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: extension
 deploiement: npm
 prerequis: [Node]

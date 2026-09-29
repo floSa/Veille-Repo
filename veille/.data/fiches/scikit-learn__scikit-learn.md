@@ -2,7 +2,7 @@
 schema: 1
 depot: scikit-learn/scikit-learn
 source_readme_sha: 3e0c151adde02aa2
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [version de Python]

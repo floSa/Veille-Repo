@@ -2,7 +2,7 @@
 schema: 1
 depot: argoproj/argo-workflows
 source_readme_sha: 0b1bfc95d099f8e5
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: docker
 prerequis: [Docker, service tiers]

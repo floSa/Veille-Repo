@@ -2,7 +2,7 @@
 schema: 1
 depot: xuanyustudio/LocalMiniDrama
 source_readme_sha: 6bc368eba4bf53ac
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: app
 deploiement: binaire
 prerequis: [clé d'API, Node]

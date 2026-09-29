@@ -2,7 +2,7 @@
 schema: 1
 depot: maziyarpanahi/openmed
 source_readme_sha: 3472c09bc42b9298
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: pip
 prerequis: [beaucoup de RAM, GPU]

@@ -2,7 +2,7 @@
 schema: 1
 depot: google/go-containerregistry
 source_readme_sha: 2e867ce27735e837
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: bibliothèque
 deploiement: autre
 prerequis: [aucun]

@@ -2,7 +2,7 @@
 schema: 1
 depot: atlassian/atlassian-mcp-server
 source_readme_sha: 80c4e6e363fe3129
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: SaaS
 prerequis: [compte à créer, Node]

@@ -2,7 +2,7 @@
 schema: 1
 depot: fluxcd/flux2
 source_readme_sha: 613675c8b4104d1d
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [service tiers]

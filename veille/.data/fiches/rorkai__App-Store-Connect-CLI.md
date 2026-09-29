@@ -2,7 +2,7 @@
 schema: 1
 depot: rorkai/App-Store-Connect-CLI
 source_readme_sha: c43b569d2ef6e12c
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: binaire
 prerequis: [compte à créer, clé d'API]

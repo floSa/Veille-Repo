@@ -2,7 +2,7 @@
 schema: 1
 depot: mlflow/mlflow
 source_readme_sha: 8cc1b534d7673fa5
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: pip
 prerequis: [aucun]

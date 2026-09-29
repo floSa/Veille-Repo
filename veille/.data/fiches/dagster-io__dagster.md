@@ -2,7 +2,7 @@
 schema: 1
 depot: dagster-io/dagster
 source_readme_sha: edd1cb00df322ab2
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: outil
 deploiement: autre
 prerequis: [aucun]

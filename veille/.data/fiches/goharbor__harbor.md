@@ -2,7 +2,7 @@
 schema: 1
 depot: goharbor/harbor
 source_readme_sha: b3a46bdd4a3118f4
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: service
 deploiement: docker
 prerequis: [Docker]

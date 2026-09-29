@@ -2,7 +2,7 @@
 schema: 1
 depot: Leonxlnx/taste-skill
 source_readme_sha: e2370a023e50a3e5
-ecrite_le: 2026-09-21
+ecrite_le: 2026-09-28
 nature: extension
 deploiement: npm
 prerequis: [aucun]
