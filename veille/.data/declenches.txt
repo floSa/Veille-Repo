@@ -328,3 +328,11 @@ NexaAI/nexa-sdk	ok
 NodeBB/NodeBB	ok
 Octane0411/open-vibe-island	ok
 OpenBMB/MiniCPM-V-Apps	ok
+OpenNebula/one	ok
+PKU-YuanGroup/Open-Sora-Plan	ok
+PaddlePaddle/ERNIE	ok
+PaddlePaddle/PaddleHelix	ok
+PaddlePaddle/PaddleNLP	ok
+PenglongHuang/chinese-novelist-skill	ok
+PipedreamHQ/pipedream	ok
+Pythagora-io/pythagora	ok
