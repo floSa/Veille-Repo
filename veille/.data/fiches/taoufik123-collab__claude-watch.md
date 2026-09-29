@@ -1,0 +1,55 @@
+---
+schema: 1
+depot: taoufik123-collab/claude-watch
+source_readme_sha: bc95c1bf4eb4bbcf
+ecrite_le: 2026-09-29
+nature: extension
+deploiement: autre
+prerequis: [clé d'API]
+cout: clé d'API à ta charge
+maturite: utilisable
+gouvernance: une personne
+alertes: [mainteneur unique]
+verdict: ignorer
+---
+
+# taoufik123-collab/claude-watch
+
+> Skill /watch qui donne à Claude des frames vidéo, un transcript et une analyse des dix premières secondes.
+
+## Le problème
+Claude ne sait pas regarder une vidéo : un lien YouTube ne donne que le titre ou un transcript sans l'image.
+
+## Ce que ça fait vraiment
+`watch.py` télécharge via yt-dlp, extrait des images ffmpeg (une par changement de scène, budget borné à 100 images et 2 fps), récupère les sous-titres ou passe par Whisper (Groq ou OpenAI). `hook.py` analyse les 10 premières secondes à 2 fps. `report.py` produit un `report.md` avec des zones à compléter par Claude ; sauvegarde optionnelle dans Obsidian. Construit sur le projet claude-video.
+
+## Comment c'est branché
+```mermaid
+flowchart LR
+  A["watch.py"] --> B["download.py (yt-dlp)"]
+  B --> C["frames.py (ffmpeg)"]
+  A --> D["hook.py"]
+  B --> E["transcribe.py"]
+  E --> F["whisper.py (Groq / OpenAI)"]
+  C --> G["report.py"]
+  E --> G
+```
+
+## Essayer
+```bash
+/plugin marketplace add taoufik123-collab/claude-watch
+/plugin install watch@claude-watch
+git clone https://github.com/taoufik123-collab/claude-watch.git ~/.codex/skills/watch
+```
+
+## Coût et pièges
+yt-dlp et ffmpeg installés au premier lancement (brew sur macOS). Clé Groq ou OpenAI seulement sans sous-titres. Les images consomment vite du contexte ; efficace surtout sous 10 minutes.
+
+## Ce que ce n'est pas
+Pas d'accès aux plateformes privées (aucune connexion). Pas un outil de compréhension de fond : Claude « voit » des images échantillonnées.
+
+## Alternatives
+Aucune alternative citée ; le README indique que le socle vient du projet `claude-video`.
+
+## Pour toi
+À ignorer si tu as déjà un skill `watch` installé : la seule nouveauté est l'extraction par scène et l'analyse d'ouverture, orientée création de contenu.
