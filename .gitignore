@@ -30,3 +30,9 @@ __pycache__/
 # --- journal de travail du service de génération, regénéré à chaque passage
 veille/.data/declencher.log
 veille/.data/a-declencher-reste.txt
+
+# --- personnel : reste sur la machine, jamais publié (le repo est public)
+# possede.json décrit ce que tu as déjà (notes DevBrain, clones) ; les sorties archivées
+# contiennent les bilans des conversations, avec des chemins locaux.
+veille/.data/possede.json
+veille/.data/sorties/
