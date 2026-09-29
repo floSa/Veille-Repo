@@ -5,7 +5,7 @@ source_readme_sha: a8da237ee1cc9447
 ecrite_le: 2026-09-29
 nature: app
 deploiement: autre
-prerequis: [compte à créer, compilation]
+prerequis: [compte à créer]
 cout: gratuit
 maturite: éprouvé
 gouvernance: fondation

@@ -5,7 +5,7 @@ source_readme_sha: 7f8e6f1ff6ee74fb
 ecrite_le: 2026-09-29
 nature: bibliothèque
 deploiement: autre
-prerequis: [compilation]
+prerequis: [aucun]
 cout: gratuit
 maturite: éprouvé
 gouvernance: communauté

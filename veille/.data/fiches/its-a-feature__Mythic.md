@@ -5,7 +5,7 @@ source_readme_sha: 3f4e0eab056fee30
 ecrite_le: 2026-09-29
 nature: outil
 deploiement: docker
-prerequis: [Docker, compilation]
+prerequis: [Docker]
 cout: gratuit
 maturite: éprouvé
 gouvernance: une personne

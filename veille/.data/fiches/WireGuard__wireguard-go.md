@@ -5,7 +5,7 @@ source_readme_sha: b71a3690a654a4ef
 ecrite_le: 2026-09-29
 nature: outil
 deploiement: compilation
-prerequis: [compilation]
+prerequis: [aucun]
 cout: gratuit
 maturite: éprouvé
 gouvernance: communauté

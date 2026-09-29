@@ -6,3 +6,7 @@ sammwyy/MikuMikuBeam
 sooryathejas/METATRON
 samugit83/redamon
 Armur-Ai/Pentest-Swarm-AI
+HavocFramework/Havoc
+OJ/gobuster
+gophish/gophish
+derv82/wifit3

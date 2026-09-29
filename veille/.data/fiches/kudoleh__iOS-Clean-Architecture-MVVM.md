@@ -5,7 +5,7 @@ source_readme_sha: 28b5cdb0965e58b1
 ecrite_le: 2026-09-29
 nature: doc
 deploiement: compilation
-prerequis: [compilation]
+prerequis: [aucun]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
