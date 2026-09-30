@@ -10,3 +10,4 @@ HavocFramework/Havoc
 OJ/gobuster
 gophish/gophish
 derv82/wifit3
+Unclecheng-li/VulnClaw
