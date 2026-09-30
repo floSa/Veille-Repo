@@ -5,7 +5,7 @@ source_readme_sha: 6d0f5e98e35b933b
 ecrite_le: 2026-09-30
 nature: service
 deploiement: autre
-prerequis: [Linux x86_64 avec KVM, version de Python]
+prerequis: [version de Python]
 cout: gratuit
 maturite: expérimental
 gouvernance: entreprise
