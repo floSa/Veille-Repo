@@ -1,0 +1,1 @@
+window.__RECU={"k": "mapbox/mapbox-maps-flutter", "g": "readmes", "t": "mapbox_maps_flutter/README.md"};

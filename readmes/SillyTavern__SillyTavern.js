@@ -1,0 +1,1 @@
+window.__RECU={"k": "SillyTavern/SillyTavern", "g": "readmes", "t": "# SillyTavern\n\nLLM Frontend for Power Users\n\n## Resources\n\n- GitHub: <https://github.com/SillyTavern/SillyTavern>\n- Docs: <https://docs.sillytavern.app/>\n- Discord: <https://discord.gg/sillytavern>\n- Reddit: <https://reddit.com/r/SillyTavernAI>\n\n## License\n\nAGPL-3.0\n"};
