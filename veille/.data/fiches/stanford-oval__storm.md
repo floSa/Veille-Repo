@@ -9,7 +9,7 @@ prerequis: [clé d'API, version de Python]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: communauté
-alertes: []
+alertes: [dernier commit ancien]
 verdict: surveiller
 ---
 
