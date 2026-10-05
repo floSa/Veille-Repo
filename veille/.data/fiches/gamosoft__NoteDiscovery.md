@@ -21,7 +21,7 @@ verdict: surveiller
 Garder ses notes en Markdown simple, sous son contrôle, avec recherche et liens, sans service commercial.
 
 ## Ce que ce n'est pas
-(voir plus bas)
+Pas fait pour être exposé sur Internet sans reverse proxy HTTPS. Pas de multi-utilisateur natif.
 
 ## Ce que ça fait vraiment
 Une application FastAPI sert une interface web sur des fichiers Markdown en dossiers : recherche, tags, rétroliens, graphe de notes, modèles, LaTeX, Mermaid, éditeur de dessin, export HTML, partage par lien, plugins et thèmes. Un serveur MCP expose les notes à Claude ou Cursor ; une pile Docker Compose avec Ollama et Open WebUI est fournie.
@@ -48,9 +48,6 @@ docker run -d --name notediscovery -p 8000:8000 \
 
 ## Coût et pièges
 Gratuit. L'authentification est désactivée par défaut et le mot de passe par défaut est `admin` : l'activer et le changer avant toute exposition réseau. Écoute sur `0.0.0.0:8000`.
-
-## Ce que ce n'est pas
-Pas fait pour être exposé sur Internet sans reverse proxy HTTPS. Pas de multi-utilisateur natif.
 
 ## Alternatives
 - Notion, Evernote, Obsidian Sync : services commerciaux comparés dans le README.
