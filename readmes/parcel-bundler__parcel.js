@@ -1,0 +1,1 @@
+window.__RECU={"k": "parcel-bundler/parcel", "g": "readmes", "t": "./packages/core/parcel/README.md"};

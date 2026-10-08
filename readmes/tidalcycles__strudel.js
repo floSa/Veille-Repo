@@ -1,0 +1,1 @@
+window.__RECU={"k": "tidalcycles/strudel", "g": "readmes", "t": "# strudel\n\nLive coding patterns on the web\nhttps://strudel.cc/\n\n**Development has moved to https://codeberg.org/uzu/strudel**\n\nPlease update your bookmarks.\n"};
