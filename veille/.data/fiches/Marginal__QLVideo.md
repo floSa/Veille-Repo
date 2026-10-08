@@ -36,7 +36,7 @@ flowchart LR
 Aucune commande documentée dans le README (« See Getting Started »). Une version est sur l'App Store.
 
 ## Coût et pièges
-Gratuit côté dépôt ; macOS uniquement.
+Gratuit côté dépôt ; macOS uniquement, sous forme d'extension Quick Look à installer.
 
 ## Ce que ce n'est pas
 Pas un lecteur vidéo ni un convertisseur. À noter : un autre dépôt, Marginal/QuickLookVideo, a un README identique.

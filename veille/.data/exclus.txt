@@ -11,3 +11,15 @@ OJ/gobuster
 gophish/gophish
 derv82/wifit3
 Unclecheng-li/VulnClaw
+Autumn-27/ARTEX
+TarlogicSecurity/BlueSpy
+kgretzky/evilginx2
+sml2h3/ddddocr
+drk1wi/Modlishka
+Ullaakut/cameradar
+bikini/exploitarium
+i-am-shodan/USBArmyKnife
+httptoolkit/frida-interception-and-unpinning
+0xsdeo/AntiDebug_Breaker
+Mafifrizi/ARES
+D3Ext/Hooka

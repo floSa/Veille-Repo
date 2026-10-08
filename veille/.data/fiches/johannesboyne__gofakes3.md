@@ -45,7 +45,7 @@ Puis créer `s3mem.New()` et `gofakes3.New(backend)` dans ton test, comme dans l
 Gratuit. Une partie de l'API S3 n'est pas implémentée et des changements incompatibles sont attendus. Aucun besoin de correction, de performance ni de sécurité, selon l'auteur.
 
 ## Ce que ce n'est pas
-Pas un stockage de production.
+Pas un stockage de production : un faux S3 fait pour les tests.
 
 ## Alternatives
 MinIO (plus complet, qualifié de « pas similaire mais puissant ») et andrewgaul/s3proxy, cités dans le README.

@@ -47,7 +47,7 @@ Gratuit, sans compte. L'installateur est exécuté via `curl | bash` et écrit d
 Pas un outil de test de charge ni de modèles ; les commandes CLI de lancement des flux ne sont pas détaillées dans le README.
 
 ## Alternatives
-Postman, cité pour la comparaison.
+Postman, cité dans le README pour la comparaison.
 
 ## Pour toi
 À surveiller : utile pour tester des API de modèles servis, mais README court sur l'usage CLI en CI.

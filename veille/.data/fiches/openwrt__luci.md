@@ -21,7 +21,7 @@ verdict: ignorer
 Configurer un routeur OpenWrt en ligne de commande est fastidieux.
 
 ## Ce que ce n'est pas
-(voir plus bas)
+Pas utilisable seul : il suppose un routeur sous OpenWrt.
 
 ## Ce que ça fait vraiment
 Vues client en JavaScript (tableau de bord, réseau, pare-feu, stockage, gestionnaire de paquets, fichiers) qui communiquent par RPC ; opérations côté serveur via ucode et rpcd. Fonctions en C (rpcd, DNS inverse, gabarits, TLS). Traductions via Weblate.
@@ -44,9 +44,6 @@ flowchart LR
 
 ## Coût et pièges
 Gratuit ; intégré au système de build OpenWrt (feed `src-git luci`). Activé par défaut.
-
-## Ce que ce n'est pas
-Pas utilisable seul : il suppose un routeur sous OpenWrt.
 
 ## Alternatives
 Aucune nommée dans le README.

@@ -49,7 +49,7 @@ L'installation passe par des guides Linux, macOS et Windows non détaillés dans
 Gratuit. L'API de gestion n'a pas d'authentification documentée dans le README : ne pas l'exposer sur un réseau ouvert.
 
 ## Ce que ce n'est pas
-Pas une messagerie moderne ni chiffrée.
+Pas une messagerie moderne ni chiffrée : un serveur pour les anciens clients AIM et ICQ.
 
 ## Alternatives
 Aucune alternative nommée dans le README.

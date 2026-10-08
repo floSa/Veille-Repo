@@ -37,7 +37,7 @@ flowchart LR
 Aucune commande documentée dans le README (« See Getting Started »).
 
 ## Coût et pièges
-Gratuit côté dépôt ; macOS uniquement.
+Gratuit côté dépôt ; macOS uniquement, sous forme d'extension Quick Look à installer.
 
 ## Ce que ce n'est pas
 Pas un lecteur vidéo. Probable doublon ou miroir de Marginal/QLVideo : relation non précisée.
