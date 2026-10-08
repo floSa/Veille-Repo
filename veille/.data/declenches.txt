@@ -1173,3 +1173,12 @@ yokoffing/Betterfox	ok
 youzan/vant-weapp	ok
 yuin/goldmark	ok
 yuliskov/SmartTubeLegacy	ok
+zachlatta/freeflow	refus
+zaigie/palworld-server-tool	ok
+zan8in/afrog	ok
+zed-industries/extensions	ok
+zed-industries/zed-fonts	ok
+zhaoolee/ChromeAppHeroes	ok
+zhu-xlab/GlobalBuildingAtlas	ok
+zloirock/core-js	ok
+zumerlab/snapdom	ok
