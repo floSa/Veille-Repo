@@ -9,7 +9,7 @@ prerequis: [GPU, Docker]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
-alertes: []
+alertes: [archivé]
 verdict: adopter
 ---
 

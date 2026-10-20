@@ -9,7 +9,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: utilisable
 gouvernance: communauté
-alertes: [matière insuffisante]
+alertes: [archivé, matière insuffisante]
 verdict: surveiller
 ---
 

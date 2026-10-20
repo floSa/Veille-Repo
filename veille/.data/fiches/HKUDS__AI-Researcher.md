@@ -9,7 +9,7 @@ prerequis: [clé d'API, GPU, Docker, version de Python]
 cout: clé d'API à ta charge
 maturite: expérimental
 gouvernance: communauté
-alertes: [licence non déclarée, dépend d'un SaaS]
+alertes: [licence non déclarée, dernier commit ancien, dépend d'un SaaS]
 verdict: surveiller
 ---
 

@@ -9,7 +9,7 @@ prerequis: [clé d'API, compte à créer]
 cout: freemium
 maturite: expérimental
 gouvernance: entreprise
-alertes: [dépend d'un SaaS]
+alertes: [licence à vérifier, dépend d'un SaaS]
 verdict: surveiller
 ---
 

@@ -9,7 +9,7 @@ prerequis: [GPU, Docker, clé d'API, compte à créer, beaucoup de RAM]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence à vérifier, dépend d'un SaaS]
+alertes: [dépend d'un SaaS]
 verdict: surveiller
 ---
 

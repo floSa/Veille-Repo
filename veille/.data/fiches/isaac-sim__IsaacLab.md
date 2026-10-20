@@ -9,7 +9,7 @@ prerequis: [GPU, service tiers]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
-alertes: [dépend d'un SaaS]
+alertes: [licence à vérifier, dépend d'un SaaS]
 verdict: surveiller
 ---
 

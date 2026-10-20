@@ -7,7 +7,7 @@ prerequis: [clé d'API, service tiers, compte à créer]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: entreprise
-alertes: [dépend d'un SaaS]
+alertes: [archivé, dépend d'un SaaS]
 verdict: surveiller
 source_readme_sha: b4898172fb0d597e
 ecrite_le: 2026-09-21

@@ -9,7 +9,7 @@ prerequis: [GPU]
 cout: gratuit
 maturite: éprouvé
 gouvernance: une personne
-alertes: [dernier commit ancien, mainteneur unique]
+alertes: [mainteneur unique]
 verdict: ignorer
 ---
 

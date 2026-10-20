@@ -9,7 +9,7 @@ prerequis: [version de Python]
 cout: gratuit
 maturite: expérimental
 gouvernance: entreprise
-alertes: [licence à vérifier, archivé]
+alertes: [licence à vérifier, archivé, dernier commit ancien]
 verdict: ignorer
 ---
 

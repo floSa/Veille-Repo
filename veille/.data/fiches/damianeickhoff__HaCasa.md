@@ -9,7 +9,7 @@ prerequis: [service tiers]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [archivé, mainteneur unique]
+alertes: [mainteneur unique]
 verdict: ignorer
 ---
 

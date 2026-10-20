@@ -9,7 +9,7 @@ prerequis: [Docker, Node]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence à vérifier, télémétrie]
+alertes: [licence copyleft, télémétrie]
 verdict: ignorer
 ---
 

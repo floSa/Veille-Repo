@@ -9,7 +9,7 @@ prerequis: [version de Python, compte à créer, clé d'API]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: entreprise
-alertes: [dépend d'un SaaS]
+alertes: [archivé, dépend d'un SaaS]
 verdict: surveiller
 ---
 

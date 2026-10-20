@@ -9,7 +9,7 @@ prerequis: [Docker]
 cout: gratuit
 maturite: utilisable
 gouvernance: communauté
-alertes: [archivé]
+alertes: []
 verdict: ignorer
 ---
 

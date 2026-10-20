@@ -9,7 +9,7 @@ prerequis: [Node, clé d'API, Docker]
 cout: clé d'API à ta charge
 maturite: expérimental
 gouvernance: entreprise
-alertes: [licence à vérifier]
+alertes: []
 verdict: surveiller
 ---
 

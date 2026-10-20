@@ -9,7 +9,7 @@ prerequis: [Node]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence à vérifier, mainteneur unique]
+alertes: [mainteneur unique]
 verdict: surveiller
 ---
 

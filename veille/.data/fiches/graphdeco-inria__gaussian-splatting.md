@@ -9,7 +9,7 @@ prerequis: [GPU, version de Python, beaucoup de RAM]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence à vérifier]
+alertes: [licence à vérifier, dernier commit ancien]
 verdict: surveiller
 ---
 

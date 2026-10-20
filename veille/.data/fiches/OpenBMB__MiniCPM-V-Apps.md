@@ -9,7 +9,7 @@ prerequis: [compte à créer, beaucoup de RAM]
 cout: gratuit
 maturite: expérimental
 gouvernance: communauté
-alertes: [licence non déclarée]
+alertes: [licence à vérifier]
 verdict: surveiller
 ---
 

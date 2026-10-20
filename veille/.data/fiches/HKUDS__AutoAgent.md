@@ -9,7 +9,7 @@ prerequis: [clé d'API, Docker]
 cout: clé d'API à ta charge
 maturite: expérimental
 gouvernance: communauté
-alertes: []
+alertes: [dernier commit ancien]
 verdict: surveiller
 ---
 
