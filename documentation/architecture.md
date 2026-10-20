@@ -13,11 +13,11 @@ mesuré (voir [couts.md](couts.md)).
 
 | Chiffre | Valeur |
 |---|---|
-| Période couverte | **2024-09-01 → 2026-10-08** |
-| Dépôts au catalogue | **4 330** |
-| README stockés hors ligne | **4 271** |
-| Schémas d'architecture (GitDiagram) | **3 611** |
-| Synthèses rédigées | **3 568** |
+| Période couverte | **2024-09-01 → 2026-10-20** |
+| Dépôts au catalogue | **4 378** |
+| README stockés hors ligne | **4 319** |
+| Schémas d'architecture (GitDiagram) | **3 642** |
+| Synthèses rédigées | **3 597** |
 
 ---
 

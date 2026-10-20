@@ -12,15 +12,15 @@
 [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-hébergement-222222?logo=githubpages&logoColor=white)](https://pages.github.com/)
 [![Licence](https://img.shields.io/badge/licence-MIT-blue)](LICENSE)
 
-Période couverte : **2024-09-01 → 2026-10-08**.
+Période couverte : **2024-09-01 → 2026-10-20**.
 
 | Pertinence | Dépôts | README hors ligne | Schémas d'architecture | Synthèses |
 |---|---|---|---|---|
-| cœur métier | 2 203 | 2 191 | 2 157 | 2 145 |
-| périphérie | 990 | 981 | 961 | 935 |
-| hors périmètre | 766 | 751 | 327 | 325 |
-| à trier | 371 | 348 | 166 | 163 |
-| **total** | **4 330** | **4 271** | **3 611** | **3 568** |
+| cœur métier | 2 239 | 2 227 | 2 189 | 2 169 |
+| périphérie | 989 | 980 | 958 | 938 |
+| hors périmètre | 775 | 760 | 329 | 327 |
+| à trier | 375 | 352 | 166 | 163 |
+| **total** | **4 378** | **4 319** | **3 642** | **3 597** |
 
 Une synthèse s'écrit à partir du README **et** du schéma : c'est le schéma qui fixe le rythme.
 Les écarts restants tiennent à trois causes — **59 dépôts** n'ont pas de README (supprimés,
