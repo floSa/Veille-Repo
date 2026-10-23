@@ -16,11 +16,11 @@ Période couverte : **2024-09-01 → 2026-10-23**.
 
 | Pertinence | Dépôts | README hors ligne | Schémas d'architecture | Synthèses |
 |---|---|---|---|---|
-| cœur métier | 3 276 | 3 255 | 2 349 | 2 335 |
+| cœur métier | 3 276 | 3 255 | 2 437 | 2 422 |
 | périphérie | 1 538 | 1 518 | 853 | 836 |
 | hors périmètre | 1 154 | 1 135 | 285 | 283 |
 | à trier | 727 | 679 | 172 | 169 |
-| **total** | **6 695** | **6 587** | **3 659** | **3 623** |
+| **total** | **6 695** | **6 587** | **3 747** | **3 710** |
 
 Une synthèse s'écrit à partir du README **et** du schéma : c'est le schéma qui fixe le rythme.
 Les écarts restants tiennent à trois causes — **108 dépôts** n'ont pas de README (supprimés,

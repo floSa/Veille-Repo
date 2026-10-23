@@ -47,7 +47,7 @@ Gratuit. Permissions micro et accessibilité à accorder. Linux : outils de sais
 Pas un service de transcription de réunions. Le README liste des limites connues (Bluetooth sous macOS, touche `fn` sur claviers tiers, collage d'un ancien presse-papiers sous charge).
 
 ## Alternatives
-Handy CLI (version Python d'origine).
+Handy CLI (version Python d'origine) ; Superwhisper et MacWhisper, payants et limités à macOS.
 
 ## Pour toi
 À adopter : dictée locale sans envoi de voix, utile pour rédiger des notes ou des prompts ; vérifie la compatibilité Wayland si tu es sous Linux.

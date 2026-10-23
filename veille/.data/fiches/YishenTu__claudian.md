@@ -50,7 +50,7 @@ Au moins un des harnais ci-dessus, avec abonnement ou clé de fournisseur. Obsid
 Pas de version mobile. L'installation est depuis les sources : le README ne documente pas le magasin de plugins. La collaboration est un plugin séparé.
 
 ## Alternatives
-Claudian Collab, pour la collaboration.
+Claudian Collab, pour la collaboration ; Copilot for Obsidian, autre assistant IA intégré à Obsidian.
 
 ## Pour toi
 À surveiller : pratique si ta base de connaissances vit dans Obsidian, mais donne à un agent accès en écriture à ton coffre.

@@ -51,7 +51,7 @@ Clé d'API LLM à ta charge. Le script de démonstration par CDN utilise une API
 Pas de l'automatisation côté serveur : conçu pour l'amélioration côté client. Le README signale que ce n'est pas un outil de scraping.
 
 ## Alternatives
-browser-use, dont le projet dérive.
+browser-use, dont le projet dérive ; Stagehand, de Browserbase, pour piloter un navigateur par un LLM.
 
 ## Pour toi
 À surveiller : utile pour un copilote embarqué dans une application métier, mais le contenu des pages part chez un fournisseur de modèle.
