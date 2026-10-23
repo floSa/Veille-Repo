@@ -178,6 +178,7 @@ Nanako0129/syrtis
 Neet-Nestor/Telegram-Media-Downloader
 NexaAI/nexa-sdk
 NodeBB/NodeBB
+NomaDamas/CozyClay
 Notifuse/notifuse
 OWASP/Go-SCP
 OWASP/OFFAT
@@ -793,6 +794,7 @@ lucaslorentz/caddy-docker-proxy
 luckyPipewrench/pipelock
 lukas-blecher/LaTeX-OCR
 lwthiker/curl-impersonate
+lycorp-jp/sim-use
 lyfe00011/whatsapp-bot
 lzell/AIProxySwift
 maboloshi/github-chinese
@@ -854,6 +856,7 @@ milanvarady/Applite
 milvus-io/milvus
 miroslavpejic85/mirotalk
 mishoo/UglifyJS
+missuo/kumone
 mit-han-lab/nunchaku
 mjmlio/mjml
 mk6i/open-oscar-server
@@ -1033,6 +1036,7 @@ sampotts/plyr
 sandeco/reversa
 sashabaranov/go-openai
 scikit-image/scikit-image
+scosman/Biscotti
 scratchfoundation/scratch-gui
 sczhou/CodeFormer
 seakee/CPA-Manager-Plus
@@ -1042,6 +1046,7 @@ sergree/matchering
 seriousm4x/UpSnap
 sgl-project/sglang-omni
 shadowcz007/comfyui-mixlab-nodes
+shaobeichen/dsh-pocket
 shaun8149/sdf-js
 shirou/gopsutil
 shobrook/wut
