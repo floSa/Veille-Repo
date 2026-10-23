@@ -17,7 +17,7 @@ mesuré (voir [couts.md](couts.md)).
 | Dépôts au catalogue | **4 385** |
 | README stockés hors ligne | **4 326** |
 | Schémas d'architecture (GitDiagram) | **3 659** |
-| Synthèses rédigées | **3 621** |
+| Synthèses rédigées | **3 623** |
 
 ---
 
