@@ -1,0 +1,1 @@
+window.__RECU={"k": "TheBeastLT/torrentio-scraper", "g": "readmes", "t": "# Torrentio\n\n- [torrentio-addon](addon) - the Stremio addon which will query scraped entries and return Stremio stream results.\n"};

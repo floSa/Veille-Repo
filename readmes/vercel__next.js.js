@@ -1,0 +1,1 @@
+window.__RECU={"k": "vercel/next.js", "g": "readmes", "t": "packages/next/README.md"};

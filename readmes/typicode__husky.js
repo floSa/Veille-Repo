@@ -1,0 +1,1 @@
+window.__RECU={"k": "typicode/husky", "g": "readmes", "t": "https://typicode.github.io/husky\n"};

@@ -1,0 +1,1 @@
+window.__RECU={"k": "digital-asset/daml", "g": "readmes", "t": "\nSee full README at [sdk/README.md](sdk/README.md)\n"};

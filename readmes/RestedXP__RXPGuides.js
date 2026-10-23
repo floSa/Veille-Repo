@@ -1,0 +1,1 @@
+window.__RECU={"k": "RestedXP/RXPGuides", "g": "readmes", "t": "# RestedXP Guides\n\n## Overview\n\nThis is a platform to write in-game leveling guides for WoW Classic\n\n## Writing your own guides\n\nIf you wish to create your own guides using this platform you can check out this article:\nhttps://www.restedxp.com/create-your-own-restedxp-guide/\n\n"};

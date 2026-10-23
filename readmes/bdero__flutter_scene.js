@@ -1,0 +1,1 @@
+window.__RECU={"k": "bdero/flutter_scene", "g": "readmes", "t": "packages/flutter_scene/README.md"};

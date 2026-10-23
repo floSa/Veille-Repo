@@ -1,0 +1,1 @@
+window.__RECU={"k": "LazyVim/starter", "g": "readmes", "t": "# 💤 LazyVim\n\nA starter template for [LazyVim](https://github.com/LazyVim/LazyVim).\nRefer to the [documentation](https://lazyvim.github.io/installation) to get started.\n"};
