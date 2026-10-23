@@ -1251,3 +1251,5 @@ scosman/Biscotti	ok
 shaobeichen/dsh-pocket	refus
 missuo/kumone	ok
 lycorp-jp/sim-use	refus
+0xNyk/council-of-high-intelligence	ok
+1jehuang/jcode	ok

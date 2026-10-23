@@ -12,18 +12,18 @@
 [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-hébergement-222222?logo=githubpages&logoColor=white)](https://pages.github.com/)
 [![Licence](https://img.shields.io/badge/licence-MIT-blue)](LICENSE)
 
-Période couverte : **2024-09-01 → 2026-10-22**.
+Période couverte : **2024-09-01 → 2026-10-23**.
 
 | Pertinence | Dépôts | README hors ligne | Schémas d'architecture | Synthèses |
 |---|---|---|---|---|
-| cœur métier | 2 244 | 2 232 | 2 196 | 2 184 |
-| périphérie | 991 | 982 | 968 | 949 |
-| hors périmètre | 775 | 760 | 329 | 327 |
-| à trier | 375 | 352 | 166 | 163 |
-| **total** | **4 385** | **4 326** | **3 659** | **3 623** |
+| cœur métier | 3 276 | 3 255 | 2 349 | 2 335 |
+| périphérie | 1 538 | 1 518 | 853 | 836 |
+| hors périmètre | 1 154 | 1 135 | 285 | 283 |
+| à trier | 727 | 679 | 172 | 169 |
+| **total** | **6 695** | **6 587** | **3 659** | **3 623** |
 
 Une synthèse s'écrit à partir du README **et** du schéma : c'est le schéma qui fixe le rythme.
-Les écarts restants tiennent à trois causes — **59 dépôts** n'ont pas de README (supprimés,
+Les écarts restants tiennent à trois causes — **108 dépôts** n'ont pas de README (supprimés,
 bloqués par GitHub, ou sans fichier README), les schémas manquants sont générés au rythme du
 quota gratuit de GitDiagram, et **23 outils offensifs** n'ont pas de synthèse, leur rédaction
 étant refusée par le filtre de sécurité du modèle.
@@ -167,7 +167,9 @@ jointes, et tout ce qui est personnel (voir [SECURITY.md](documentation/SECURITY
 
 | Composant | Rôle | Licence |
 |---|---|---|
-| [bonfy/github-trending](https://github.com/bonfy/github-trending) | Archive quotidienne du trending, source du catalogue | MIT |
+| [bonfy/github-trending](https://github.com/bonfy/github-trending) | Archive quotidienne du trending (Python, JavaScript, Go, Swift), depuis 2024-09 | MIT |
+| [antonkomarev/github-trending-archive](https://github.com/antonkomarev/github-trending-archive) | Archive du trending tous langages, rattrapage 2026 (repos restés 10 jours et +) | MIT |
+| [github.com/trending](https://github.com/trending) | Page « any language », lue chaque jour (jour, semaine, mois) | conditions d'utilisation de GitHub |
 | API GitHub | Métadonnées des dépôts | conditions d'utilisation de GitHub |
 | [GitDiagram](https://github.com/ahmedkhaleel2004/gitdiagram) | Schémas d'architecture tirés du code | MIT |
 | [Mermaid](https://github.com/mermaid-js/mermaid) | Rendu des schémas dans la page | MIT |

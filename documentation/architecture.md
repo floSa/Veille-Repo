@@ -13,9 +13,9 @@ mesuré (voir [couts.md](couts.md)).
 
 | Chiffre | Valeur |
 |---|---|
-| Période couverte | **2024-09-01 → 2026-10-22** |
-| Dépôts au catalogue | **4 385** |
-| README stockés hors ligne | **4 326** |
+| Période couverte | **2024-09-01 → 2026-10-23** |
+| Dépôts au catalogue | **6 695** |
+| README stockés hors ligne | **6 587** |
 | Schémas d'architecture (GitDiagram) | **3 659** |
 | Synthèses rédigées | **3 623** |
 
@@ -61,7 +61,7 @@ Trois scripts d'orchestration les enchaînent : `mettre-a-jour.sh`, `integrer.sh
 ```mermaid
 flowchart TD
   subgraph Sources
-    arch[(Archive de trending<br/>bonfy/github-trending)]
+    arch[(Trending GitHub<br/>bonfy · antonkomarev · page du jour)]
     api[API GitHub]
     gd[GitDiagram]
   end
@@ -162,8 +162,9 @@ commit remplacé à chaque publication.
 - **Couverture partielle** : seules les synthèses du périmètre retenu sont écrites (voir
   [fiches.md](fiches.md#1-périmètre)). Les autres dépôts ont README, description et parfois
   schéma, mais pas de synthèse.
-- **Archive limitée à quatre langages** : l'archive de trending ne couvre que Python,
-  JavaScript, Go et Swift. Un dépôt Rust ou C++ n'y entre que par d'autres chemins.
+- **Tous langages depuis 2026 seulement** : avant 2026, seule l'archive bonfy (Python,
+  JavaScript, Go, Swift) est lue. En 2026, l'archive tous langages n'apporte que les dépôts
+  restés au moins 10 jours au trending.
 - **Dépôts disparus** : **37** dépôts ont été supprimés ou bloqués par GitHub depuis leur
   passage en trending. Ils restent au catalogue avec les données collectées à l'époque.
 - **Outils offensifs** : la rédaction de certaines fiches est refusée par le filtre de
