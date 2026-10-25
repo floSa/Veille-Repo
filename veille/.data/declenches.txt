@@ -1549,3 +1549,13 @@ Bittu5134/LOTM-Reader	refus
 ChrisMack32/Locus	ok
 Christ9038/Ydisks-Xianyu-Helper	ok
 Crosstalk-Solutions/project-nomad	ok
+DanielLavrushin/b4	refus
+Davidona/StreamVault-IPTV	ok
+DevLARLEY/WidevineProxy2	ok
+Dimillian/CodexSkillManager	ok
+Done-0/fuck-u-code	refus
+Emanuele-web04/remodex	ok
+Flowseal/tg-ws-proxy	ok
+Friedrich-M/UniMate	refus
+FrizzleM/SideInstaller	ok
+GregTech-Odyssey/GregTech-Odyssey	ok
