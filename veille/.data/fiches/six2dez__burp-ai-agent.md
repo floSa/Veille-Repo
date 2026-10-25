@@ -5,7 +5,7 @@ source_readme_sha: f5853616e770e5af
 ecrite_le: 2026-10-25
 nature: extension
 deploiement: compilation
-prerequis: [Java 21, clé d'API, service tiers, Node]
+prerequis: [clé d'API, service tiers, Node]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: une personne
