@@ -1537,3 +1537,15 @@ varunsalian/debrify	ok
 zio/zio-blocks	refus
 AvaProtocol/EigenLayer-AVS	ok
 makecindy/cindy	ok
+1812z/HyperIsland	ok
+1Panel-dev/CordysCRM	ok
+1lck/Lithe-IDEA	ok
+6Kmfi6HP/EDtunnel	ok
+Alban1911/Rose	ok
+AndyHazz/bookshelf.koplugin	ok
+AumGupta/abyss-jellyfin	ok
+BarutSRB/Hiro	ok
+Bittu5134/LOTM-Reader	refus
+ChrisMack32/Locus	ok
+Christ9038/Ydisks-Xianyu-Helper	ok
+Crosstalk-Solutions/project-nomad	ok
