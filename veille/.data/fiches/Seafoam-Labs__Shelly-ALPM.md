@@ -5,7 +5,7 @@ source_readme_sha: 906606c2bf1da9dd
 ecrite_le: 2026-10-25
 nature: app
 deploiement: compilation
-prerequis: [Arch Linux]
+prerequis: [aucun]
 cout: gratuit
 maturite: utilisable
 gouvernance: communauté
