@@ -1708,3 +1708,6 @@ mikumifa/cppTickerBuy	ok
 minsang-alt/PasteClip	ok
 misaka10032w/Han1meViewer	ok
 monasticacademy/httptap	ok
+mudler/LocalRecall	ok
+muratcankoylan/Agent-Skills-for-Context-Engineering	ok
+muyoou/st-memory-enhancement	ok
