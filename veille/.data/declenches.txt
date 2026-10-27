@@ -1777,3 +1777,5 @@ usual2970/certimate	refus
 valkey-io/valkey-swift	ok
 verback2308/Opaline	refus
 versenilvis/IRIS	ok
+yaml/go-yaml	refus
+yuzono/anime-extensions	ok
