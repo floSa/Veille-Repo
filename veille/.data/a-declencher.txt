@@ -107,6 +107,7 @@ DefiLlama/DefiLlama-Adapters
 DeusData/codebase-memory-mcp
 DevLARLEY/WidevineProxy2
 DevilXD/TwitchDropsMiner
+Difegue/LANraragi
 DigitalPhonetics/IMS-Toucan
 Dimillian/CodexSkillManager
 Donchitos/Claude-Code-Game-Studios
@@ -134,6 +135,7 @@ Floorp-Projects/Floorp
 Flowseal/tg-ws-proxy
 FluidInference/FluidAudio
 Flux159/mcp-server-kubernetes
+FoggedLens/deflock
 Forceu/Gokapi
 FortAwesome/Font-Awesome
 Friedrich-M/UniMate
@@ -188,6 +190,7 @@ Jguer/yay
 JingMatrix/TEESimulator
 JiyaBatra/CODEVIBE-
 JohannesKaufmann/html-to-markdown
+JohnSnowLabs/spark-nlp
 JudgmentLabs/judgeval
 Junyi-99/ChatGPT-API-Scanner
 JustVugg/colibri
@@ -217,6 +220,7 @@ Light-Heart-Labs/DreamServer
 LimeSurvey/LimeSurvey
 Lingyan000/fluxdo
 Lissy93/networking-toolbox
+Logflare/logflare
 MG1937/ASC
 MacPaw/OpenAI
 MarSeventh/CloudFlare-ImgBed
@@ -232,6 +236,7 @@ Meeep1/EeveeSpotifyRevivedPublic
 MemoriLabs/Memori
 MengTo/Skills
 MercuryTechnologies/mercury-cli
+MetaCubeX/metacubexd
 MetaMask/eth-phishing-detect
 MightyMoud/sidekick
 MiniMax-AI/skills
@@ -269,6 +274,7 @@ Nanako0129/TokenBar
 Nanako0129/syrtis
 Neet-Nestor/Telegram-Media-Downloader
 NexaAI/nexa-sdk
+NickvanDyke/opencode.nvim
 NodeBB/NodeBB
 NomaDamas/CozyClay
 NomaDamas/k-skill
@@ -385,6 +391,7 @@ ThePrimeagen/99
 TheSmallHanCat/flow2api
 TideDra/zotero-arxiv-daily
 ToolJet/ToolJet
+TryGhost/Casper
 Ujhhgtg/WeKit
 Ullaakut/cameradar
 UnblockNeteaseMusic/server
@@ -432,6 +439,7 @@ Zeyi-Lin/HivisionIDPhotos
 ZimengXiong/winmux
 ZingerLittleBee/Heeler
 a5c-ai/babysitter
+aaddrick/claude-desktop-debian
 aandrew-me/ytDownloader
 abhigyanpatwari/GitNexus
 abhiz123/todoist-mcp-server
@@ -447,6 +455,7 @@ adobe/skills
 adongwanai/AgentGuide
 adrianhajdin/project_3D_developer_portfolio
 aframevr/aframe
+agentjido/jido
 agentjido/req_llm
 agentscope-ai/HiClaw
 agentscope-ai/ReMe
@@ -511,6 +520,10 @@ antirez/ds4
 antiwork/gumroad
 antvis/chart-visualization-skills
 anubhavxdev/Event-management-system-main
+apache/carbondata
+apache/couchdb
+apache/ozone
+apache/paimon
 apecloud/ApeRAG
 apify/agent-skills
 apinanaivot/IKEA-3D-Model-Download-Button
@@ -598,6 +611,7 @@ bryanthaboi/gen1recomp
 btcsuite/btcd
 bufbuild/protoc-gen-validate
 builtbybel/FluentCleaner
+butzist/ActivityLauncher
 bvaughn/react-virtualized
 bysiber/cleardisk
 bytebase/bytebase
@@ -702,6 +716,7 @@ deepseek-ai/Engram
 deepseek-ai/FlashMLA
 dendenxu/fast-gaussian-rasterization
 denizsafak/abogen
+dependabot/dependabot-core
 derailed/popeye
 develop202/migu_video
 devtron-labs/devtron
@@ -713,6 +728,7 @@ dinoki-ai/osaurus
 direnv/direnv
 disler/claude-code-hooks-mastery
 dmtrKovalenko/fff
+docker-mailserver/docker-mailserver
 docker/cli
 dominikh/go-tools
 donnemartin/data-science-ipython-notebooks
@@ -751,9 +767,11 @@ elastic/mcp-server-elasticsearch
 elementdavv/internet_archive_downloader
 elidickinson/pi-claude-bridge
 elie222/rakazo
+elixirs/faker
 elliottech/lighter-python
 embabel/embabel-agent
 emirpasic/gods
+endoflife-date/endoflife.date
 entireio/cli
 eoao/cloud-mail
 erha19/ping-island
@@ -800,6 +818,7 @@ fleetdm/fleet
 floatpane/matcha
 flutter/agent-plugins
 flutter/genui
+flutter/skills
 fluxerapp/flutter_client
 fluxerapp/fluxer
 flyteorg/flyte
@@ -833,6 +852,7 @@ gesellix/Bose-SoundTouch
 getarcaneapp/arcane
 getomni-ai/zerox
 getsentry/sentry
+getsentry/sentry-cocoa
 ggbond268/MacTools
 ggml-org/Llama-macOS
 ggml-org/LlamaBarn
@@ -891,6 +911,7 @@ grab/cursor-talk-to-figma-mcp
 gradio-app/fastrtc
 grapeot/devin.cursorrules
 greggh/claude-code.nvim
+groue/GRDB.swift
 groundwater/GhostVM
 gruntwork-io/terragrunt
 guofei9987/scikit-opt
@@ -924,6 +945,9 @@ hillelkingqt/GeminiDesk
 himself65/finance-skills
 hitesh-kumar123/Travel-Plans-
 hoaxisr/awg-manager
+home-assistant/addons
+home-assistant/core
+home-assistant/iOS
 home-assistant/supervisor
 home-sweet-gnome/dash-to-panel
 homebrewltd/ichigo
@@ -963,6 +987,7 @@ iflytek/skillhub
 igrigorik/videospeed
 ihmily/StreamCap
 iliyami/MacSai
+imaNNeo/fl_chart
 imbue-ai/mngr
 import-js/eslint-plugin-import
 imsyy/yt-dlp-gui
@@ -1037,6 +1062,7 @@ kdlbs/kandev
 keleus/BewlyCat
 kenn-io/roborev
 kenwheeler/slick
+kepano/obsidian-minimal
 kercre123/wire-pod
 kernalix7/winpodx
 kernel/kernel-images
@@ -1084,6 +1110,7 @@ kzaremski/apple-notes-exporter
 labmlai/annotated_deep_learning_paper_implementations
 lackeyjb/playwright-skill
 ladaapp/lada
+lakehq/sail
 langbot-app/LangBot
 langchain-ai/langgraph-swarm-py
 langgenius/dify-official-plugins
@@ -1200,6 +1227,7 @@ microsoft/Foundry-Local
 microsoft/MoGe
 microsoft/RAMPART
 microsoft/RD-Agent
+microsoft/SynapseML
 microsoft/TypeScript
 microsoft/ZoomitForMac
 microsoft/agent-academy
@@ -1227,6 +1255,7 @@ mikker/LeaderKey.app
 mikumifa/cppTickerBuy
 milanvarady/Applite
 milvus-io/milvus
+mindsdb/mindshub
 minsang-alt/PasteClip
 miroslavpejic85/mirotalk
 misaka10032w/Han1meViewer
@@ -1265,6 +1294,7 @@ motdotla/dotenv
 mother-of-all-self-hosting/mash-playbook
 mozilla-ai/any-llm
 mozilla-firefox/firefox
+mpv-android/mpv-android
 mrrfv/cloudflare-gateway-pihole-scripts
 msitarzewski/agency-agents
 mudler/LocalAGI
@@ -1277,6 +1307,7 @@ muyoou/st-memory-enhancement
 mvanhorn/cli-printing-press
 mvanhorn/printing-press-library
 myshell-ai/OpenVoice
+mysticaltech/terraform-hcloud-kube-hetzner
 n00bcodr/Jellyfin-Enhanced
 nadimtuhin/claude-token-optimizer
 nageoffer/ragent
@@ -1316,6 +1347,7 @@ obra/superpowers
 obsidian-nvim/obsidian.nvim
 octelium/octelium
 odoo/odoo
+okd-project/okd
 ollm/OpenComic
 omnimind-ai/OmniBot
 omriharel/deej
@@ -1346,6 +1378,7 @@ openinterpreter/openinterpreter
 openshift/origin
 openspeedtest/Speed-Test
 opentofu/registry
+openutau/OpenUtau
 openwrt-xiaomi/xmir-patcher
 openwrt/luci
 ophub/fnnas
@@ -1499,6 +1532,7 @@ sdegenaar/liquid_glass_widgets
 seakee/CPA-Manager-Plus
 sebattfg/ZeroScript-Free
 securego/gosec
+semantic-release/semantic-release
 sentient-agi/ROMA
 sergree/matchering
 seriousm4x/UpSnap
@@ -1579,6 +1613,7 @@ substratusai/kubeai
 subtrace/subtrace
 sudo-tee/opencode.nvim
 supabase/supabase-swift
+supabase/supavisor
 superdesigndev/superdesign-skill
 superdurable/dex
 superlinked/sie
@@ -1645,6 +1680,7 @@ trailofbits/buttercup
 trailofbits/publications
 trailofbits/skills
 tranvuongquocdat/SideScreen
+tranxuanthang/lrcget
 trey-a-12/LaunchBack
 tristenlammi/Arrmada
 trueadm/ripple
@@ -1658,6 +1694,7 @@ uber/kraken
 umlx5h/LLPlayer
 umputun/agterm
 unilabsim/UniLab
+unoplatform/uno
 up-for-grabs/up-for-grabs.net
 usual2970/certimate
 utkarshdalal/GameNative
