@@ -51,5 +51,5 @@ Pas un toolkit complet : ni fenêtre, ni entrées, ni rendu.
 Aucune alternative nommée dans le README (des portages Go et des liaisons Odin/Rust sont cités).
 
 ## Pour toi
-Hors sujet pour la data/IA : à ignorer.
+Hors sujet pour la data/IA : c'est une bibliothèque C de calcul de mise en page d'interfaces, utile seulement pour du développement d'interface bas niveau. À ignorer pour ton métier.
 

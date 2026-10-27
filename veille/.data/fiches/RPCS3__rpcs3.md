@@ -18,7 +18,7 @@ verdict: ignorer
 > Émulateur et débogueur PlayStation 3 open source en C++ pour Windows, Linux, macOS et FreeBSD.
 
 ## Le problème
-Faire tourner des jeux PS3 sur PC.
+Faire tourner sur PC des jeux de la PlayStation 3 : RPCS3 est un émulateur et débogueur open source, sans rapport avec la data ou l'IA.
 
 ## Ce que ça fait vraiment
 Exécute le code invité PPU/SPU (traducteurs JIT), fournit les services système LV2 et les modules Cell, mémoire invitée, systèmes de fichiers, entrées, audio, réseau, trophées. Rendu RSX traduit vers OpenGL ou Vulkan, débogueur GDB. Le README est court et renvoie au site, au wiki et au guide de démarrage rapide.
