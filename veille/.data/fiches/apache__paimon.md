@@ -24,7 +24,14 @@ Les formats de lac classiques gèrent mal les mises à jour continues issues du 
 Format de table pour architecture « lakehouse » temps réel, unifiant flux et lot, qui applique une structure LSM. Anciennement Flink Table Store ; son architecture s'inspire d'Iceberg. Le README n'en dit pas plus : tout le détail est sur le site du projet.
 
 ## Comment c'est branché
-Non documenté : aucun diagramme fourni et le README ne décrit pas les composants.
+Schéma simplifié d'après le README, sans diagramme fourni.
+
+```mermaid
+graph LR
+  A["Flux temps réel"] --> C["Table Paimon (structure LSM)"]
+  B["Lot"] --> C
+  C --> D["Moteurs de requête"]
+```
 
 ## Essayer
 ```bash
