@@ -20,9 +20,6 @@ verdict: surveiller
 ## Le problème
 Stocker des milliards de fichiers et de blocs de façon cohérente, au-delà des limites des systèmes de fichiers distribués classiques.
 
-## Ce que ce n'est pas
-Voir plus bas.
-
 ## Ce que ça fait vraiment
 Expose S3 et le système de fichiers Hadoop. Ozone Manager gère les métadonnées, le Storage Container Manager gère conteneurs et pipelines, les datanodes stockent les blocs avec réplication ou erasure coding. Cohérence par Raft, sécurité Kerberos, ACL, Ranger, chiffrement TDE et sur le réseau. Fonctionne sur Kubernetes et YARN.
 

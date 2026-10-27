@@ -24,7 +24,14 @@ Automatiser des réponses et la gestion de groupes WhatsApp sans écrire de bot.
 Bot Node.js reposant sur l'API WhatsApp Web ; il faut un identifiant de session obtenu via un outil séparé, puis des variables `SESSION`, `YOUR_NUMBER`, `YOUR_LID`. Le README liste Heroku, Render, Koyeb, Railway, Bot-Hosting, Optiklink et Termux. Le README parle de FLASH-MD-V3 alors que le dépôt s'appelle V2.
 
 ## Comment c'est branché
-Pas de schéma fourni ni d'architecture décrite : non documenté.
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+
+```mermaid
+graph LR
+  A["Bot Node.js"] --> B["API WhatsApp Web"]
+  A --> C["Variables SESSION et YOUR_NUMBER"]
+  A --> D["Hébergeur (Heroku, Render, Koyeb…)"]
+```
 
 ## Essayer
 ```bash

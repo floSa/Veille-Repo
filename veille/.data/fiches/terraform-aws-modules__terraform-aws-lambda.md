@@ -5,7 +5,7 @@ source_readme_sha: c1e3a8e533fdfe4d
 ecrite_le: 2026-10-27
 nature: bibliothèque
 deploiement: autre
-prerequis: [Terraform ≥ 1.5.7, version de Python, compte à créer]
+prerequis: [version de Python, compte à créer]
 cout: payant
 maturite: éprouvé
 gouvernance: une personne

@@ -24,7 +24,14 @@ verdict: ignorer
 Client Swift pour Ampache/Subsonic : multi-comptes, hors ligne, CarPlay, lecture sans blanc, musique/podcasts/radio, Siri et App Intents, égaliseur, replay gain, minuterie de sommeil, notation, scrobbling. Compilation avec Xcode 26 et Swift 6. CarPlay et Siri exigent un certificat développeur avec droits dédiés pour tester sur appareil réel.
 
 ## Comment c'est branché
-Pas de schéma fourni ni d'architecture décrite : non documenté.
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+
+```mermaid
+graph LR
+  A["Application iOS Amperfy"] --> B["Serveur Ampache ou Subsonic"]
+  A --> C["CarPlay et Siri"]
+  A --> D["Cache hors ligne"]
+```
 
 ## Essayer
 ```bash

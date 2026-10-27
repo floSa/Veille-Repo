@@ -5,7 +5,7 @@ source_readme_sha: 96972aa4a2cff94c
 ecrite_le: 2026-10-27
 nature: app
 deploiement: docker
-prerequis: [Python ≥ 3.12, Node, Docker, service tiers]
+prerequis: [version de Python, Node, Docker, service tiers]
 cout: gratuit
 maturite: utilisable
 gouvernance: communauté

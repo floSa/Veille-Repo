@@ -5,7 +5,7 @@ source_readme_sha: 441c31046b2e56fd
 ecrite_le: 2026-10-27
 nature: bibliothèque
 deploiement: autre
-prerequis: [Terraform 1.3+, compte à créer, service tiers]
+prerequis: [compte à créer, service tiers]
 cout: gratuit
 maturite: éprouvé
 gouvernance: communauté

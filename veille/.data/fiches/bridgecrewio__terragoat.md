@@ -5,7 +5,7 @@ source_readme_sha: de6f87a64f93f53b
 ecrite_le: 2026-10-27
 nature: outil
 deploiement: autre
-prerequis: [Terraform 0.12 (version), service tiers, compte à créer]
+prerequis: [service tiers, compte à créer]
 cout: payant
 maturite: utilisable
 gouvernance: entreprise

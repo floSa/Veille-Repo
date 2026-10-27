@@ -24,7 +24,14 @@ Les clients AIM et ICQ d'époque n'ont plus de serveur officiel.
 Implémente le protocole OSCAR : messagerie, listes d'amis, salons, profils, messages d'absence, icônes, recherche d'annuaire, transfert de fichiers, clients TOC1/TOC2 et ICQ. Une API de gestion (OpenAPI) sur le port 8080 permet de créer des utilisateurs, changer les mots de passe, lister sessions et salons. Non affilié à AOL ni Yahoo.
 
 ## Comment c'est branché
-Pas de schéma fourni ni d'architecture décrite : non documenté.
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+
+```mermaid
+graph LR
+  A["Clients OSCAR, TOC et ICQ"] --> B["Retro AIM Server"]
+  B --> C["Messagerie, salons, annuaire"]
+  E["API de gestion OpenAPI (port 8080)"] --> B
+```
 
 ## Essayer
 ```bash
