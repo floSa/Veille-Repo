@@ -24,7 +24,14 @@ Les fichiers musicaux locaux n'ont pas de paroles synchronisées pour l'affichag
 Parcourt un dossier de musique, interroge le service LRCLIB et enregistre des fichiers `.lrc` du même nom à côté des morceaux. Application Tauri (Rust et JavaScript) pour Windows, Linux et macOS, c'est le client officiel de LRCLIB.
 
 ## Comment c'est branché
-Non documenté : aucun diagramme fourni, le README décrit le téléchargement et la compilation seulement.
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+
+```mermaid
+graph LR
+  A["Dossier de musique"] --> B["Application Tauri"]
+  B --> C["Service LRCLIB"]
+  C --> D["Fichiers .lrc à côté des morceaux"]
+```
 
 ## Essayer
 ```bash

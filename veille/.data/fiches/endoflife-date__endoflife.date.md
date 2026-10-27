@@ -24,7 +24,15 @@ Ces dates sont difficiles à trouver ou mal présentées, ce qui fait manquer le
 Rassemble les dates de fin de support par produit, avec des URL faciles à deviner. Une API (en bêta, changements incompatibles possibles) permet de l'intégrer aux plateformes de CI. Le site est statique, construit avec Jekyll.
 
 ## Comment c'est branché
-Non documenté : le README liste seulement les composants (GitHub, Jekyll, Netlify, Swagger UI).
+Schéma simplifié d'après le README, sans diagramme fourni.
+
+```mermaid
+graph LR
+  A["Données par produit"] --> B["Site statique Jekyll"]
+  B --> C["Pages et URL par produit"]
+  B --> D["API bêta (Swagger UI)"]
+  D --> E["Plateformes de CI"]
+```
 
 ## Essayer
 ```bash
