@@ -46,5 +46,5 @@ Pas un orchestrateur général de conteneurs : il est conçu pour les serveurs d
 Aucune alternative nommée dans le README.
 
 ## Pour toi
-Ignorer : hors périmètre data/IA/MLOps.
+Ignorer : panneau d'administration de serveurs de jeux, hors périmètre data, IA et MLOps. Sans intérêt pour ton métier.
 

@@ -49,7 +49,7 @@ Gratuit. Un adaptateur par langage (ex. debugpy) est à installer et configurer 
 Pas un débogueur autonome ni une interface façon IDE : l'UI complète vient d'extensions (nvim-dap-ui). Pas de support Vim.
 
 ## Alternatives
-vimspector (cité pour Vim).
+vimspector (cité pour Vim) : même rôle, côté Vim. Le README ne compare pas d'autres alternatives pour Neovim.
 
 ## Pour toi
 À surveiller si tu codes en Python sous Neovim et veux déboguer scripts et pipelines ; sans intérêt autrement.

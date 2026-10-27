@@ -48,7 +48,7 @@ Gratuit. Choisir la V1 stable ; la V2 casse la compatibilité.
 Pas un assistant IA : uniquement de la complétion de code.
 
 ## Alternatives
-nvim-cmp est cité en comparaison.
+nvim-cmp est cité en comparaison : c'est l'autre plugin de complétion de référence pour Neovim, que blink.cmp vise à remplacer en plus rapide.
 
 ## Pour toi
 À ignorer sauf si tu es sous Neovim : confort d'édition, rien de spécifique à data/IA.
