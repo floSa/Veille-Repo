@@ -39,7 +39,7 @@ Le README fournit des binaires Windows, macOS et Linux sur la page des releases 
 Gratuit. 8 098 issues ouvertes. Linux : AppImage ou Flathub.
 
 ## Ce que ce n'est pas
-Pas un outil de modélisation 3D.
+Pas un outil de modélisation 3D : c'est un logiciel de tranchage pour imprimantes 3D, qui prépare des modèles existants sans les créer.
 
 ## Alternatives
 Aucune alternative citée dans le README (PrusaSlicer mentionné comme base).

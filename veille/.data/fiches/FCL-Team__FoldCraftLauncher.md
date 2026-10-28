@@ -40,7 +40,7 @@ Aucune commande : le README décrit les fonctions et les dépendances, sans proc
 Gratuit. Dépendances sous licences variées (dont AGPL, LGPL ; LWJGLX à licence inconnue). README en chinois, anglais et russe.
 
 ## Ce que ce n'est pas
-Pas un lanceur pour PC.
+Pas un lanceur pour PC : c'est un lanceur Minecraft Java pour Android, sans lien avec la data ou l'IA.
 
 ## Alternatives
 - HMCL : source du cœur fonctionnel.

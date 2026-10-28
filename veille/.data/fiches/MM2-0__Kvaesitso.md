@@ -40,7 +40,7 @@ Aucune commande : installation via F-Droid (dépôt `https://fdroid.mm20.de/repo
 Gratuit. La version F-Droid officielle retire les fonctions dépendant d'API non libres.
 
 ## Ce que ce n'est pas
-Pas un outil de productivité de bureau.
+Pas un outil de productivité de bureau : c'est un lanceur d'écran d'accueil Android, qui ne sert pas à un travail de data ou d'IA.
 
 ## Alternatives
 Aucune alternative citée dans le README.
