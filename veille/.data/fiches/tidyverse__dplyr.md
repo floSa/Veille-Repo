@@ -1,0 +1,55 @@
+---
+schema: 1
+depot: tidyverse/dplyr
+source_readme_sha: a747b449909b01f4
+ecrite_le: 2026-10-28
+nature: bibliothèque
+deploiement: autre
+prerequis: [aucun]
+cout: gratuit
+maturite: éprouvé
+gouvernance: entreprise
+alertes: [licence à vérifier]
+verdict: surveiller
+---
+
+# tidyverse/dplyr
+
+> Grammaire de manipulation de données en R, avec verbes cohérents, pour data scientists.
+
+## Le problème
+Transformer des tables en R demande une syntaxe uniforme et lisible.
+
+## Ce que ça fait vraiment
+Cinq verbes : `mutate`, `select`, `filter`, `summarise`, `arrange`, combinables avec `group_by`, plus des verbes à deux tables. Les mêmes verbes tournent sur d'autres moteurs : arrow, dbplyr (SQL), dtplyr (data.table), duckplyr (DuckDB), sparklyr (Spark).
+
+## Comment c'est branché
+```mermaid
+flowchart LR
+  A["Data frame ou tibble"] --> B["Core Verbs Engine"]
+  B --> C["dbplyr"]
+  B --> D["dtplyr"]
+  B --> E["duckplyr"]
+  B --> F["sparklyr"]
+```
+
+## Essayer
+```r
+install.packages("tidyverse")
+install.packages("dplyr")
+pak::pak("tidyverse/dplyr")
+```
+
+## Coût et pièges
+Gratuit. Licence présente mais non identifiée par GitHub. Dernier push le 2026-06-02.
+
+## Ce que ce n'est pas
+Pas du Python : pour pandas ou Polars, ce n'est pas la même bibliothèque.
+
+## Alternatives
+- duckplyr : pour de grands jeux de données en mémoire via DuckDB.
+- sparklyr : pour de très gros volumes sur Spark.
+
+## Pour toi
+À surveiller : référence si tu fais du R ; sinon ton écosystème Python ne t'en demande pas.
+
