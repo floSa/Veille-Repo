@@ -25,7 +25,7 @@ Période couverte : **2024-09-01 → 2026-10-27**.
 Une synthèse s'écrit à partir du README **et** du schéma : c'est le schéma qui fixe le rythme.
 Les écarts restants tiennent à trois causes — **107 dépôts** n'ont pas de README (supprimés,
 bloqués par GitHub, ou sans fichier README), les schémas manquants sont générés au rythme du
-quota gratuit de GitDiagram, et **28 outils offensifs** n'ont pas de synthèse, leur rédaction
+quota gratuit de GitDiagram, et **32 outils offensifs** n'ont pas de synthèse, leur rédaction
 étant refusée par le filtre de sécurité du modèle.
 
 ## Sommaire
