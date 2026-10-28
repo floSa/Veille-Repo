@@ -26,3 +26,7 @@ D3Ext/Hooka
 tr4m0ryp/tr4mpass
 techchipnet/CamPhish
 ultrasecurity/Storm-Breaker
+cifertech/ESP32-DIV
+Virtual-Browser/VirtualBrowser
+assafdori/bypass-mdm
+QuiteAFancyEmerald/Holy-Unblocker
