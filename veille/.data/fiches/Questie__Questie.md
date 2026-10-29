@@ -37,7 +37,7 @@ lua cli/validate-loader-usage.lua
 Gratuit ; exige le jeu. Développement : Lua 5.1, luarocks, busted, luacheck.
 
 ## Ce que ce n'est pas
-Pas un outil hors du jeu.
+Pas un outil de productivité ni de data : c'est une extension du jeu World of Warcraft Classic, sans intérêt pour ton métier.
 
 ## Alternatives
 Aucune alternative nommée dans le README.

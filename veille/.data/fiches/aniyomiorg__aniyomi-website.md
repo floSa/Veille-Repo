@@ -40,7 +40,7 @@ Non documenté. Licence MPL-2.0.
 Pas l'application elle-même, seulement son site.
 
 ## Alternatives
-Mihon (cité comme base du projet).
+Aucune alternative n'est citée dans le README, qui est très court. Le projet lui-même (lecteur et visionneuse pour Android, basé sur Mihon) est le sujet du site, pas un concurrent.
 
 ## Pour toi
 À ignorer : un site vitrine pour une appli de divertissement Android, sans valeur pour data/IA/MLOps.

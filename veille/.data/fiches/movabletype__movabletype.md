@@ -24,7 +24,14 @@ Publier et gérer des blogs et sites web avec un CMS auto-hébergé.
 Application Perl (5.16.3+) exécutée en CGI sur nginx, Apache ou IIS avec une base comme MySQL. Installation par envoi de fichiers dans un dossier `mt`, assistant de configuration dans le navigateur ; mise à jour par écrasement après sauvegarde. Le README ne décrit que l'installation.
 
 ## Comment c'est branché
-Matière insuffisante pour un schéma fidèle : aucune architecture fournie.
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+
+```mermaid
+graph LR
+  A["Navigateur"] --> B["Serveur web (nginx, Apache, IIS)"]
+  B --> C["Application Perl en CGI"]
+  C --> D["Base de données (MySQL…)"]
+```
 
 ## Essayer
 Aucune commande documentée : envoyer les fichiers sur le serveur, activer l'exécution CGI et ouvrir `/mt/`.

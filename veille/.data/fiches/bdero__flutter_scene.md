@@ -24,7 +24,12 @@ Non documenté dans le matériau fourni.
 Le README reçu ne contient que la mention `packages/flutter_scene/README.md` : aucune description. Le nom indique un paquet Flutter pour des scènes, mais ce n'est pas vérifié.
 
 ## Comment c'est branché
-Matière insuffisante pour un schéma : ni README ni architecture fournis.
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+
+```mermaid
+graph LR
+  A["Paquet Flutter flutter_scene"] --> B["Scènes (non vérifié, README vide)"]
+```
 
 ## Essayer
 Aucune commande documentée.

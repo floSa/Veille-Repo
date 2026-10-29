@@ -21,7 +21,7 @@ verdict: ignorer
 Inspecter transactions et contrats sur un réseau privé ou un L2 sans dépendre d'un explorateur fermé comme Etherscan.
 
 ## Ce que ce n'est pas
-Pas un portefeuille ni un nœud.
+Pas un portefeuille ni un nœud : c'est un explorateur de blockchain qui lit les données d'un nœud existant.
 
 ## Ce que ça fait vraiment
 Permet de chercher transactions, comptes et soldes, de vérifier et d'interagir avec des contrats, et de consulter les applications sur la chaîne. Cible Ethereum Mainnet, Classic, Optimism, Gnosis et leurs forks. Les détails d'architecture ne sont pas documentés dans ce README.

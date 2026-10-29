@@ -18,7 +18,7 @@ verdict: ignorer
 > IDE qui permet de développer des applications Android Gradle directement sur un appareil Android.
 
 ## Le problème
-Développer une app Android sans PC.
+Développer une application Android directement sur un téléphone ou une tablette, sans PC : édition, compilation Gradle et gestion du projet sur l'appareil lui-même.
 
 ## Ce que ça fait vraiment
 Édition et build Gradle sur l'appareil, JDK 11 et 17, terminal avec paquets, SDK Manager (par le terminal), lecteur de logs, Git, serveurs de langage Java et XML, éditeur visuel de layouts. Projets AGP 7.2.0 minimum ; pas de NDK officiel. Le README déclare le projet **non maintenu**.

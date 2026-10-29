@@ -24,7 +24,15 @@ Analyser des millions de cellules ATAC-seq avec des ressources limitées.
 Traitement et analyse complets de scATAC-seq, analyse couplée avec scRNA-seq, trajectoires par monocle3 et Slingshot, export d'une matrice de pics pour STREAM. Le README annonce 1 million de cellules en 8 heures sur un portable. Environnements `renv` (R 4.1 et 4.4) ou images Docker avec RStudio.
 
 ## Comment c'est branché
-Matière insuffisante pour un schéma fidèle : aucune architecture fournie ; le README liste fonctions et modes d'installation.
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+
+```mermaid
+graph LR
+  A["Données scATAC-seq"] --> B["ArchR (R, cœur C++)"]
+  B --> C["Analyse couplée scRNA-seq"]
+  B --> D["Trajectoires monocle3 et Slingshot"]
+  B --> E["Matrice de pics pour STREAM"]
+```
 
 ## Essayer
 ```r

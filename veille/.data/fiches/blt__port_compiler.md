@@ -43,7 +43,7 @@ Avec `{plugins, [pc]}.` dans `rebar.config`.
 Chaîne C/C++ requise. Pas un remplacement strict en ligne de commande. Il faut utiliser la syntaxe `${}`.
 
 ## Ce que ce n'est pas
-Pas un outil généraliste de build C.
+Pas un remplacement strict du port compiler de rebar2 en ligne de commande : il faut adapter la syntaxe (`${}`). Pas un compilateur C/C++ : il appelle la chaîne C/C++ installée.
 
 ## Alternatives
 Aucune alternative nommée dans le README.

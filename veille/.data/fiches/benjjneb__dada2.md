@@ -38,7 +38,7 @@ flowchart LR
 Aucune commande complète dans le README (le bloc d'installation est tronqué) : installation par Bioconductor, tutoriel sur le site.
 
 ## Coût et pièges
-Gratuit, LGPL-3.0. 227 issues ouvertes.
+Gratuit, licence LGPL-3.0. 227 issues ouvertes. Prévoir R et Bioconductor, et des données de séquençage (amplicons Illumina) ; le calcul demande de la mémoire sur de gros jeux de données.
 
 ## Ce que ce n'est pas
 Pas un outil de séquençage ; il traite des lectures brutes déjà produites.

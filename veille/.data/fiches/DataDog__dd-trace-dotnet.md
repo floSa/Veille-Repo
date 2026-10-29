@@ -33,7 +33,7 @@ Aucune commande documentée dans le README : voir les documents de configuration
 Le client est libre mais utile surtout avec un compte Datadog payant. 353 issues ouvertes.
 
 ## Ce que ce n'est pas
-Pas un outil autonome d'observabilité.
+Pas un outil de supervision complet à lui seul : il produit des traces et des profils envoyés à Datadog. Pas destiné à d'autres langages que .NET.
 
 ## Alternatives
 Aucune alternative nommée dans le README.

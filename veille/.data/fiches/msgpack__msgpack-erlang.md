@@ -43,7 +43,7 @@ Ham = msgpack:pack(Spam),
 Licence non déclarée dans les métadonnées. Dernier push en juin 2025.
 
 ## Ce que ce n'est pas
-Pas une couche RPC, seulement un codec.
+Pas un format de sérialisation lisible comme JSON : MessagePack est binaire et compact. Pas une bibliothèque pour d'autres langages qu'Erlang.
 
 ## Alternatives
 Aucune alternative nommée ; le README mentionne jiffy et jsx comme formats de map.

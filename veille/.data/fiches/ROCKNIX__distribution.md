@@ -24,7 +24,14 @@ Les consoles portables ont besoin d'un système tout prêt pour l'émulation, la
 Système Linux immuable avec jeu réseau local et distant, tactile, réglages batterie/performance, musique et vidéo, Bluetooth, sortie HDMI, synchronisation (Syncthing, rclone), VPN (Wireguard, Tailscale, ZeroTier), scraping et RetroAchievements. Logiciels originaux sous GPL v2 ; les composants intégrés gardent leur licence.
 
 ## Comment c'est branché
-Matière insuffisante pour un schéma fidèle : aucune architecture fournie ; le README ne décrit que les fonctions.
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+
+```mermaid
+graph LR
+  A["Système Linux immuable"] --> B["Jeu local et distant"]
+  A --> C["Synchronisation (Syncthing, rclone)"]
+  A --> D["VPN (Wireguard, Tailscale, ZeroTier)"]
+```
 
 ## Essayer
 Aucune commande documentée dans le README.

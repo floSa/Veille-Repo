@@ -24,7 +24,14 @@ Inspecter transactions, comptes et contrats d'une chaîne EVM sans dépendre d'u
 Interface web pour chercher des transactions, voir comptes et soldes, vérifier et interagir avec des contrats. Fonctionne avec Ethereum, Ethereum Classic, Optimism, Gnosis et des L2 ou sidechains privés. Installation par Ansible ou manuelle ; détails dans la documentation externe.
 
 ## Comment c'est branché
-Non documenté dans le README et aucun diagramme fourni.
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+
+```mermaid
+graph LR
+  A["Nœud Ethereum ou L2"] --> B["Blockscout"]
+  B --> C["Interface web"]
+  C --> D["Transactions, comptes, contrats"]
+```
 
 ## Essayer
 Aucune commande dans le README : renvoi à la documentation (Ansible, déploiement manuel, variables d'environnement).

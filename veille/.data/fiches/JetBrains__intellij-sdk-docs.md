@@ -24,7 +24,13 @@ Les développeurs de plugins pour les IDE JetBrains ont besoin d'une documentati
 Le dépôt héberge le site de documentation du SDK ; le README, très court, renvoie aux exemples de code (dépôt miroir) et aux canaux de retour d'erreurs. Rien d'autre n'est décrit.
 
 ## Comment c'est branché
-Matière insuffisante pour un schéma : le README ne décrit aucune architecture.
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+
+```mermaid
+graph LR
+  A["Documentation du SDK IntelliJ"] --> B["Site de documentation"]
+  A --> C["Exemples de code (dépôt miroir)"]
+```
 
 ## Essayer
 Aucune commande documentée : lire le site publié.

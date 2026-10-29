@@ -46,7 +46,7 @@ val retrofitClient = Retrofit.Builder()
 Compte Datadog requis ; facture selon ton offre.
 
 ## Ce que ce n'est pas
-Pas utilisable sans backend Datadog.
+Pas un outil autonome : il n'a de valeur qu'avec un compte Datadog qui reçoit les données. Pas un SDK pour d'autres plateformes que Android.
 
 ## Alternatives
 Aucune alternative nommée dans le README.
