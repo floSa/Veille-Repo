@@ -2070,3 +2070,14 @@ joshuacant/ProjectTitle	refus
 jquense/react-big-calendar	refus
 juliansteenbakker/mobile_scanner	ok
 kekingcn/kkFileView	refus
+ibhagwan/fzf-lua	refus
+jruby/jruby	refus
+kagisearch/kite-public	refus
+kilimchoi/engineering-blogs	refus
+kivra/restclient	refus
+klzgrad/naiveproxy	refus
+kmaasrud/awesome-obsidian	refus
+kmonad/kmonad	refus
+koalaman/shellcheck	refus
+koiverse/ArchiveTune	refus
+kubernetes/k8s.io	refus
