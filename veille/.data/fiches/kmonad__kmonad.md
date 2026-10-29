@@ -20,9 +20,6 @@ verdict: surveiller
 ## Le problème
 Les claviers sans firmware QMK n'ont ni couches ni tap-hold. Remapper Caps Lock ou mettre les modificateurs sur la rangée de repos est impossible nativement.
 
-## Ce que ce n'est pas
-voir plus bas
-
 ## Ce que ça fait vraiment
 Manipulation bas niveau des touches : couches illimitées, multi-tap, tap-hold (Caps Lock = Échap au tap, Ctrl maintenu), modificateurs combinés, et boutons de commande qui lancent des commandes shell. Se configure via un fichier ; le détail est renvoyé vers la documentation.
 
