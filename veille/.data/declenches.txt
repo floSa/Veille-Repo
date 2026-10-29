@@ -2084,3 +2084,4 @@ kubernetes/k8s.io	refus
 ledgersmb/LedgerSMB	refus
 lewis6991/gitsigns.nvim	refus
 liberationfonts/liberation-fonts	refus
+librespeed/speedtest	refus
