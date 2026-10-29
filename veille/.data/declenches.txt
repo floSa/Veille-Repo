@@ -2081,3 +2081,4 @@ kmonad/kmonad	refus
 koalaman/shellcheck	refus
 koiverse/ArchiveTune	refus
 kubernetes/k8s.io	refus
+ledgersmb/LedgerSMB	refus
