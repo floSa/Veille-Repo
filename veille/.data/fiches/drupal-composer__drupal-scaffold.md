@@ -41,7 +41,7 @@ composer drupal:scaffold
 Gratuit mais déprécié, dernier push 2020, sans licence déclarée.
 
 ## Ce que ce n'est pas
-Pas à utiliser pour un nouveau projet.
+Pas à utiliser pour un nouveau projet : le README est marqué « DEPRECATED - DO NOT USE ». Ce n'est pas non plus un outil de data ou d'IA, seulement un plugin Composer pour Drupal.
 
 ## Alternatives
 drupal/core-composer-scaffold, recommandé par le README.

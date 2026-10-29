@@ -38,7 +38,7 @@ Aucune commande documentée : utiliser la démo en ligne mentionnée.
 Gratuit. Licence non déclarée, dernier push avril 2022.
 
 ## Ce que ce n'est pas
-Pas un outil data/IA.
+Pas un outil data ni IA : c'est un éditeur web compilé avec emscripten, dont le README ne documente rien d'autre qu'une démo en ligne.
 
 ## Alternatives
 Aucune alternative nommée dans le README.
