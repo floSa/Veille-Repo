@@ -9,7 +9,7 @@ prerequis: [Docker, service tiers]
 cout: gratuit
 maturite: utilisable
 gouvernance: communauté
-alertes: []
+alertes: [dernier commit ancien]
 verdict: ignorer
 ---
 

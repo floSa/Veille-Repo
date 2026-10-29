@@ -9,7 +9,7 @@ prerequis: [Node]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [mainteneur unique, télémétrie]
+alertes: [dernier commit ancien, mainteneur unique, télémétrie]
 verdict: ignorer
 ---
 

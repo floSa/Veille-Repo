@@ -1,0 +1,51 @@
+---
+schema: 1
+depot: LiveContainer/LiveContainer
+source_readme_sha: fd23479a4a222944
+ecrite_le: 2026-10-29
+nature: app
+deploiement: autre
+prerequis: [compte à créer]
+cout: gratuit
+maturite: utilisable
+gouvernance: communauté
+alertes: [licence copyleft]
+verdict: ignorer
+---
+
+# LiveContainer/LiveContainer
+
+> Lanceur d'applications iOS qui exécute des apps dans une app hôte, pour utilisateurs d'iPhone sideloadant des IPA.
+
+## Le problème
+Un compte développeur gratuit limite le nombre d'apps (3 apps, 10 identifiants) installables par sideloading.
+
+## Ce que ça fait vraiment
+Une seule app et un seul identifiant servent d'hôte : on y installe autant d'IPA qu'on veut, avec plusieurs versions et conteneurs de données. Il modifie l'exécutable invité (segment `__PAGEZERO`, `MH_EXECUTE` en `MH_DYLIB`), redirige `@executable_path` et `NSBundle.mainBundle`, charge l'exécutable par `dlopen` et saute au point d'entrée. Avec JIT (avant iOS 26) la signature est contournée, sinon l'app est signée avec le certificat de LiveContainer. Multitâche en fenêtres virtuelles, Picture-in-Picture, tweaks, intégration SideStore.
+
+## Comment c'est branché
+```mermaid
+flowchart LR
+  U["Utilisateur"] --> UI["LiveContainerSwiftUI"]
+  UI --> M["LCAppModel.swift"]
+  UI --> L["Guest loader (main.c)"]
+  L --> P["Patch Mach-O (LCMachOUtils.h)"]
+  P --> T["TweakLoader"]
+  L --> Z["Signature (signing.cpp)"]
+```
+
+## Essayer
+Aucune commande documentée pour l'usage ; pour compiler : ouvrir Xcode et renseigner `DEVELOPMENT_TEAM[config=Debug]` dans `xcconfigs/Global.xcconfig`, puis compiler. Installation : app à installer via AltStore 2.0+ ou SideStore 0.6.0+, puis ajouter des IPA avec le bouton plus.
+
+## Coût et pièges
+Gratuit, AGPL-3.0. Exige iOS/iPadOS 15+ et un outil de sideloading. Limites documentées : permissions appliquées globalement, conteneurs non isolés entre eux, pas de notifications push distantes, pas d'extensions d'app. Des builds tiers fermés circulent et auraient accès à tes données, trousseau compris, selon l'avertissement du README.
+
+## Ce que ce n'est pas
+Pas un émulateur ni un hyperviseur. Toutes les apps ne fonctionnent pas : une liste de compatibilité existe.
+
+## Alternatives
+SideStore et AltStore sont cités comme outils d'installation avec lesquels il s'utilise, pas comme remplaçants.
+
+## Pour toi
+Ignorer : outil de sideloading iOS sans lien avec le travail data/IA ; les risques de builds tiers et d'isolation affaiblie sont une raison de plus de ne pas s'y intéresser.
+

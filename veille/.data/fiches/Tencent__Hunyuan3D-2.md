@@ -9,7 +9,7 @@ prerequis: [GPU, version de Python]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence à vérifier]
+alertes: [licence à vérifier, dernier commit ancien]
 verdict: surveiller
 ---
 
