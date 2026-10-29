@@ -24,7 +24,13 @@ Monter une caméra de surveillance sur un Raspberry Pi demande beaucoup d'assemb
 Matière insuffisante : le README tient en deux phrases et renvoie au wiki. Il indique que l'auteur ne peut plus s'impliquer et cherche un repreneur.
 
 ## Comment c'est branché
-Non documenté : pas de diagramme fourni.
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+
+```mermaid
+graph LR
+  A["MotionEyeOS"] --> B["Wiki du projet"]
+  A --> C["Auteur en recherche de repreneur"]
+```
 
 ## Essayer
 ```bash

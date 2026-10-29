@@ -48,7 +48,7 @@ Gratuit. Node 16 à 17 requis en développement.
 Pas collaboratif : stockage local au navigateur.
 
 ## Alternatives
-Vditor (la base du projet).
+Vditor (la base du projet) : l'éditeur Markdown sur lequel celui-ci est construit, utilisable directement si tu veux seulement le composant sans cette application.
 
 ## Pour toi
 Ignorer : un éditeur de plus, sans lien avec data/IA/MLOps.

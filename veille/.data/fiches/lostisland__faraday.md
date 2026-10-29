@@ -39,7 +39,7 @@ Schéma d'après le README, pas de diagramme fourni.
 ```
 
 ## Coût et pièges
-Gratuit. Écosystème Ruby uniquement.
+Gratuit. Écosystème Ruby uniquement : inutile pour un projet Python ou JavaScript. Le choix de l'adaptateur HTTP (Net::HTTP, Typhoeus, Excon…) change le comportement des requêtes parallèles et du streaming.
 
 ## Ce que ce n'est pas
 Pas un client HTTP à part entière : une couche sur d'autres adaptateurs.

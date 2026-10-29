@@ -5,7 +5,7 @@ source_readme_sha: 9dc098a31cc5d211
 ecrite_le: 2026-10-29
 nature: bibliothèque
 deploiement: autre
-prerequis: [version de Python]
+prerequis: [aucun]
 cout: gratuit
 maturite: éprouvé
 gouvernance: entreprise
@@ -20,11 +20,8 @@ verdict: ignorer
 ## Le problème
 Écrire des services web Java/Scala scalables sans cycle compilation-redémarrage lourd.
 
-## Ce que ce n'est pas — voir plus bas
-Le README est très court : il décrit un flux « just hit refresh », des tests intégrés, REST par défaut, compilateurs d'assets, JSON et WebSocket.
-
 ## Ce que ça fait vraiment
-Framework web Java/Scala, architecture stateless et non bloquante, REST par défaut, support JSON et WebSocket. Le détail technique renvoie au site et à la documentation, non fournie ici.
+Le README est très court : il décrit un flux « just hit refresh », des tests intégrés, REST par défaut, compilateurs d'assets, JSON et WebSocket. Framework web Java/Scala, architecture stateless et non bloquante, REST par défaut, support JSON et WebSocket. Le détail technique renvoie au site et à la documentation, non fournie ici.
 
 ## Comment c'est branché
 ```mermaid

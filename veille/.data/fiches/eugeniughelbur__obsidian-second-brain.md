@@ -5,7 +5,7 @@ source_readme_sha: 5d21b92b93cd2361
 ecrite_le: 2026-10-29
 nature: outil
 deploiement: autre
-prerequis: [clé d'API, Python 3.10+, service tiers]
+prerequis: [clé d'API, version de Python, service tiers]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: une personne

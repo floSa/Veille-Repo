@@ -45,7 +45,7 @@ Gratuit. Plus de maintenance : risque de dérive avec Home Assistant.
 Pas le projet actif : utiliser le fork cité.
 
 ## Alternatives
-knowald/ha-fusion (fork maintenu).
+knowald/ha-fusion (fork maintenu) : c'est la suite recommandée par le README, qui signale que ce dépôt n'est plus maintenu.
 
 ## Pour toi
 Ignorer : abandonné et sans lien avec data/IA/MLOps ; aller au fork si besoin.

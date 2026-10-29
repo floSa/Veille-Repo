@@ -5,7 +5,7 @@ source_readme_sha: b23d0b9a46022bc1
 ecrite_le: 2026-10-29
 nature: extension
 deploiement: autre
-prerequis: [version de Python]
+prerequis: [aucun]
 cout: gratuit
 maturite: éprouvé
 gouvernance: une personne

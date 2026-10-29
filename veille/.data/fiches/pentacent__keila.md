@@ -24,7 +24,14 @@ Envoyer des campagnes d'e-mail sans dépendre d'un service fermé.
 Matière insuffisante : le README fourni propose une version hébergée (app.keila.io, tarifs sur le site), une image `pentacent/keila` et un Docker Compose d'exemple, et présente la mascotte. Aucune fonction n'est décrite.
 
 ## Comment c'est branché
-Non documenté : pas de diagramme fourni.
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+
+```mermaid
+graph LR
+  A["Utilisateur"] --> B["Version hébergée app.keila.io"]
+  A --> C["Image Docker pentacent/keila"]
+  C --> D["Docker Compose d'exemple"]
+```
 
 ## Essayer
 ```bash
