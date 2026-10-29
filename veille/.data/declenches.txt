@@ -2132,3 +2132,6 @@ potatosalad/erlang-jose	refus
 prisma-flowdiagram/PRISMA2020	refus
 privacyguides/privacyguides.org	refus
 proper-testing/proper	refus
+pterodactyl/documentation	refus
+pterodactyl/game-eggs	refus
+pulumi/pulumi-random	refus
