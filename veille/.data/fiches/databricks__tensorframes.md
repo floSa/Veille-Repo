@@ -50,7 +50,7 @@ Gratuit. Spark 2.4 et Scala 2.11 : piles anciennes. Dernier push en juillet 2024
 Pas maintenu : le README dit d'utiliser `pandas UDF` à la place. Pas de support officiel hors Linux.
 
 ## Alternatives
-`pandas UDF` (indiqué par le README).
+`pandas UDF` (indiqué par le README) : l'approche de Spark pour appliquer du code Python, y compris des modèles, sur des colonnes de DataFrame. Le README ne cite pas d'autre alternative.
 
 ## Pour toi
 À ignorer : déprécié par ses propres auteurs ; utilise plutôt les UDF pandas pour de l'inférence sur Spark.

@@ -41,7 +41,7 @@ rebar3 compile
 ```
 
 ## Coût et pièges
-Gratuit. Utiliser un tag stable.
+Gratuit. Utiliser un tag stable plutôt que la branche principale : les fonctions sont prévues pour inspecter un système Erlang en production, donc à manier avec prudence sur une machine qui sert du trafic.
 
 ## Ce que ce n'est pas
 Pas une plateforme d'observabilité complète.
