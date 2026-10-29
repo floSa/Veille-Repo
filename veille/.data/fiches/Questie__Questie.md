@@ -24,7 +24,14 @@ Le jeu Classic montre peu d'informations sur les quêtes.
 Affiche départs, rendus et objectifs de quêtes sur la carte, trajets des PNJ, suivi de quêtes, progression de groupe, journal de parcours, quêtes par zone, recherche dans la base, nombreuses options. Traductions pour les langues officielles de Classic. API pour intégrer Questie à d'autres addons.
 
 ## Comment c'est branché
-Matière insuffisante pour un schéma fidèle : pas d'architecture fournie, le README décrit les fonctions et le développement.
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+
+```mermaid
+graph LR
+  A["Jeu WoW Classic"] --> B["Extension Questie (Lua)"]
+  B --> C["Carte : départs, rendus, objectifs"]
+  B --> D["Suivi de quêtes et de groupe"]
+```
 
 ## Essayer
 ```bash

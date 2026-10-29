@@ -24,7 +24,15 @@ Observer les performances d'applications .NET en production.
 Traceur .NET qui instrumente automatiquement les bibliothèques prises en charge et permet une instrumentation manuelle ; profileur continu. Alimente le traçage distribué, la sécurité applicative, la visibilité CI et l'instrumentation dynamique. Paquets NuGet `Datadog.Trace` et `Datadog.Trace.OpenTracing`, installateurs Windows et Linux.
 
 ## Comment c'est branché
-Matière insuffisante pour un schéma fidèle : aucune architecture fournie ; le README liste les composants (traceur, profileur, paquets).
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+
+```mermaid
+graph LR
+  A["Application .NET"] --> B["Traceur (instrumentation auto ou manuelle)"]
+  A --> C["Profileur continu"]
+  B --> D["Datadog"]
+  C --> D
+```
 
 ## Essayer
 Aucune commande documentée dans le README : voir les documents de configuration Datadog.
