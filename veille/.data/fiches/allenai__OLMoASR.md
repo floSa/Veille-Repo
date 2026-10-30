@@ -9,7 +9,7 @@ prerequis: [GPU, version de Python, service tiers]
 cout: gratuit
 maturite: utilisable
 gouvernance: fondation
-alertes: []
+alertes: [dernier commit ancien]
 verdict: surveiller
 ---
 
