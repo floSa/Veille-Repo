@@ -49,5 +49,5 @@ Pas un formateur de code ni un vérificateur de types.
 Aucune alternative nommée.
 
 ## Pour toi
-Ignorer : ne sert qu'aux bases Elixir.
+Ignorer : c'est un analyseur de code statique pour Elixir, qui ne sert qu'aux bases de code Elixir. Aucun usage pour de la data, de l'IA ou du MLOps en Python.
 
