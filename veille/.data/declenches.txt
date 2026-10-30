@@ -2217,3 +2217,12 @@ zarzet/SpotiFLAC-Mobile	refus
 zio/zio-schema	refus
 zotonic/zotonic	refus
 upbound/build	refus
+hyperledger-labs/splice	refus
+lanrhyme/micyou	refus
+paxx12/snapmakeru1-extended-firmware	refus
+plaintextaccounting/hledger	refus
+qcytsn/dsh-dafeiyu	refus
+simonmichael/hledger	refus
+amzxyz/rime_wanxiang	refus
+anonym-tsk/nfqws-keenetic	refus
+dotnet/aspire	refus

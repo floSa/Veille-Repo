@@ -598,6 +598,7 @@ amacneil/dbmate
 amd/gaia
 amir20/dozzle
 amzn/style-dictionary
+amzxyz/rime_wanxiang
 anandprtp/Antra
 anbeime/skill
 andreamazz/AMPopTip
@@ -610,6 +611,7 @@ aniyomiorg/aniyomi-website
 ankitpokhrel/jira-cli
 anomalyco/opencode
 anomalyco/opencode-anthropic-auth
+anonym-tsk/nfqws-keenetic
 ansible/ansible-lint
 anthropics/anthropic-cli
 anthropics/anthropic-sdk-go
@@ -906,6 +908,7 @@ donnemartin/data-science-ipython-notebooks
 dorianborian/sesame-robot
 dotenvx/dotenvx
 dotintent/react-native-ble-plx
+dotnet/aspire
 dotnet/skills
 drakkan/sftpgo
 drk1wi/Modlishka
@@ -1177,6 +1180,7 @@ huilang-me/CF-Server-Monitor
 huiyadanli/RevokeMsgPatcher
 humanwhocodes/crosspost
 huynhsontung/Screenbox
+hyperledger-labs/splice
 hyperliquid-dex/hyperliquid-python-sdk
 hzm0321/real-time-fund
 i-am-shodan/USBArmyKnife
@@ -1354,6 +1358,7 @@ langbot-app/LangBot
 langchain-ai/langgraph-swarm-py
 langgenius/dify-official-plugins
 langgenius/dify-sandbox
+lanrhyme/micyou
 laoma528/awesome-zhuiju-free
 laravel/ai
 laravel/boost
@@ -1704,6 +1709,7 @@ pascalorg/editor
 pashov/skills
 pass-with-high-score/blockads-android
 paul-gauthier/aider
+paxx12/snapmakeru1-extended-firmware
 pdone/lx-music-source
 pelican-dev/panel
 pentacent/keila
@@ -1718,6 +1724,7 @@ pirxthepilot/wtfis
 pixelfed/pixelfed-rn
 piyushsachdeva/Terraform-Full-Course-Aws
 pjialin/py12306
+plaintextaccounting/hledger
 playframework/playframework
 pluja/whishper
 pluk-inc/markdown-preview
@@ -1755,6 +1762,7 @@ pythongosssss/ComfyUI-Custom-Scripts
 pytorch/pytorch
 pytube/pytube
 pyvista/pyvista
+qcytsn/dsh-dafeiyu
 qdm12/ddns-updater
 qdm12/gluetun
 qichiyuhub/rule
@@ -1888,6 +1896,7 @@ signerlabs/ShipSwift
 sigstore/cosign
 sigstore/root-signing
 simonlin1212/TradingAgents-astock
+simonmichael/hledger
 simonw/files-to-prompt
 simple-icons/simple-icons
 simulot/immich-go
