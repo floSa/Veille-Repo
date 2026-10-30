@@ -2226,3 +2226,7 @@ simonmichael/hledger	refus
 amzxyz/rime_wanxiang	refus
 anonym-tsk/nfqws-keenetic	refus
 dotnet/aspire	refus
+LanRhyme/MicYou	refus
+QCYTSN/dsh-dafeiyu	refus
+paxx12/SnapmakerU1-Extended-Firmware	refus
+Anonym-tsk/nfqws-keenetic	refus
