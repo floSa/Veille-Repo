@@ -5,7 +5,7 @@ source_readme_sha: 0dd89f0f2c9e197a
 ecrite_le: 2026-10-30
 nature: app
 deploiement: autre
-prerequis: [version de Python, compte à créer]
+prerequis: [compte à créer]
 cout: gratuit
 maturite: éprouvé
 gouvernance: communauté

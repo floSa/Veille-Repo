@@ -5,7 +5,7 @@ source_readme_sha: 504f35ebaf355b40
 ecrite_le: 2026-10-30
 nature: outil
 deploiement: compilation
-prerequis: [version de Python, aucun]
+prerequis: [aucun]
 cout: gratuit
 maturite: éprouvé
 gouvernance: fondation

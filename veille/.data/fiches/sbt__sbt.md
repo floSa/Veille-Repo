@@ -38,7 +38,7 @@ Aucune commande dans le README : voir la page « Setup » de la documentation.
 Gratuit. Lire CONTRIBUTING avant toute issue ou PR. Une partie de l'historique est dans sbt-zero-seven (0.7.7 et avant).
 
 ## Ce que ce n'est pas
-Pas un guide d'usage : README minimal.
+Pas un guide d'usage : le README est minimal et renvoie à la documentation, à la FAQ et à CONTRIBUTING. Pas un outil pour d'autres langages que Scala et Java.
 
 ## Alternatives
 Aucune alternative nommée.

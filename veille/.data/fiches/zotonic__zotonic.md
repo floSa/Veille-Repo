@@ -43,7 +43,7 @@ ZOTONIC_UID=1001 ZOTONIC_GID=1001 ./start-docker.sh
 Gratuit. Les lanceurs se démarrent en utilisateur normal ; UID doivent être non nuls.
 
 ## Ce que ce n'est pas
-Pas un outil data : c'est un CMS web.
+Pas un outil data : c'est un CMS web et un framework en Erlang, sans lien avec la data ou l'IA.
 
 ## Alternatives
 Le README ne nomme pas d'alternative.

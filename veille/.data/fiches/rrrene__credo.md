@@ -40,7 +40,7 @@ mix credo
 ```
 
 ## Coût et pièges
-Gratuit. Doc complète sur Hexdocs.
+Gratuit. Doc complète sur Hexdocs. Écosystème Elixir uniquement : il faut Elixir et Mix pour l'installer et l'utiliser, ce qui n'est pas pertinent pour un projet Python.
 
 ## Ce que ce n'est pas
 Pas un formateur de code ni un vérificateur de types.

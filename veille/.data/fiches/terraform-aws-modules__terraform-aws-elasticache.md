@@ -44,7 +44,7 @@ terraform init && terraform apply
 Nœuds ElastiCache facturés par AWS. L'exemple contient un `auth_token` en dur à remplacer. Providers aws >= 5.93.
 
 ## Ce que ce n'est pas
-Pas un client de cache. Seulement AWS.
+Pas un client de cache : il ne lit ni n'écrit dans le cache, il crée l'infrastructure ElastiCache. Il ne fonctionne que sur AWS.
 
 ## Alternatives
 Aucune alternative nommée dans le README.
