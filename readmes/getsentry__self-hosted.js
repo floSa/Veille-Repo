@@ -1,0 +1,1 @@
+window.__RECU={"k": "getsentry/self-hosted", "g": "readmes", "t": "# Self-Hosted Sentry nightly\n\n[Sentry](https://sentry.io/), feature-complete and packaged up for low-volume deployments and proofs-of-concept.\n\nDocumentation [here](https://develop.sentry.dev/self-hosted/).\n"};

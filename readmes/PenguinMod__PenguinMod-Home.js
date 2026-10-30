@@ -1,0 +1,1 @@
+window.__RECU={"k": "PenguinMod/PenguinMod-Home", "g": "readmes", "t": "# PenguinMod-Home\nThe main home page for PenguinMod, which has community-made projects and other content.\n"};

@@ -1,0 +1,1 @@
+window.__RECU={"k": "mob-sakai/UIEffect", "g": "readmes", "t": "Packages/src/README.md"};

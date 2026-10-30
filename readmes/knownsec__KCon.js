@@ -1,0 +1,1 @@
+window.__RECU={"k": "knownsec/KCon", "g": "readmes", "t": "KCon\n====\n\nKCon is a famous Hacker Con powered by Knownsec Team.\n\nhttp://kcon.knownsec.com/\n"};

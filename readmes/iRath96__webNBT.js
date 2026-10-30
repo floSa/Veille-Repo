@@ -1,0 +1,1 @@
+window.__RECU={"k": "iRath96/webNBT", "g": "readmes", "t": "# webNBT\n**An HTML5 NBT-editor based on emscripten**\n\nAllows you to edit NBT-files saved by Minecraft directly in your browser - no need to download anything!\n\nCheck out the [live-demo](http://irath96.github.io/webNBT/).\n"};

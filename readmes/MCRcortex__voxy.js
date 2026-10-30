@@ -1,0 +1,1 @@
+window.__RECU={"k": "MCRcortex/voxy", "g": "readmes", "t": "Voxy is an LoD rendering mod for minecraft"};
