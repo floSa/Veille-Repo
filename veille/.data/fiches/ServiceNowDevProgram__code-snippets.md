@@ -9,7 +9,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: utilisable
 gouvernance: communauté
-alertes: [licence non déclarée]
+alertes: [licence non déclarée, dernier commit ancien]
 verdict: ignorer
 ---
 
