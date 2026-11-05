@@ -27,7 +27,14 @@ Lire la série en ligne ou hors ligne dans un lecteur confortable, sans publicit
 - Architecture non fournie : aucun diagramme de code.
 
 ## Comment c'est branché
-Non documenté : ni diagramme ni description du code. Seul le site et le lien de téléchargement EPUB sont mentionnés.
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+```mermaid
+flowchart LR
+  A["Communauté (contenu éditable)"] --> B["Site web (beyonder.pages.dev)"]
+  A --> C["Volumes EPUB"]
+  B --> D["Lecteur : thèmes, police, interligne"]
+  C --> E["Kindle, Kobo, téléphone"]
+```
 
 ## Essayer
 Aucune commande : ouvrir le site ou la page de téléchargement EPUB depuis le README.
