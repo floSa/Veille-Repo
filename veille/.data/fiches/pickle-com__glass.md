@@ -27,6 +27,13 @@ Pendant une réunion, on perd les actions à retenir et le contexte de ce qui s'
 - Fork de CheatingDaddy ; application de bureau Electron.
 
 ## Comment c'est branché
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+```mermaid
+flowchart LR
+  A["Audio et écran de la session"] --> B["Application Electron"]
+  B --> C["Modèles : OpenAI, Gemini, ou Ollama et Whisper en local"]
+  C --> D["Notes, résumés, réponses Ask"]
+```
 Aucun diagramme ni architecture du code fournis : le fonctionnement interne n'est pas documenté ici.
 
 ## Essayer

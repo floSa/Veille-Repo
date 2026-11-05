@@ -24,6 +24,13 @@ Il faut des modèles vision-langage ouverts, capables aussi de vidéo et de mult
 Regroupe les variantes LLaVA-OneVision, LLaVA-NeXT-Image, -Video et -Interleave, avec scripts de démonstration et d'évaluation (via lmms-eval). Le déploiement accéléré passe par SGLang, y compris la vidéo sur plusieurs nœuds. Les détails sont dans des pages liées, non reprises dans ce README.
 
 ## Comment c'est branché
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+```mermaid
+flowchart LR
+  A["Variantes : OneVision, Image, Video, Interleave"] --> B["Scripts de démo et d'évaluation (lmms-eval)"]
+  A --> C["Service d'inférence SGLang"]
+  C --> D["Vidéo sur plusieurs nœuds"]
+```
 Pas de diagramme fourni. Le README décrit un dépôt unique avec des sous-projets par modalité (OneVision, Image, Video, Interleave), le service d'inférence étant délégué à SGLang.
 
 ## Essayer

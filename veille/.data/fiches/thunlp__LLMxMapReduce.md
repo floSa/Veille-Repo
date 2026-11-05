@@ -27,6 +27,12 @@ Les LLM intègrent mal de très grands volumes de sources pour produire un long 
 - Pipeline V2 : un sujet ou vos propres papiers en entrée, un rapport Markdown en sortie.
 
 ## Comment c'est branché
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+```mermaid
+flowchart LR
+  A["Sujet ou .jsonl de papiers"] --> B["scripts/pipeline_start.sh"]
+  B --> C["Rapport Markdown dans ./output/md"]
+```
 Pas de diagramme fourni. Le flux décrit : entrée (sujet ou `.jsonl` de papiers) → `scripts/pipeline_start.sh` → rapport dans `./output/md`. Le détail interne n'est pas documenté.
 
 ## Essayer

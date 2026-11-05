@@ -27,6 +27,13 @@ Automatiser triage d'issues, analyse de CI, revue de code et documentation deman
 - Fragments partagés (serveurs MCP arXiv, MarkItDown, Microsoft Docs ; FFmpeg ; sq).
 
 ## Comment c'est branché
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+```mermaid
+flowchart LR
+  A["Catalogue de workflows"] --> B["Import dans un dépôt GitHub"]
+  B --> C["Extension gh aw (mise à jour)"]
+  D["Fragments partagés (MCP, FFmpeg)"] --> B
+```
 Pas de diagramme fourni. Le README décrit seulement : workflows importés dans un dépôt, mis à jour par l'extension `gh aw`. Le fonctionnement interne n'est pas documenté.
 
 ## Essayer

@@ -24,6 +24,13 @@ Utiliser CogVideoX dans ComfyUI demande une intégration des modèles, quantific
 Fournit des nœuds pour CogVideoX 5B (texte vers vidéo, image vers vidéo, vidéo vers vidéo), CogVideoX 1.5, Fun, Tora, LoRA, GGUF, FasterCache, sageattention, quantification torchao, torch.compile, Go-with-the-Flow. Le VAE peut être chargé séparément. Le README est un journal de mises à jour, sans guide d'installation.
 
 ## Comment c'est branché
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+```mermaid
+flowchart LR
+  A["Nœuds CogVideoX dans ComfyUI"] --> B["diffusers"]
+  A --> C["Encodeur T5 de ComfyUI"]
+  B --> D["Modèles dans ComfyUI/models/CogVideo/"]
+```
 Pas de diagramme fourni. Description d'après le README : les nœuds s'insèrent dans ComfyUI, appellent diffusers, utilisent le T5 de ComfyUI, et téléchargent les modèles dans `ComfyUI/models/CogVideo/`.
 
 ## Essayer
