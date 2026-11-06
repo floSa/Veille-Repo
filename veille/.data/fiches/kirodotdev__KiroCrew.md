@@ -5,7 +5,7 @@ source_readme_sha: eb2c3b68dd7bb134
 ecrite_le: 2026-11-06
 nature: app
 deploiement: pip
-prerequis: [Python version, Node, service tiers, compte à créer]
+prerequis: [version de Python, Node, service tiers, compte à créer]
 cout: freemium
 maturite: expérimental
 gouvernance: entreprise
