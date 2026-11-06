@@ -3,16 +3,15 @@ schema: 1
 depot: arabold/docs-mcp-server
 source_readme_sha: 501917ed151d74b6
 ecrite_le: 2026-11-06
----
-
 nature: outil
 deploiement: npm
 prerequis: [Node, clé d'API]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: une personne
-alertes: [mainteneur unique, télémétrie activée par défaut]
+alertes: [mainteneur unique]
 verdict: adopter
+---
 
 # arabold/docs-mcp-server
 
@@ -59,4 +58,3 @@ Context7, Nia et Ref.Tools, dont c'est l'alternative open source.
 
 ## Pour toi
 À adopter : donne à un agent de code une documentation versionnée et locale, utile à ton travail d'AI engineer.
-
