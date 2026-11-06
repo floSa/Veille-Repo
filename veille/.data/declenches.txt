@@ -2230,3 +2230,9 @@ LanRhyme/MicYou	refus
 QCYTSN/dsh-dafeiyu	refus
 paxx12/SnapmakerU1-Extended-Firmware	refus
 Anonym-tsk/nfqws-keenetic	refus
+AnthonyGress/zen_ui.koplugin	ok
+LLaVA-VL/LLaVA-NeXT	ok
+Peterande/D-FINE	ok
+anomalyco/hex	ok
+gnmyt/Nexterm	ok
+kijai/ComfyUI-CogVideoXWrapper	ok

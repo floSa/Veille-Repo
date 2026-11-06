@@ -42,6 +42,7 @@ Anil-matcha/open-duet
 Anmol-Baranwal/Cool-GIFs-For-GitHub
 Anonym-tsk/nfqws-keenetic
 AntSwordProject/antSword
+AnthonyGress/zen_ui.koplugin
 AnubisNekhet/AnuPpuccin
 AnyiWang/OpenCovibe
 AprilNEA/OpenLogi
@@ -253,6 +254,7 @@ KruxAI/ragbuilder
 Ksuriuri/index-tts-vllm
 KwaiVGI/LivePortrait
 LC044/WeChatMsg
+LLaVA-VL/LLaVA-NeXT
 Lakr233/FlowDown
 LanRhyme/MicYou
 LaurieWired/GhidraMCP
@@ -373,6 +375,7 @@ PaddlePaddle/PaddleNLP
 ParsaKSH/spoof-tunnel
 PavelDoGreat/WebGL-Fluid-Simulation
 PenglongHuang/chinese-novelist-skill
+Peterande/D-FINE
 Phineas/lanyard
 Picsart-AI-Research/StreamingT2V
 PipedreamHQ/pipedream
@@ -612,6 +615,7 @@ android/nav3-recipes
 anilbeesetti/nextplayer
 aniyomiorg/aniyomi-website
 ankitpokhrel/jira-cli
+anomalyco/hex
 anomalyco/opencode
 anomalyco/opencode-anthropic-auth
 anonym-tsk/nfqws-keenetic
@@ -1069,6 +1073,7 @@ githubnext/agentics
 githubnext/gh-aw
 gkjohnson/three-mesh-bvh
 glific/glific
+gnmyt/Nexterm
 go-admin-team/go-admin
 go-co-op/gocron
 go-git/go-git
@@ -1306,6 +1311,7 @@ kernel/kernel-images
 kevinhermawan/Ollamac
 kgretzky/evilginx2
 khanhduytran0/SparseBox
+kijai/ComfyUI-CogVideoXWrapper
 kijai/ComfyUI-WanVideoWrapper
 kilimchoi/engineering-blogs
 kimdre/doco-cd
