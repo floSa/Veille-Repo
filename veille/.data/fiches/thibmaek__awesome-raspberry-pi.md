@@ -36,7 +36,7 @@ flowchart TD
 ```
 
 ## Essayer
-Aucune commande : liste à parcourir.
+Aucune commande : c'est une liste de ressources. Ouvre le README du dépôt et parcours les catégories (systèmes, outils, projets) pour trouver ce dont tu as besoin.
 
 ## Coût et pièges
 Gratuit. Le README est tronqué à l'extrait fourni : les sections Ressources ne sont pas lues. La licence n'est pas reconnue par GitHub. Les entrées ne sont pas vérifiées une à une ; la liste inclut des projets d'attaque USB et Wi-Fi (P4wnP1, PoisonTap, Pwnagotchi), comme entrées de la liste seulement.

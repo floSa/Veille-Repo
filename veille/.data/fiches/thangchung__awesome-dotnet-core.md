@@ -34,7 +34,7 @@ flowchart LR
 ```
 
 ## Essayer
-Aucune commande : on lit la liste.
+Aucune commande : c'est une liste de ressources. Ouvre le README du dépôt et parcours les catégories (frameworks, bibliothèques, outils, tutoriels) pour trouver ce dont tu as besoin.
 
 ## Coût et pièges
 Gratuit, mais aucune licence déclarée. Plusieurs entrées sont anciennes (IdentityServer4, Stormpath déprécié) : à vérifier avant usage.
