@@ -46,7 +46,7 @@ npm run dev
 Le logiciel est gratuit, mais il faut au moins un agent installé et authentifié : tokens ou abonnement à ta charge. L'accès distant passe par un tunnel Cloudflare si tu l'actives.
 
 ## Ce que ce n'est pas
-Pas un agent de code lui-même : il ne fait que lancer les tiens. Pas un outil intéractif au sens d'un terminal en direct : chaque tâche reçoit un prompt et rend une réponse. Licence AGPL.
+Pas un agent de code lui-même : il ne fait que lancer les tiens. Pas un outil interactif au sens d'un terminal en direct : chaque tâche reçoit un prompt et rend une réponse. Licence AGPL.
 
 ## Alternatives
 Aucune alternative nommée dans le README.
