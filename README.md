@@ -12,21 +12,27 @@
 [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-hébergement-222222?logo=githubpages&logoColor=white)](https://pages.github.com/)
 [![Licence](https://img.shields.io/badge/licence-MIT-blue)](LICENSE)
 
-Période couverte : **2024-09-01 → 2026-11-06**.
+Période couverte : **2024-09-01 → 2026-11-07**.
 
 | Pertinence | Dépôts | README hors ligne | Schémas d'architecture | Synthèses |
 |---|---|---|---|---|
-| cœur métier | 3 417 | 3 395 | 3 194 | 3 380 |
-| périphérie | 1 546 | 1 526 | 1 330 | 1 507 |
-| hors périmètre | 1 156 | 1 137 | 656 | 303 |
-| à trier | 649 | 604 | 381 | 204 |
-| **total** | **6 768** | **6 662** | **5 561** | **5 394** |
+| cœur métier | 5 496 | 5 453 | 3 875 | 3 555 |
+| périphérie | 3 303 | 3 273 | 1 850 | 1 528 |
+| hors périmètre | 2 004 | 1 968 | 615 | 262 |
+| à trier | 1 508 | 1 375 | 402 | 215 |
+| **total** | **12 311** | **12 069** | **6 742** | **5 560** |
 
 Une synthèse s'écrit à partir du README **et** du schéma : c'est le schéma qui fixe le rythme.
-Les écarts restants tiennent à trois causes — **107 dépôts** n'ont pas de README (supprimés,
+Les écarts restants tiennent à trois causes — **242 dépôts** n'ont pas de README (supprimés,
 bloqués par GitHub, ou sans fichier README), les schémas manquants sont générés au rythme du
 quota gratuit de GitDiagram, et **31 outils offensifs** n'ont pas de synthèse, leur rédaction
 étant refusée par le filtre de sécurité du modèle.
+
+**Collecte.** Un workflow GitHub Actions (`.github/workflows/collecte-trending.yml`) lit la page
+trending deux fois par jour, toutes langues, et écrit un relevé par jour sur la branche
+`trending-quotidien`, que la machine soit allumée ou non. À chaque mise à jour, ces relevés sont
+versés au catalogue avec les archives publiques, qui comblent les jours manquants. Avant 2026,
+la source ne couvre que Python, JavaScript, Go et Swift.
 
 ## Sommaire
 

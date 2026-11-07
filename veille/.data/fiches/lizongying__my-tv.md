@@ -24,7 +24,12 @@ Regarder des chaînes chinoises en direct sur un téléviseur Android sans abonn
 Fournit un APK à installer par clé USB, assistant Xiaomi ou ADB. Le README liste des chantiers non faits : favoris, volume, luminosité, mise à jour automatique. Il signale des appareils où l'appli plante ou ne démarre pas seule.
 
 ## Comment c'est branché
-Non documenté : le README ne décrit pas d'architecture et aucun diagramme n'est fourni.
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+```mermaid
+flowchart LR
+  apk["APK my-tv"] -->|installé par USB, ADB ou assistant Xiaomi| tv["Téléviseur ou box Android"]
+  tv -->|lit en direct| flux["Flux de chaînes en ligne"]
+```
 
 ## Essayer
 ```bash

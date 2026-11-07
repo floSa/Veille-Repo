@@ -20,10 +20,9 @@ verdict: surveiller
 ## Le problème
 Les moteurs de réponse IA du commerce envoient tes requêtes chez un tiers. Ici la recherche reste sur ta machine.
 
-## Ce que ce n'est pas encore décrit : voir plus bas
+## Ce que ça fait vraiment
 Le README (rebaptisé Vane) décrit : modes Vitesse, Équilibré et Qualité, sources web, discussions et articles académiques, widgets (météo, calculs, bourse), recherche d'images et vidéos, upload de fichiers, historique local, flux Discover.
 
-## Ce que ça fait vraiment
 Une requête passe par l'API Next.js, une chaîne de recherche interroge SearxNG, un fournisseur de modèle (Ollama, OpenAI, Claude, Groq, Gemini) rédige la réponse avec citations. L'historique est stocké en base SQL via Drizzle. Le diagramme fourni vient d'une description générée, plus ancienne que le README actuel.
 
 ## Comment c'est branché

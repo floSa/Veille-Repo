@@ -21,7 +21,7 @@ verdict: surveiller
 Rédiger, vérifier et présenter un article scientifique demande beaucoup de tâches répétitives que l'agent fait mal sans méthode.
 
 ## Ce que ça fait vraiment
-Environ vingt skills `SKILL.md` :润色 de style Nature, rédaction, simulation de relecture, réponse aux relecteurs, figures, recherche académique (MCP avec PubMed, Scopus), téléchargement de PDF, citations, conversion image vers PPTX éditable, article vers brevet. Un paquet `nature-shared` sert de base commune. Les statuts vont de Draft à Stable. Le README contient aussi des liens commerciaux (recharge de comptes GPT/Claude, communauté payante).
+Environ vingt skills `SKILL.md` :relecture de style Nature, rédaction, simulation de relecture, réponse aux relecteurs, figures, recherche académique (MCP avec PubMed, Scopus), téléchargement de PDF, citations, conversion image vers PPTX éditable, article vers brevet. Un paquet `nature-shared` sert de base commune. Les statuts vont de Draft à Stable. Le README contient aussi des liens commerciaux (recharge de comptes GPT/Claude, communauté payante).
 
 ## Comment c'est branché
 ```mermaid

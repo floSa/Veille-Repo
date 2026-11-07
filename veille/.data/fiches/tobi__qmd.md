@@ -50,7 +50,7 @@ qmd mcp --http
 Gratuit. Téléchargement d'environ 2 Go de modèles au premier usage et VRAM utilisée ; le serveur HTTP n'a pas d'authentification. Changer de modèle d'embedding impose `qmd embed -f`.
 
 ## Ce que ce n'est pas
-Pas un service géré. embeddinggemma est orienté anglais ; le CJC exige un autre modèle. README tronqué en fin de document.
+Pas un service géré. embeddinggemma est orienté anglais ; le CJK exige un autre modèle. README tronqué en fin de document.
 
 ## Alternatives
 Aucune nommée dans le README.

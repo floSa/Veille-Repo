@@ -20,10 +20,9 @@ verdict: surveiller
 ## Le problème
 Dans un monorepo, tout reconstruire et retester à chaque commit allonge les CI.
 
-## Ce que ce n'est pas qu'une promesse
+## Ce que ça fait vraiment
 Nx construit un graphe de projets, calcule les tâches affectées, les exécute via des plugins (Vite, Jest, Gradle, Maven, .NET, Go) et réutilise un cache local ou distant. Il propose une CI intégrée (cache distant, distribution des tâches) et une CI « auto-réparatrice » par agent IA reliée en MCP.
 
-## Ce que ça fait vraiment
 Cœur en Rust, extensions en TypeScript. Le CLI s'intègre à un espace de travail npm, pnpm ou yarn existant en lisant les scripts de `package.json`. Une interface TUI et un graphe web de projets et de tâches sont fournis.
 
 ## Comment c'est branché

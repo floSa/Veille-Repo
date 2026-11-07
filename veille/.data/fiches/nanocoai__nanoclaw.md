@@ -42,7 +42,7 @@ bash nanoclaw.sh
 ```
 
 ## Coût et pièges
-Crédential Anthropic via passerelle, Docker, Node 22+ et pnpm 10+. Diagnostics anonymes désactivables. Image préfabriquée soumise à un compte gratuit.
+Credential Anthropic via passerelle, Docker, Node 22+ et pnpm 10+. Diagnostics anonymes désactivables. Image préfabriquée soumise à un compte gratuit.
 
 ## Ce que ce n'est pas
 Pas un framework configurable par fichiers. Pas un second projet : mêmes étoiles, dates et README que qwibitai/nanoclaw, alias probable.

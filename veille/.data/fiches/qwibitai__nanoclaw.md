@@ -43,7 +43,7 @@ bash nanoclaw.sh
 ```
 
 ## Coût et pièges
-Crédential Anthropic requis par défaut ; Docker, Node 22+ et pnpm 10+. Diagnostics anonymes de setup, coupables par `NANOCLAW_NO_DIAGNOSTICS=1`. L'image préfabriquée demande un compte gratuit. Claude Code sert à `/customize` et à la reprise d'erreurs.
+Credential Anthropic requis par défaut ; Docker, Node 22+ et pnpm 10+. Diagnostics anonymes de setup, coupables par `NANOCLAW_NO_DIAGNOSTICS=1`. L'image préfabriquée demande un compte gratuit. Claude Code sert à `/customize` et à la reprise d'erreurs.
 
 ## Ce que ce n'est pas
 Pas configurable par fichiers : on modifie le code. Le README oppose le projet à OpenClaw sans le comparer chiffré. Ce dépôt a un doublon exact (nanocoai/nanoclaw).

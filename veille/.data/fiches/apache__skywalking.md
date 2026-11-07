@@ -20,9 +20,6 @@ verdict: surveiller
 ## Le problème
 Diagnostiquer lenteurs et pannes dans des architectures distribuées sans visibilité bout en bout.
 
-## Ce que ce n'est pas
-Pas un outil de MLOps : il observe des services, pas des modèles. Exige un déploiement serveur, le README ne détaille pas l'installation.
-
 ## Ce que ça fait vraiment
 Traçage de bout en bout, topologie de services, agents (Java, .NET, PHP, Node, Go, Python, etc.), agent eBPF Rover pour Kubernetes, base d'observabilité BanyanDB, ingestion Zipkin, OpenTelemetry, Prometheus, Zabbix, Fluentd, pipelines de logs et d'alertes, détection d'anomalies par ML.
 
@@ -42,6 +39,9 @@ Aucune commande dans le README : voir la documentation officielle, la page des r
 
 ## Coût et pièges
 Gratuit ; coût d'infrastructure (stockage de télémétrie, cluster) à ta charge. Liste de diffusion pour le support.
+
+## Ce que ce n'est pas
+Pas un outil de MLOps : il observe des services, pas des modèles. Exige un déploiement serveur, le README ne détaille pas l'installation.
 
 ## Alternatives
 Aucune nommée hors les écosystèmes supportés (Zipkin, OpenTelemetry, Prometheus).
