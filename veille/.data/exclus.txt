@@ -38,3 +38,6 @@ rajkumardusad/IP-Tracer
 bountyyfi/lonkero
 hypery11/flipper-tesla-fsd
 aimeoa/hanshuang-codex
+rajhodedara/live-sport-plugin
+kaimi-io/yandex-music-download
+LegendaryGaoZheng/Cross-Game-Recoil-Control
