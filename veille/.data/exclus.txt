@@ -41,3 +41,10 @@ aimeoa/hanshuang-codex
 rajhodedara/live-sport-plugin
 kaimi-io/yandex-music-download
 LegendaryGaoZheng/Cross-Game-Recoil-Control
+SpacehuhnTech/esp8266_deauther
+nmap/nmap
+vanhauser-thc/thc-hydra
+screetsec/TheFatRat
+robertdavidgraham/masscan
+k1tbyte/Wemod-Patcher
+gentilkiwi/mimikatz
