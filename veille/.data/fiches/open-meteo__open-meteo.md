@@ -5,7 +5,7 @@ source_readme_sha: b778cceb72eee715
 ecrite_le: 2026-10-29
 nature: service
 deploiement: docker
-prerequis: [aucun, Docker]
+prerequis: [Docker]
 cout: gratuit
 maturite: éprouvé
 gouvernance: communauté

@@ -5,7 +5,7 @@ source_readme_sha: f557c0abe69fa399
 ecrite_le: 2026-10-25
 nature: outil
 deploiement: pip
-prerequis: [Node, aucun]
+prerequis: [Node]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne

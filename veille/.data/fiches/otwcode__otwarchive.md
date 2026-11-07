@@ -5,7 +5,7 @@ source_readme_sha: c70128ed9231ea46
 ecrite_le: 2026-10-27
 nature: app
 deploiement: compilation
-prerequis: [version de Python, aucun]
+prerequis: [version de Python]
 cout: gratuit
 maturite: éprouvé
 gouvernance: fondation

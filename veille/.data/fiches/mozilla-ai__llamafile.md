@@ -5,7 +5,7 @@ source_readme_sha: ec541178249a9a08
 ecrite_le: 2026-10-27
 nature: outil
 deploiement: binaire
-prerequis: [aucun, beaucoup de RAM]
+prerequis: [beaucoup de RAM]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise

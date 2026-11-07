@@ -5,7 +5,7 @@ source_readme_sha: ecdaa0bea6edb6bb
 ecrite_le: 2026-10-05
 nature: outil
 deploiement: compilation
-prerequis: [version de Python, aucun]
+prerequis: [version de Python]
 cout: gratuit
 maturite: expérimental
 gouvernance: une personne

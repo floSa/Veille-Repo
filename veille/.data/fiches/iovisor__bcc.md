@@ -5,7 +5,7 @@ source_readme_sha: e01188a35e1a5b58
 ecrite_le: 2026-11-07
 nature: bibliothèque
 deploiement: pip
-prerequis: [version de Python, aucun]
+prerequis: [version de Python]
 cout: gratuit
 maturite: éprouvé
 gouvernance: fondation

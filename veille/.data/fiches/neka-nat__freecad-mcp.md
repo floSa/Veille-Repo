@@ -5,7 +5,7 @@ source_readme_sha: f8f7e952099d6515
 ecrite_le: 2026-09-29
 nature: extension
 deploiement: autre
-prerequis: [service tiers, aucun]
+prerequis: [service tiers]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne

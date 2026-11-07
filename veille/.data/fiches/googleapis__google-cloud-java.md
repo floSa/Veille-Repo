@@ -5,7 +5,7 @@ source_readme_sha: 9f05c4753a7dbcaa
 ecrite_le: 2026-11-07
 nature: bibliothèque
 deploiement: autre
-prerequis: [compte à créer, aucun]
+prerequis: [compte à créer]
 cout: clé d'API à ta charge
 maturite: éprouvé
 gouvernance: entreprise

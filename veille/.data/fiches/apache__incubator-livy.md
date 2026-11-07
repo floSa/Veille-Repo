@@ -5,7 +5,7 @@ source_readme_sha: 6643d5914ef8c1dd
 ecrite_le: 2026-11-07
 nature: service
 deploiement: compilation
-prerequis: [Java, version de Python, service tiers]
+prerequis: [version de Python, service tiers]
 cout: gratuit
 maturite: éprouvé
 gouvernance: fondation

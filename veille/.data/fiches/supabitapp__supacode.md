@@ -5,7 +5,7 @@ source_readme_sha: 36a24c6c315c8b76
 ecrite_le: 2026-09-29
 nature: app
 deploiement: compilation
-prerequis: [Node, aucun]
+prerequis: [Node]
 cout: gratuit
 maturite: expérimental
 gouvernance: entreprise

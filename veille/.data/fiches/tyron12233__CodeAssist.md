@@ -5,7 +5,7 @@ source_readme_sha: 7331e0949971c874
 ecrite_le: 2026-10-27
 nature: app
 deploiement: binaire
-prerequis: [Node, aucun]
+prerequis: [Node]
 cout: gratuit
 maturite: expérimental
 gouvernance: une personne

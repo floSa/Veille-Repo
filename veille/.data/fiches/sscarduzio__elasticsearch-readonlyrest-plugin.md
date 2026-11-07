@@ -5,7 +5,7 @@ source_readme_sha: 5ea632ab48ad8afd
 ecrite_le: 2026-11-07
 nature: extension
 deploiement: autre
-prerequis: [Java, service tiers]
+prerequis: [service tiers]
 cout: gratuit
 maturite: éprouvé
 gouvernance: une personne

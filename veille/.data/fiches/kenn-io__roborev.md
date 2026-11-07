@@ -5,7 +5,7 @@ source_readme_sha: 91bf8225af36c36d
 ecrite_le: 2026-10-05
 nature: outil
 deploiement: binaire
-prerequis: [aucun, service tiers]
+prerequis: [service tiers]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: une personne

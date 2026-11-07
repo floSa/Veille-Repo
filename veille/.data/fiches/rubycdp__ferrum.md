@@ -5,7 +5,7 @@ source_readme_sha: 969dff5d3696f392
 ecrite_le: 2026-11-07
 nature: bibliothèque
 deploiement: autre
-prerequis: [Docker, aucun]
+prerequis: [Docker]
 cout: gratuit
 maturite: éprouvé
 gouvernance: communauté

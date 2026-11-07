@@ -5,7 +5,7 @@ source_readme_sha: 39388e55791ce854
 ecrite_le: 2026-10-25
 nature: outil
 deploiement: npm
-prerequis: [aucun, clé d'API, service tiers]
+prerequis: [clé d'API, service tiers]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise

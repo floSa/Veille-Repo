@@ -5,7 +5,7 @@ source_readme_sha: f31e1730c962ab81
 ecrite_le: 2026-11-07
 nature: outil
 deploiement: binaire
-prerequis: [version de Python, aucun]
+prerequis: [version de Python]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise

@@ -5,7 +5,7 @@ source_readme_sha: 8fc6649c4c965e5a
 ecrite_le: 2026-09-29
 nature: app
 deploiement: binaire
-prerequis: [aucun, compte à créer]
+prerequis: [compte à créer]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne

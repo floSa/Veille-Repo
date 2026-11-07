@@ -5,7 +5,7 @@ source_readme_sha: c2f60f208c8dd8b2
 ecrite_le: 2026-10-25
 nature: bibliothèque
 deploiement: autre
-prerequis: [aucun, Node]
+prerequis: [Node]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise

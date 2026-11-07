@@ -5,7 +5,7 @@ source_readme_sha: f90b77b82976fe69
 ecrite_le: 2026-10-25
 nature: bibliothèque
 deploiement: npm
-prerequis: [Node, aucun]
+prerequis: [Node]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise

@@ -5,7 +5,7 @@ source_readme_sha: 3d27e9a9a3680c1d
 ecrite_le: 2026-10-25
 nature: outil
 deploiement: npm
-prerequis: [Node, aucun]
+prerequis: [Node]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne

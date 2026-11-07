@@ -5,7 +5,7 @@ source_readme_sha: 39092085a9007303
 ecrite_le: 2026-11-07
 nature: outil
 deploiement: binaire
-prerequis: [GPU, aucun]
+prerequis: [GPU]
 cout: gratuit
 maturite: éprouvé
 gouvernance: communauté

@@ -5,7 +5,7 @@ source_readme_sha: 8abb1e54efa57796
 ecrite_le: 2026-11-07
 nature: outil
 deploiement: autre
-prerequis: [aucun, service tiers]
+prerequis: [service tiers]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: une personne

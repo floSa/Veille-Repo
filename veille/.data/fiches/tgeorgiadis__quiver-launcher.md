@@ -5,7 +5,7 @@ source_readme_sha: e4900eab9aee7757
 ecrite_le: 2026-10-25
 nature: app
 deploiement: binaire
-prerequis: [aucun, service tiers]
+prerequis: [service tiers]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne

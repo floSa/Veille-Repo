@@ -5,7 +5,7 @@ source_readme_sha: d5d551add9b627c1
 ecrite_le: 2026-10-27
 nature: outil
 deploiement: binaire
-prerequis: [aucun, Node]
+prerequis: [Node]
 cout: gratuit
 maturite: expérimental
 gouvernance: entreprise

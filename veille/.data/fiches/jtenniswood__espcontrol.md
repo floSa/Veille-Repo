@@ -5,7 +5,7 @@ source_readme_sha: a7bfb39c43b4c6c7
 ecrite_le: 2026-11-05
 nature: outil
 deploiement: autre
-prerequis: [service tiers, aucun]
+prerequis: [service tiers]
 cout: payant
 maturite: utilisable
 gouvernance: une personne

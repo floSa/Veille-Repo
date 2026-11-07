@@ -5,7 +5,7 @@ source_readme_sha: 90929501ea2d7d68
 ecrite_le: 2026-11-05
 nature: app
 deploiement: compilation
-prerequis: [aucun, compte à créer, service tiers]
+prerequis: [compte à créer, service tiers]
 cout: gratuit
 maturite: expérimental
 gouvernance: une personne

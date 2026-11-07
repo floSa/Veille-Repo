@@ -20,9 +20,6 @@ verdict: ignorer
 ## Le problème
 Désactiver les options développeur réinitialise leurs réglages, ce qui gêne l'usage de certaines applications bancaires.
 
-## Ce que ce n'est pas
-Pas un outil de contournement documenté en détail : le README tient en quelques lignes.
-
 ## Ce que ça fait vraiment
 Modifie les valeurs de réglages via les préférences partagées, ce qui évite de les perdre quand les options développeur sont coupées. Exige la permission `android.permission.WRITE_SECURE_SETTINGS`, à accorder soi-même.
 

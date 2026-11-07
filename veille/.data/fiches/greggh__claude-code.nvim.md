@@ -5,7 +5,7 @@ source_readme_sha: 61ac0f6f238c51dc
 ecrite_le: 2026-10-25
 nature: extension
 deploiement: autre
-prerequis: [aucun, service tiers]
+prerequis: [service tiers]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: une personne

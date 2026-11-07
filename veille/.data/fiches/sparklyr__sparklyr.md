@@ -5,7 +5,7 @@ source_readme_sha: df7e244143c616c8
 ecrite_le: 2026-11-07
 nature: bibliothèque
 deploiement: autre
-prerequis: [Java, version de Python]
+prerequis: [version de Python]
 cout: gratuit
 maturite: éprouvé
 gouvernance: communauté

@@ -5,7 +5,7 @@ source_readme_sha: c4d2a10e2952dc1c
 ecrite_le: 2026-11-05
 nature: app
 deploiement: binaire
-prerequis: [aucun, version de Python]
+prerequis: [version de Python]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne

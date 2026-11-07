@@ -5,7 +5,7 @@ source_readme_sha: 6e91221605b6127f
 ecrite_le: 2026-10-27
 nature: outil
 deploiement: binaire
-prerequis: [aucun, service tiers]
+prerequis: [service tiers]
 cout: gratuit
 maturite: utilisable
 gouvernance: communauté
