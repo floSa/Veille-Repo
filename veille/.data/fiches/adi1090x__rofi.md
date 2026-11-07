@@ -28,7 +28,7 @@ Fournit 7 types de lanceurs, 9 applets (batterie, volume, MPD, capture…) et 6 
 flowchart TB
     Repo["Dépôt GitHub"] --> Setup["setup.sh"]
     Setup --> Conf["~/.config/rofi (config.rasi, colors)"]
-    WM["Fenêtre manager / Polybar"] --> Scripts["launcher.sh / powermenu.sh / applets"]
+    WM["Gestionnaire de fenêtres / Polybar"] --> Scripts["launcher.sh / powermenu.sh / applets"]
     Scripts --> Rofi["Rofi"]
     Scripts --> Ext["Utilitaires externes"]
 ```

@@ -20,9 +20,6 @@ verdict: surveiller
 ## Le problème
 Déployer Nextcloud proprement en conteneur demande de maîtriser volumes, base de données et configuration.
 
-## Ce que ce n'est pas
-Voir plus bas : ce n'est pas la solution clé en main.
-
 ## Ce que ça fait vraiment
 Deux variantes : `apache` (serveur inclus) et `fpm` (à coupler à un serveur web). Configuration automatique par variables d'environnement : base SQLite, MySQL/MariaDB ou PostgreSQL, admin initial, Redis, SMTP, stockage objet S3 ou Swift, limites PHP. Hooks d'installation et de mise à jour, utilitaire `occ`. Le README source est tronqué à l'exemple compose.
 
