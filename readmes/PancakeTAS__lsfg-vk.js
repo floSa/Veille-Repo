@@ -1,0 +1,1 @@
+window.__RECU={"k": "PancakeTAS/lsfg-vk", "g": "readmes", "t": "lsfg-vk has moved to https://lsfg-vk.dev.\n\nRead more about the change here: https://lsfg-vk.dev/blog/important-changes-to-lsfg-vk/\nThe archived GitHub repository is available here: https://git.lsfg-vk.dev/lsfg-vk-archive\n"};

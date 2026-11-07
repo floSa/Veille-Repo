@@ -1,0 +1,1 @@
+window.__RECU={"k": "rrousselGit/freezed", "g": "readmes", "t": "packages/freezed/README.md"};

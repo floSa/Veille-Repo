@@ -1,0 +1,1 @@
+window.__RECU={"k": "hechoendrupal/drupal-console-core", "g": "readmes", "t": "# Drupal Console Core\n\nDrupal Console Core, this project contains commands and features to be shared across DrupalConsole projects.\n"};

@@ -1,0 +1,1 @@
+window.__RECU={"k": "google/skia", "g": "readmes", "t": "Skia is a complete 2D graphic library for drawing Text, Geometries, and Images.\n\nSee full details, and build instructions, at https://skia.org.\n"};

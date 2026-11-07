@@ -1,0 +1,1 @@
+window.__RECU={"k": "haikuports/haikuports", "g": "readmes", "t": "# Welcome to HaikuPorts!\n\nTo get started, [read the wiki!](https://github.com/haikuports/haikuports/wiki/)\n"};

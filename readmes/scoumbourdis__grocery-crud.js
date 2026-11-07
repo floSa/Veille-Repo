@@ -1,0 +1,1 @@
+window.__RECU={"k": "scoumbourdis/grocery-crud", "g": "readmes", "t": "Grocery CRUD\n=============\nGrocery CRUD is a PHP and Codeigniter Framework library that creates a full functional CRUD system without the need to customise JavaScript or CSS.\n\nFor more information, visit http://www.grocerycrud.com"};

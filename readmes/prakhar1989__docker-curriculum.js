@@ -1,0 +1,1 @@
+window.__RECU={"k": "prakhar1989/docker-curriculum", "g": "readmes", "t": "Docker Curriculum\n===\n\n> Learn to build and deploy your distributed applications easily to the cloud with Docker!\n\nFollow the curriculum on [docker-curriculum.com](https://docker-curriculum.com/)\n"};

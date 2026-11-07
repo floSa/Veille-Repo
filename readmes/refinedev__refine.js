@@ -1,0 +1,1 @@
+window.__RECU={"k": "refinedev/refine", "g": "readmes", "t": "packages/core/README.md"};

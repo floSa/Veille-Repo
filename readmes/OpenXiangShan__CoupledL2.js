@@ -1,0 +1,1 @@
+window.__RECU={"k": "OpenXiangShan/CoupledL2", "g": "readmes", "t": "# CoupledL2\n\n![Build Status](https://github.com/RISCVERS/HuanCun/actions/workflows/main.yml/badge.svg)\n\n## Compile source code\n\n```\nmake init\nmake compile\n```\n\n"};

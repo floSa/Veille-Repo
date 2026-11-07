@@ -1,0 +1,1 @@
+window.__RECU={"k": "theupdateframework/theupdateframework.io", "g": "readmes", "t": "# The TUF website\n\nWebsite repository for The Update Framework (TUF), built with [Hugo] using the\n[Docsy] theme and hosted on [Netlify].\n\n[Docsy]: https://docsy.dev\n[Hugo]: https://gohugo.io\n[Netlify]: https://netlify.com\n"};

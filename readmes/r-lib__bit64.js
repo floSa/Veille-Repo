@@ -1,0 +1,1 @@
+window.__RECU={"k": "r-lib/bit64", "g": "readmes", "t": "# bit64\nAn R package with an S3 Class for Vectors of 64bit Integers\n"};

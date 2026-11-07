@@ -1,0 +1,1 @@
+window.__RECU={"k": "lewagon/dotfiles", "g": "readmes", "t": "This repository is used by [Le Wagon](https://www.lewagon.com) students.\n\n## Toolset\n\n- [oh-my-zsh](http://ohmyz.sh/)\n- [Visual Studio Code](https://code.visualstudio.com/)\n- [git](https://git-scm.com/)\n"};

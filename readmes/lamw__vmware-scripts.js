@@ -1,0 +1,1 @@
+window.__RECU={"k": "lamw/vmware-scripts", "g": "readmes", "t": "# VMware Script Repository\n\nThis repository contains a collection of sample scripts across various programming/scripting languages for VMware based solutions.\n"};
