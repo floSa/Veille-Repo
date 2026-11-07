@@ -35,3 +35,5 @@ elder-plinius/T3MP3ST
 Tuhinshubhra/RED_HAWK
 zouzhekang/YJYpaper
 rajkumardusad/IP-Tracer
+bountyyfi/lonkero
+hypery11/flipper-tesla-fsd

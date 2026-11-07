@@ -1,0 +1,53 @@
+---
+schema: 1
+depot: JackEblan/Geto
+source_readme_sha: 4e69450fb27558de
+ecrite_le: 2026-11-07
+nature: app
+deploiement: autre
+prerequis: [aucun]
+cout: gratuit
+maturite: utilisable
+gouvernance: une personne
+alertes: [licence copyleft, mainteneur unique, matière insuffisante]
+verdict: ignorer
+---
+
+# JackEblan/Geto
+
+> Application Android qui applique des réglages système par application, par exemple masquer les options développeur.
+
+## Le problème
+Désactiver les options développeur réinitialise leurs réglages, ce qui gêne l'usage de certaines applications bancaires.
+
+## Ce que ce n'est pas
+Pas un outil de contournement documenté en détail : le README tient en quelques lignes.
+
+## Ce que ça fait vraiment
+Modifie les valeurs de réglages via les préférences partagées, ce qui évite de les perdre quand les options développeur sont coupées. Exige la permission `android.permission.WRITE_SECURE_SETTINGS`, à accorder soi-même.
+
+## Comment c'est branché
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+
+```mermaid
+flowchart LR
+  A[Geto] --> B[WRITE_SECURE_SETTINGS]
+  B --> C[Réglages système]
+  C --> D[Applications ciblées]
+```
+
+## Essayer
+Aucune commande documentée dans le README. Une vidéo tutoriel est mentionnée.
+
+## Coût et pièges
+Gratuit, GPL-3.0. Il faut accorder une permission sensible, ce qui suppose un accès ADB.
+
+## Ce que ce n'est pas
+Pas un outil de contournement de sécurité documenté. Le README est trop court pour juger la fiabilité.
+
+## Alternatives
+Aucune alternative nommée dans le README.
+
+## Pour toi
+À ignorer : utilitaire Android sans rapport avec la data, l'IA ou le MLOps.
+
