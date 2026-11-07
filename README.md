@@ -16,16 +16,16 @@ Période couverte : **2024-09-01 → 2026-11-07**.
 
 | Pertinence | Dépôts | README hors ligne | Schémas d'architecture | Synthèses |
 |---|---|---|---|---|
-| cœur métier | 5 496 | 5 453 | 3 875 | 3 555 |
+| cœur métier | 5 496 | 5 453 | 3 875 | 5 328 |
 | périphérie | 3 303 | 3 273 | 1 850 | 1 528 |
 | hors périmètre | 2 004 | 1 968 | 615 | 262 |
 | à trier | 1 508 | 1 375 | 402 | 215 |
-| **total** | **12 311** | **12 069** | **6 742** | **5 560** |
+| **total** | **12 311** | **12 069** | **6 742** | **7 333** |
 
 Une synthèse s'écrit à partir du README **et** du schéma : c'est le schéma qui fixe le rythme.
 Les écarts restants tiennent à trois causes — **242 dépôts** n'ont pas de README (supprimés,
 bloqués par GitHub, ou sans fichier README), les schémas manquants sont générés au rythme du
-quota gratuit de GitDiagram, et **31 outils offensifs** n'ont pas de synthèse, leur rédaction
+quota gratuit de GitDiagram, et **41 outils offensifs** n'ont pas de synthèse, leur rédaction
 étant refusée par le filtre de sécurité du modèle.
 
 **Collecte.** Un workflow GitHub Actions (`.github/workflows/collecte-trending.yml`) lit la page

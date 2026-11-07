@@ -30,7 +30,7 @@ Schéma simplifié d'après la fiche, sans diagramme fourni.
 flowchart LR
   A[Frontend Source Academy] --> B[API Phoenix Cadet]
   B --> C[PostgreSQL]
-  D[mix ecs setup et seeds] --> C
+  D[mix ecto.setup et seeds] --> C
   B --> E[MQTT pour Sling]
 ```
 

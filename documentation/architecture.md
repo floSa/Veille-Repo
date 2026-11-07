@@ -17,7 +17,7 @@ mesuré (voir [couts.md](couts.md)).
 | Dépôts au catalogue | **12 311** |
 | README stockés hors ligne | **12 069** |
 | Schémas d'architecture (GitDiagram) | **6 742** |
-| Synthèses rédigées | **5 560** |
+| Synthèses rédigées | **7 333** |
 
 La collecte quotidienne ne dépend pas de la machine : un workflow GitHub Actions
 (`.github/workflows/collecte-trending.yml`, deux passages par jour) écrit un relevé par jour
