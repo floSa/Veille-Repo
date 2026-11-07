@@ -48,3 +48,15 @@ screetsec/TheFatRat
 robertdavidgraham/masscan
 k1tbyte/Wemod-Patcher
 gentilkiwi/mimikatz
+aircrack-ng/aircrack-ng
+antfu-collective/icones
+epi052/feroxbuster
+frohoff/ysoserial
+meetecho/janus-gateway
+rmcrackan/Libation
+six2dez/reconftw
+trickest/cve
+wpscanteam/wpscan
+yaklang/yakit
+yarrick/iodine
+zmap/zmap
