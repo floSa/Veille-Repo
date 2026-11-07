@@ -24,6 +24,7 @@ Un robot doit connaître sa position à partir de caméras et d'une centrale ine
 Il fusionne caméra mono, stéréo et IMU, avec calibration spatiale et temporelle en ligne et fermeture de boucle visuelle. Un exemple fusionne aussi un GPS. Il s'exécute comme nœuds ROS (vins_node, loop_fusion_node, global_fusion_node) sur des jeux de données EuRoC et KITTI.
 
 ## Comment c'est branché
+Schéma simplifié d'après la fiche, sans diagramme fourni.
 ```mermaid
 flowchart LR
     BAG["Rosbag / capteurs"] --> VN["vins_node"]
@@ -32,7 +33,6 @@ flowchart LR
     VN --> GF["global_fusion_node"]
     VN --> RV["rviz"]
 ```
-Schéma simplifié d'après la fiche, sans diagramme fourni.
 
 ## Essayer
 ```bash
@@ -51,7 +51,7 @@ Gratuit. Il faut Ubuntu 16.04 ou 18.04, ROS Kinetic ou Melodic et Ceres Solver, 
 Ce n'est pas un produit clé en main : le README précise que le papier n'est pas exactement identique au code. Il dépend fortement du matériel.
 
 ## Alternatives
-VINS-Mono, dont il est l'extension.
+VINS-Mono, dont il est l'extension à plusieurs capteurs. Le README ne nomme pas d'autre alternative.
 
 ## Pour toi
 À ignorer : outil de robotique figé sur des versions d'Ubuntu et ROS anciennes, hors du périmètre data, IA ou MLOps.
