@@ -46,7 +46,7 @@ Gratuit. Licence AGPL-3.0. Sous Linux, distribution seulement par Flathub. 938 i
 Pas un outil de modélisation 3D : il prépare l'impression. Les intégrations en ligne sont facultatives.
 
 ## Alternatives
-Slic3r, dont PrusaSlicer est issu.
+Slic3r, dont PrusaSlicer est issu. Le README ne nomme pas d'autre alternative.
 
 ## Pour toi
 À ignorer : impression 3D, sans lien avec un travail data / IA / MLOps.

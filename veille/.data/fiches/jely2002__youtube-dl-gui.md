@@ -44,10 +44,10 @@ winget install -e --id jely2002.youtube-dl-gui
 Gratuit. Licence AGPL-3.0. La version du Microsoft Store reçoit les mises à jour plus lentement et sans mise à jour auto de yt-dlp. Respect des conditions des plateformes à ta charge.
 
 ## Ce que ce n'est pas
-Pas un téléchargeur autonome : il dépend de yt-dlp. Les maintenants déclinent toute responsabilité en cas de mauvais usage.
+Pas un téléchargeur autonome : il dépend de yt-dlp. Les mainteneurs déclinent toute responsabilité en cas de mauvais usage.
 
 ## Alternatives
-yt-dlp, utilisé en ligne de commande.
+yt-dlp, utilisé en ligne de commande, dont cette interface est une surcouche graphique. Le README ne nomme pas d'autre alternative.
 
 ## Pour toi
 À surveiller : pratique pour récupérer des vidéos ou sous-titres comme matière brute, mais c'est une surcouche à yt-dlp que tu peux appeler directement.
