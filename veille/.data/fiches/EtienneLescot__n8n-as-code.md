@@ -1,0 +1,59 @@
+---
+schema: 1
+depot: EtienneLescot/n8n-as-code
+source_readme_sha: b905737dc9835ab5
+ecrite_le: 2026-11-07
+nature: outil
+deploiement: npm
+prerequis: [Node, service tiers, clé d'API]
+cout: gratuit
+maturite: utilisable
+gouvernance: une personne
+alertes: [mainteneur unique]
+verdict: surveiller
+---
+
+# EtienneLescot/n8n-as-code
+
+> Boîte à outils pour éditer, versionner et déployer des workflows n8n depuis l'éditeur ou un agent IA.
+
+## Le problème
+Les workflows n8n vivent dans l'interface web : difficiles à relire, à versionner et à faire manipuler proprement par un agent IA.
+
+## Ce que ça fait vraiment
+Une CLI (`n8nac`) gère des environnements n8n, tire et pousse les workflows de façon explicite, et les convertit en fichiers `.workflow.ts` lisibles. Une extension VS Code/Cursor et des skills d'agent fournissent schémas, exemples et règles de validation. La commande `promote` copie les workflows d'un environnement vers un autre en remappant les credentials.
+
+## Comment c'est branché
+```mermaid
+flowchart LR
+  Dev["Éditeur ou agent"] --> CLI["n8nac"]
+  CLI --> Env["n8nac env"]
+  CLI --> TS[".workflow.ts"]
+  CLI --> Skills["Skills n8n"]
+  Env --> N8N["Instance n8n"]
+  Mgr["n8n-manager"] --> N8N
+```
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+
+## Essayer
+```bash
+npm install n8nac
+npx --yes n8nac env add Dev --base-url https://n8n.example.com --workflows-path workflows/dev
+printf '%s' "$N8N_API_KEY" | npx --yes n8nac env auth set Dev --api-key-stdin
+npx --yes n8nac env use Dev
+npx --yes n8nac list
+npx --yes n8nac pull <workflow-id>
+```
+
+## Coût et pièges
+Il faut une instance n8n et sa clé d'API (stockée en local, hors dépôt). Le schéma des nœuds suit la dernière version stable de n8n : une instance ancienne donne de moins bons résultats.
+
+## Ce que ce n'est pas
+Ni un produit n8n officiel (projet communautaire indépendant), ni un moteur d'exécution de workflows. La synchronisation reste manuelle : rien n'est poussé sans commande explicite.
+
+## Alternatives
+Aucune alternative nommée dans le README.
+
+## Pour toi
+À surveiller : utile si tu versionnes de l'automatisation n8n avec un agent, mais le projet repose sur une seule personne et n'a qu'un an.
+

@@ -5,7 +5,7 @@ source_readme_sha: 233613107a14d77b
 ecrite_le: 2026-11-07
 nature: bibliothèque
 deploiement: autre
-prerequis: [version de Python]
+prerequis: [aucun]
 cout: gratuit
 maturite: éprouvé
 gouvernance: communauté
