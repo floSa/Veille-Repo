@@ -49,7 +49,7 @@ Gratuit. Linux uniquement, avec privilèges root pour charger les sondes. Vérif
 Pas un outil de monitoring continu ni multiplateforme : c'est un traceur ponctuel pour Linux.
 
 ## Alternatives
-Les traceurs DTrace et SystemUp sont évoqués comme prédécesseurs ; le README nomme DTrace et SystemTap.
+Les traceurs DTrace et SystemTap sont évoqués comme prédécesseurs ; le README nomme DTrace et SystemTap.
 
 ## Pour toi
 À surveiller : très utile en MLOps pour diagnostiquer un serveur d'inférence Linux, mais à garder pour les moments de débogage système.

@@ -9,7 +9,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: éprouvé
 gouvernance: communauté
-alertes: [aucun]
+alertes: []
 verdict: ignorer
 ---
 

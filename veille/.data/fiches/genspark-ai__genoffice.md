@@ -9,7 +9,7 @@ prerequis: [clé d'API]
 cout: freemium
 maturite: expérimental
 gouvernance: entreprise
-alertes: [aucun]
+alertes: []
 verdict: surveiller
 ---
 

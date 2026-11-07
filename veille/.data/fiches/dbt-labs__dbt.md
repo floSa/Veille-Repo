@@ -24,6 +24,13 @@ Transformer des données dans un entrepôt avec des pratiques de génie logiciel
 Tu écris des modèles sous forme de SELECT ; dbt les transforme en tables et vues dans l'entrepôt, gère les dépendances entre modèles et les tests. La branche principale contient la version 2.0 : réécriture en Rust, binaire unique, analyse et compilation plus rapides, spécification stricte, artefacts Parquet en plus du JSON. La version 1 en Python vit sur la branche `1.latest`.
 
 ## Comment c'est branché
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+```mermaid
+flowchart LR
+  sql["Requêtes SELECT"] --> d["dbt (version Rust)"]
+  d --> wh["Entrepôt de données"]
+```
+
 Aucun diagramme fourni, et l'architecture décrite d'après le code n'est pas disponible. Non documenté.
 
 ## Essayer

@@ -24,6 +24,15 @@ Dans une architecture distribuée, le trajet d'une transaction reste une boîte 
 Des agents tracent les transactions entre composants et fournissent une carte de topologie (ServerMap), un graphique de threads actifs, un nuage de points requêtes/réponses, la pile d'appels niveau code, un inspecteur (CPU, mémoire, JVM) et une analyse d'erreurs. Installation d'agents sans changer le code, impact annoncé d'environ 3 % de ressources. La version 4.0.0 est sortie le 28 octobre 2026.
 
 ## Comment c'est branché
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+```mermaid
+flowchart LR
+  app["Application Java, PHP ou Python"] --> ag["Agent"]
+  ag --> co["Collecteur"]
+  co --> st["Stockage HBase ou Pinot"]
+  st --> web["Interface web"]
+```
+
 Aucun diagramme fourni. Le README liste agent, collecteur, web et batch avec des tables de compatibilité Java, HBase et Pinot. Non documenté en détail.
 
 ## Essayer

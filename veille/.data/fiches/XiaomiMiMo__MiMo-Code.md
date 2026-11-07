@@ -24,6 +24,16 @@ Les assistants de code perdent le contexte entre sessions et ont du mal à tenir
 Agent de terminal qui lit et écrit du code, lance des commandes et gère Git. Mémoire de projet (SQLite FTS5), points de contrôle de session, suivi de tâches en arbre, sous-agents en parallèle, commande `/goal` avec juge indépendant, workflows JavaScript (deep-research, fact-check, research-experiment) et skills intégrés. Se connecte à Xiaomi MiMo, Codex, Claude Code ou à toute API compatible OpenAI. Une application de bureau l'utilise comme moteur. README tronqué.
 
 ## Comment c'est branché
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+```mermaid
+flowchart LR
+  u["Terminal"] --> c["MiMo Code"]
+  c --> ag["Agents build et plan"]
+  c --> sa["Sous-agents et workflows"]
+  c --> mem["Mémoire persistante"]
+  ag --> llm["LLM au choix"]
+```
+
 Aucun diagramme fourni. Le README décrit agents build et plan, mémoire, sous-agents, workflows et skills. Non documenté en détail.
 
 ## Essayer

@@ -24,6 +24,13 @@ Le livre de référence n'est proposé qu'en HTML sur son site, ce qui gêne la 
 Le dépôt contient des PDF réalisés à partir d'impressions du contenu HTML : le livre entier et un PDF par chapitre. Le README ajoute des liens vers exercices, diapositives et ressources externes, et une publicité pour un modèle de projet data de l'auteur.
 
 ## Comment c'est branché
+Schéma simplifié d'après la fiche, sans diagramme fourni.
+```mermaid
+flowchart LR
+  repo["Dépôt"] --> pdf["PDF par chapitres"]
+  repo --> full["PDF complet"]
+```
+
 Pas de diagramme : c'est un dépôt de fichiers PDF. Non documenté.
 
 ## Essayer

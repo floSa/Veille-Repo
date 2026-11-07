@@ -9,7 +9,7 @@ prerequis: [Docker, clé d'API, service tiers]
 cout: freemium
 maturite: utilisable
 gouvernance: entreprise
-alertes: [aucun]
+alertes: []
 verdict: surveiller
 ---
 
