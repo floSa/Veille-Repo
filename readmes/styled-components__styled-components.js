@@ -1,0 +1,1 @@
+window.__RECU={"k": "styled-components/styled-components", "g": "readmes", "t": "packages/styled-components/README.md"};

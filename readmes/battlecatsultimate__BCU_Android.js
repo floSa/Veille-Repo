@@ -1,0 +1,1 @@
+window.__RECU={"k": "battlecatsultimate/BCU_Android", "g": "readmes", "t": "# BCU_Android\nBattle Cats Ultimate for Androids\n"};

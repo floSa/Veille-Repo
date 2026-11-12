@@ -1,0 +1,1 @@
+window.__RECU={"k": "cordiverse/cordis", "g": "readmes", "t": "./packages/core/README.md"};

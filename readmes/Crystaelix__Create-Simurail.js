@@ -1,0 +1,1 @@
+window.__RECU={"k": "Crystaelix/Create-Simurail", "g": "readmes", "t": "<div align=\"center\">\n<p><img src=\"./src/main/resources/simurail.logo.png\" alt=\"Logo\" width=\"256\"></p>\n<h1>Create Simurail</h1>\n<p>A train mod using Create and Sable.</p>\n</div>\n"};

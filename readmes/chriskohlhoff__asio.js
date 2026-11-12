@@ -1,0 +1,1 @@
+window.__RECU={"k": "chriskohlhoff/asio", "g": "readmes", "t": "asio version 1.38.2\nReleased Sunday, 19 July 2026.\n\nVisit https://think-async.com/ or see packaged doc/index.html for API\ndocumentation and a tutorial.\n"};

@@ -1,0 +1,1 @@
+window.__RECU={"k": "vuetifyjs/vuetify", "g": "readmes", "t": "packages/vuetify/README.md"};

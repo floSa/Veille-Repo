@@ -1,0 +1,1 @@
+window.__RECU={"k": "Arijit-SE/Java-Solutions-TCS-IPA-Questions", "g": "readmes", "t": "# Java-Solution-TCS-IPA-Questions\n\nTCS company take IPA exam for incentive. There are one 35 marks and one 15 marks question.\nHere I have to solve all the type of questions on Java\n<html>\n<img src = \"https://github.com/Arijit-SE/Arijit-SE/blob/main/java.jpg\">\n</html>\n"};

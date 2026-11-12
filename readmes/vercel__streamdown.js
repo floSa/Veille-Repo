@@ -1,0 +1,1 @@
+window.__RECU={"k": "vercel/streamdown", "g": "readmes", "t": "packages/streamdown/README.md"};

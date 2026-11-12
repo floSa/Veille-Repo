@@ -1,0 +1,1 @@
+window.__RECU={"k": "vercel/ai", "g": "readmes", "t": "packages/ai/README.md\n"};

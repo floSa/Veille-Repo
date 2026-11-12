@@ -1,0 +1,1 @@
+window.__RECU={"k": "GaloisInc/flexdis86", "g": "readmes", "t": "# flexdis86\n\nA disassembler and assembler for x86.\n"};

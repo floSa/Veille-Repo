@@ -1,0 +1,1 @@
+window.__RECU={"k": "rhasspy/piper", "g": "readmes", "t": "Development has moved: https://github.com/OHF-Voice/piper1-gpl\n"};

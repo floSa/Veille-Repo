@@ -1,0 +1,1 @@
+window.__RECU={"k": "mob-sakai/SoftMaskForUGUI", "g": "readmes", "t": "Packages/src/README.md"};

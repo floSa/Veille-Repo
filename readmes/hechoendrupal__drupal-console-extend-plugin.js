@@ -1,0 +1,1 @@
+window.__RECU={"k": "hechoendrupal/drupal-console-extend-plugin", "g": "readmes", "t": "# Drupal Console Extend Plugin\n\nComposer plugin to discover Drupal Console commands using a standard package/library.\n\n### Install this project:\n```\ncomposer require drupal/console-extend-plugin\n```\n"};

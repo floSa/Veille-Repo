@@ -1,0 +1,1 @@
+window.__RECU={"k": "isar/isar", "g": "readmes", "t": "packages/isar/README.md"};

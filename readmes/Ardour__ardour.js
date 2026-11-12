@@ -1,0 +1,1 @@
+window.__RECU={"k": "Ardour/ardour", "g": "readmes", "t": "Please see the Ardour website at https://ardour.org/ for all documentation.\n\nFor information on building Ardour:\n\nhttps://ardour.org/development.html\n"};

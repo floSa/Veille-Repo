@@ -1,0 +1,1 @@
+window.__RECU={"k": "suzuki-shunsuke/tfaction-example", "g": "readmes", "t": "# tfaction-example\n\nExample usage of [tfaction](https://github.com/suzuki-shunsuke/tfaction)\n"};

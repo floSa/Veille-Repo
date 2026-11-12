@@ -1,0 +1,1 @@
+window.__RECU={"k": "PaddlePaddle/PaddleDetection", "g": "readmes", "t": "README_cn.md"};

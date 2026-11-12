@@ -1,0 +1,1 @@
+window.__RECU={"k": "heroui-inc/heroui", "g": "readmes", "t": "packages/react/README.md"};

@@ -1,0 +1,1 @@
+window.__RECU={"k": "wanteddev/wanted-sans", "g": "readmes", "t": "/packages/wanted-sans/README.md"};

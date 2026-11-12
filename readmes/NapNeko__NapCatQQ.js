@@ -1,0 +1,1 @@
+window.__RECU={"k": "NapNeko/NapCatQQ", "g": "readmes", "t": "# NapCatQQ\n\n## Ending\n\n到这里告一段落。\n"};
