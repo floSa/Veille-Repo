@@ -12,18 +12,18 @@
 [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-hébergement-222222?logo=githubpages&logoColor=white)](https://pages.github.com/)
 [![Licence](https://img.shields.io/badge/licence-MIT-blue)](LICENSE)
 
-Période couverte : **2024-09-01 → 2026-11-07**.
+Période couverte : **2024-09-01 → 2026-11-12**.
 
 | Pertinence | Dépôts | README hors ligne | Schémas d'architecture | Synthèses |
 |---|---|---|---|---|
-| cœur métier | 5 496 | 5 453 | 3 875 | 5 328 |
-| périphérie | 3 303 | 3 273 | 1 850 | 1 911 |
-| hors périmètre | 2 004 | 1 968 | 615 | 262 |
-| à trier | 1 508 | 1 375 | 402 | 215 |
-| **total** | **12 311** | **12 069** | **6 742** | **7 716** |
+| cœur métier | 5 527 | 5 483 | 4 243 | 5 335 |
+| périphérie | 3 315 | 3 285 | 2 031 | 1 911 |
+| hors périmètre | 2 015 | 1 980 | 615 | 262 |
+| à trier | 1 520 | 1 388 | 402 | 215 |
+| **total** | **12 377** | **12 136** | **7 291** | **7 723** |
 
 Une synthèse s'écrit à partir du README **et** du schéma : c'est le schéma qui fixe le rythme.
-Les écarts restants tiennent à trois causes — **242 dépôts** n'ont pas de README (supprimés,
+Les écarts restants tiennent à trois causes — **241 dépôts** n'ont pas de README (supprimés,
 bloqués par GitHub, ou sans fichier README), les schémas manquants sont générés au rythme du
 quota gratuit de GitDiagram, et **58 outils offensifs** n'ont pas de synthèse, leur rédaction
 étant refusée par le filtre de sécurité du modèle.
