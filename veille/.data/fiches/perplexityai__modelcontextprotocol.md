@@ -1,54 +1,54 @@
 ---
 schema: 1
 depot: perplexityai/modelcontextprotocol
-source_readme_sha: 17e782912d229660
-ecrite_le: 2026-10-05
-nature: extension
+source_readme_sha: 415b93b18ceeeaf0
+ecrite_le: 2026-11-12
+nature: outil
 deploiement: npm
-prerequis: [clé d'API, Node]
+prerequis: [clé d'API]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: entreprise
-alertes: [dépend d'un SaaS]
+alertes: []
 verdict: adopter
 ---
 
 # perplexityai/modelcontextprotocol
 
-> Serveur MCP officiel de Perplexity donnant aux assistants recherche web, réponse rapide, raisonnement et recherche approfondie.
+> Serveur MCP officiel de Perplexity qui donne à un assistant IA la recherche web, la réponse rapide et la recherche approfondie.
 
 ## Le problème
-Les assistants n'ont pas d'accès web actuel et sourcé sans intégration dédiée.
+Un assistant IA sans accès web reste limité à ses connaissances figées et ne peut pas vérifier ou chercher une information récente.
 
 ## Ce que ça fait vraiment
-Quatre outils : `perplexity_search` (Search API), `perplexity_ask`, `perplexity_reason` et `perplexity_research` (Agent API, presets fast, medium et high). Deux modes : serveur distant hébergé (`https://api.perplexity.ai/mcp`) ou serveur local en stdio / HTTP via npx. Proxy d'entreprise, CORS et hôtes autorisés configurables ; usable aussi comme bibliothèque Node.
+Expose quatre outils MCP : `perplexity_search` (recherche web directe), `perplexity_ask` (réponse rapide), `perplexity_research` (recherche approfondie en streaming) et `perplexity_reason` (raisonnement avancé), tous appuyés sur l'Agent API ou la Search API de Perplexity. Peut tourner en serveur distant hébergé ou en local (stdio/HTTP).
 
 ## Comment c'est branché
 ```mermaid
-flowchart LR
-  A["MCP client"] --> B["Stdio entry (index.ts)"]
-  A --> C["HTTP entry (http.ts)"]
-  B --> D["MCP server (server.ts)"]
-  C --> D
-  D --> E["Search API"]
-  D --> F["Agent API"]
+flowchart TD
+  client["Client MCP"] --> stdio["Entrée stdio/HTTP"]
+  stdio --> mcp["Serveur MCP<br/>server.ts"]
+  mcp --> search["Recherche web"]
+  mcp --> ask["Réponse rapide"]
+  mcp --> research["Recherche approfondie"]
+  mcp --> reason["Raisonnement"]
+  search --> api["API Perplexity"]
 ```
 
 ## Essayer
 ```bash
-claude mcp add --transport http perplexity https://api.perplexity.ai/mcp --header "Authorization: Bearer YOUR_API_KEY"
 claude mcp add perplexity --env PERPLEXITY_API_KEY="your_key_here" -- npx -y @perplexity-ai/mcp-server
 ```
 
 ## Coût et pièges
-Clé d'API Perplexity, facturée à l'usage ; les recherches approfondies peuvent durer des minutes. En mode HTTP, l'écoute est en loopback par défaut : `0.0.0.0` expose le serveur.
+Nécessite une clé d'API Perplexity, facturée par cet usage. Le serveur distant évite l'installation mais transmet la clé via l'en-tête d'autorisation.
 
 ## Ce que ce n'est pas
-Pas un moteur local : tout passe par les API Perplexity. Les anciens paramètres `strip_thinking` et `reasoning_effort` sont ignorés.
+Pas un moteur de recherche propre : il relaie les appels vers l'Agent API et la Search API de Perplexity. N'inclut plus les anciens paramètres `strip_thinking`/`reasoning_effort`, ignorés s'ils sont envoyés.
 
 ## Alternatives
 Aucune alternative nommée dans le README.
 
 ## Pour toi
-À adopter si tu utilises déjà Perplexity : intégration officielle simple, mais toute requête sort vers leur service.
+À adopter pour un agent data/IA qui a besoin de recherche web fiable avec sources datées, si le budget clé d'API Perplexity est accepté.
 

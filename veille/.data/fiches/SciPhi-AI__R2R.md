@@ -9,7 +9,7 @@ prerequis: [clé d'API, Docker]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: entreprise
-alertes: [matière insuffisante]
+alertes: [dernier commit ancien, matière insuffisante]
 verdict: surveiller
 ---
 

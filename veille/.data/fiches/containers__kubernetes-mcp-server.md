@@ -1,11 +1,11 @@
 ---
 schema: 1
 depot: containers/kubernetes-mcp-server
-source_readme_sha: 66636d4c0c01fec4
-ecrite_le: 2026-09-28
-nature: service
+source_readme_sha: cc200aa8291364a4
+ecrite_le: 2026-11-12
+nature: outil
 deploiement: binaire
-prerequis: [service tiers]
+prerequis: [aucun]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
@@ -15,58 +15,39 @@ verdict: adopter
 
 # containers/kubernetes-mcp-server
 
-> Serveur MCP Go qui parle directement à l'API Kubernetes, sans passer par kubectl.
+> Serveur MCP natif en Go qui donne à un assistant IA un accès direct à l'API Kubernetes et OpenShift.
 
 ## Le problème
-Les serveurs MCP Kubernetes existants enveloppent `kubectl` : il faut installer la chaîne
-d'outils, subir la latence des processus externes et se contenter de ce que la CLI expose.
+Piloter un cluster Kubernetes depuis un assistant IA nécessite souvent d'enchaîner des appels `kubectl`, lents et dépendants d'outils externes installés sur la machine.
 
 ## Ce que ça fait vraiment
-Implémentation Go native qui dialogue avec l'API server : CRUD générique sur n'importe quelle
-ressource Kubernetes ou OpenShift, opérations dédiées sur les pods (list, get, delete, logs,
-top, exec, run), namespaces, events, projets OpenShift, logs et statistiques de nœuds. Les
-outils sont regroupés en *toolsets* activables (`config` et `core` par défaut ; `helm`, `kcp`,
-`kiali`, `kubevirt`, `netobserv`, `tekton` en option) pour réduire le contexte et améliorer la
-sélection d'outils par le LLM. Configuration en TOML avec fichiers drop-in, rechargement
-dynamique par SIGHUP, ressources interdites, prompts MCP personnalisés et OAuth/OIDC en mode
-HTTP. Journalisation MCP avec rédaction automatique des jetons et mots de passe.
+Implémentation Go native qui parle directement à l'API Kubernetes (pas un wrapper de `kubectl`/`helm`) : gestion de ressources génériques, pods (list/get/delete/logs/exec/top/run), namespaces, événements, Helm, et toolsets optionnels (Tekton, Kiali, KubeVirt). Supporte le multi-cluster et des garde-fous `read_only`/`denied_resources`.
 
 ## Comment c'est branché
 ```mermaid
 flowchart TD
-  CL["Client MCP (Claude Code, Cursor, VS Code, Goose)"] --> SRV["kubernetes-mcp-server (binaire Go)"]
-  CFG["config.toml (+ --config-dir drop-ins)"] --> SRV
-  SRV --> TS["Toolsets: config, core, helm, tekton, kiali…"]
-  TS --> API["API server Kubernetes / OpenShift"]
-  SRV --> OTEL["OpenTelemetry + /stats"]
-  SRV --> LOG["MCP logging (secrets rédigés)"]
+  main["Point d'entrée<br/>main.go"] --> mcp["Cœur MCP<br/>pkg/mcp"]
+  mcp --> toolsets["Assemblage des toolsets"]
+  toolsets --> kubernetes["Adaptateur Kubernetes<br/>pkg/kubernetes"]
+  toolsets --> helm["Adaptateur Helm<br/>pkg/helm"]
+  mcp --> http["Mode HTTP<br/>pkg/http"]
+  kubernetes --> cluster[("Cluster Kubernetes")]
 ```
 
 ## Essayer
-```bash
+```shell
 npx kubernetes-mcp-server@latest --help
-uvx kubernetes-mcp-server@latest --help
-./kubernetes-mcp-server --help
-kubernetes-mcp-server --config /etc/kubernetes-mcp-server/config.toml
-code --add-mcp '{"name":"kubernetes","command":"npx","args":["kubernetes-mcp-server@latest"]}'
 ```
 
 ## Coût et pièges
-Gratuit. Il faut un accès à un cluster. Binaire natif Linux/macOS/Windows, donc ni Node ni
-Python requis — mais des paquets npm et PyPI existent aussi. Attention au périmètre : `pods_exec`
-et `resources_create_or_update` donnent un pouvoir réel sur le cluster ; le README documente
-`read_only = true` et `denied_resources` (par exemple bloquer les Secrets), à poser avant de
-brancher un agent. `resources_create_or_update` applique en Server-Side Apply : tout champ
-omis du manifeste est supprimé.
+Gratuit, binaire unique sans dépendance Node/Python. Les garde-fous `read_only`/`denied_resources` sont best-effort : le vrai contrôle d'accès reste le RBAC Kubernetes de l'identité utilisée.
 
 ## Ce que ce n'est pas
-Ce n'est pas un wrapper `kubectl`/`helm`. Ce n'est pas un outil d'observabilité, même s'il
-expose des traces OTel. Les scénarios d'évaluation couvrent Helm, Istio, Kiali, KubeVirt,
-NetObserv et Tekton, mais ce ne sont pas des intégrations complètes.
+Pas un simple wrapper de `kubectl`/`helm` : implémentation directe de l'API. Les redactions de logs MCP ne garantissent pas la suppression de toute donnée sensible dans les résultats d'outils.
 
 ## Alternatives
-- Les serveurs MCP Kubernetes basés sur `kubectl`, si tu veux rester sur des commandes shell
-  auditables plutôt que sur des appels API directs.
+Aucune alternative nommée dans le README.
 
 ## Pour toi
-Le plus solide des MCP Kubernetes si tu débogues des workloads ML en cluster — en read-only d'abord.
+À adopter pour piloter des clusters Kubernetes depuis un agent IA en MLOps, avec les garde-fous `read_only`/`denied_resources` activés en production.
+

@@ -1,8 +1,8 @@
 ---
 schema: 1
 depot: google/adk-python
-source_readme_sha: 084467083400d9e8
-ecrite_le: 2026-09-28
+source_readme_sha: 67e443cbd801d36d
+ecrite_le: 2026-11-12
 nature: bibliothèque
 deploiement: pip
 prerequis: [version de Python, clé d'API]
@@ -10,58 +10,50 @@ cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: entreprise
 alertes: []
-verdict: adopter
+verdict: surveiller
 ---
 
 # google/adk-python
 
-> Cadre Python code-first de Google pour construire, évaluer et déployer des agents.
+> Framework Python de Google pour construire, évaluer et déployer des agents IA et leurs workflows en graphe.
 
 ## Le problème
-Un système multi-agents écrit à la main mélange logique métier, orchestration et reprise sur erreur :
-rien n'est testable isolément, et le déploiement se réinvente à chaque projet.
+Assembler des agents, leurs outils, leur mémoire et leur évaluation à la main donne du code ad hoc, difficile à tester et à déployer.
 
 ## Ce que ça fait vraiment
-Deux classes centrales : `Agent` (instructions, outils, comportement) et `Workflow` (graphe d'exécution
-déclaré par `edges`). Le runtime de workflow gère routage, fan-out/fan-in, boucles, réessais, état,
-nœuds dynamiques, humain dans la boucle et workflows imbriqués. Une Task API structure la délégation
-entre agents (multi-tours, sortie contrôlée en un tour, agents-tâches comme nœuds). Outils préfabriqués,
-fonctions, specs OpenAPI, outils MCP, et une confirmation d'outil qui peut bloquer une exécution.
-Une UI de développement, `adk eval` pour l'évaluation, et un déploiement Docker ou Cloud Run.
+Fournit les classes `Agent` et `Workflow` (graphe d'exécution avec routage, boucles, reprise, validation humaine). Le runtime charge le graphe d'agents, exécute les flux LLM, appelle les outils ou délègue à d'autres agents, puis persiste sessions et artefacts. Une CLI (`adk run`, `adk eval`, `adk deploy`) et une UI de développement complètent l'ensemble. Optimisé pour Gemini mais présenté comme agnostique du modèle.
 
 ## Comment c'est branché
 ```mermaid
 flowchart TD
-    AGENT["Agent(name, model, instruction)"] --> WF["Workflow(edges=[...])"]
-    TOOLS["outils : fonctions, OpenAPI, MCP"] --> AGENT
-    WF --> RUNTIME["runtime graphe (routage, boucles, HITL)"]
-    RUNTIME --> TASK["Task API (délégation agent→agent)"]
-    RUNTIME --> UI["adk run / UI de développement"]
-    RUNTIME --> EVAL["adk eval (evalset.json)"]
-    RUNTIME --> DEPLOY["adk deploy docker | cloud_run"]
+  CLI["CLI (cli.py)"] --> AG["Agent Graph (base_agent.py)"]
+  API["API Server (api_server.py)"] --> AG
+  AG --> FL["LLM Flows (auto_flow.py)"]
+  FL --> TC["Tool Caller (_caller.py)"]
+  FL --> EV["Event Stream (event.py)"]
+  EV --> SS[("Session Database")]
+  EVAL["Agent Evaluation (agent_evaluator.py)"] --> AG
 ```
 
 ## Essayer
 ```bash
 pip install google-adk
 adk run path/to/my_agent
-adk eval samples_for_testing/hello_world samples_for_testing/hello_world/hello_world_eval_set_001.evalset.json
-adk deploy cloud_run --with_ui <agent-folder>
+adk eval \
+    contributing/samples/evaluation/home_automation_agent \
+    contributing/samples/evaluation/basic_criteria/home_automation.evalset.json \
+    --config_file_path contributing/samples/evaluation/basic_criteria/eval_config.json
 ```
 
 ## Coût et pièges
-Python 3.10+. Le README recommande d'installer avec les fichiers de contraintes fournis
-(`constraints-3.10.txt` et suivants) pour se protéger des dépendances transitives — signe d'un arbre
-de dépendances instable. Le déploiement Cloud Run et Vertex AI Agent Engine se facture chez Google,
-et les modèles aussi. Cadence de publication d'environ deux semaines.
+Python 3.11+ requis. Un modèle (Gemini par défaut dans l'exemple) suppose une clé d'API ou un compte cloud à ta charge. La version de développement installée depuis `main` peut contenir des changements expérimentaux.
 
 ## Ce que ce n'est pas
-Pas lié à Gemini : le README le dit optimisé pour Gemini mais agnostique au modèle, au déploiement
-et aux autres cadres. Pas un produit hébergé : c'est une bibliothèque. La version `@main` contient
-des changements expérimentaux et n'est pas destinée à la production.
+Pas un agent prêt à l'emploi : c'est un kit de construction. Plusieurs briques (RAG, recherche, moteur de code, télémétrie) s'appuient sur des services Google Cloud (Vertex). Le déploiement cible surtout Cloud Run et Vertex AI Agent Engine, même si Docker est possible.
 
 ## Alternatives
-- Agent Config : le mode sans code du même projet, si le graphe suffit.
+Aucune alternative nommée dans le README.
 
 ## Pour toi
-Le cadre d'agents le plus sérieusement outillé côté évaluation et déploiement — à évaluer contre ton existant.
+À surveiller : base sérieuse pour des agents avec évaluation intégrée, mais le centre de gravité Google/Gemini te lie à cet écosystème si tu n'y es pas déjà.
+

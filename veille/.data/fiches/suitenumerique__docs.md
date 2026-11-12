@@ -1,36 +1,36 @@
 ---
 schema: 1
 depot: suitenumerique/docs
-source_readme_sha: 7dfdb1c11a9cedbf
-ecrite_le: 2026-09-29
+source_readme_sha: 27fa1bf1a2c3ee21
+ecrite_le: 2026-11-12
 nature: app
 deploiement: docker
-prerequis: [Docker, service tiers]
+prerequis: [Docker, Node]
 cout: gratuit
 maturite: utilisable
-gouvernance: communauté
+gouvernance: entreprise
 alertes: []
 verdict: surveiller
 ---
 
-# suitenumique/docs
+# suitenumerique/docs
 
-> Éditeur collaboratif open source, alternative à Notion, à héberger soi-même pour organisations publiques ou entreprises.
+> Éditeur collaboratif auto-hébergeable, alternative à Notion et Google Docs, porté par les États français et allemand.
 
 ## Le problème
-Les équipes écrivent et partagent leur savoir dans des outils fermés, hébergés hors de leur contrôle.
+Les équipes et administrations veulent de l'édition collaborative en temps réel sans confier leurs documents à un SaaS étranger.
 
 ## Ce que ça fait vraiment
-Édition riche et Markdown en temps réel (curseurs, commentaires, accès granulaires), sous-pages, hors ligne, import `.docx`/`.md`, export `.docx`/`.odt`/`.pdf`, mode présentation. Fonctions IA optionnelles (réécrire, résumer, traduire) branchées sur n'importe quel fournisseur via clé et URL. API pour intégrations (exemple : transcriptions Meet). Architecture : backend Django, frontend Next.js/BlockNote, serveur temps réel Yjs/HocusPocus.
+Édition riche et Markdown, curseurs en direct, commentaires, droits d'accès fins, sous-pages, mode hors ligne, présentations, import `.docx`/`.md`, export `.docx`/`.odt`/`.pdf`. Fonctions IA optionnelles, agnostiques du modèle (une clé d'API et une URL). API serveur à serveur pour intégrer par exemple les transcriptions de Meet. Architecture : backend Django REST, frontend Next.js avec BlockNote, serveur temps réel Yjs.
 
 ## Comment c'est branché
 ```mermaid
-flowchart LR
-  U[Navigateur] --> FE[Frontend Next.js + BlockNote]
-  FE --> BE[Backend Django + DRF]
-  FE --> RT[Serveur Yjs/HocusPocus]
-  BE --> PG[(PostgreSQL)]
-  BE --> S3[(Minio / S3)]
+flowchart TD
+  U["User (Browser)"] --> FE["Docs Frontend (Next.js + BlockNote.js)"]
+  FE -->|REST| BE["Docs Backend (Django + DRF)"]
+  FE -->|WebSocket| RT["Real-Time Collaboration Server (y-provider)"]
+  BE --> DB["PostgreSQL Database"]
+  BE --> OS["Object Storage (Minio/S3)"]
 ```
 
 ## Essayer
@@ -41,14 +41,14 @@ make demo
 ```
 
 ## Coût et pièges
-Docker, Docker Compose et GNU Make. Les paquets XL de BlockNote (dont l'export PDF) sont sous GPL, non compatibles MIT ; construire avec `PUBLISH_AS_MIT=true` pour s'en passer. Identifiants de dev par défaut : impress/impress. 369 issues ouvertes.
+Docker, Docker Compose et GNU Make requis. L'export PDF s'appuie sur des paquets BlockNote XL sous GPL, non compatibles MIT ; la construction avec `PUBLISH_AS_MIT=true` les retire.
 
 ## Ce que ce n'est pas
-Ce n'est pas un produit clé en main : le README décrit surtout un environnement de développement. Ce n'est pas purement MIT dès qu'on active les fonctions XL.
+Pas un outil léger : il faut PostgreSQL, un stockage objet et un serveur temps réel. Identifiants par défaut (impress/impress) réservés au développement.
 
 ## Alternatives
-Notion et Google Docs (cités comme références à remplacer) ; pas d'autre dépôt nommé.
+Notion et Google Docs sont cités comme références à remplacer.
 
 ## Pour toi
-À surveiller : intéressant pour un wiki d'équipe souverain, avec API et IA branchable, mais la question GPL des paquets XL est à trancher avant tout usage commercial.
+À surveiller : intéressant pour une base de connaissances souveraine, mais vérifie la question GPL avant toute redistribution.
 

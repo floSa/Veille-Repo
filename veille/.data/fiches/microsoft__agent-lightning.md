@@ -1,13 +1,13 @@
 ---
 schema: 1
 depot: microsoft/agent-lightning
-source_readme_sha: 80652c19f70d5f6d
-ecrite_le: 2026-09-28
+source_readme_sha: 081e9a6e2f11a88b
+ecrite_le: 2026-11-12
 nature: bibliothèque
-deploiement: autre
-prerequis: [GPU]
+deploiement: pip
+prerequis: [GPU, version de Python]
 cout: gratuit
-maturite: expérimental
+maturite: utilisable
 gouvernance: entreprise
 alertes: []
 verdict: surveiller
@@ -15,27 +15,24 @@ verdict: surveiller
 
 # microsoft/agent-lightning
 
-> Entraîne par renforcement un agent existant sans modifier son code, via un proxy de modèle.
+> Entraîne des agents IA existants par apprentissage par renforcement, presque sans modifier leur code.
 
 ## Le problème
-Appliquer du RL à un agent oblige d'ordinaire à réécrire sa boucle pour exposer états et récompenses.
-On finit par entraîner une version simplifiée de l'agent, pas celui qui tourne vraiment.
+Améliorer un agent par RL oblige normalement à le réécrire pour le brancher à une boucle d'entraînement.
 
 ## Ce que ça fait vraiment
-L'agent parle au modèle à travers un proxy : outils, contexte, flux de contrôle et environnement restent en place.
-Trois composants seulement : Trainer (`verl` + vLLM), API Gateway (proxy et capture), Rollout Controller.
-Les agents tournent en local ou comme Jobs Kubernetes, sans service de bac à sable externe.
-Résultat annoncé sur l'exemple de codage : SWE-bench Verified de 41,8 % à 56,4 % avec 6 000 échantillons.
+Un proxy d'API capture les requêtes modèle de l'agent réel et les convertit en données d'entraînement. Trois composants : Trainer (verl et vLLM, construit les échantillons, met à jour la politique), API Gateway, Rollout Controller (agents en local ou en Jobs Kubernetes). Un store central (mémoire, SQLite, MongoDB) relie traces, ressources et algorithmes, et un tableau de bord React affiche l'état. Le README annonce des gains sur SWE-bench Verified avec Qwen3.5.
 
 ## Comment c'est branché
 ```mermaid
-flowchart LR
-  trainer[Trainer verl + vLLM] --> controller[Rollout Controller]
-  controller --> agent[agent réel inchangé]
-  agent --> gateway[API Gateway proxy]
-  gateway --> trainer
-  controller --> k8s[Kubernetes Jobs]
-  gateway --> traces[événements + trajectoires]
+flowchart TD
+  RUN["Runner"] --> EM["Emitter"]
+  EM --> ST[("Store")]
+  ST --> AL["Algorithms"]
+  AL --> ST
+  TR["Trainer"] --> RUN
+  TR --> VL["VERL"]
+  DB["Dashboard"] --> ST
 ```
 
 ## Essayer
@@ -44,19 +41,16 @@ cd <this-repo>
 uv sync
 bash scripts/setup_verl.sh 0.8.0 cu130
 ```
-Les exemples vont de Calc-X (un seul GPU) à GSM8K, ScienceWorld, Search-R1, LLM-in-Sandbox et Coding Agent.
 
 ## Coût et pièges
-La pile GPU `verl` est le vrai prérequis ; l'exemple d'installation cible CUDA 13.0.
-Seul Calc-X est annoncé comme tenant sur un GPU : le reste suppose un cluster.
+Exemple d'installation sur une machine CUDA 13.0 : GPU indispensable pour l'entraînement. Les exemples de codage supposent du calcul lourd (modèles 9B à 35B).
 
 ## Ce que ce n'est pas
-Pas un cadre d'agents : il entraîne des agents écrits ailleurs, il ne remplace pas leur harnais.
-Pas la v0 : le projet a été entièrement refondu en v1.0, les versions antérieures vivent sur une autre branche.
-Pas un produit : ~3 500 lignes assumées, avec certification Responsible AI mais sans engagement de service.
+Pas un framework d'agents : il entraîne des agents conçus ailleurs. Les chiffres de SWE-bench sont ceux des auteurs, non vérifiés ici.
 
 ## Alternatives
-`Tinker` — combinaison documentée dans un article du projet pour ajuster n'importe quel agent.
+Aucune alternative nommée dans le README.
 
 ## Pour toi
-À suivre : c'est la voie crédible pour faire du RL sur un agent réel, mais la facture GPU reste le verrou.
+À surveiller : pertinent si tu fais du RL sur des agents et disposes de GPU ; sinon c'est une lecture d'architecture plus qu'un outil quotidien.
+

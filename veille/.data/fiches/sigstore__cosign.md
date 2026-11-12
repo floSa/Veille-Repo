@@ -1,56 +1,58 @@
 ---
 schema: 1
 depot: sigstore/cosign
-source_readme_sha: 2c7402c7b6d72cfb
-ecrite_le: 2026-09-28
+source_readme_sha: ff167bbc67a9ad2a
+ecrite_le: 2026-11-12
 nature: outil
 deploiement: binaire
-prerequis: [aucun]
+prerequis: [service tiers]
 cout: gratuit
 maturite: éprouvé
-gouvernance: fondation
+gouvernance: communauté
 alertes: []
 verdict: adopter
 ---
 
 # sigstore/cosign
 
-> Outil Sigstore pour signer et vérifier des conteneurs OCI et autres artefacts.
+> Outil en ligne de commande pour signer et vérifier des images de conteneurs et autres artefacts via Sigstore.
 
 ## Le problème
-Signer des images de conteneurs et prouver leur provenance imposait PGP et une gestion de clés lourde. Les signatures détachées et l'air-gap compliquent la vérification.
+Impossible de prouver qu'une image ou un binaire téléchargé vient bien de son auteur et n'a pas été modifié.
 
 ## Ce que ça fait vraiment
-Signature « keyless » par défaut via l'autorité Fulcio et le log de transparence Rekor (OIDC, certificat lié à l'email). Support aussi des clés matérielles/KMS et d'un keypair chiffré généré. Signe, vérifie et stocke des signatures dans un registre OCI. Vérification air-gap via bundle/trusted root. Attestations in-toto (DSSE). Signe aussi blobs, WASM, eBPF, Tekton bundles, Helm charts.
+Cosign signe un artefact stocké dans un registre OCI, par défaut en mode « keyless » : authentification OIDC, certificat éphémère de l'autorité Fulcio, trace dans le journal de transparence Rekor. Il gère aussi des clés locales, du matériel, des KMS, des attestations in-toto et la signature de blobs. La signature est stockée dans le registre à côté de l'image ; la vérification contrôle identité et émetteur.
 
 ## Comment c'est branché
 ```mermaid
 flowchart TD
-    IMG[Image OCI @sha256] --> SIGN[cosign sign]
-    SIGN --> FULCIO[Fulcio CA - certificat éphémère]
-    SIGN --> REKOR[Rekor log transparence]
-    SIGN --> REG[Registre OCI .sig]
-    REG --> VERIFY[cosign verify]
-    VERIFY --> ID[--certificate-identity / issuer]
+  cli["Cosign CLI (main.go)"] --> sign["Sign (sign.go)"]
+  cli --> ver["Verify (verify.go)"]
+  sign --> oidc["OIDC (auth.go)"]
+  sign --> fulcio{{"Fulcio CA"}}
+  sign --> rekor{{"Rekor"}}
+  sign --> reg[("Registre OCI (remote.go)")]
+  ver --> reg
 ```
 
 ## Essayer
-```shell
+```bash
 cosign sign $IMAGE
-```
-```shell
 cosign verify $IMAGE --certificate-identity=$IDENTITY --certificate-oidc-issuer=$OIDC_ISSUER
+cosign sign-blob artifact --bundle artifact.sigstore.json --yes
 ```
 
 ## Coût et pièges
-Gratuit. Signature keyless : l'email d'authentification est stocké de façon permanente dans les logs de transparence publics. Signer par digest (`@sha256:`), jamais par tag. Les signatures ne sont pas garbage-collectées avec l'image ; multi-signatures = race condition read-append-write.
+Gratuit. Le mode keyless publie ton identité (e-mail) dans des journaux publics, de façon permanente ; il dépend des services Sigstore, une panne fait échouer la signature. Signe toujours par digest, pas par tag.
 
 ## Ce que ce n'est pas
-Pas un scanner de vulnérabilités : signature et vérification de provenance uniquement. Seulement ECDSA-P256/SHA256 pour ses propres clés.
+Pas un scanneur de vulnérabilités ni un registre. Le README liste lui-même des limites : ECDSA-P256 uniquement, signatures non supprimées avec l'image.
 
 ## Alternatives
-- Notary v2 : comparé dans une FAQ dédiée.
-- containers/image signing : proche, mais PGP au lieu d'ECDSA.
+- Notary v2 : le README renvoie à un comparatif.
+- containers/image signing : proche, mais signe en PGP.
+- TUF : jugé complémentaire.
 
 ## Pour toi
-Standard de fait pour signer tes images de modèles/conteneurs dans un pipeline MLOps ; à adopter.
+À adopter pour signer les images de modèles et de pipelines : c'est la brique standard de la chaîne d'approvisionnement logicielle et elle reste active.
+

@@ -9,7 +9,7 @@ prerequis: [version de Python, compte à créer]
 cout: gratuit
 maturite: expérimental
 gouvernance: une personne
-alertes: [licence non déclarée, mainteneur unique]
+alertes: [licence non déclarée, dernier commit ancien, mainteneur unique]
 verdict: ignorer
 ---
 

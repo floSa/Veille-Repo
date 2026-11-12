@@ -1,72 +1,57 @@
 ---
 schema: 1
 depot: maziyarpanahi/openmed
-source_readme_sha: 3472c09bc42b9298
-ecrite_le: 2026-09-28
+source_readme_sha: aa2d545c294535de
+ecrite_le: 2026-11-12
 nature: bibliothèque
 deploiement: pip
-prerequis: [beaucoup de RAM, GPU]
+prerequis: [version de Python]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [mainteneur unique, télémétrie]
+alertes: [mainteneur unique]
 verdict: surveiller
 ---
 
 # maziyarpanahi/openmed
 
-> SDK local d'extraction d'entités cliniques et de dé-identification de données de santé, multi-backend.
+> Bibliothèque locale de NER clinique et de dé-identification de textes médicaux, du Python à iOS et Android.
 
 ## Le problème
-Envoyer des notes cliniques à une API cloud pour en extraire maladies, médicaments ou identifiants
-est rarement acceptable ; recoller soi-même modèles NER médicaux, tokenizer et règles PII est long.
+Extraire des entités médicales et masquer des données patient sans envoyer le texte à une API cloud.
 
 ## Ce que ça fait vraiment
-`analyze_text()` renvoie des entités typées (DISEASE, DRUG, ANATOMY, GENE…) depuis un registre de
-modèles spécialisés ; `extract_pii()` et `deidentify()` couvrent masquage, remplacement, hachage et
-décalage de dates, avec une fusion d'entités qui garde `01/15/1970` entier. Le même code tourne sur
-CPU, CUDA, MLX (Apple Silicon), ONNX Runtime Mobile (Android) et Transformers.js (navigateur/WebGPU).
-Un service FastAPI expose `/analyze`, `/pii/extract`, `/pii/deidentify`, plus un serveur MCP et un
-catalogue de skills agent installables.
+OpenMed charge des modèles du catalogue (maladies, médicaments, anatomie, gènes, PII) via Hugging Face, MLX (Apple Silicon), CoreML ou ONNX, et rend entités ou texte dé-identifié (masquage, remplacement, hash, décalage de dates). Un pipeline PII ajoute fusion de spans, règles par pays et contrôles qualité. Un service REST FastAPI, des skills pour agents, un paquet Swift, une bibliothèque Android et un export navigateur sont fournis.
 
 ## Comment c'est branché
 ```mermaid
-flowchart LR
-    T["texte clinique"] --> API["openmed<br/>analyze_text / deidentify"]
-    API --> REG["registre de modèles"]
-    REG --> HUB["Hugging Face Hub<br/>(ou dossier local)"]
-    API --> BE["backends : PyTorch / MLX / ONNX"]
-    BE --> ENT["entités + PII + texte dé-identifié"]
-    API --> SVC["openmed.service.app<br/>(FastAPI)"]
-    API --> MCP["serveur MCP / skills"]
+flowchart TD
+  api["OpenMed API (__init__.py)"] --> reg[("Model registry")]
+  api --> cfg["Config et backends (config.py)"]
+  cfg --> mlx["MLX"]
+  cfg --> torch["Torch (privacy_filter.py)"]
+  api --> pii["PII pipeline (pii.py)"]
+  pii --> anon["Anonymizer (engine.py)"]
+  svc["FastAPI (app.py)"] --> api
 ```
 
 ## Essayer
 ```bash
 pip install --upgrade "openmed[hf]"
 pip install --upgrade "openmed[hf,service]"
-pip install --upgrade "openmed[mlx]"
-uvicorn openmed.service.app:app --host 0.0.0.0 --port 8080
-curl -X POST http://127.0.0.1:8080/pii/extract \
-  -H "Content-Type: application/json" \
-  -d '{"text":"Paciente: Maria Garcia, DNI: 12345678Z","lang":"es"}'
-./install-skills.sh
+python -m openmed.service.logging --host 0.0.0.0 --port 8080
+python examples/v30_clinical_brief.py
 ```
 
 ## Coût et pièges
-Le SDK est Apache-2.0, mais chaque modèle et dataset a ses propres conditions, à valider soi-même.
-Modèles de 109M à 434M paramètres à télécharger ; des chemins réseau (téléchargement, adaptateurs
-distants, télémétrie) existent et sont à couper explicitement pour un usage hors ligne.
+SDK gratuit en Apache-2.0, mais les licences des modèles et jeux de données varient : à vérifier un par un. Le téléchargement des modèles passe par le réseau. Le README précise que l'usage du SDK n'établit aucune conformité HIPAA.
 
 ## Ce que ce n'est pas
-Pas une conformité HIPAA : le README répète que l'alignement « Safe Harbor » est une aide, que la
-revue de déploiement par un expert reste obligatoire et que l'usage du SDK ne l'établit pas. Pas un
-modèle de génération : c'est de la classification de tokens, pas un LLM clinique.
+Pas une validation clinique : les démos du README utilisent des composants de test synthétiques. Pas un remplaçant d'une revue d'expert avant un usage réel de dé-identification.
 
 ## Alternatives
-- `transformers` + un modèle NER (p. ex. `dslim/bert-base-NER`) : moins de plomberie, tout à écrire.
-- `openai/privacy-filter` seul : les poids sans la couche de politiques ni le service.
-- Transformers.js : si le besoin est uniquement navigateur.
+Aucune alternative citée dans le README.
 
 ## Pour toi
-La référence à tester si tu touches à de la donnée de santé : dé-identification locale, API sobre.
+À surveiller si tu traites des textes cliniques : la brique locale est solide sur le papier, mais 548 issues ouvertes, un seul porteur et des licences de modèles hétérogènes demandent une validation avant adoption.
+

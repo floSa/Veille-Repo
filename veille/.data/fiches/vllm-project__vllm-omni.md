@@ -1,13 +1,13 @@
 ---
 schema: 1
 depot: vllm-project/vllm-omni
-source_readme_sha: 07f28d6237dc6c63
-ecrite_le: 2026-09-28
+source_readme_sha: 29dd9006458e7b56
+ecrite_le: 2026-11-12
 nature: bibliothèque
-deploiement: pip
-prerequis: [GPU, beaucoup de RAM]
+deploiement: docker
+prerequis: [GPU, Docker]
 cout: gratuit
-maturite: expérimental
+maturite: utilisable
 gouvernance: communauté
 alertes: []
 verdict: surveiller
@@ -15,37 +15,38 @@ verdict: surveiller
 
 # vllm-project/vllm-omni
 
-> Extension de vLLM pour servir des modèles omni-modaux (texte, image, audio, vidéo, action).
+> Extension de vLLM pour servir des modèles omni-modaux (texte, image, audio, vidéo, action) via API OpenAI.
 
 ## Le problème
-vLLM sert des LLM texte autorégressifs, mais ne couvre pas les architectures non-autorégressives (diffusion) ni les sorties multimodales et robotiques. Servir ces modèles demande des runtimes séparés.
+vLLM sert surtout du texte autorégressif ; les modèles de diffusion, de parole ou multi-étapes demandent un autre moteur de service.
 
 ## Ce que ça fait vraiment
-Étend vLLM à l'omni-modalité : texte, image, audio, vidéo, action. Ajoute le support des Diffusion Transformers (DiT) au-delà de l'autorégressif. Sorties hétérogènes. Réutilise la gestion KV-cache de vLLM, exécution par étapes pipelinée, désagrégation via OmniConnector. Supporte Qwen3-Omni, MiniCPM-o, TTS (CosyVoice3…), diffusion (Wan2.2…), modèles robot-policy (π0, GR00T). API compatible OpenAI, serving full-duplex temps réel.
+Le framework découpe un modèle en étapes (par exemple « thinker », « talker », diffusion) exécutées par des workers, avec transfert de KV et de données entre étapes via des connecteurs (mémoire partagée, Mooncake…). Il couvre des familles comme Qwen3-Omni, TTS, Wan2.2 ou des modèles d'action. Il expose une API compatible OpenAI, du temps réel full-duplex, la quantification, et des plateformes CUDA, ROCm, NPU, XPU.
 
 ## Comment c'est branché
 ```mermaid
 flowchart TD
-    HF[Modèles HuggingFace] --> P[Pipeline hétérogène]
-    P --> AR[Étage AR - KV cache vLLM]
-    P --> DIT[Étage DiT diffusion]
-    AR --> OC[OmniConnector]
-    DIT --> OC
-    OC --> API[API compatible OpenAI]
-    API --> OUT[Texte / image / audio / vidéo / action]
+  api["OpenAI API (entrypoints/openai)"] --> orch["Orchestrator (orchestrator.py)"]
+  orch --> pool["Stage Pool (stage_pool.py)"]
+  orch --> stage["Stage Client (stage_client.py)"]
+  stage --> models["Model Executor (Qwen Omni, TTS)"]
+  stage --> dfx["Diffusion Engine"]
+  stage --> conn["Omni Connectors"]
+  pool --> work["GPU Workers"]
 ```
 
 ## Essayer
-Aucune commande d'installation présente dans le README (renvoie vers la doc : Installation, Quickstart, images Docker CUDA nightly). L'écrire : voir la documentation du projet.
+Aucune commande documentée dans le README : il renvoie à la documentation (installation, quickstart) et à des images Docker CUDA nocturnes.
 
 ## Coût et pièges
-Gratuit. GPU (CUDA/ROCm/NPU/XPU) et RAM conséquente requis. Runtime full-duplex temps réel marqué expérimental. Cadence de release alignée sur les versions paires de vLLM.
+Gratuit mais exige du matériel GPU (ou NPU) et le calage sur une version précise de vLLM (la 0.32.0 est alignée sur vLLM 0.32.0). 1 913 issues ouvertes : le projet bouge vite.
 
 ## Ce que ce n'est pas
-Pas vLLM lui-même : une extension omni-modale. Pas un produit stabilisé sur tous les axes (plusieurs briques expérimentales).
+Pas un modèle ni un service hébergé : c'est un runtime de service. Ce n'est pas non plus un remplaçant de vLLM, il s'appuie dessus.
 
 ## Alternatives
-- vllm-project/vllm : l'amont, pour le texte seul.
+Aucune alternative citée dans le README.
 
 ## Pour toi
-À suivre si tu sers des modèles multimodaux ou de diffusion en prod ; encore mouvant.
+À surveiller si tu sers déjà des modèles avec vLLM et veux de l'audio, de l'image ou de la vidéo ; sinon l'installation GPU est lourde.
+

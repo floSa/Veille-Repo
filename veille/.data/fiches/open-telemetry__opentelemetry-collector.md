@@ -1,8 +1,8 @@
 ---
 schema: 1
 depot: open-telemetry/opentelemetry-collector
-source_readme_sha: a1af388db3685b87
-ecrite_le: 2026-09-28
+source_readme_sha: b64c26e3876adcf5
+ecrite_le: 2026-11-12
 nature: outil
 deploiement: binaire
 prerequis: [aucun]
@@ -15,53 +15,43 @@ verdict: adopter
 
 # open-telemetry/opentelemetry-collector
 
-> Collecteur neutre qui reçoit, transforme et exporte traces, métriques et logs.
+> Collecteur neutre qui reçoit, transforme et exporte traces, métriques et logs vers n'importe quel backend.
 
 ## Le problème
-Chaque back-end d'observabilité impose son agent. En empiler plusieurs sur la même machine
-multiplie la consommation, les configurations et les modes de panne.
+Multiplier les agents de collecte (Jaeger, Prometheus, etc.) pour chaque format de télémétrie et chaque backend.
 
 ## Ce que ça fait vraiment
-Un seul binaire, déployable en agent local ou en collecteur central, qui reçoit les formats open
-source courants (Jaeger, Prometheus, etc.) et les réexporte vers des back-ends libres ou
-commerciaux. Objectifs affichés : configuration par défaut raisonnable et fonctionnelle dès
-l'installation, stabilité sous charge variable, service lui-même observable, extensible sans
-toucher au cœur, base de code unique pour les trois signaux. Les niveaux de stabilité et le
-versionnage sont documentés composant par composant.
+Un seul binaire déployable en agent ou en collecteur, configuré par pipelines de récepteurs, processeurs, connecteurs, exportateurs et extensions. Le service assemble le graphe à partir de la configuration, et `pdata` porte le modèle de données de logs, métriques, traces et profils. Un outil `builder` génère des distributions sur mesure à partir d'un manifeste de composants. Les images sont signées avec Cosign depuis la version 0.95.0.
 
 ## Comment c'est branché
 ```mermaid
-graph LR
-  A[Jaeger / Prometheus / OTLP] --> B[Receivers]
-  B --> C[Processors]
-  C --> D[Exporters]
-  D --> E[Back-end open source]
-  D --> F[Back-end commercial]
-  G[Distro binaire signée cosign] --> B
+flowchart TD
+  CM["confmap (config ingestion)"] --> OC["otelcol (collector runtime)"]
+  OC --> SV["service (orchestration)"]
+  SV --> GR["graph (wiring core)"]
+  GR --> RC["receiver"]
+  GR --> PR["processor"]
+  GR --> EX["exporter"]
 ```
 
 ## Essayer
+Aucune commande d'installation du collecteur dans le README ; il montre seulement la vérification de signature d'une image.
 ```bash
 cosign verify \
-  --certificate-identity=https://github.com/open-telemetry/opentelemetry-collector-releases/.github/workflows/base-release.yaml@refs/tags/v0.98.0 \
+  --certificate-identity=https://github.com/open-telemetry/opentelemetry-collector-releases/.github/workflows/base-release.yaml@refs/tags/<RELEASE_TAG> \
   --certificate-oidc-issuer=https://token.actions.githubusercontent.com \
-  ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib:0.98.0
+  <OTEL_COLLECTOR_IMAGE>
 ```
 
 ## Coût et pièges
-Gratuit, gouverné par la CNCF, avec une liste nommée de mainteneurs et d'approbateurs répartis
-entre Grafana, Snowflake, Splunk, Dynatrace, Datadog, Elastic et Microsoft. Piège de version : en
-tant que bibliothèque, le support d'une version mineure de Go `N-2` est retiré dès la première
-release après la sortie de Go `N`, et ce retrait n'est pas considéré comme cassant. Les images ne
-sont signées qu'à partir de la v0.95.0.
+Gratuit. Le dépôt contient le cœur ; les composants courants vivent dans le dépôt « contrib ». Niveaux de stabilité variables selon les composants.
 
 ## Ce que ce n'est pas
-Ce n'est pas un back-end : il ne stocke rien et n'affiche rien. Ce n'est pas instrumenté pour toi
-— il faut que les applications émettent. Le README ne documente ni configuration ni installation,
-seulement la vérification de signature.
+Pas un backend de stockage ni un tableau de bord : il achemine la télémétrie. Le dépôt n'est pas une distribution prête à l'emploi mais le socle des distributions.
 
 ## Alternatives
 Aucune alternative nommée dans le README.
 
 ## Pour toi
-Brique standard : si tu produis de la télémétrie, c'est le point de passage par défaut.
+À adopter : passage obligé pour instrumenter proprement des services ML ou des pipelines, avec un standard ouvert soutenu par plusieurs éditeurs.
+

@@ -1,54 +1,55 @@
 ---
 schema: 1
 depot: tranxuanthang/lrcget
-source_readme_sha: 1c21c6c1f6d63e03
-ecrite_le: 2026-10-27
+source_readme_sha: 13ca5d25fc3d6b39
+ecrite_le: 2026-11-12
 nature: app
 deploiement: binaire
 prerequis: [aucun]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [mainteneur unique, dépend d'un SaaS]
+alertes: [mainteneur unique]
 verdict: ignorer
 ---
 
 # tranxuanthang/lrcget
 
-> Application de bureau qui télécharge en masse des paroles synchronisées LRC pour une bibliothèque musicale locale.
+> Application de bureau qui télécharge en masse les paroles synchronisées LRC pour une bibliothèque musicale locale.
 
 ## Le problème
-Les fichiers musicaux locaux n'ont pas de paroles synchronisées pour l'affichage en lecture.
+Trouver et aligner manuellement des paroles synchronisées pour chaque morceau d'une bibliothèque musicale est long et fastidieux.
 
 ## Ce que ça fait vraiment
-Parcourt un dossier de musique, interroge le service LRCLIB et enregistre des fichiers `.lrc` du même nom à côté des morceaux. Application Tauri (Rust et JavaScript) pour Windows, Linux et macOS, c'est le client officiel de LRCLIB.
+Scanne un dossier de musique, interroge le service LRCLIB (dont c'est le client officiel) et enregistre un fichier `.lrc` du même nom à côté de chaque morceau. Fournit des installeurs pour Windows, Linux (Flatpak, deb, rpm, AppImage) et macOS.
 
 ## Comment c'est branché
 Schéma simplifié d'après la fiche, sans diagramme fourni.
-
 ```mermaid
-graph LR
-  A["Dossier de musique"] --> B["Application Tauri"]
-  B --> C["Service LRCLIB"]
-  C --> D["Fichiers .lrc à côté des morceaux"]
+flowchart TD
+  user["Utilisateur"] --> app["LRCGET (Tauri)"]
+  app -->|scanne| library[("Dossier musique local")]
+  app -->|interroge| lrclib["Service LRCLIB"]
+  lrclib -->|paroles| app
+  app -->|écrit| lrcfiles[("Fichiers .lrc")]
 ```
 
 ## Essayer
-```bash
+```shell
 cd lrcget
 npm install
 npm run tauri dev
 ```
 
 ## Coût et pièges
-Gratuit ; dépend du service LRCLIB. Compilation : Rust 1.81+, NodeJS 16.18+ ; sous Windows, outils de build C++.
+Gratuit, binaires prêts à l'emploi. Compiler soi-même demande Rust 1.81+, NodeJS 16.18+ et les outils de build C++ natifs à l'OS.
 
 ## Ce que ce n'est pas
-Pas un lecteur de musique. Les dons sont acceptés.
+Pas un outil de transcription ou d'alignement audio : il récupère des paroles déjà synchronisées existant sur LRCLIB, il n'en génère pas. Ne fonctionne que si le morceau est déjà référencé sur ce service.
 
 ## Alternatives
-- Aucune citée dans le README.
+Aucune alternative nommée dans le README.
 
 ## Pour toi
-À ignorer : utilitaire de bibliothèque musicale sans rapport avec data/IA.
+Hors sujet pour un profil data/IA/MLOps : c'est un utilitaire grand public de gestion musicale, sans lien avec un flux de travail data ou IA.
 

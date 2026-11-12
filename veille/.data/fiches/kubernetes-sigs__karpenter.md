@@ -1,11 +1,11 @@
 ---
 schema: 1
 depot: kubernetes-sigs/karpenter
-source_readme_sha: bf16f0a3cf6d2246
-ecrite_le: 2026-09-28
+source_readme_sha: 79d6c8613fce0c15
+ecrite_le: 2026-11-12
 nature: outil
-deploiement: docker
-prerequis: [service tiers]
+deploiement: autre
+prerequis: [aucun]
 cout: gratuit
 maturite: éprouvé
 gouvernance: fondation
@@ -15,49 +15,37 @@ verdict: surveiller
 
 # kubernetes-sigs/karpenter
 
-> Autoscaler de nœuds Kubernetes qui provisionne exactement ce que les pods en attente réclament.
+> Autoscaler Kubernetes qui provisionne et retire des nœuds selon les besoins réels des pods.
 
 ## Le problème
-Un cluster dimensionné par groupes de nœuds fixes gaspille de la capacité et laisse quand même
-des pods non planifiables.
+Les groupes de nœuds statiques gaspillent de la capacité ou bloquent des pods faute de nœuds adaptés, surtout pour des workloads hétérogènes (GPU, besoins de taille variable).
 
 ## Ce que ça fait vraiment
-Quatre gestes, décrits tels quels dans le README : il **surveille** les pods que l'ordonnanceur
-Kubernetes a marqués non planifiables, **évalue** leurs contraintes (demandes de ressources,
-nodeSelectors, affinités, tolérances, contraintes de répartition topologique), **provisionne**
-des nœuds qui satisfont ces exigences, et **supprime** ces nœuds quand ils ne servent plus.
-C'est un projet multi-cloud : le cœur est ici, les implémentations sont chez les fournisseurs
-— AWS, Azure, AlibabaCloud, GCP, Hetzner, IBM Cloud, Oracle (support officiel Oracle),
-Proxmox, Exoscale, Cluster API, Akamai/Linode en alpha, UpCloud, et d'autres.
+Surveille les pods non planifiables, évalue leurs contraintes (ressources, affinités, tolérances), provisionne des nœuds adaptés chez le fournisseur cloud, puis consolide ou retire les nœuds devenus inutiles. Multi-cloud via des implémentations tierces (AWS, Azure, GCP, Hetzner, OCI, etc.).
 
 ## Comment c'est branché
 ```mermaid
 flowchart TD
-  SCHED["kube-scheduler"] --> UNS["Pods non planifiables"]
-  UNS --> KP["Karpenter (core, kubernetes-sigs)"]
-  KP --> EVAL["Évaluation des contraintes de planification"]
-  EVAL --> PROV["Provider AWS / Azure / GCP / …"]
-  PROV --> NODE["Nouveaux nœuds"]
-  KP --> REM["Suppression des nœuds inutiles"]
+  pods["Pods non planifiables"] --> provisioner["Provisioner"]
+  provisioner --> scheduler["Évaluation des contraintes"]
+  provisioner --> cloudprovider["Fournisseur cloud"]
+  cloudprovider --> node["Nœuds Kubernetes"]
+  disruption["Contrôleur de disruption"] --> consolidation["Consolidation"]
+  disruption --> provisioner
 ```
 
 ## Essayer
-Aucune commande documentée : ce dépôt est le cœur multi-cloud, l'installation se fait via
-l'implémentation du fournisseur (par exemple `aws/karpenter-provider-aws`).
+Aucune commande d'installation n'est documentée dans l'extrait disponible : le README renvoie aux implémentations spécifiques par fournisseur cloud.
 
 ## Coût et pièges
-Le logiciel est gratuit ; ce qu'il provisionne ne l'est pas — c'est un outil qui crée des
-machines chez un cloud, donc qui engage directement la facture. Le comportement réel dépend du
-provider choisi, et plusieurs sont en alpha ou bêta ou maintenus par des tiers (Zoom pour OCI,
-kubekanvas, upcloud-tools).
+Gratuit et open-source, mais nécessite un cluster Kubernetes existant et une implémentation spécifique au fournisseur cloud choisi.
 
 ## Ce que ce n'est pas
-Ce n'est pas le Cluster Autoscaler (le README renvoie à une conférence qui les compare). Ce
-n'est pas un autoscaler de pods : il agit sur les nœuds. Et ce dépôt seul ne s'installe pas.
+Pas un autoscaler générique indépendant du cloud : le cœur du projet délègue le provisionnement réel à des implémentations par fournisseur, à installer séparément. Ne remplace pas le Cluster Autoscaler historique partout, selon les providers.
 
 ## Alternatives
-- Kubernetes Cluster Autoscaler, l'approche par groupes de nœuds.
-- `aws/karpenter-provider-aws` et les autres providers : ce sont les artefacts installables.
+Le README cite explicitement le "Kubernetes Cluster Autoscaler" comme alternative historique comparée dans ses talks.
 
 ## Pour toi
-Peu de rapport avec la data au quotidien, sauf si tu portes la facture GPU du cluster.
+À surveiller pour un MLOps qui gère des clusters Kubernetes à charge variable (GPU inclus), afin de réduire les coûts d'infrastructure d'entraînement/inférence.
+

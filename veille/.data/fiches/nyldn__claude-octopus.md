@@ -1,11 +1,11 @@
 ---
 schema: 1
 depot: nyldn/claude-octopus
-source_readme_sha: fd22e8cb2fcdc8e2
-ecrite_le: 2026-10-25
+source_readme_sha: 8cdc17e0d62786ab
+ecrite_le: 2026-11-12
 nature: extension
 deploiement: autre
-prerequis: [clé d'API, Node]
+prerequis: [aucun]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: une personne
@@ -15,23 +15,23 @@ verdict: surveiller
 
 # nyldn/claude-octopus
 
-> Plugin Claude Code qui orchestre plusieurs modèles et applique un seuil de consensus avant de livrer.
+> Plugin Claude Code qui fait relire et débattre le travail par plusieurs modèles, avec des portes de consensus.
 
 ## Le problème
-Un seul modèle a des angles morts : revue, recherche ou architecture gagnent à être recoupées par d'autres modèles.
+Un seul modèle a des angles morts et personne ne contredit ses choix avant livraison.
 
 ## Ce que ça fait vraiment
-Ajoute les commandes `/octo:*` (embrace, council, debate, research, tdd, security, factory…). Les workflows sont explicites et restent dormants sinon. Jusqu'à douze fournisseurs externes (Codex, Copilot, Ollama, Perplexity, OpenRouter, Cursor CLI, Grok, Kimi Code…) ; porte de consensus à 75 %, personas, mémoire entre sessions, serveur MCP pour Cursor et autres. Mode « Dark Factory » spec → logiciel.
+Le plugin ajoute des commandes `/octo:*` (embrace, council, debate, research, review, tdd, security, factory…), 31 personas et des skills. Il peut interroger jusqu'à douze fournisseurs externes (Codex, Copilot, Qwen, Ollama, Perplexity, OpenRouter, Grok, Kimi…) et applique un seuil de consensus à 75 %. Il reste inactif tant que tu n'invoques pas une commande. Il existe aussi un serveur MCP pour Cursor et un pipeline d'extraction de tokens de design.
 
 ## Comment c'est branché
 ```mermaid
-flowchart LR
-  A[Commandes /octo:*] --> B[orchestrate.sh]
-  B --> C[Fournisseurs externes]
-  B --> D[Portes de consensus]
-  B --> E[Mémoire persistante]
-  F[Serveur MCP index.ts] --> B
-  G[Extraction de tokens de design] --> H[Sorties CSS / JSON / Markdown]
+flowchart TD
+  user(("Ingénieur")) --> host(("Claude Code"))
+  host --> orch["Workflow orchestration"]
+  orch --> prov["Fournisseurs IA externes"]
+  orch --> cons["Consensus gates"]
+  orch -.-> mem[("Mémoire persistante")]
+  user -.-> mcp["MCP server (index.ts)"]
 ```
 
 ## Essayer
@@ -42,14 +42,14 @@ claude plugin install octo@nyldn-plugins
 ```
 
 ## Coût et pièges
-Claude seul suffit pour démarrer ; les fournisseurs externes passent par abonnements ou clés d'API. Un run complet est estimé à 1 à 6 dollars ou plus. Linux et macOS seulement, sous Windows via WSL.
+Aucun fournisseur externe n'est requis pour démarrer, mais chaque appel multi-modèle consomme tes abonnements ou clés d'API. Le mode `OCTOPUS_AUTO_ROUTER_MODE=invoke` peut lancer des workflows payants et partager tes prompts avec des fournisseurs. Windows natif non supporté : passer par WSL.
 
 ## Ce que ce n'est pas
-Pas affilié à Anthropic. Le routage automatique, désactivé par défaut, enverrait des prompts aux fournisseurs externes.
+Pas un projet affilié à Anthropic, comme le README le précise. Pas un remplaçant de Claude Code : il s'y ajoute pour l'escalade.
 
 ## Alternatives
-- obra/superpowers : méthodologie structurée pour un seul agent, comparée dans le README.
+- Superpowers : une seule méthode pour un agent, sans consensus multi-fournisseurs.
 
 ## Pour toi
-À surveiller : le croisement multi-modèles aide pour des revues sensibles, mais l'ampleur (63 skills, 54 commandes) et le coût en tokens appellent un essai ciblé avant adoption.
+À surveiller : utile pour des revues à plusieurs avis, mais très chargé en options, porté par une personne, et coûteux dès qu'on active plusieurs fournisseurs.
 

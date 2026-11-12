@@ -1,55 +1,61 @@
 ---
 schema: 1
 depot: moeru-ai/airi
-source_readme_sha: 20795d11ec72949d
-ecrite_le: 2026-10-27
+source_readme_sha: 164b7288562b601f
+ecrite_le: 2026-11-12
 nature: app
-deploiement: pip
-prerequis: [Node, clé d'API]
+deploiement: binaire
+prerequis: [Node, GPU]
 cout: clé d'API à ta charge
 maturite: expérimental
 gouvernance: communauté
 alertes: []
-verdict: surveiller
+verdict: ignorer
 ---
 
 # moeru-ai/airi
 
-> Compagnon virtuel IA auto-hébergé, type VTuber, qui discute, joue et parle, en web, bureau et mobile.
+> Compagnon virtuel animé, piloté par un LLM, qui discute et joue, sur navigateur, bureau et mobile.
 
 ## Le problème
-Neuro-sama n'est pas open source ; il manque une alternative que l'on possède et qui fait plus que du chat (jeux, voix, vision).
+Les plateformes de chat à personnages ne jouent pas, ne voient pas ce que tu fais et ne restent pas sous ton contrôle. Le streamer virtuel Neuro-sama est fermé.
 
 ## Ce que ça fait vraiment
-Un client (web, desktop Electron, mobile Capacitor) envoie la conversation à un LLM de ton choix, résout des outils et des workflows, puis produit parole en streaming et avatar animé (Live2D, VRM). Intégrations Discord, Minecraft, Factorio, MCP. Le README se dit « au stade précoce ».
+Une application Vue/TypeScript en trois versions : web (`stage-web`), bureau Electron (`stage-tamagotchi`) et mobile (`stage-pocket`, expérimental). Un moteur LLM streame les réponses, appelle des outils et des MCP, puis un pipeline audio les transforme en voix synchronisée avec un avatar Live2D ou VRM. Des intégrations existent pour Discord, Minecraft et Factorio. Le bureau utilise CUDA ou Metal en natif.
 
 ## Comment c'est branché
 ```mermaid
-flowchart LR
-  C[Chat UI] --> L[llm-service.ts]
-  L --> LP[LLM Provider]
-  L --> T[Tool Registry]
-  L --> SP[speech-pipeline.ts]
-  SP --> A[Avatar Stage]
-  P[Plugin Host] --> L
+flowchart TD
+  user(("Utilisateur")) -->|"envoie des messages"| chat["Chat UI chat.vue"]
+  chat -->|"demande une génération"| llm["LLM Runtime llm-service.ts"]
+  llm -->|"streame"| ext["Fournisseur LLM"]
+  llm -->|"résout les outils"| tool["Tool Registry"]
+  llm -->|"livre les tours"| sp["Speech Runtime"]
+  sp -->|"ouvre"| au["Audio Pipeline speech-pipeline.ts"]
+  au -->|"joue"| av["Avatar Stage"]
 ```
 
 ## Essayer
 ```bash
 pnpm i
 pnpm dev
+# version bureau
+pnpm dev:tamagotchi
+# installation sous Windows
+winget install MoeruAI.AIRI
+# installation sous macOS
+brew install --cask airi
 ```
-Version bureau : `pnpm dev:tamagotchi`.
 
 ## Coût et pièges
-Gratuit ; LLM, voix et clés à ta charge. Le README précise qu'aucune cryptomonnaie officielle n'existe. Chemin natif CUDA/Metal sur bureau, WebGPU dans le navigateur.
+Pour un usage complet : clés d'API de LLM et de synthèse vocale à ta charge, ou modèles locaux sur GPU. La version mobile passe par Capacitor et un simulateur. Le README précise qu'aucune cryptomonnaie officielle n'existe.
 
 ## Ce que ce n'est pas
-Pas un produit stabilisé. Pas un service hébergé garanti, même si une démo web existe.
+Ce n'est pas un outil de productivité ni de MLOps. Le projet se dit lui-même à un stade précoce de développement.
 
 ## Alternatives
-kimjammer/Neuro, Open-LLM-VTuber (t41372), semperai/amica : cités comme projets similaires.
+kimjammer/Neuro, semperai/amica, elizaOS/eliza, t41372/Open-LLM-VTuber : autres compagnons ou agents virtuels open source.
 
 ## Pour toi
-À surveiller : bon terrain d'étude pour un pipeline LLM+TTS+vision temps réel, mais trop expérimental et orienté divertissement pour du MLOps.
+À ignorer pour un profil data/MLOps : c'est un compagnon grand public, expérimental, sans lien avec tes pipelines.
 

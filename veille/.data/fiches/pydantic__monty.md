@@ -1,36 +1,37 @@
 ---
 schema: 1
 depot: pydantic/monty
-source_readme_sha: bdd3edcb874fad6b
-ecrite_le: 2026-10-27
+source_readme_sha: a0fae38862f577d0
+ecrite_le: 2026-11-12
 nature: bibliothèque
 deploiement: pip
-prerequis: [aucun]
-cout: freemium
-maturite: utilisable
+prerequis: [version de Python]
+cout: gratuit
+maturite: expérimental
 gouvernance: entreprise
 alertes: []
-verdict: adopter
+verdict: surveiller
 ---
 
 # pydantic/monty
 
-> Bac à sable Python écrit en Rust pour exécuter du code généré par des IA, pour développeurs d'agents.
+> Bac à sable Python écrit en Rust pour exécuter du code généré par un LLM, avec isolation et démarrage rapide.
 
 ## Le problème
-Un sandbox par conteneur ou service coûte de la latence et de la complexité (environ 1500 ms annoncés par sandbox service).
+Exécuter du code écrit par un modèle dans un conteneur coûte de la latence et de la complexité (environ 1 500 ms pour un service de sandbox selon le README).
 
 ## Ce que ça fait vraiment
-Interpréteur d'un sous-ensemble de Python 3.14 isolé : pas de système de fichiers, de variables d'environnement ni de réseau, sauf via les fonctions et montages que tu passes. Un nouveau sandbox prend moins de 1 ms depuis un pool, selon le README. Existe en paquet Python, npm et Rust ; un serveur commercial « Full Monty » l'expose en WebSocket.
+Un interpréteur Python (sous-ensemble) isolé : pas de système de fichiers, de variables d'environnement ni de réseau ; il ne joint l'hôte que par les fonctions et montages que tu fournis. Un nouveau bac à sable prend moins d'une milliseconde depuis un pool. Liaisons Rust, Python et JavaScript, limites de ressources, instantanés et vérification de types. Il existe aussi Full Monty, serveur commercial qui expose le même bac à sable en gRPC.
 
 ## Comment c'est branché
 ```mermaid
-flowchart LR
-  H["Host Python API"] --> P["Worker Pool checkout.rs"]
-  P --> I["Python interpreter run.rs"]
-  I --> F["Host functions"]
-  I --> M["Filesystem mounts overlay.rs"]
-  P --> W["Worker protocol wire.rs"]
+flowchart TD
+  H["Host application"] --> PY["Python API (__init__.py)"]
+  PY --> POOL["Worker pool (checkout.rs)"]
+  POOL --> WK["Worker transports (worker.rs)"]
+  WK --> PR["Protocol child (worker.rs)"]
+  PR --> ENG["Python interpreter (run.rs)"]
+  PY --> FN["Host functions"]
 ```
 
 ## Essayer
@@ -39,17 +40,16 @@ uv add pydantic-monty
 npm install @pydantic/monty
 cargo add monty
 ```
-Exemple Python dans le README avec `Monty()`, `pool.checkout()` et `session.feed_run(...)`.
 
 ## Coût et pièges
-Le paquet MIT est gratuit ; Full Monty est commercial. Seul un sous-ensemble de Python est supporté (page des limites).
+Gratuit pour l'édition MIT. Seul un sous-ensemble de Python est pris en charge, donc le code généré peut échouer sur une fonction non implémentée. Full Monty est payant.
 
 ## Ce que ce n'est pas
-Pas un Python complet ni un conteneur : le code ne voit que ce que l'hôte expose.
+Pas un Python complet ni une isolation au niveau du système d'exploitation : c'est un interpréteur dédié. Le README compare à Docker, Pyodide, WASI et aux services de sandbox, sans les détailler ici.
 
 ## Alternatives
-- Docker, Pyodide, WASI et services de sandbox : comparés dans la documentation, non détaillés ici.
+Docker, Pyodide, WASI et les services de sandbox sont comparés dans la documentation du projet.
 
 ## Pour toi
-À adopter pour exécuter du code généré par LLM : gain de latence net, MIT, et l'éditeur est aussi derrière Pydantic AI.
+À surveiller : très prometteur pour le mode code des agents, mais jeune et limité au sous-ensemble Python supporté.
 

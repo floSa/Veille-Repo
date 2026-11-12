@@ -1,11 +1,11 @@
 ---
 schema: 1
 depot: kagent-dev/kagent
-source_readme_sha: e7162053426861c5
-ecrite_le: 2026-09-28
+source_readme_sha: e07f3e5506bde639
+ecrite_le: 2026-11-12
 nature: outil
 deploiement: autre
-prerequis: [clé d'API, service tiers]
+prerequis: [service tiers, clé d'API]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: communauté
@@ -15,44 +15,38 @@ verdict: surveiller
 
 # kagent-dev/kagent
 
-> Cadriciel natif Kubernetes pour construire, déployer et gérer des agents IA.
+> Framework natif Kubernetes pour construire, déployer et gérer des agents IA décrits comme ressources déclaratives.
 
 ## Le problème
-Un agent IA de production a besoin d'un endroit où tourner, se configurer et s'observer.
-Kubernetes sait le faire pour des charges, pas pour des agents décrits en prompts et en outils.
+Les agents IA tournent souvent comme des scripts isolés, sans cycle de vie, sans suivi de sessions ni déploiement GitOps.
 
 ## Ce que ça fait vraiment
-Un agent est une ressource Kubernetes : un prompt système, un ensemble d'outils et d'agents, une config de LLM.
-Les fournisseurs (OpenAI, Azure, Anthropic, Vertex AI, Ollama, passerelles) passent par la ressource `ModelConfig`.
-Les outils MCP sont des `ToolServers`, réutilisables par plusieurs agents ; un serveur MCP intégré couvre
-Kubernetes, Istio, Helm, Argo, Prometheus, Grafana et Cilium. Le traçage OpenTelemetry est pris en charge.
+Un agent est une ressource Kubernetes (Agent, ModelConfig, RemoteMCPServer, AgentTemplate). Un contrôleur Go surveille ces ressources, prépare les agents et gère les sessions, avec des API gRPC, A2A et MCP. Les agents s'exécutent via des runtimes (ADK Go ou Python, Codex, Claude, personnalisé), stockent sessions et historique dans PostgreSQL, et se tracent avec OpenTelemetry. Une interface web et une CLI complètent l'ensemble.
 
 ## Comment c'est branché
 ```mermaid
-flowchart LR
-  YAML[Agent CRD en YAML] --> CTRL[Controller]
-  MC[ModelConfig CRD] --> CTRL
-  TS[ToolServer CRD MCP] --> CTRL
-  CTRL --> ENG[Engine sur ADK]
-  ENG --> OTEL[Traces OpenTelemetry]
-  UI[Web UI] --> CTRL
-  CLI[CLI] --> CTRL
+flowchart TD
+  ui["UI"] --> ctrl["kagent Controller"]
+  cli["CLI"] --> ctrl
+  crd["Ressources Kubernetes"] --> ctrl
+  ctrl --> db[("PostgreSQL")]
+  ctrl --> sub["Substrate"]
+  sub --> run["Agent runtimes"]
+  ctrl -->|"A2A"| run
 ```
 
 ## Essayer
-Aucune commande documentée dans le README : il renvoie au Quick Start et au guide d'installation.
+Aucune commande documentée dans le README : il renvoie au guide d'installation et à la création d'un premier agent.
 
 ## Coût et pièges
-Il faut un cluster Kubernetes et une clé de fournisseur LLM, à ta charge.
-Le README ne dit rien des garde-fous d'exécution des outils : un agent y parle à Helm et à Argo.
+Gratuit, mais il faut un cluster Kubernetes, PostgreSQL et au moins un fournisseur de LLM (OpenAI, Azure OpenAI, Anthropic, Vertex AI, Ollama…) dont l'usage est facturé chez toi.
 
 ## Ce que ce n'est pas
-Pas un modèle ni une bibliothèque d'agents : c'est l'enveloppe d'exécution et de configuration.
-Pas utilisable hors Kubernetes.
-Le README reste au niveau des principes ; la matière concrète est ailleurs.
+Pas une bibliothèque d'agents à importer dans un script : c'est une plateforme qui suppose Kubernetes. Il ne fournit pas de modèle.
 
 ## Alternatives
-Aucune alternative nommée dans le README.
+Aucune alternative citée dans le README.
 
 ## Pour toi
-À suivre si tes agents doivent vivre dans le cluster plutôt que sur ton poste ; sinon trop d'infrastructure.
+À surveiller si ton équipe déploie déjà tout sur Kubernetes et veut gérer ses agents en GitOps ; sinon la charge d'exploitation est disproportionnée.
+

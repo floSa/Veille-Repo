@@ -1,8 +1,8 @@
 ---
 schema: 1
 depot: paperclipai/paperclip
-source_readme_sha: b7c58fc6fe8a5900
-ecrite_le: 2026-10-25
+source_readme_sha: 7025291164ffbbe0
+ecrite_le: 2026-11-12
 nature: app
 deploiement: npm
 prerequis: [Node, clé d'API]
@@ -15,45 +15,45 @@ verdict: surveiller
 
 # paperclipai/paperclip
 
-> Serveur Node et interface React pour piloter des équipes d'agents IA avec tâches, budgets et gouvernance.
+> Serveur Node et interface React qui orchestrent une équipe d'agents IA avec tâches, budgets et validations.
 
 ## Le problème
-Avec vingt terminaux d'agents ouverts, on perd le fil des tâches, des coûts et du contexte ; chaque redémarrage efface tout.
+Avec vingt terminaux Claude Code ouverts, on ne sait plus qui travaille sur quoi, ni combien ça coûte. Les sessions se perdent au redémarrage.
 
 ## Ce que ça fait vraiment
-Paperclip structure des agents (Claude Code, Codex, Cursor, OpenClaw…) en organigramme : tickets avec checkout atomique, objectifs hérités, heartbeats, budgets avec arrêt automatique, approbations, routines planifiées (cron, webhook, API), skills partagés, plusieurs organisations par déploiement. Il ne fournit pas les agents : il les orchestre. Base PostgreSQL embarquée en local.
+Un tableau de bord type gestionnaire de tâches où l'on déclare des objectifs et où l'on « embauche » des agents (Claude Code, Codex, Cursor, Gemini CLI, bots HTTP). Il gère un organigramme, des tickets avec verrou de prise en charge, des budgets avec arrêt automatique, des routines planifiées, des approbations et un journal d'activité. Les agents sont réveillés par des « heartbeats ». Une base PostgreSQL embarquée est créée au premier lancement.
 
 ## Comment c'est branché
 ```mermaid
-flowchart LR
-  A["Human operator"] --> B["Management UI"]
-  B --> C["Application server (app.ts)"]
-  C --> D["Tasks and issues (issues.ts)"]
-  C --> E["Heartbeat runs (heartbeat_runs.ts)"]
-  E --> F["Agent adapters / Agent execution"]
-  C --> G["Budgets and costs (accounting.ts)"]
-  C --> H["PostgreSQL data (client.ts)"]
+flowchart TD
+  op(("Opérateur")) -->|"définit les objectifs"| ui["Management UI"]
+  ui -->|"gère le travail"| srv["Application server app.ts"]
+  srv -->|"persiste"| db[("PostgreSQL client.ts")]
+  srv -->|"coordonne"| agents["Agents agents.ts"]
+  srv -->|"suit le coût"| bud["Budgets accounting.ts"]
+  srv -->|"dispatche"| adp["Agent adapters"]
+  adp -->|"exécute"| sbx["Sandbox providers"]
 ```
 
 ## Essayer
 ```bash
 npx paperclipai@latest onboard --yes
-ANTHROPIC_API_KEY=... npx paperclipai test-drive
+# ou, depuis les sources
 git clone https://github.com/paperclipai/paperclip.git
+cd paperclip
 pnpm install
 pnpm dev
 ```
 
 ## Coût et pièges
-Node 24.11+, pnpm 9.15+ ; les tokens des agents sont à ta charge. La télémétrie anonyme est activée par défaut (désactivable : `PAPERCLIP_TELEMETRY_DISABLED=1` ou `DO_NOT_TRACK=1`). Plus de 6 400 issues ouvertes.
+Node.js 24.11 ou plus, pnpm 9.15 pour les sources, et un Rust pour le runner natif en développement. Les agents consomment vos propres abonnements ou clés d'API. La télémétrie anonyme est active par défaut ; on la coupe avec `PAPERCLIP_TELEMETRY_DISABLED=1` ou `DO_NOT_TRACK=1`.
 
 ## Ce que ce n'est pas
-Ni un framework d'agents, ni un simple chatbot ou workflow builder. Les promesses « business autonome à 1 M$ de MRR » sont une illustration, pas un résultat démontré.
+Ce n'est pas un framework pour construire des agents : il orchestre ceux qui existent déjà. Ce n'est pas non plus un simple chatbot ni un gestionnaire de prompts.
 
 ## Alternatives
-- OpenClaw : agent seul, « employé » dont Paperclip est « l'entreprise ».
-- Claude Code, Codex, Cursor : les agents que Paperclip orchestre.
+Le README ne nomme aucune alternative directe. Il se positionne par rapport à OpenClaw et Claude Code, qu'il pilote au lieu de les remplacer.
 
 ## Pour toi
-À surveiller : pertinent pour suivre coûts et tâches de plusieurs agents, mais le cadrage « entreprise autonome » est ambitieux ; teste sur un projet interne avec budgets stricts.
+À surveiller si tu jongles avec plusieurs agents de code et veux suivre les coûts, mais l'écosystème est jeune (créé en mars 2026) et 6 400 issues restent ouvertes.
 

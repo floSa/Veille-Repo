@@ -1,8 +1,8 @@
 ---
 schema: 1
 depot: shanraisshan/claude-code-best-practice
-source_readme_sha: 51dea96830ea420f
-ecrite_le: 2026-10-25
+source_readme_sha: 10c81f3150ede5ca
+ecrite_le: 2026-11-12
 nature: doc
 deploiement: rien à installer
 prerequis: [aucun]
@@ -10,28 +10,29 @@ cout: gratuit
 maturite: utilisable
 gouvernance: une personne
 alertes: [mainteneur unique]
-verdict: adopter
+verdict: surveiller
 ---
 
 # shanraisshan/claude-code-best-practice
 
-> Dépôt de référence sur les primitives de Claude Code, avec exemples, conseils et workflows communautaires.
+> Référentiel de pratiques, de modèles et de conseils pour configurer et exploiter Claude Code au quotidien.
 
 ## Le problème
-Les fonctions de Claude Code (sous-agents, skills, hooks, MCP, mémoire) évoluent vite et les bonnes pratiques sont dispersées entre tweets, vidéos et dépôts.
+Claude Code a beaucoup de leviers (sous-agents, skills, hooks, MCP, mémoire) dont la documentation officielle éparpille les bonnes pratiques.
 
 ## Ce que ça fait vraiment
-Un index README et des dossiers `best-practice/`, `implementation/`, `reports/`, `tips/` : tableau des concepts, 83 conseils sourcés (Boris Cherny, Thariq, etc.), comparatif de workflows (Superpowers, gstack, Spec Kit…), collections de skills et d'agents. Une couche `.claude/` opérationnelle (commandes, agents, skills, hooks) montre le motif Commande → Agent → Skill avec l'exemple `/weather-orchestrator`.
+Un README-index vers des guides par fonction (`best-practice/`, `implementation/`, `reports/`), des tableaux de workflows communautaires et de collections de skills, et 83 astuces sourcées. Le dossier `.claude/` sert d'exemple chargeable : commandes, agents, skills, hooks, règles. L'exemple de référence est la chaîne Commande → Agent → Skill avec un orchestrateur météo.
 
 ## Comment c'est branché
 ```mermaid
-flowchart LR
-  A["README (index)"] --> B["CLAUDE.md (memory)"]
-  A --> C["Commands / Agents / Skills"]
-  C --> D["Hooks (event sidecar)"]
-  A --> E["Best practice / Implementation"]
-  A --> F["Orchestration / RPI workflow"]
-  C --> G["Settings (settings.json)"]
+flowchart TD
+  readme["README.md"] -->|"cadre"| sess(("Session Claude"))
+  sess -->|"charge"| mem["CLAUDE.md"]
+  sess -->|"lit"| set["settings.json"]
+  sess -->|"accepte"| cmd["Commands"]
+  cmd -->|"lance"| ag["Agents"]
+  ag -->|"consomme"| sk{{"Skills"}}
+  sess -->|"émet"| hk[("Hooks")]
 ```
 
 ## Essayer
@@ -41,16 +42,14 @@ claude
 ```
 
 ## Coût et pièges
-Gratuit. Beaucoup de chiffres (étoiles, nombre de skills) sont des instantanés du README, déjà divergents d'un dépôt à l'autre. Plusieurs liens sont des tweets qui peuvent disparaître.
+Gratuit, mais il faut Claude Code et un abonnement ou une clé d'API pour l'utiliser. Les tableaux d'étoiles de projets tiers se périment vite, et les astuces suivent des versions précises du produit.
 
 ## Ce que ce n'est pas
-Pas un outil à installer ni une autorité officielle d'Anthropic : une curation individuelle. Pas un benchmark : les conseils ne sont pas évalués.
+Ce n'est pas un logiciel ni un plugin à installer : c'est de la documentation et des gabarits à copier. Aucune source officielle d'Anthropic.
 
 ## Alternatives
-- Superpowers : méthode appliquée plutôt que référence.
-- gstack : workflow prêt à l'emploi.
-- anthropics/skills : collection de skills nommée dans le README.
+mattpocock/skills, anthropics/skills et wshobson/agents : des collections de skills ou d'agents prêtes à l'emploi, là où ce dépôt explique surtout comment s'y prendre.
 
 ## Pour toi
-À adopter comme lecture de référence : un seul dépôt à parcourir pour monter en compétence sur Claude Code avant de choisir un workflow.
+À surveiller si tu utilises Claude Code : bon aide-mémoire, sans code à exécuter, tenu par une seule personne.
 

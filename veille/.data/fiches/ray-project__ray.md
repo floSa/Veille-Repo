@@ -1,44 +1,38 @@
 ---
 schema: 1
 depot: ray-project/ray
-source_readme_sha: 94df2acbdfdc95f8
-ecrite_le: 2026-09-28
+source_readme_sha: 27d1e25d12e73712
+ecrite_le: 2026-11-12
 nature: bibliothèque
 deploiement: pip
-prerequis: [beaucoup de RAM]
+prerequis: [version de Python]
 cout: gratuit
 maturite: éprouvé
-gouvernance: entreprise
+gouvernance: communauté
 alertes: []
 verdict: adopter
 ---
 
 # ray-project/ray
 
-> Runtime distribué Python pour passer d'un portable à un cluster sans réécrire le code.
+> Framework Python qui fait passer du code et des charges IA d'un ordinateur portable à un cluster.
 
 ## Le problème
-Un environnement mono-machine ne suit plus les charges d'entraînement et d'inférence actuelles,
-et réécrire pour du calcul distribué coûte un projet entier.
+Un entraînement, un prétraitement ou un service de modèle écrit pour une machine ne tient plus la charge, et réécrire pour un cluster est lourd.
 
 ## Ce que ça fait vraiment
-Fournit trois abstractions de base : Tasks (fonctions sans état exécutées dans le cluster),
-Actors (processus workers avec état) et Objects (valeurs immuables accessibles depuis tout le cluster).
-Au-dessus, cinq bibliothèques : Data (jeux de données pour le ML), Train (entraînement distribué),
-Tune (recherche d'hyperparamètres), RLlib (apprentissage par renforcement) et Serve (service de modèles).
-Tourne sur n'importe quelle machine, cluster, cloud ou Kubernetes. Fournit un Ray Dashboard pour
-la supervision et un Ray Distributed Debugger.
+Un noyau distribué avec trois abstractions : tâches (fonctions sans état), acteurs (processus à état) et objets (valeurs immuables partagées). Par-dessus, cinq bibliothèques : Data, Train, Tune, RLlib et Serve. Un tableau de bord et un débogueur distribué servent à observer. Il tourne sur une machine, un cloud ou Kubernetes. Des API existent en Python, C++ et Java.
 
 ## Comment c'est branché
 ```mermaid
 flowchart TD
-  code["Code Python"] --> core["Ray Core"]
-  core --> tasks["Tasks (sans état)"]
-  core --> actors["Actors (avec état)"]
-  core --> objects["Objects (store partagé)"]
-  core --> libs["Data / Train / Tune / RLlib / Serve"]
-  libs --> cluster["Cluster / cloud / Kubernetes"]
-  cluster --> dash["Ray Dashboard + Distributed Debugger"]
+  dev(("Développeur")) -->|"utilise"| api["Python API __init__.py"]
+  api -->|"invoque"| rt["Ray runtime"]
+  rt -->|"soumet"| sub["Task submission"]
+  sub -->|"dispatche"| ex["Task execution"]
+  ex -->|"stocke"| obj[("Object store")]
+  rt -->|"accède à l'état"| gcs[("Cluster state")]
+  dev -->|"déploie"| serve["Ray Serve"]
 ```
 
 ## Essayer
@@ -47,17 +41,14 @@ pip install ray
 ```
 
 ## Coût et pièges
-Gratuit. Anyscale, le service commercial de l'éditeur, est mis en avant dès le premier badge du
-README. Un cluster suppose des ressources à provisionner et à payer chez ton fournisseur.
-Les wheels nocturnes passent par une page d'installation séparée.
+Gratuit, mais le cluster, ses machines et ses GPU sont à ta charge. Le README ne détaille que l'installation par pip ; configuration et déploiement passent par la documentation. Le dépôt compte plus de 3 600 issues ouvertes.
 
 ## Ce que ce n'est pas
-Ce n'est pas un ordonnanceur de workflows au sens d'Airflow : il distribue du calcul, il ne
-planifie pas des batchs quotidiens. Ce n'est pas un framework de deep learning : il porte les
-tiens. Le README annonce explicitement un projet de recherche avec des « sharp edges ».
+Ce n'est pas un orchestrateur de pipelines de données planifiés, ni une plateforme MLOps complète. Ce n'est pas magique : la performance dépend de la façon de découper le travail.
 
 ## Alternatives
 Aucune alternative nommée dans le README.
 
 ## Pour toi
-Le passage à l'échelle par défaut côté Python : Tune pour les hyperparamètres, Serve pour l'inférence.
+À adopter dès que l'entraînement ou le service de modèles dépasse une machine : base standard et éprouvée du calcul distribué en Python.
+

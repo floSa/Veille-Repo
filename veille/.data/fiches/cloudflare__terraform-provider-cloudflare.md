@@ -1,12 +1,12 @@
 ---
 schema: 1
 depot: cloudflare/terraform-provider-cloudflare
-source_readme_sha: 06df8539ea91cb47
-ecrite_le: 2026-09-28
+source_readme_sha: 0c9f13ad09a2a606
+ecrite_le: 2026-11-12
 nature: outil
 deploiement: autre
-prerequis: [clé d'API, compte à créer]
-cout: gratuit
+prerequis: [clé d'API]
+cout: clé d'API à ta charge
 maturite: éprouvé
 gouvernance: entreprise
 alertes: []
@@ -15,28 +15,23 @@ verdict: ignorer
 
 # cloudflare/terraform-provider-cloudflare
 
-> Fournisseur Terraform officiel qui expose l'API REST Cloudflare en ressources déclaratives.
+> Provider Terraform officiel qui expose l'API REST de Cloudflare comme ressources et sources de données déclaratives.
 
 ## Le problème
-Configurer zones, DNS, règles et certificats à la main dans le tableau de bord Cloudflare ne laisse ni trace ni possibilité de revue.
-Reproduire une configuration sur un second compte devient un exercice de recopie.
+Gérer manuellement les zones DNS, certificats et règles de sécurité Cloudflare via l'interface web ne s'intègre pas à un flux d'infrastructure-as-code versionné.
 
 ## Ce que ça fait vraiment
-Déclare la source `cloudflare/cloudflare` dans `required_providers`, puis chaque objet Cloudflare devient une ressource HCL (`cloudflare_zone`, etc.).
-Quatre schémas d'authentification : jeton d'API (recommandé), clé globale plus e-mail, clé de service utilisateur pour les certificats Origin CA.
-`account_id` et `zone_id` peuvent être fixés au niveau du fournisseur pour toutes les requêtes concernées.
-Chaque option a sa variable d'environnement équivalente, ce que le README recommande pour les valeurs sensibles.
+Fournit des ressources Terraform (`cloudflare_zone`, etc.) qui créent et gèrent des objets Cloudflare via l'API REST : comptes, règles d'accès, API Shield, scan de contenu, certificats, AI Gateway, AI Search. Généré automatiquement et maintenu en interne par Cloudflare ; ne prend plus de pull requests communautaires.
 
 ## Comment c'est branché
 ```mermaid
-graph TD
-  A[main.tf required_providers] --> B[provider cloudflare]
-  C[CLOUDFLARE_API_TOKEN] --> B
-  D[CLOUDFLARE_ACCOUNT_ID / ZONE_ID] --> B
-  B --> E[API REST Cloudflare]
-  F[resource cloudflare_zone] --> B
-  G[terraform init] --> A
-  H[dossier examples] --> F
+flowchart TD
+  cli["Terraform CLI"] --> plugin["Entrée du plugin<br/>main.go"]
+  plugin --> provider["Configuration du provider<br/>provider.go"]
+  provider --> account["Ressources de compte"]
+  provider --> aigateway["AI Gateway"]
+  account --> api["API REST Cloudflare"]
+  aigateway --> api
 ```
 
 ## Essayer
@@ -45,24 +40,24 @@ terraform {
   required_providers {
     cloudflare = {
       source  = "cloudflare/cloudflare"
-      version = "~> 5.24.0"
+      version = "~> 5.28.0"
     }
   }
 }
+provider "cloudflare" {
+  api_token = "votre_token"
+}
 ```
-Puis `terraform init` dans le répertoire.
 
 ## Coût et pièges
-Terraform CLI 1.0 minimum. Un compte Cloudflare et un jeton d'API sont indispensables.
-Les exemples du README contiennent des jetons et clés en clair : à ne jamais reproduire, les variables d'environnement existent pour ça.
+Le provider lui-même est gratuit, mais nécessite un compte Cloudflare et une clé d'API/token valide ; certaines fonctionnalités Cloudflare couvertes peuvent être payantes selon le plan. Projet auto-généré, les correctifs communautaires passent par des issues, pas des pull requests.
 
 ## Ce que ce n'est pas
-Pas un projet communautaire : le code est **auto-généré** et maintenu en interne, et les pull requests externes ne sont plus acceptées.
-Pas un SemVer strict : des changements incompatibles peuvent sortir en version mineure, sur les internes publics non documentés et sur ce qui est jugé sans impact majoritaire.
-Beaucoup de tickets sont suivis hors GitHub, sur des systèmes internes Cloudflare.
+Pas un outil IA : c'est un provider d'infrastructure-as-code classique pour Cloudflare. Ne gère que ce que l'API Cloudflare expose, rien côté modèles ou données au-delà des produits AI Gateway/AI Search de Cloudflare.
 
 ## Alternatives
 Aucune alternative nommée dans le README.
 
 ## Pour toi
-Pertinent seulement si ton infrastructure passe par Cloudflare ; rien à en tirer côté data ou ML.
+À ignorer pour un profil data/IA/MLOps générique, sauf si l'infrastructure cible repose déjà sur Cloudflare (DNS, sécurité, AI Gateway) et nécessite un provisionnement Terraform.
+

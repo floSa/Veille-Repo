@@ -1,8 +1,8 @@
 ---
 schema: 1
 depot: apache/superset
-source_readme_sha: ca75688235bc4414
-ecrite_le: 2026-09-29
+source_readme_sha: 0f9fecb2c6873312
+ecrite_le: 2026-11-12
 nature: app
 deploiement: docker
 prerequis: [Docker]
@@ -15,38 +15,40 @@ verdict: adopter
 
 # apache/superset
 
-> Application web de BI open source : exploration SQL, graphiques sans code, tableaux de bord.
+> Application web de business intelligence open source pour explorer des données et bâtir des tableaux de bord.
 
 ## Le problème
-Donner aux équipes des tableaux de bord sur leurs bases SQL sans payer une licence de BI propriétaire.
+Les outils de BI propriétaires sont chers et enferment les données. Les analystes veulent interroger une base SQL et publier des graphiques sans coder.
 
 ## Ce que ça fait vraiment
-Frontend React (constructeur de graphiques sans code, éditeur SQL Lab, tableaux de bord) au-dessus d'un backend Python Flask exposant une API REST.
-Le backend interroge quasiment toute base SQL via des connecteurs SQLAlchemy, avec couche sémantique légère (dimensions, métriques), cache configurable et rôles de sécurité (RBAC).
-Les requêtes longues passent par des tâches asynchrones Celery ; un service WebSocket séparé pousse l'avancement au navigateur. Extensible : plugins de visualisation et connecteurs. L'analyse d'architecture fournie est générique.
+Un constructeur de graphiques sans code, un éditeur SQL (SQL Lab), une couche sémantique légère pour définir dimensions et métriques, des tableaux de bord et un cache configurable. Il se connecte à presque toute base SQL via SQLAlchemy. L'architecture comprend un backend Flask, un frontend React, un service websocket et des tâches Celery pour les requêtes longues.
 
 ## Comment c'est branché
 ```mermaid
-flowchart LR
-  F[Superset Frontend React] --> R[REST API Endpoints]
-  R --> B[Superset Backend Flask]
-  B --> C[Database Connectors]
-  C --> D[(External Databases & Caches)]
-  B --> Q[Celery Task Queue]
-  W[Websocket Service] --> F
+flowchart TD
+  fe["Superset Frontend React"] -->|"appelle"| rest["REST API"]
+  rest -->|"route vers"| be["Superset Backend Flask"]
+  be -->|"envoie les jobs"| task["Celery tasks"]
+  be -->|"interroge"| conn["Database Connectors"]
+  conn -->|"récupère"| ext[("Bases et caches externes")]
+  ws["Websocket Service"] -->|"pousse les mises à jour"| fe
 ```
 
 ## Essayer
-Aucune commande dans le README : il renvoie au guide de démarrage rapide et au tutoriel « Superset in 2 Minutes using Docker Compose ».
+```bash
+# Le README ne donne aucune commande : il renvoie au guide de démarrage rapide
+# et à « Superset in 2 Minutes using Docker Compose » dans la documentation.
+```
 
 ## Coût et pièges
-Gratuit, Apache-2.0. En production, prévoir base de métadonnées, cache et broker Celery : c'est toi qui opères.
+Gratuit, mais il faut l'héberger : backend, base de métadonnées, broker pour Celery. Chaque base demande son pilote ; la documentation d'installation des pilotes est un passage obligé.
 
 ## Ce que ce n'est pas
-Pas un outil de préparation de données ni un entrepôt : il visualise ce que tes bases exposent. La couche sémantique est « légère » : pas un outil de modélisation complet.
+Ce n'est pas un entrepôt de données ni un outil d'ETL : il lit des bases existantes. Ce n'est pas un SaaS prêt à l'emploi ; l'offre cloud est celle d'un éditeur tiers.
 
 ## Alternatives
 Aucune alternative nommée dans le README.
 
 ## Pour toi
-À adopter pour exposer des résultats de modèles ou des métriques de données à des non-techniciens.
+À adopter pour donner une couche BI à une équipe data : projet de la fondation Apache, très répandu, avec une API pour automatiser.
+

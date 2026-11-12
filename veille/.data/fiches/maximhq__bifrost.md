@@ -1,67 +1,57 @@
 ---
 schema: 1
 depot: maximhq/bifrost
-source_readme_sha: 5b0956dfe41f2f34
-ecrite_le: 2026-09-28
+source_readme_sha: c3c7218b2659bfa4
+ecrite_le: 2026-11-12
 nature: service
 deploiement: docker
-prerequis: [clé d'API, Docker]
+prerequis: [Docker, clé d'API]
 cout: freemium
 maturite: utilisable
 gouvernance: entreprise
-alertes: [dépend d'un SaaS]
+alertes: []
 verdict: surveiller
 ---
 
 # maximhq/bifrost
 
-> Passerelle Go qui expose 23+ fournisseurs de LLM derrière une seule API compatible OpenAI.
+> Passerelle IA en Go qui unifie plus de vingt fournisseurs derrière une API compatible OpenAI, avec bascule automatique.
 
 ## Le problème
-Chaque fournisseur a son SDK, ses clés, ses pannes. Basculer d'OpenAI vers Anthropic ou Bedrock
-demande de réécrire le code d'appel et de gérer soi-même quotas, reprises et budgets.
+Chaque fournisseur de LLM a son API, ses quotas et ses pannes ; changer ou répartir la charge coûte du code.
 
 ## Ce que ça fait vraiment
-Un seul endpoint `/v1/chat/completions` routé vers OpenAI, Anthropic, Bedrock, Vertex, Azure,
-Cohere, Mistral, Ollama, Groq et d'autres. Bascule automatique entre fournisseurs et clés,
-cache sémantique, passerelle MCP pour outiller les modèles, suivi d'usage, limites de débit et
-budgets hiérarchiques. Interface web intégrée pour configurer sans fichier, métriques Prometheus.
+Passerelle HTTP (ou SDK Go) qui normalise les appels vers OpenAI, Anthropic, Bedrock, Vertex et d'autres, avec bascule entre fournisseurs, répartition entre clés, cache sémantique, passerelle MCP, plugins, gouvernance (budgets, clés virtuelles, limites) et métriques Prometheus. Interface web de configuration. Persistance optionnelle (SQLite, Postgres, ClickHouse, magasins vectoriels). Le README annonce 11 µs de surcharge à 5 000 requêtes par seconde.
 
 ## Comment c'est branché
 ```mermaid
-graph LR
-  A[Client SDK OpenAI] --> B[transports/bifrost-http]
-  B --> C[core/bifrost.go]
-  C --> D[core/providers]
-  C --> E[plugins/semanticcache]
-  C --> F[plugins/governance]
-  C --> G[framework/logstore]
-  D --> H[OpenAI / Anthropic / Bedrock]
+flowchart TD
+  HTTP["HTTP server (server.go)"] --> INF["Inference handlers (inference.go)"]
+  INF --> CORE["Inference orchestration (bifrost.go)"]
+  CORE --> PL["Plugin pipeline (pluginpipeline.go)"]
+  PL --> GOV["Governance plugin"]
+  PL --> SC["Semantic cache"]
+  CORE --> PA["Provider adapters (openai.go)"]
 ```
 
 ## Essayer
 ```bash
 npx -y @maximhq/bifrost
-docker run -p 8080:8080 -v $(pwd)/data:/app/data maximhq/bifrost
+docker run -p 8080:8080 maximhq/bifrost
 curl -X POST http://localhost:8080/v1/chat/completions \
   -H "Content-Type: application/json" \
   -d '{"model": "openai/gpt-4o-mini", "messages": [{"role": "user", "content": "Hello, Bifrost!"}]}'
-go get github.com/maximhq/bifrost/core
 ```
 
 ## Coût et pièges
-Le binaire est gratuit mais les clés des fournisseurs restent à ta charge, et la facture de
-tokens ne bouge pas. Load balancing adaptatif, clustering, garde-fous et passerelle MCP sont
-réservés aux déploiements « enterprise » : le README ne dit pas ce qui est ouvert.
+Les clés des fournisseurs et leur facturation restent à ta charge. Clustering, garde-fous, équilibrage adaptatif et passerelle MCP sont décrits comme réservés aux déploiements entreprise. Plus de 1 200 issues ouvertes.
 
 ## Ce que ce n'est pas
-Ce n'est pas un fournisseur d'inférence : sans clés, rien ne répond. Ce n'est pas un framework
-d'agents — pas d'orchestration, pas de mémoire. Les chiffres de surcoût (11 µs à 5 000 RPS)
-sont ceux de l'éditeur, mesurés sur ses propres instances t3.
+Pas un fournisseur de modèles. Les chiffres de performance sont ceux de l'éditeur, mesurés sur ses machines.
 
 ## Alternatives
-- **LiteLLM** : cité comme SDK intégré ; couche Python plus légère si tu restes en Python.
-- **LangChain** : cité comme intégration ; à préférer si tu veux la chaîne complète, pas la passerelle.
+LiteLLM est cité comme SDK intégrable ; aucune autre alternative nommée.
 
 ## Pour toi
-Utile si tu multiplies les fournisseurs en production ; surdimensionné pour un seul modèle.
+À surveiller : utile pour centraliser les appels LLM d'une équipe, mais certaines fonctions clés sont payantes.
+

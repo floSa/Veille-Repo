@@ -1,13 +1,13 @@
 ---
 schema: 1
 depot: comet-ml/opik
-source_readme_sha: e363ac59f8b31bae
-ecrite_le: 2026-09-28
-nature: outil
+source_readme_sha: f4fffa79c792d196
+ecrite_le: 2026-11-12
+nature: service
 deploiement: docker
-prerequis: [Docker]
+prerequis: [Docker, compte à créer]
 cout: freemium
-maturite: éprouvé
+maturite: utilisable
 gouvernance: entreprise
 alertes: []
 verdict: adopter
@@ -15,56 +15,45 @@ verdict: adopter
 
 # comet-ml/opik
 
-> Plateforme d'observabilité et d'évaluation LLM sous Apache-2.0, auto-hébergeable en entier.
+> Plateforme open source de traçage, d'évaluation et de suivi d'applications et d'agents LLM.
 
 ## Le problème
-Une application LLM échoue silencieusement : on ne voit ni l'arbre d'appels, ni le prompt exact,
-ni la dérive de qualité entre deux versions — et les outils qui le montrent sont fermés.
+Impossible de savoir pourquoi un agent a mal répondu, de comparer deux versions d'un prompt ou de surveiller la qualité en production sans outillage dédié.
 
 ## Ce que ça fait vraiment
-Un décorateur `@track` enregistre toute fonction, appels imbriqués compris, donc les traces d'agents
-complets. Des datasets et expériences pour l'évaluation, des métriques LLM-as-a-judge
-(`Hallucination`, Answer Relevance, Context Precision), des règles d'évaluation en ligne sur les
-traces de production, un playground de prompts, l'Opik Agent Optimizer, des garde-fous, et une
-intégration PyTest pour évaluer en CI. Plus de soixante intégrations listées, plus OpenTelemetry.
+On décore ses fonctions avec `@track` et chaque appel LLM, imbriqué ou non, est tracé. La plateforme gère jeux de données, expériences, métriques LLM-juge (hallucination, pertinence), règles d'évaluation en ligne, gestion de prompts, garde-fous et optimiseur d'agents. Elle propose des intégrations avec des dizaines de frameworks, OpenTelemetry et un serveur MCP. Le backend Java utilise MySQL, ClickHouse, Redis et S3.
 
 ## Comment c'est branché
 ```mermaid
 flowchart TD
-    SDK["@track (Python) / SDK TypeScript"] --> SRV["serveur Opik (Apache-2.0)"]
-    OTEL["OpenTelemetry"] --> SRV
-    INTEG["intégrations (LangGraph, LiteLLM, CrewAI…)"] --> SRV
-    SRV --> DASH["Opik Dashboard"]
-    SRV --> EVAL["datasets, expériences, LLM-as-a-judge"]
-    EVAL --> CI["intégration PyTest"]
-    MCP["uvx opik mcp configure"] --> SRV
+  sdk["Python SDK et TypeScript SDK"] -->|"HTTPS"| gw["API Gateway"]
+  ui["opik-frontend React"] -->|"HTTPS"| gw
+  gw -->|"REST"| be["opik-backend Java"]
+  be -->|"écrit"| ch[("ClickHouse")]
+  be -->|"lit et écrit"| my[("MySQL")]
+  be -->|"cache et événements"| rd[("Redis")]
+  be -->|"appelle"| llm["Fournisseurs LLM"]
 ```
 
 ## Essayer
 ```bash
 pip install opik
 opik configure
-uvx opik mcp configure
 git clone https://github.com/comet-ml/opik.git
 cd opik
 ./opik.sh
+uvx opik mcp configure
 ```
 
 ## Coût et pièges
-Auto-hébergé, c'est un Docker Compose complet (bases, caches) : `./opik.sh --infra`, `--backend`,
-`--verify`, `--clean` (qui détruit tous les volumes). L'UI est sur `localhost:5173`. Les métriques
-LLM-as-a-judge consomment un modèle, donc une clé et une facture. Le cloud Comet est l'option facile
-mais sort les traces de ton infrastructure.
+L'auto-hébergement est gratuit mais lance plusieurs conteneurs (MySQL, ClickHouse, Redis), donc beaucoup de ressources. Le cloud de Comet a un forfait gratuit puis des offres payantes. Les métriques LLM-juge consomment des appels à tes modèles, à ta charge.
 
 ## Ce que ce n'est pas
-Pas un simple SDK client : le dépôt contient le serveur et l'application web, et le README insiste
-sur ce point face aux concurrents dont seul le SDK est ouvert. Pas un observateur d'infrastructure :
-il trace des appels LLM, pas des conteneurs. Le tableau comparatif est écrit par l'éditeur.
+Ce n'est pas un orchestrateur d'agents : il observe et évalue, il n'exécute pas. Le chiffre de 40 millions de traces par jour est une affirmation du README.
 
 ## Alternatives
-- Langfuse : cœur MIT auto-hébergeable, modules entreprise commerciaux (tableau du README).
-- Phoenix (Arize) : source-available sous Elastic License 2.0, auto-hébergeable.
-- LangSmith : auto-hébergement réservé à l'offre entreprise.
+Langfuse (cœur MIT), Phoenix (licence Elastic 2.0) et LangSmith (fermé, auto-hébergement réservé aux entreprises).
 
 ## Pour toi
-Le choix par défaut si l'observabilité LLM doit rester chez toi — c'est le seul du tableau à l'être entièrement.
+À adopter pour tracer et évaluer des agents : plateforme complète, auto-hébergeable sous Apache-2.0, avec une intégration pytest pour tester à chaque commit.
+

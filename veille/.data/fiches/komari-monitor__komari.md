@@ -1,11 +1,11 @@
 ---
 schema: 1
 depot: komari-monitor/komari
-source_readme_sha: fa9ef0c9cc040748
-ecrite_le: 2026-09-29
-nature: service
-deploiement: docker
-prerequis: [Docker]
+source_readme_sha: 901e62412bf000db
+ecrite_le: 2026-11-12
+nature: app
+deploiement: binaire
+prerequis: [aucun]
 cout: gratuit
 maturite: utilisable
 gouvernance: communauté
@@ -15,39 +15,37 @@ verdict: ignorer
 
 # komari-monitor/komari
 
-> Supervision de serveurs auto-hébergée, avec agents légers, tableau de bord web et terminal distant.
+> Supervision de serveurs auto-hébergée, légère, avec agent et interface web, pour administrateurs système.
 
 ## Le problème
-Suivre l'état de plusieurs serveurs sans SaaS de monitoring demande d'assembler soi-même collecte, stockage et interface.
+Suivre l'état de quelques serveurs sans déployer une pile de supervision lourde.
 
 ## Ce que ça fait vraiment
-Un binaire Go (Gin, WebSocket, JSON-RPC) reçoit les métriques d'agents à la seconde et les historise en SQLite (PostgreSQL pris en charge par le moteur de métriques).
-Interface web embarquée : tableau de bord, historiques, terminal web, transfert de fichiers via l'agent.
-Plugins exécutés dans un runtime JavaScript, thèmes, notifications (e-mail, Telegram, webhooks…), OAuth.
+Un serveur Go reçoit les métriques envoyées par des agents légers, les stocke (SQLite, avec abstraction PostgreSQL pour les métriques) et les affiche en temps réel (intervalle d'une seconde annoncé). Il offre aussi un terminal web, un transfert de fichiers via l'agent, des notifications (e-mail, Telegram, webhook), des thèmes et des plugins JavaScript.
 
 ## Comment c'est branché
 ```mermaid
-graph LR
-  M[main.go] --> S[server.go] --> APP[app.go]
-  APP --> R[router.go]
-  R --> AG[connections.go]
-  R --> T[stream_relay.go]
-  APP --> DB[dbcore.go]
-  APP --> MS[store.go]
-  APP --> PL[plugin.go]
+flowchart TD
+  agent["Agents (connections.go)"] --> router["Gin router (router.go)"]
+  router --> metrics[("Metric store (store.go)")]
+  metrics --> db[("Database core (dbcore.go)")]
+  router --> rpc["JSON-RPC (dispatch.go)"]
+  rpc --> plug["Plugins (plugin.go)"]
+  router --> front["Frontend embarqué (embedded.go)"]
 ```
 
 ## Essayer
-Aucune commande dans le README : il renvoie au guide d'installation (Docker, binaire, source).
+Aucune commande documentée dans le README : il renvoie au guide d'installation (Docker, binaire, compilation).
 
 ## Coût et pièges
-Gratuit ; le README met en avant des hébergeurs partenaires payants. Outil de contrôle à distance : exposition à sécuriser soi-même.
+Gratuit. L'agent donne au serveur un contrôle à distance (terminal, fichiers) : un serveur compromis ouvre l'accès à toutes les machines supervisées. Le README prévient de ne déployer que sur des systèmes autorisés. Il contient aussi des encarts publicitaires pour des hébergeurs.
 
 ## Ce que ce n'est pas
-Pas un simple afficheur de métriques : il exécute des commandes et transfère des fichiers sur les machines. Le dépôt est archivé.
+Pas un outil d'observabilité de modèles ou de pipelines, ni un remplaçant d'une pile Prometheus complète. Ce n'est pas qu'un tableau de bord passif : il exécute des commandes.
 
 ## Alternatives
-Aucune alternative nommée dans le README.
+Aucune alternative citée dans le README.
 
 ## Pour toi
-À ignorer : dépôt archivé et README d'une page, alors qu'un outil qui ouvre un terminal sur tes serveurs exige une maintenance active.
+À ignorer pour ton profil data / IA / MLOps : c'est de la supervision de serveurs personnels, sans lien avec les métriques de modèles, et l'agent à contrôle distant élargit la surface d'attaque.
+

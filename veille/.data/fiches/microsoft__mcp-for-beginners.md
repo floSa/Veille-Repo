@@ -1,8 +1,8 @@
 ---
 schema: 1
 depot: microsoft/mcp-for-beginners
-source_readme_sha: 6a8c9e4b8d6569b8
-ecrite_le: 2026-09-28
+source_readme_sha: a22222f08a104810
+ecrite_le: 2026-11-12
 nature: doc
 deploiement: rien à installer
 prerequis: [aucun]
@@ -10,55 +10,47 @@ cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
 alertes: []
-verdict: surveiller
+verdict: adopter
 ---
 
 # microsoft/mcp-for-beginners
 
-> Cursus Microsoft pour apprendre le Model Context Protocol, avec du code en six langages.
+> Cours progressif de Microsoft pour apprendre le Model Context Protocol avec des exemples en plusieurs langages.
 
 ## Le problème
-MCP bouge vite et sa spécification est datée (versions AAAA-MM-JJ) : lire la spec
-seule ne dit ni par où commencer ni ce qui a changé.
+Le protocole MCP évolue vite, et les tutoriels dispersés mêlent versions de spécification et langages.
 
 ## Ce que ça fait vraiment
-Treize modules, du module 00 (introduction) au module 12 (outillage), avec labs.
-Enseigne la révision courante `2026-07-28` — requêtes sans état, framework
-Extensions, dépréciation de Roots/Sampling/Logging — tout en gardant des exemples
-épinglés à `2025-11-25` le temps que les SDK suivent. Exemples calculatrice puis
-avancés en C#, Java, JavaScript, Python, TypeScript, Rust. Module 11 : 13 labs
-d'intégration PostgreSQL (RLS, multi-tenant, pgvector, Azure Container Apps).
+Un curriculum en modules : bases, sécurité, premier serveur et client, transports stdio et HTTP, authentification, MCP Apps, sampling, déploiement, puis un atelier PostgreSQL en 13 labs. Les exemples existent en C#, Java, JavaScript, Python, TypeScript et Rust. Le cours cible la spécification 2026-07-28, certains exemples restant à 2025-11-25. Plus de 50 traductions sont fournies.
 
 ## Comment c'est branché
 ```mermaid
-graph TD
-  A[Modules 0-2 fondamentaux] --> B[Module 3 premier serveur]
-  B --> C[Module 3.2 premier client]
-  C --> D[Modules 4-5 avancé]
-  D --> E[Module 11 labs PostgreSQL]
-  D --> F[Module 10 workshop Foundry]
-  A --> G[Study Guide visuel]
+flowchart TD
+  L["Learner"] --> C["LLM MCP client (Program.cs)"]
+  C --> S["Basic tool server (server.py)"]
+  C --> M["Azure OpenAI"]
+  M --> C
+  A["Authenticated server (server.py)"] --> T["Token validation (util.py)"]
+  W["Web-search server (server.py)"] --> P["SerpAPI"]
 ```
+Ce dépôt n'est pas une application unique mais une suite de leçons.
 
 ## Essayer
 ```bash
-git clone https://github.com/microsoft/mcp-for-beginners.git
+git clone --filter=blob:none --sparse https://github.com/microsoft/mcp-for-beginners.git
+cd mcp-for-beginners
+git sparse-checkout set --no-cone '/*' '!translations' '!translated_images'
 ```
 
 ## Coût et pièges
-Gratuit, licence MIT. Les modules Azure (5.1, 5.12, 5.13, labs 03/10/11) supposent
-un abonnement Azure ; les exemples pgvector supposent une clé Azure OpenAI.
+Gratuit à lire. Certains exemples appellent Azure OpenAI ou SerpAPI (clés à ta charge). Le clone complet est lourd à cause des traductions, d'où le sparse checkout.
 
 ## Ce que ce n'est pas
-Ce n'est pas la spécification ni un SDK : c'est un support pédagogique qui renvoie
-vers la doc officielle. Le ton est très encourageant et répétitif ; la matière
-utile tient dans les tables de modules. Le décalage assumé entre la version
-enseignée et celle des exemples peut dérouter.
+Pas une bibliothèque ni un serveur à déployer tel quel : ce sont des exemples pédagogiques, parfois décalés par rapport aux derniers SDK.
 
 ## Alternatives
-- MCP GitHub Repository : les SDK et exemples officiels, sans le parcours.
-- MCP Specification : la référence, sans progression pédagogique.
+Aucune alternative nommée dans le README (renvoie à la documentation officielle MCP).
 
 ## Pour toi
-Bonne carte du territoire MCP à parcourir une fois ; le module 11 est le seul
-morceau vraiment réutilisable en MLOps.
+À adopter : parcours structuré et à jour pour monter en compétence sur MCP, sans rien installer au départ.
+

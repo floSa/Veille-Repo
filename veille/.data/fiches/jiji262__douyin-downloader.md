@@ -1,13 +1,13 @@
 ---
 schema: 1
 depot: jiji262/douyin-downloader
-source_readme_sha: 26e8f8ffd84be1cf
-ecrite_le: 2026-09-28
+source_readme_sha: 92469a02c84f5627
+ecrite_le: 2026-11-12
 nature: outil
 deploiement: pip
 prerequis: [version de Python, compte à créer]
-cout: gratuit
-maturite: utilisable
+cout: freemium
+maturite: expérimental
 gouvernance: une personne
 alertes: [mainteneur unique, dépend d'un SaaS]
 verdict: ignorer
@@ -15,54 +15,46 @@ verdict: ignorer
 
 # jiji262/douyin-downloader
 
-> Téléchargeur en ligne de commande pour Douyin, avec base SQLite de déduplication et reprise.
+> Télécharge vidéos et photos Douyin sans filigrane, via une application de bureau ou une CLI Python.
 
 ## Le problème
-Archiver les publications d'un compte Douyin à la main est impraticable, et les téléchargements se dupliquent d'un passage à l'autre.
-Les interfaces changent, donc un script maison casse sans avertissement.
+Récupérer en lot les contenus d'un créateur Douyin, sans le filigrane de la plateforme.
 
 ## Ce que ça fait vraiment
-Télécharge vidéos, notes images, collections, musiques, favoris et publications de profil, piloté par un `config.yml` et des options CLI.
-Déduplication SQLite plus vérification des fichiers sur disque, reprise incrémentale par mode (`increase.post`), filtres de date, concurrence et retries.
-Extras : collecte de commentaires en JSON, enregistrement de live en FLV, `--hot-board` et `--search` en JSONL, serveur REST `--serve` (FastAPI), notifications Bark/Telegram/webhook.
-Transcription facultative des vidéos via une API compatible OpenAI (`gpt-4o-mini-transcribe`).
+La CLI Python (Douyin seulement) gère téléchargements par lot, filtres de dates, reprises, historique, commentaires et transcription facultatifs, plus une API REST optionnelle. L'application de bureau Douzy étend à TikTok, YouTube, Telegram et X, certaines fonctions avancées demandant une activation. Le README reconnaît que la vérification des requêtes de Douyin bloque actuellement les téléchargements de vidéos, collections, musiques, likes et favoris en CLI.
 
 ## Comment c'est branché
 ```mermaid
 flowchart TD
-  A[config.yml link + mode + cookies] --> B[python run.py -c config.yml]
-  B --> C[API Douyin aweme/post, mix, music]
-  C --> D[ArgusSecurityPlugin 403 sur la plupart des endpoints]
-  B --> E[browser_fallback playwright headed]
-  B --> F[dy_downloader.db déduplication]
-  B --> G[Downloaded/AuthorName/post/…]
-  G --> H[transcript.txt via API OpenAI]
+  CLI["DouYinCommand.py"] --> CFG["Configuration Manager"]
+  CFG --> DY["douyin.py"]
+  DY --> API["douyinapi.py"]
+  API --> DL["download.py"]
+  DL --> DB["Database (database.py)"]
 ```
+Ce schéma reflète l'ancienne structure ; le README actuel utilise `run.py`.
 
 ## Essayer
 ```bash
-pip install -r requirements.txt
-pip install playwright
+git clone https://github.com/jiji262/douyin-downloader.git
+cd douyin-downloader
+python -m pip install -r requirements.txt
+python -m pip install playwright
 python -m playwright install chromium
 cp config.example.yml config.yml
 python -m tools.cookie_fetcher --config config.yml
 python run.py -c config.yml
-python run.py --hot-board 30 -p ./Downloaded
-python run.py --serve --serve-port 8000
-python3 -m pytest -q
 ```
 
 ## Coût et pièges
-Le README annonce lui-même que la porte anti-robot de Douyin renvoie 403 sur les vidéos seules, collections, musiques, likes et favoris depuis août-septembre 2026 : la signature `x-secsdk-web-signature` ne peut être produite que dans une vraie page web.
-Reste le fallback navigateur pour les publications de profil, non testé contre cette porte. Cookies d'un compte connecté requis ; transcription = clé OpenAI à votre charge.
+Python 3.9+, cookies de connexion Douyin, Chromium via Playwright. Douzy a des fonctions sous activation. Respect des droits d'auteur et des conditions de la plateforme à ta charge.
 
 ## Ce que ce n'est pas
-Pas un outil fonctionnel en CLI aujourd'hui pour l'essentiel de ses modes — l'auteur renvoie vers son application de bureau Douzy, en bêta fermée.
-Pas un enregistreur de live abouti : le HLS ne sauve que la playlist, l'endpoint webcast est déclaré expérimental.
-Pas sans risque juridique : le README rappelle que l'usage et ses conséquences sont à votre charge.
+Pas un outil fiable aujourd'hui : l'auteur déconseille la CLI pour l'usage courant. Le logiciel de bureau n'est pas dans ce dépôt de code.
 
 ## Alternatives
-Aucun dépôt alternatif nommé dans le README.
+Douzy, l'application de bureau citée par le README, remplace la CLI.
 
 ## Pour toi
-À écarter : hors sujet pour un profil data, et la moitié des fonctions sont bloquées côté plateforme.
+À ignorer : hors de ton profil data/IA/MLOps et, selon le README, la CLI est bloquée pour l'essentiel.
+

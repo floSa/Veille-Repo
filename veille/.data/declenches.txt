@@ -2236,3 +2236,11 @@ Peterande/D-FINE	ok
 anomalyco/hex	ok
 gnmyt/Nexterm	ok
 kijai/ComfyUI-CogVideoXWrapper	ok
+0x0funky/agent-sprite-forge	ok
+1013503897/jadx-headless-mcp	ok
+1995chen/dnf	ok
+1Password/connect-helm-charts	ok
+1Password/scim-examples	ok
+777genius/claude_agent_teams_ui	ok
+ANovokmet/svelte-gantt	ok
+Aaalice233/Aaalice_NAI_Launcher	ok

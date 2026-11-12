@@ -1,66 +1,57 @@
 ---
 schema: 1
 depot: agentscope-ai/agentscope
-source_readme_sha: 8a28a77a0b1437e1
-ecrite_le: 2026-09-28
+source_readme_sha: ec9928a31c1d1168
+ecrite_le: 2026-11-12
 nature: bibliothèque
 deploiement: pip
-prerequis: [clé d'API, version de Python]
+prerequis: [version de Python, clé d'API]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: entreprise
 alertes: []
-verdict: adopter
+verdict: surveiller
 ---
 
 # agentscope-ai/agentscope
 
-> Framework d'agents Python avec SDK, service multi-tenant, Web UI et sandboxes d'exécution.
+> Framework Python pour construire des agents LLM avec outils, mémoire et un service applicatif multi-utilisateurs.
 
 ## Le problème
-Passer d'un agent de démonstration à une application multi-utilisateur demande sessions, persistance, permissions, UI et canaux de messagerie.
-Les frameworks qui contraignent le modèle par des prompts rigides vieillissent mal à mesure que les modèles progressent.
+Assembler une boucle d'agent avec outils, permissions, mémoire et interface oblige à recoller de nombreuses briques sans cadre commun.
 
 ## Ce que ça fait vraiment
-Couche SDK : boucle ReAct avec sortie structurée, interruption et reprise en temps réel, acting par lots ; Toolkit gérant outils Python, serveurs MCP et skills, avec outils de codage intégrés (shell, édition de fichiers, recherche).
-Modèles LLM, embedding et TTS chez OpenAI, Anthropic, Gemini, DashScope, DeepSeek, Moonshot, Volcengine, xAI, Ollama ; contexte avec compaction automatique, déport des résultats d'outils et injection via middleware.
-Permissions et HITL à granularité fine, bus d'événements unifié (raisonnement, appels d'outils, texte/image/audio), mémoire à backends interchangeables (ReMe, Mem0).
-Couche service : backend FastAPI et Web UI préconstruite, multi-tenant et multi-session, équipes leader/workers, canaux Feishu et Discord, service RAG, hub MCP et skills, planification de tâches et réveil d'agent.
+Un SDK avec boucle ReAct, boîte à outils (outils Python, serveurs MCP, skills, outils de code), modèles de plusieurs fournisseurs, middlewares, moteur de permissions avec confirmation humaine, mémoire (ReMe, Mem0) et bacs à sable (Docker, E2B, K8s…). Un « agent service » FastAPI avec interface web ajoute multi-tenance, canaux (Feishu, Discord), RAG, planification et persistance. La 2.0 mise sur des modèles capables plutôt que sur des prompts rigides.
 
 ## Comment c'est branché
 ```mermaid
-graph TD
-  A[Agent ReAct] --> B[Toolkit : Python, MCP, skills]
-  A --> C[Model : OpenAI, Anthropic, Ollama]
-  A --> D[Context : compaction, offload]
-  A --> E[Middleware + permissions HITL]
-  B --> F[Workspace / Sandbox : Docker, E2B, K8s]
-  A --> G[Agent Service FastAPI]
-  G --> H[examples/web_ui]
+flowchart TD
+  dev(("Développeur")) -->|"configure"| ag["Agent Loop _agent.py"]
+  ag -->|"appelle"| mod["LLM Models"]
+  mod -->|"envoie les requêtes"| prov(("Fournisseurs de modèles"))
+  ag -->|"invoque"| tk["Toolkit _toolkit.py"]
+  ag -->|"vérifie l'accès"| perm["Permission Engine"]
+  ag -->|"diffuse"| ev["Event Stream"]
+  app["Application API _app.py"] -->|"sert le chat"| chat["Chat Service"]
 ```
 
 ## Essayer
 ```bash
 uv pip install agentscope
-```
-
-```bash
 git clone -b main https://github.com/agentscope-ai/agentscope.git
 cd agentscope/examples/agent_service
 python main.py
 ```
 
 ## Coût et pièges
-Apache-2.0, gratuit ; les appels aux modèles restent à votre charge (l'exemple utilise `DASHSCOPE_API_KEY`).
-Python 3.11 minimum ; la Web UI demande pnpm en plus. Les sandboxes (Docker, E2B, Daytona, K8s) sont autant de dépendances à provisionner.
+Python 3.11 ou plus. Il faut la clé d'API d'au moins un fournisseur (l'exemple utilise DashScope). L'interface web demande pnpm. Le passage de la 1.0 à la 2.0 modifie l'API.
 
 ## Ce que ce n'est pas
-Ce n'est pas un framework à orchestration imposée : le parti pris annoncé est de s'appuyer sur le raisonnement du modèle plutôt que de le contraindre.
-Ce n'est pas un produit fini : c'est un ensemble de briques composables, avec de la colle à écrire.
-Ce n'est pas indépendant d'Alibaba : DashScope est le fournisseur des exemples.
+Ce n'est pas une plateforme d'évaluation ni d'observabilité. Les outils de shell et d'édition de fichiers donnent à l'agent un accès réel à la machine : à encadrer.
 
 ## Alternatives
-Aucun framework concurrent n'est nommé ; ReMe et Mem0 sont cités comme backends de mémoire.
+Aucune alternative nommée dans le README.
 
 ## Pour toi
-Le framework le plus complet du bloc côté service : à considérer si tu dois livrer une appli d'agents, pas un script.
+À surveiller si tu construis des agents en Python ; le champ concurrentiel est encombré, mais le service applicatif fourni évite d'écrire beaucoup de colle.
+

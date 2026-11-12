@@ -9,7 +9,7 @@ prerequis: [GPU, version de Python, Docker]
 cout: gratuit
 maturite: expérimental
 gouvernance: une personne
-alertes: [mainteneur unique]
+alertes: [dernier commit ancien, mainteneur unique]
 verdict: ignorer
 ---
 

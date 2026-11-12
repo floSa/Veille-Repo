@@ -1,8 +1,8 @@
 ---
 schema: 1
 depot: open-telemetry/opentelemetry-collector-contrib
-source_readme_sha: 0a719facc01f3627
-ecrite_le: 2026-09-28
+source_readme_sha: f0d16c2d97ece350
+ecrite_le: 2026-11-12
 nature: bibliothèque
 deploiement: autre
 prerequis: [aucun]
@@ -10,55 +10,43 @@ cout: gratuit
 maturite: éprouvé
 gouvernance: fondation
 alertes: []
-verdict: surveiller
+verdict: adopter
 ---
 
 # open-telemetry/opentelemetry-collector-contrib
 
-> Dépôt des composants du Collector OpenTelemetry qui n'ont pas leur place dans le cœur.
+> Catalogue de composants optionnels du Collector OpenTelemetry : récepteurs, processeurs, exporteurs, connecteurs.
 
 ## Le problème
-Le Collector cœur ne peut pas embarquer un récepteur ou un exporteur pour chaque backend du marché ;
-sans dépôt contrib, chaque intégration vivrait dans un fork.
+Le collecteur de base ne couvre pas tous les formats et destinations de télémétrie des équipes.
 
 ## Ce que ça fait vraiment
-Héberge les composants hors cœur du Collector. Les distributions officielles, `core` et `contrib`,
-sont publiées depuis le dépôt `opentelemetry-collector-releases` ; certains composants d'ici (Jaeger,
-Prometheus) font partie de la distribution cœur, la plupart uniquement de `contrib`. Les
-utilisateurs sont encouragés à construire leur propre distribution avec l'OpenTelemetry Collector
-Builder, en piochant dans le cœur, dans contrib, et dans des dépôts tiers ou internes. Chaque
-composant porte son niveau de support, et un niveau de stabilité **par signal** : un même composant
-peut être stable en traces, alpha en métriques et en développement pour les logs. Des fonctions
-restent derrière des feature gates, elles-mêmes à des stades différents.
+Le dépôt regroupe les composants jugés hors du cœur : connecteurs (failover, routage, span metrics, service graph), exporteurs (Alertmanager, Elasticsearch, fichier, clouds), processeurs comme le tail sampling, extensions de stockage, fournisseurs de configuration (S3, AES), un superviseur OpAMP et le générateur `telemetrygen`. Chaque composant a un niveau de stabilité par signal (traces, métriques, logs).
 
 ## Comment c'est branché
 ```mermaid
-flowchart LR
-    CONTRIB["composants contrib"] --> OCB["OpenTelemetry Collector Builder<br/>(manifeste)"]
-    CORE["dépôt cœur"] --> OCB
-    TIERS["composants tiers / internes"] --> OCB
-    OCB --> DIST["distribution personnalisée"]
-    DIST --> RCV["receivers"]
-    RCV --> PROC["processors"]
-    PROC --> EXP["exporters"]
-    REL["opentelemetry-collector-releases<br/>core / contrib"] --> DIST
+flowchart TD
+  coll["Collector runtime"] --> conn["Connectors"]
+  coll --> exp["Exporters"]
+  conn --> route["Routing connector"]
+  exp --> es["Elasticsearch exporter"]
+  exp --> back(("Backends de télémétrie"))
+  gen["telemetrygen"] --> back
+  sup["OpAMP supervisor"] --> coll
 ```
 
 ## Essayer
-Aucune commande documentée dans le README : il renvoie aux distributions officielles et au Collector
-Builder, sans ligne de commande.
+Aucune commande documentée dans le README : les distributions officielles viennent du dépôt opentelemetry-collector-releases, ou d'un build personnalisé avec le Collector Builder.
 
 ## Coût et pièges
-Gratuit. Le piège est la stabilité par signal : vérifier le niveau du composant **pour le signal
-qu'on utilise**, pas le composant en bloc, et surveiller les feature gates activées par défaut.
+Gratuit, mais ce n'est pas une application : il faut une distribution ou la construire. La stabilité varie par composant et par signal, et le dépôt compte plus de 1 000 issues ouvertes.
 
 ## Ce que ce n'est pas
-Pas un produit installable : c'est un catalogue de composants, la distribution se construit ailleurs.
-Le README est surtout un document de gouvernance (mainteneurs, approbateurs, triagers, règle de
-non-sur-représentation à 25 % par employeur, processus de PR) : quasi rien sur l'usage.
+Pas un backend de stockage ni un outil de visualisation. Pas un exécutable unique prêt à lancer.
 
 ## Alternatives
-- La distribution `core` : suffisante si Jaeger et Prometheus couvrent le besoin.
+Aucune alternative citée dans le README.
 
 ## Pour toi
-À connaître pour instrumenter une plateforme ML ; la lecture utile est le catalogue, pas ce README.
+À adopter comme socle d'observabilité de tes services d'inférence et pipelines : standard du domaine, soutenu par de nombreuses entreprises.
+

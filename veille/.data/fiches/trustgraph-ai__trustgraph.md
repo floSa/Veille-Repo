@@ -1,12 +1,12 @@
 ---
 schema: 1
 depot: trustgraph-ai/trustgraph
-source_readme_sha: 4da887680d3b17d1
-ecrite_le: 2026-09-28
-nature: outil
+source_readme_sha: 5822da3b88c102a0
+ecrite_le: 2026-11-12
+nature: service
 deploiement: docker
-prerequis: [Docker]
-cout: freemium
+prerequis: [clé d'API, Docker]
+cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: entreprise
 alertes: []
@@ -15,34 +15,24 @@ verdict: surveiller
 
 # trustgraph-ai/trustgraph
 
-> Couche d'orchestration de contexte à base d'hypergraphes RDF, pour équipes qui déploient des agents en entreprise.
+> Plateforme de gouvernance pour agents IA qui transforme connaissances d'entreprise en graphe de contexte et applique des politiques d'action.
 
 ## Le problème
-Deux agents ne peuvent pas communiquer s'ils ne partagent pas la même compréhension du contexte.
-Le README le montre avec « Who's on First » : un RAG vectoriel prend « Who » pour un pronom
-interrogatif au lieu d'un nom de joueur, et hallucine. La similarité sémantique est probabiliste :
-elle ne distingue pas un mot employé comme pronom d'un nom propre dans un contexte local.
+Les agents IA en entreprise manquent d'un cadre unifié pour comprendre les données internes, limiter leurs actions selon des règles explicites et prouver après coup pourquoi une décision a été prise.
 
 ## Ce que ça fait vraiment
-Ingère PDF, wikis, API et bases, extrait entités et relations par LLM et les structure dans l'hypergraphe.
-Utilise RDF 1.2 et les Named Graphs en N-Quads pour référencer une déclaration entière comme nœud,
-donc des relations n-aires : un document, son auteur, le manager approbateur, la politique de
-conformité et les métadonnées temps/lieu dans une seule unité adressable. Ontologie OWL apportée
-par l'utilisateur (BYOO), récupération conforme à l'ontologie automatisée.
-Hyperflows : workflows agentiques chaînés, avec LLM et permissions de graphe configurés par étape.
-Workspaces (isolation), Collections (bases de connaissances partitionnées), Context Cores (unités
-de contexte portables). Provenance temps réel de chaque décision d'agent.
+Construit un graphe de connaissances ontologique depuis documents et systèmes, applique des règles de gouvernance (autorité, risque, portée) à l'exécution d'un agent, et conserve preuves/versions de politique pour audit. Combine trois techniques RAG (document, graphe, requête structurée) et orchestration d'agents (ReAct, Plan, Supervisor).
 
 ## Comment c'est branché
 ```mermaid
-flowchart LR
-  A[PDF / wikis / API / bases] --> B[extraction LLM]
-  B --> C[hypergraphe RDF 1.2<br/>+ ontologie OWL]
-  C --> D[Cassandra · Qdrant · Garage]
-  C --> E[Hyperflows]
-  E --> F[stack LLM: vLLM / Ollama / TGI]
-  C --> G[SPARQL / GraphRAG]
-  G --> H[UI :8888 provenance]
+flowchart TD
+  gateway["Passerelle API<br/>gateway"] --> ingest["Ingestion/décodage"]
+  ingest --> extract["Extraction KG"]
+  extract --> storage["Stockage (Cassandra/graphe/vecteurs)"]
+  storage --> query["Services de requête"]
+  query --> rag["RAG"]
+  rag --> agent["Orchestration d'agent"]
+  llm["Adaptateurs LLM"] --> agent
 ```
 
 ## Essayer
@@ -51,20 +41,14 @@ npx @trustgraph/config
 ```
 
 ## Coût et pièges
-Se déploie en conteneurs Docker, Podman ou Minikube ; le configurateur produit `deploy.zip` avec
-`docker-compose.yaml` ou `resources.yaml` et un `INSTALLATION.md`. Trois clés d'API seulement peuvent
-être nécessaires : un LLM tiers, un OCR tiers, et celle que tu fixes pour ta passerelle.
-Le reste (Cassandra, Qdrant, Garage, Pulsar/RabbitMQ, stack d'inférence) est inclus — donc lourd.
-Déploiement auto-hébergé, BYOC ou SaaS managé.
+Se déploie en conteneurs Docker/Podman/Kubernetes ; nécessite une clé d'API pour le fournisseur LLM choisi (Anthropic, OpenAI, etc.) et éventuellement pour l'OCR tiers. Le reste (Cassandra, Qdrant, Pulsar/RabbitMQ) est géré en interne.
 
 ## Ce que ce n'est pas
-Ce n'est pas une base graphe : le README insiste, c'est un moteur de traitement.
-Ce n'est pas un graphe de connaissances classique limité aux relations binaires.
-Ce n'est pas léger : compter une pile complète de services pour un premier essai.
+Pas une simple bibliothèque RAG : c'est un ensemble de services conteneurisés avec passerelle, bus de messages et plusieurs bases. Ne dispense pas de choisir et payer un fournisseur LLM externe.
 
 ## Alternatives
-Glean, cité comme recherche d'entreprise standard, indexation documentaire et similarité vectorielle
-là où TrustGraph vise le contexte hyper-relationnel.
+Aucune alternative nommée dans le README.
 
 ## Pour toi
-L'argument anti-RAG-vectoriel est solide et bien démontré ; à évaluer si tu as déjà une ontologie métier.
+À surveiller pour un profil MLOps qui doit gouverner des agents en production, mais le coût d'exploitation (conteneurs multiples) est à évaluer avant adoption.
+

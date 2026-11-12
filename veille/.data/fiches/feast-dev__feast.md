@@ -1,44 +1,38 @@
 ---
 schema: 1
 depot: feast-dev/feast
-source_readme_sha: c150196258165066
-ecrite_le: 2026-09-28
-nature: bibliothèque
+source_readme_sha: 05cec5b98aecbe9d
+ecrite_le: 2026-11-12
+nature: outil
 deploiement: pip
-prerequis: [aucun]
+prerequis: [version de Python, service tiers]
 cout: gratuit
 maturite: éprouvé
-gouvernance: fondation
+gouvernance: communauté
 alertes: []
 verdict: adopter
 ---
 
 # feast-dev/feast
 
-> Feature store open source : mêmes features à l'entraînement et en inférence temps réel.
+> Magasin de features open source pour équipes ML : mêmes features à l'entraînement et en inférence en ligne.
 
 ## Le problème
-Les features calculées pour l'entraînement et celles servies en production divergent, et les
-jointures temporelles maison laissent fuiter des valeurs futures dans le jeu d'entraînement.
+Les features calculées pour l'entraînement ne sont pas celles servies en production, et les jointures historiques laissent fuiter le futur dans le modèle.
 
 ## Ce que ça fait vraiment
-Trois composants articulés : un *offline store* pour l'historique (entraînement, scoring batch),
-un *online store* à faible latence pour la prédiction temps réel, et un serveur de features pour
-exposer les valeurs précalculées. `get_historical_features` produit des jeux corrects
-point-in-time, ce qui supprime la fuite de données. `materialize-incremental` pousse les valeurs
-vers l'online store, `get_online_features` les relit par entité. Une couche d'accès unique
-découple le stockage de la récupération, donc le modèle reste portable d'une infra à l'autre.
+Feast enregistre les définitions de features dans un registre, puis fait des jointures « point dans le temps » sur un store hors ligne (BigQuery, DuckDB, Snowflake, Spark…). Il matérialise ensuite les valeurs vers un store en ligne (Redis, DynamoDB, Postgres…) et les sert via un serveur de features. Le SDK Python et la CLI `feast` sont le point d'entrée ; des serveurs Go et Java existent aussi.
 
 ## Comment c'est branché
 ```mermaid
-graph LR
-  A[feast init / apply] --> B[Feature repo]
-  B --> C[Offline store]
-  C --> D[get_historical_features — point-in-time]
-  B --> E[materialize-incremental]
-  E --> F[Online store]
-  F --> G[get_online_features]
-  B --> H[feast ui]
+flowchart TD
+  cli["feast CLI (cli.py)"] --> sdk["FeatureStore (feature_store.py)"]
+  sdk --> reg[("Registre (registry.py)")]
+  sdk --> off["Historique (offline_store.py)"]
+  off --> wh[("Entrepôts (bigquery.py)")]
+  sdk --> mat["Matérialisation"]
+  mat --> on["Store en ligne (online_store.py)"]
+  srv["Serveur de features (feature_server.py)"] --> on
 ```
 
 ## Essayer
@@ -48,23 +42,18 @@ feast init my_feature_repo
 cd my_feature_repo/feature_repo
 feast apply
 feast ui
-feast materialize-incremental $(date -u +"%Y-%m-%dT%H:%M:%S")
-feast materialize --disable-event-timestamp
+feast materialize-incremental $CURRENT_TIME
 ```
 
 ## Coût et pièges
-La bibliothèque est gratuite ; les stores derrière ne le sont pas nécessairement — la config
-minimale locale diffère beaucoup d'un déploiement Snowflake, GCP ou AWS, renvoyé à une page à
-part. L'interface web `feast ui` est marquée **expérimentale**. `--disable-event-timestamp` prend
-l'heure courante comme timestamp : pratique quand la source n'en a pas, mais cela invalide la
-correction point-in-time.
+Gratuit, mais il faut en pratique brancher un store hors ligne et un store en ligne, donc de l'infrastructure à ta charge. L'interface web `feast ui` est marquée expérimentale.
 
 ## Ce que ce n'est pas
-Ce n'est pas un moteur de calcul de features : il orchestre et sert, il ne transforme pas tes
-données à ta place. Ce n'est pas une base de données — il s'appuie sur les tiennes.
+Pas un outil de calcul de features à lui seul : il orchestre, il ne remplace pas ton pipeline de transformation. Ce n'est pas un entrepôt de données non plus.
 
 ## Alternatives
-Aucune alternative nommée dans le README.
+Aucune alternative citée dans le README.
 
 ## Pour toi
-La brique canonique du MLOps tabulaire : à adopter dès que training et serving se désynchronisent.
+À adopter dès que tu as des modèles servis en temps réel : le point-in-time join évite la fuite de données et le projet est actif (dernier push 2026-10-19).
+

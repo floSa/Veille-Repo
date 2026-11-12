@@ -9,7 +9,7 @@ prerequis: [Node, compte à créer, service tiers]
 cout: payant
 maturite: expérimental
 gouvernance: une personne
-alertes: [mainteneur unique, dépend d'un SaaS]
+alertes: [dernier commit ancien, mainteneur unique, dépend d'un SaaS]
 verdict: surveiller
 ---
 

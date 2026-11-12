@@ -1,60 +1,51 @@
 ---
 schema: 1
 depot: gardener/gardener
-source_readme_sha: e6e9273c65312bbf
-ecrite_le: 2026-09-28
-nature: outil
+source_readme_sha: 7ce08cd2627284c2
+ecrite_le: 2026-11-12
+nature: service
 deploiement: autre
 prerequis: [service tiers]
 cout: gratuit
 maturite: éprouvé
 gouvernance: communauté
 alertes: []
-verdict: surveiller
+verdict: ignorer
 ---
 
 # gardener/gardener
 
-> Gestion automatisée de clusters Kubernetes comme service, pour opérateurs d'infrastructure multi-cloud.
+> Plateforme Kubernetes-native qui crée et exploite des clusters Kubernetes « as a service » sur plusieurs infrastructures.
 
 ## Le problème
-Gérer des dizaines de clusters Kubernetes sur plusieurs clouds donne des clusters hétérogènes.
-Les opérations « jour 2 » (mise à jour, robustesse) sont réécrites pour chaque fournisseur.
+Gérer des dizaines de clusters Kubernetes homogènes sur plusieurs clouds sans maîtres dédiés ni outils par fournisseur.
 
 ## Ce que ça fait vraiment
-Un API server d'extension plus des contrôleurs, installés dans un cluster **garden**.
-Les clusters utilisateurs (**shoot**) sont décrits de façon déclarative et réconciliés en continu.
-Leurs plans de contrôle (etcd, API server, controller manager, scheduler) tournent comme charge
-Kubernetes native dans des clusters **seed** : pas de VM master dédiée (« kubeception »).
-Certifié conformance CNCF jusqu'à Kubernetes v1.35, résultats publiés en continu sur le testgrid.
+Gardener ajoute à un cluster « garden » un serveur d'API étendu et des contrôleurs. On y décrit un cluster utilisateur (« shoot ») par une spécification déclarative. Son plan de contrôle (etcd, API server, controller manager, scheduler) tourne comme charge Kubernetes dans un cluster « seed », sans VM maîtres. Un framework d'extensions porte le travail propre à chaque fournisseur, un opérateur installe le paysage, et le projet participe aux tests de conformité Kubernetes.
 
 ## Comment c'est branché
 ```mermaid
-flowchart LR
-  A[garden cluster] --> B[Gardener API Server]
-  B --> C[Gardener Controller Manager]
-  B --> D[Gardener Scheduler]
-  D --> E[seed cluster]
-  E --> F[Gardenlet]
-  F --> G[plan de contrôle du shoot]
-  G --> H[shoot cluster]
+flowchart TD
+  client(("Cluster API Client")) --> apisrv["Gardener API Server"]
+  apisrv --> reg["Core Resource Registry"]
+  reg --> store[("Garden API Backing Store")]
+  cm["Controller Manager"] --> shoot{{"Shoot Cluster"}}
+  seed{{"Seed Cluster"}} --> shoot
+  ext["Extension Controller Framework"] --> infra{{"Infrastructure Provider"}}
 ```
 
 ## Essayer
-Aucune commande documentée dans le README : il renvoie à l'index de `/docs` et au guide de
-mise en place d'un « landscape » Gardener.
+Aucune commande documentée dans le README : il renvoie à `/docs` et au guide de mise en place d'un paysage Gardener.
 
 ## Coût et pièges
-Gratuit côté logiciel, mais le coût réel est l'infrastructure : un cluster garden, des seeds,
-et un compte chez chaque fournisseur cloud visé. Pas de chemin d'essai local dans le README.
+Gratuit, mais l'infrastructure (clusters garden et seed, comptes cloud) est entièrement à ta charge, et l'opération d'un paysage demande une équipe plateforme.
 
 ## Ce que ce n'est pas
-Ce n'est pas la Cluster API de SIG Cluster Lifecycle : Gardener harmonise aussi la composition
-des clusters, pas seulement la façon d'y arriver. Ce n'est pas un outil pour un cluster unique.
-Le README ne nomme ni l'entreprise qui porte le projet ni la licence.
+Pas un outil pour exécuter des applications ou des modèles : il fabrique les clusters qui les hébergent. Pas équivalent à Cluster API : le README insiste sur la différence.
 
 ## Alternatives
-La Cluster API de SIG Cluster Lifecycle, citée comme approche voisine ; GKE, cité comme service managé.
+- Cluster API (SIG Cluster Lifecycle) : harmonise la création des clusters, pas leur composition.
 
 ## Pour toi
-Hors périmètre d'un profil data/IA sauf si tu opères une flotte de clusters : à connaître, pas à installer.
+À ignorer : c'est de la gestion de flotte de clusters pour équipes plateforme, très loin d'un quotidien data / IA / MLOps, sauf si ton organisation l'exploite déjà.
+

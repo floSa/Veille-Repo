@@ -1,59 +1,53 @@
 ---
 schema: 1
 depot: cilium/cilium
-source_readme_sha: e9e50bdafcee3039
-ecrite_le: 2026-09-28
-nature: outil
-deploiement: docker
-prerequis: [service tiers]
+source_readme_sha: 0e162a60a486accd
+ecrite_le: 2026-11-12
+nature: service
+deploiement: autre
+prerequis: [aucun]
 cout: gratuit
 maturite: éprouvé
-gouvernance: fondation
+gouvernance: communauté
 alertes: []
 verdict: ignorer
 ---
 
 # cilium/cilium
 
-> Réseau, observabilité et sécurité pour Kubernetes, avec un plan de données en eBPF.
+> Réseau, sécurité et observabilité Kubernetes fondés sur eBPF, qui remplacent kube-proxy.
 
 ## Le problème
-Filtrer par adresse IP oblige à modifier les pare-feux de tous les serveurs dès qu'un conteneur démarre.
-Comprendre pourquoi un paquet a été rejeté dans un cluster relève de la devinette.
+Le réseau Kubernetes classique filtre sur des adresses IP changeantes et passe par des règles lourdes qui ne tiennent pas à grande échelle.
 
 ## Ce que ça fait vraiment
-Plugin CNI qui fournit un réseau L3 plat, en encapsulation (VXLAN, Geneve) ou en routage natif, extensible à plusieurs clusters.
-Équilibrage de charge distribué en eBPF via tables de hachage : remplace entièrement kube-proxy, avec DSR et hachage Maglev en entrée nord-sud.
-Politiques réseau fondées sur une identité de sécurité et non sur l'IP, de L3 à L7 : méthode HTTP, chemin d'URL, appel gRPC, domaines FQDN.
-Cluster Mesh pour la découverte de services entre clusters ; Hubble pour les cartes de services temps réel et les causes de rejet.
+Un plugin CNI à base d'eBPF : routage par overlay (VXLAN, Geneve) ou natif, avec BGP. Il équilibre la charge sans kube-proxy, applique des politiques réseau L3 à L7 selon l'identité des charges (filtres HTTP, DNS, gRPC), chiffre le trafic (IPsec, WireGuard), connecte plusieurs clusters (Cluster Mesh) et sert de plan de données Gateway API. Hubble fournit cartes de services et flux.
 
 ## Comment c'est branché
 ```mermaid
-flowchart LR
-  pod["pods"] --> cni["Cilium CNI"]
-  cni --> ebpf["programmes eBPF (noyau Linux)"]
-  ebpf --> lb["load balancing (remplace kube-proxy)"]
-  ebpf --> policy["identité + policy L3-L7"]
-  ebpf --> hubble["Hubble (flux, DNS, drops)"]
-  hubble --> prom["Prometheus / Grafana"]
-  cni --> mesh["Cluster Mesh"]
+flowchart TD
+  op(("Opérateur Kubernetes")) -->|"réconcilie"| kube[("Kubernetes API")]
+  kube -->|"état des endpoints"| ep["Endpoint lifecycle manager.go"]
+  ep -->|"régénère"| bpf["eBPF datapath bpf_lxc.c"]
+  lb["Service load balancing"] -->|"redirections"| bpf
+  trf(("Trafic des charges")) -->|"traité par"| bpf
+  bpf -->|"émet des flux"| hub["Hubble observer.proto"]
 ```
 
 ## Essayer
-Aucune commande d'installation n'est écrite dans le README : il renvoie au guide « Installing Cilium » et donne les tags d'images, par exemple `quay.io/cilium/cilium:v1.20.2`.
+```bash
+# Aucune commande dans le README : il renvoie au guide d'installation de la documentation.
+```
 
 ## Coût et pièges
-Gratuit, mais suppose un cluster Kubernetes et un noyau Linux compatible eBPF : c'est de l'infrastructure, pas un paquet.
-Trois versions mineures seulement sont maintenues (v1.20, v1.19, v1.18) ; au-delà, c'est en fin de vie.
+Gratuit. Nécessite un cluster Kubernetes et un noyau Linux compatible eBPF (prérequis détaillés dans la documentation). Le code BPF est sous double licence GPL-2.0 ou BSD-2, le reste sous Apache-2.0.
 
 ## Ce que ce n'est pas
-Ce n'est pas mono-licence : l'espace utilisateur est Apache 2.0, mais les modèles de code BPF sont en double licence GPL-2.0 / BSD-2-Clause.
-Ce n'est pas un produit à tester en `main` : les images issues de la branche principale sont explicitement hors production.
-Ce n'est pas un service mesh à proxy : c'est l'argument inverse, éviter le coût des architectures à sidecar.
+Ce n'est pas un outil de données ou d'IA : c'est une brique d'infrastructure réseau. Ce n'est pas utilisable hors Kubernetes.
 
 ## Alternatives
-kube-proxy : le composant que Cilium remplace, si l'équilibrage basique suffit.
-Gateway API : Cilium en est une implémentation conforme, l'alternative étant une autre implémentation.
+Aucune alternative nommée dans le README, hormis kube-proxy, qu'il remplace.
 
 ## Pour toi
-Hors périmètre : sujet d'infrastructure réseau, à laisser à l'équipe plateforme.
+À ignorer sauf si tu administres toi-même les clusters qui portent tes charges MLOps : ce n'est pas un outil de data science.
+

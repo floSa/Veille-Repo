@@ -1,42 +1,38 @@
 ---
 schema: 1
 depot: unclecode/crawl4ai
-source_readme_sha: 3de808095d5cb810
-ecrite_le: 2026-09-28
+source_readme_sha: cbe8e3075935cf98
+ecrite_le: 2026-11-12
 nature: bibliothèque
 deploiement: pip
 prerequis: [version de Python]
 cout: gratuit
 maturite: éprouvé
-gouvernance: une personne
-alertes: [mainteneur unique]
+gouvernance: entreprise
+alertes: []
 verdict: adopter
 ---
 
 # unclecode/crawl4ai
 
-> Crawler et scraper open source qui transforme le web en Markdown propre pour RAG et agents.
+> Crawler web asynchrone en Python qui transforme des pages en Markdown propre ou en JSON structuré pour la RAG.
 
 ## Le problème
-Le HTML récupéré brut est inexploitable : menus, bannières, scripts noient le contenu utile.
-Les services qui font ce nettoyage demandent un compte, un jeton et une facture.
+Extraire le texte utile d'un site (JavaScript, bandeaux, menus) pour alimenter un LLM demande de l'assembler soi-même : navigateur, nettoyage, découpage.
 
 ## Ce que ça fait vraiment
-Génère un Markdown structuré, avec un mode « fit » qui filtre le bruit par heuristique ou BM25.
-Extraction structurée sans LLM par schéma CSS/XPath, ou avec LLM via une stratégie dédiée et un schéma Pydantic.
-Contrôle complet du navigateur : sessions, profils persistants, proxies, cookies, hooks, exécution de JS, CDP distant.
-Déploiement Docker avec tableau de bord temps réel, terrain de jeu interactif et intégration MCP.
+`AsyncWebCrawler` pilote un navigateur Playwright, puis nettoie le HTML et produit du Markdown, avec un filtre « fit » qui retire le superflu. L'extraction se fait par schémas CSS/XPath sans LLM, ou avec n'importe quel fournisseur LiteLLM. Il gère les sessions, proxys, profils persistants, le parcours profond (BFS, DFS) et le multi-URL. Un serveur Docker FastAPI avec file Redis et un service cloud payant existent aussi.
 
 ## Comment c'est branché
 ```mermaid
 flowchart TD
-  code(("Code / CLI")) --> crawler["AsyncWebCrawler"]
-  crawler --> browser["Pool de navigateurs Playwright"]
-  browser --> page["Page rendue"]
-  page --> filter["Filtre de contenu (Pruning / BM25)"]
-  filter --> md["Markdown"]
-  page --> extract["Extraction CSS/XPath ou LLM"]
-  docker["Serveur Docker + MCP"] --> crawler
+  sdk["SDK __init__.py"] -->|"exporte"| crawler["AsyncWebCrawler"]
+  cli["CLI cli.py"] -->|"lance"| crawler
+  crawler -->|"acquiert les pages"| browser["browser_manager.py"]
+  crawler -->|"traite le HTML"| scrap["content_scraping_strategy.py"]
+  scrap -->|"vers Markdown"| md["markdown_generation_strategy.py"]
+  crawler -->|"extraction"| ext["extraction_strategy.py"]
+  ext -.->|"stratégie LLM"| llm{{"LLM model_loader.py"}}
 ```
 
 ## Essayer
@@ -44,21 +40,18 @@ flowchart TD
 pip install -U crawl4ai
 crawl4ai-setup
 crawl4ai-doctor
-crwl https://docs.crawl4ai.com --deep-crawl bfs --max-pages 10
+crwl https://news.ycombinator.com -o markdown
 ```
 
 ## Coût et pièges
-Gratuit ; seule l'extraction par LLM consomme une clé d'API. Playwright télécharge un Chromium complet.
-L'usage impose une attribution visible (badge ou ligne de texte) dans ta documentation.
+La bibliothèque est gratuite sous Apache-2.0, mais le navigateur et l'infrastructure sont à ta charge. L'extraction par LLM demande une clé de ton fournisseur. Le README impose une attribution (badge ou ligne de texte) quand on utilise le projet.
 
 ## Ce que ce n'est pas
-Pas exempt de surface d'attaque : la v0.9.3 corrige cinq avis de sécurité (écriture de fichier, SSRF, DoS, XSS).
-Pas un service géré — la v0.9.0 verrouille le serveur Docker par défaut, à toi de l'exposer correctement.
-La version synchrone (Selenium) est dépréciée et sera retirée.
+Ce n'est pas le service Crawl4AI Cloud, qui est hébergé et payant au-delà de 1 000 crédits par mois. Il ne contourne pas à coup sûr les protections anti-bot : tu règles proxys et mode furtif.
 
 ## Alternatives
-- `D4Vinci/Scrapling` : parser adaptatif et framework de spiders, plus proche de Scrapy.
-- `browser-use/browser-use` : quand il faut un agent qui décide, pas un crawler qui exécute.
+Aucune alternative nommée dans le README, hormis l'offre cloud du même auteur.
 
 ## Pour toi
-La brique la plus directe pour alimenter un RAG depuis le web. À adopter, en suivant les correctifs de sécurité.
+À adopter pour alimenter une chaîne RAG en Markdown propre : bibliothèque mature, licence permissive, et un chemin clair vers le Docker ou le cloud.
+

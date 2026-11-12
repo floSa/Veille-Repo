@@ -1,8 +1,8 @@
 ---
 schema: 1
 depot: embabel/embabel-agent
-source_readme_sha: d9c83945f3611397
-ecrite_le: 2026-10-25
+source_readme_sha: 67cfb0c87933070a
+ecrite_le: 2026-11-12
 nature: bibliothèque
 deploiement: autre
 prerequis: [clé d'API, Docker]
@@ -10,28 +10,29 @@ cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: entreprise
 alertes: []
-verdict: ignorer
+verdict: surveiller
 ---
 
 # embabel/embabel-agent
 
-> Framework JVM typé pour écrire des agents qui planifient leurs actions vers un but, mêlant code et LLM.
+> Framework JVM (Kotlin, Java, Spring) pour écrire des agents dont le plan est calculé, pas codé en dur.
 
 ## Le problème
-Les agents écrits comme chaînes de prompts sont difficiles à tester, à réutiliser et à étendre, surtout dans un écosystème Spring/Java.
+Les agents LLM en séquence figée ou en machine à états s'étendent mal, et les flux mêlant code et prompts sont difficiles à tester.
 
 ## Ce que ça fait vraiment
-On déclare actions, buts et conditions avec des annotations `@Agent`, `@Action`, `@Goal` ou une DSL Kotlin. La plateforme planifie dynamiquement avec GOAP (ou Utility AI) et replanifie après chaque action. Trois modes d'exécution : focalisé, fermé, ouvert. Fournit mélange de LLM, serveur et client MCP, A2A, RAG, observabilité OpenTelemetry/Langfuse et tests unitaires de prompts.
+Tu déclares des actions, des objectifs et des conditions sur un modèle de domaine typé, via annotations (`@Agent`, `@Action`, `@AchievesGoal`) ou DSL Kotlin. Un planificateur non-LLM (GOAP par défaut, ou Utility AI) choisit les actions et replanifie après chacune. Trois modes : ciblé, fermé, ouvert. Il s'appuie sur Spring AI, mélange plusieurs LLM, propose du RAG, un serveur A2A et des tests unitaires d'agents.
 
 ## Comment c'est branché
 ```mermaid
-flowchart LR
-  A[Agent annotations / DSL] --> B[AgentPlatform]
-  B --> C[AgentProcess + Planner]
-  C --> D[ActionRunner]
-  D --> E[Blackboard]
-  D --> F[LlmService Spring AI]
-  B --> G[MCP / A2A]
+flowchart TD
+  def["Agent definitions (agent.kt)"] --> plat["AgentPlatform.kt"]
+  ann["Annotated actions (annotations.kt)"] --> plat
+  plat --> proc["AgentProcess.kt"]
+  proc --> plan["PlannerType.kt"]
+  plan --> act["ActionRunner.kt"]
+  act --> bb["Blackboard.kt"]
+  bb --> proc
 ```
 
 ## Essayer
@@ -40,18 +41,17 @@ uvx --from git+https://github.com/embabel/project-creator.git project-creator
 git clone https://github.com/embabel/embabel-agent-examples
 cd embabel-agent-examples/scripts/kotlin
 ./shell.sh
-mvn test
 ```
 
 ## Coût et pièges
-`OPENAI_API_KEY` requis, Anthropic recommandé pour certains exemples ; Docker Desktop pour les outils MCP web. Les appels LLM sont facturés par le fournisseur.
+`OPENAI_API_KEY` est requis, `ANTHROPIC_API_KEY` conseillé : la facture reste à ta charge. Docker Desktop (version 4.43.2 ou plus) sert aux outils MCP ; Maven et un JDK sont aussi nécessaires, ce que la liste de prérequis ne couvre pas.
 
 ## Ce que ce n'est pas
-Pas un framework Python ni un produit fini : une base pour développeurs JVM. Le mode ouvert est le moins déterministe.
+Pas un framework Python. Le mode « ouvert » est le moins déterministe, et le README dit travailler encore sur des actions en langage naturel.
 
 ## Alternatives
-- Spring AI : couche plus bas niveau sur laquelle Embabel s'appuie.
+- Spring AI : niveau plus bas, Embabel est construit dessus.
 
 ## Pour toi
-À ignorer sauf contexte JVM : l'idée de planification non-LLM est intéressante, mais pour un profil data/IA Python l'écosystème n'offre pas de gain direct.
+À surveiller : l'idée de planification explicite est originale, mais tout est sur la JVM ; utile seulement si ta stack est Spring.
 

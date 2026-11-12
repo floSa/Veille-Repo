@@ -9,7 +9,7 @@ prerequis: [clé d'API]
 cout: clé d'API à ta charge
 maturite: expérimental
 gouvernance: une personne
-alertes: [mainteneur unique]
+alertes: [dernier commit ancien, mainteneur unique]
 verdict: surveiller
 ---
 

@@ -1,11 +1,11 @@
 ---
 schema: 1
 depot: fengshao1227/ccg-workflow
-source_readme_sha: 7d83d25137ad4113
-ecrite_le: 2026-09-28
-nature: outil
+source_readme_sha: 9fb080030817b77b
+ecrite_le: 2026-11-12
+nature: extension
 deploiement: npm
-prerequis: [Node, service tiers]
+prerequis: [Node, clé d'API]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: une personne
@@ -15,52 +15,43 @@ verdict: surveiller
 
 # fengshao1227/ccg-workflow
 
-> Moteur de workflow qui fait de Claude Code l'orchestrateur de Codex, Grok et Kimi.
+> Moteur de workflow pour Claude Code qui délègue analyse et revue à d'autres modèles (Codex, Gemini, etc.).
 
 ## Le problème
-Un seul modèle sur une tâche complexe garde ses angles morts, et l'état de la tâche disparaît à la compaction du contexte.
-Faire travailler plusieurs CLI ensemble suppose de recopier le contexte à la main entre elles.
+Un seul modèle laisse des angles morts et Claude Code perd son contexte après compaction pendant les longues tâches.
 
 ## Ce que ça fait vraiment
-Dix stratégies auto-sélectionnées selon type et complexité, de `direct-fix` (zéro surcoût) à `full-collaborate` (double analyse parallèle + équipes d'agents + revue croisée).
-Quatre hooks JavaScript réinjectent l'état à chaque tour, au démarrage de session, dans les prompts de sous-agents, et routent la connaissance de domaine par mots-clés.
-Les tâches de complexité moyenne ou supérieure obtiennent un répertoire `.ccg/tasks/<nom>/` persistant : `task.json`, `requirements.md`, `plan.md`, `context.jsonl`, `review.md`.
-Un binaire Go (`codeagent-wrapper`) fait le pont vers les modèles externes ; des portes qualité (`verify-security`, `verify-quality`) se déclenchent sur seuils.
+CCG installe des commandes slash, quatre hooks JavaScript qui réinjectent l'état de la tâche à chaque tour, et un binaire Go (`codeagent-wrapper`) qui relaie le travail vers des modèles externes. Il choisit parmi dix stratégies selon la complexité, crée un dossier `.ccg/tasks/`, impose un arrêt pour validation du plan, puis lance des revues croisées. Il propose aussi des skills (SEO, AdSense, BaoTa) et un plugin pour DeepSeek Harness.
 
 ## Comment c'est branché
 ```mermaid
-graph TD
-  A[/ccg:go «ajoute JWT»] --> B[classification: type, complexité, risque]
-  B --> C[sélection d'une des 10 stratégies]
-  C --> D[.ccg/tasks/nom/task.json]
-  D --> E[codeagent-wrapper — Codex, Grok, Kimi]
-  E --> F[plan → HARD STOP approbation]
-  F --> G[Agent Teams en parallèle]
-  G --> H[portes qualité + revue croisée]
+flowchart TD
+  user(("Développeur")) --> cli["CCG CLI (ccg.mjs)"]
+  cli --> inst["Installer (installer.ts)"]
+  user --> claude(("Claude Code"))
+  claude --> hooks["Hooks (workflow-state.js)"]
+  claude --> wrap["codeagent-wrapper (main.go)"]
+  wrap --> exec["Executor (executor.go)"]
+  exec --> ai{{"Backends IA"}}
 ```
 
 ## Essayer
 ```bash
-npx ccg-workflow              # assistant interactif en 4 étapes
+npx ccg-workflow
 npx ccg-workflow init --skip-prompt
 npx ccg-workflow doctor
-# variante plugin natif, skills seules :
 claude plugin marketplace add fengshao1227/ccg-workflow
-claude plugin install ccg@ccg
 ```
 
 ## Coût et pièges
-Node.js 20+ et Claude Code CLI obligatoires ; Codex, Grok, Kimi et Antigravity sont optionnels mais ce sont eux qui activent le multi-modèle — et leurs abonnements.
-Le mode `full-collaborate` lance deux analyses externes en parallèle plus des équipes d'agents : le coût par tâche n'est pas annoncé.
+Gratuit, mais chaque modèle externe consomme ton quota ou ta clé d'API. Node.js 20+ et Claude Code CLI requis ; Codex, Grok, Kimi, Antigravity sont optionnels. Les commandes multi-modèles ne passent que par l'installation npx, pas par le plugin natif.
 
 ## Ce que ce n'est pas
-Ce n'est pas autonome : Claude Code reste l'orchestrateur obligatoire, et le plugin natif (option B) perd les commandes multi-modèles.
-Ce n'est pas un outil isolé non plus — l'auteur y greffe son propre annuaire de plugins DSH, mentionné dès le haut du README.
+Pas un modèle ni un agent autonome : Claude reste le chef d'orchestre. Le diagnostic `doctor` vérifie la configuration, pas l'accès réel aux API.
 
 ## Alternatives
-- `cexll/myclaude` : cité comme inspiration du `codeagent-wrapper`.
-- `mindfold-ai/Trellis` : cité pour les patterns d'état de workflow par hooks.
-- `UfoMiao/zcf` : cité comme référence pour les outils Git.
+Aucune alternative citée dans le README.
 
 ## Pour toi
-L'idée des hooks qui survivent à la compaction est la bonne part ; le reste empile des dépendances à quatre CLI payantes.
+À surveiller si tu travailles en profondeur avec Claude Code ; le dépôt est jeune (janvier 2026), porté par une seule personne, et la valeur dépend de la multiplication de tes abonnements.
+

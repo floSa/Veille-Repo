@@ -1,8 +1,8 @@
 ---
 schema: 1
 depot: neuml/txtai
-source_readme_sha: bb16e5a56ca961c7
-ecrite_le: 2026-09-28
+source_readme_sha: cb429f4c4fcd302b
+ecrite_le: 2026-11-12
 nature: bibliothèque
 deploiement: pip
 prerequis: [version de Python]
@@ -15,65 +15,41 @@ verdict: adopter
 
 # neuml/txtai
 
-> Framework tout-en-un pour recherche sémantique, orchestration de LLM et workflows de modèles.
+> Framework Python tout-en-un pour la recherche sémantique, la RAG, les agents et les workflows de modèles.
 
 ## Le problème
-Monter un RAG demande d'assembler un index vectoriel, une base relationnelle, un graphe et une
-couche de prompts, chacun avec sa propre bibliothèque.
+Assembler base vectorielle, graphe, base relationnelle, pipelines de modèles et API oblige à coller plusieurs outils.
 
 ## Ce que ça fait vraiment
-Le composant central est une base d'embeddings : union d'index vectoriels (creux et denses), de
-réseaux en graphe et de bases relationnelles. Elle permet la recherche vectorielle avec SQL,
-stockage d'objets, modélisation de sujets, analyse de graphe et indexation multimodale (texte,
-documents, audio, images, vidéo). Par-dessus : des pipelines pilotés par modèles de langage
-(prompts LLM, question-réponse, étiquetage, transcription, traduction, résumé), des workflows qui
-les enchaînent, et des agents bâtis sur smolagents — compatibles Hugging Face, llama.cpp, OpenAI,
-Claude et AWS Bedrock via LiteLLM, avec prise en charge des fichiers `agents.md` et `skill.md`. API
-web et MCP incluses, avec liaisons JavaScript, Java, Rust et Go.
+Le cœur est une base d'embeddings qui réunit index vectoriels (denses et épars), graphes et SQL. Autour : pipelines (LLM, questions-réponses, transcription, traduction, résumé), workflows pour les enchaîner, agents construits sur smolagents, et API web ou MCP. Fonctionne en local, avec Hugging Face Transformers et Sentence Transformers, des modèles de toute taille, installation légère puis extensible. Plus de 70 notebooks d'exemples.
 
 ## Comment c'est branché
 ```mermaid
-flowchart LR
-  data[texte · documents · audio · images] --> emb[base d'embeddings]
-  emb --> vec[index vectoriels creux + denses]
-  emb --> graph[réseau en graphe]
-  emb --> sql[base relationnelle / SQL]
-  emb --> pipe[pipelines LLM · QA · résumé]
-  pipe --> wf[workflows]
-  wf --> agents[agents smolagents]
-  emb --> api[API web + MCP]
+flowchart TD
+  API["API Layer"] --> WF["Workflow Engine"]
+  API --> PIP["Pipeline System"]
+  AG["Agent System"] --> WF
+  WF --> EMB["Embeddings Engine"]
+  EMB --> VS["Vector Storage"]
+  EMB --> DB["Database Systems"]
 ```
 
 ## Essayer
 ```bash
 pip install txtai
-```
-```python
-import txtai
-embeddings = txtai.Embeddings()
-embeddings.index(["Correct", "Not what we hoped"])
-embeddings.search("positive", 1)
-```
-```bash
 CONFIG=app.yml uvicorn "txtai.api:app"
 curl -X GET "http://localhost:8000/search?query=positive"
 ```
 
 ## Coût et pièges
-Gratuit, Apache 2.0, Python 3.10+. L'empreinte de départ est faible mais les dépendances
-s'ajoutent par composant. Les modèles recommandés (all-MiniLM-L6-v2, Gemma 4 31B, Whisper, BLIP)
-se téléchargent depuis le Hub — prévoir le disque et, pour les gros LLM, le GPU. NeuML, la société
-derrière, vend du conseil et prépare une offre hébergée `txtai.cloud`.
+Python 3.11+. Gratuit en local ; les LLM distants passent par LiteLLM avec clé à ta charge. NeuML vend du conseil et un service hébergé (txtai.cloud), facultatifs.
 
 ## Ce que ce n'est pas
-Ce n'est pas une base vectorielle nue : l'index n'est qu'un des trois composants de la base
-d'embeddings. Ce n'est pas un service managé : tout tourne en local par défaut, ce que le README
-revendique comme un avantage.
+Pas une base vectorielle spécialisée à l'échelle massive ni un framework d'agents autonome réputé : c'est un ensemble intégré, plus simple que modulaire.
 
 ## Alternatives
-Aucun concurrent nommé ; le README liste plutôt les applications construites dessus (`rag`,
-`ncoder`, `paperai`, `annotateai`) et les frameworks intégrés (smolagents, LiteLLM, llama.cpp).
+smolagents est la base de ses agents ; aucune autre alternative nommée dans le README.
 
 ## Pour toi
-Le meilleur rapport couverture/effort pour un RAG local : tu obtiens index, graphe, SQL et agents
-sans coller quatre bibliothèques, et plus de 70 notebooks pour démarrer.
+À adopter : très bon point de départ pour une RAG ou une recherche sémantique locale avec peu de code.
+

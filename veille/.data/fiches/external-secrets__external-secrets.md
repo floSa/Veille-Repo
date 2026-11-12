@@ -1,47 +1,51 @@
 ---
 schema: 1
 depot: external-secrets/external-secrets
-source_readme_sha: 5f0864e082a0e3bc
-ecrite_le: 2026-09-28
+source_readme_sha: 95f6c684cd5fcfa9
+ecrite_le: 2026-11-12
 nature: outil
-deploiement: docker
+deploiement: autre
 prerequis: [service tiers]
 cout: gratuit
 maturite: éprouvé
 gouvernance: fondation
 alertes: []
-verdict: surveiller
+verdict: adopter
 ---
 
 # external-secrets/external-secrets
 
-> Opérateur Kubernetes qui synchronise des secrets externes vers des Secrets Kubernetes natifs.
+> Opérateur Kubernetes qui synchronise les secrets d'un gestionnaire externe vers des Secrets Kubernetes natifs.
 
 ## Le problème
-Les secrets vivent dans AWS Secrets Manager, Vault, Azure Key Vault, etc., mais les workloads Kubernetes attendent des `Secret` natifs. Recopier à la main est fragile et non versionné.
+Les secrets vivent dans AWS, Vault ou GCP, mais les pods ont besoin de Secrets Kubernetes, et les copier à la main est fragile.
 
 ## Ce que ça fait vraiment
-L'opérateur lit des API externes (AWS Secrets Manager, HashiCorp Vault, GCP Secret Manager, Azure Key Vault, IBM, Akeyless, CyberArk, Pulumi ESC…) et injecte automatiquement les valeurs dans des Secrets Kubernetes. Projet CNCF fusionnant plusieurs efforts. SBOM et provenance attachés aux releases.
+L'opérateur lit les API de fournisseurs (AWS Secrets Manager, HashiCorp Vault, Google Secret Manager, Azure Key Vault, IBM, Akeyless, CyberArk, Pulumi ESC…) et injecte les valeurs dans des Secrets Kubernetes. Des ressources dédiées décrivent la source (SecretStore, ClusterSecretStore) et la cible (ExternalSecret, ClusterExternalSecret). PushSecret fait le chemin inverse, vers le fournisseur.
 
 ## Comment c'est branché
 ```mermaid
 flowchart TD
-    EXT[(AWS SM / Vault / Azure KV / GCP SM)] --> OP[External Secrets Operator]
-    OP --> KS[Kubernetes Secret]
-    KS --> POD[Pods]
+  es["ExternalSecret CRD"] --> ctrl["ExternalSecret Controller"]
+  ss["SecretStore CRD"] --> sctrl["SecretStore Controller"]
+  ctrl --> prov["Providers (AWS, GCP, Azure, Vault)"]
+  ctrl --> sec[("Kubernetes Secrets")]
+  ps["PushSecret Controller"] --> prov
+  wh["Webhook Server"] --> es
 ```
 
 ## Essayer
-Aucune commande d'installation présente dans le README (renvoie vers external-secrets.io). L'écrire : voir la documentation officielle.
+Aucune commande documentée dans le README : l'installation et les guides sont sur external-secrets.io.
 
 ## Coût et pièges
-Gratuit. Dépend d'un gestionnaire de secrets tiers et d'un cluster Kubernetes. Réunion de dev bihebdomadaire CNCF.
+Gratuit, mais il faut un cluster Kubernetes et un compte chez le gestionnaire de secrets choisi, avec ses propres coûts. Les secrets finissent bien en clair dans des Secrets Kubernetes : à protéger côté cluster.
 
 ## Ce que ce n'est pas
-Pas un coffre-fort de secrets : il ne stocke rien, il synchronise depuis un backend existant.
+Pas un coffre-fort : il ne stocke rien, il synchronise. Il ne chiffre pas les Secrets Kubernetes à ta place.
 
 ## Alternatives
-Non nommées dans le README (liste des backends supportés, pas des concurrents).
+Aucune alternative citée dans le README.
 
 ## Pour toi
-Standard de fait si tes charges ML tournent sur Kubernetes et consomment des secrets cloud ; hors sujet sinon.
+À adopter si tes déploiements ML tournent sur Kubernetes : il évite de coller des clés d'API dans les manifestes, et le projet est mûr (créé en 2018 côté équipe, dépôt de 2020, SBOM publié).
+

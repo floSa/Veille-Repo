@@ -1,62 +1,51 @@
 ---
 schema: 1
 depot: xinnan-tech/xiaozhi-esp32-server
-source_readme_sha: 0442fab13f04e02d
-ecrite_le: 2026-09-28
+source_readme_sha: 415f522f8bbb3283
+ecrite_le: 2026-11-12
 nature: service
 deploiement: docker
-prerequis: [Docker, clé d'API, beaucoup de RAM, service tiers]
-cout: freemium
+prerequis: [Docker, clé d'API, service tiers]
+cout: clé d'API à ta charge
 maturite: expérimental
 gouvernance: communauté
-alertes: [dépend d'un SaaS]
-verdict: ignorer
+alertes: []
+verdict: surveiller
 ---
 
 # xinnan-tech/xiaozhi-esp32-server
 
-> Backend Python/Java/Vue pour assistants vocaux ESP32 parlant le protocole Xiaozhi.
+> Serveur backend libre pour les terminaux vocaux ESP32 Xiaozhi : reconnaissance, LLM, synthèse et console de gestion.
 
 ## Le problème
-Un boîtier ESP32 Xiaozhi dépend du backend hébergé par son auteur ; sans serveur propre, aucune
-maîtrise des modèles, des données vocales ni des clés d'API utilisées.
+Les appareils Xiaozhi dépendent d'un backend hébergé ; il faut un serveur à soi pour piloter la voix et les objets connectés.
 
 ## Ce que ça fait vraiment
-Expose MQTT+UDP, WebSocket et HTTP, avec ASR et TTS en flux, VAD, reconnaissance de locuteur en
-parallèle de l'ASR, identification d'intention par appel de fonction, mémoire courte locale ou mem0/PowerMem,
-et base de connaissances RAGFlow. Deux installations : minimale (fichier de config) ou complète
-(base de données, console web multi-utilisateurs, multi-agents, envoi de commandes MCP aux appareils).
+Un serveur Python reçoit audio et texte par WebSocket (ou MQTT+UDP), enchaîne VAD, reconnaissance vocale, dialogue, LLM, synthèse vocale, avec mémoire, voiceprint, intentions et outils (IoT, MCP, plugins). Une installation complète ajoute une API de gestion Java/Spring, une base de données, Redis, RAGFlow et des consoles Vue web et mobile. Deux profils : gratuit (FunASR, glm-4-flash, EdgeTTS) et flux (iFlytek, Alibaba, Volcengine).
 
 ## Comment c'est branché
 ```mermaid
-flowchart LR
-    ESP32[Appareil ESP32] --> Passerelle[MQTT+UDP / WebSocket]
-    Passerelle --> ASR[ASR flux + VAD]
-    ASR --> Voix[Reconnaissance locuteur]
-    Voix --> LLM[LLM + function_call]
-    LLM --> RAG[RAGFlow / mémoire]
-    LLM --> TTS[TTS flux]
-    TTS --> ESP32
+flowchart TD
+  D["Voice/IoT terminals"] -->|WebSocket| S["Session transport"]
+  S --> P["Protocol handlers"]
+  P --> O["Conversation orchestration (dialogue.py)"]
+  O --> PR["AI/audio providers"]
+  O --> T["Unified tool dispatch"]
+  M["Management API"] --> C["Runtime configuration (config.yaml)"]
 ```
 
 ## Essayer
-```bash
-python start.py
-python performance_tester.py
-```
+Les commandes détaillées sont dans la documentation de déploiement (Docker ou source), non reproduites dans le README ; le README cite seulement `python performance_tester.py` pour tester la vitesse des modèles.
 
 ## Coût et pièges
-Configuration « tout gratuit » possible (FunASR local, glm-4-flash, EdgeTTS) mais il faut 2 cœurs/4 Go,
-4 cœurs/8 Go en installation complète. La configuration « flux » repose sur des API payantes chinoises
-(Xunfei, Huoshan, Bailian) : comptes et clés à votre charge.
+Nécessite un appareil ESP32. Les API tierces (LLM, ASR, TTS) peuvent être payantes ; FunASR local consomme beaucoup de mémoire. Le README précise que le projet n'a pas passé d'évaluation de sécurité et ne doit pas être utilisé en production.
 
 ## Ce que ce n'est pas
-Le README **avertit explicitement** : fonctionnalités incomplètes, aucun audit de sécurité réseau,
-à ne pas utiliser en production. Aucun lien commercial avec les fournisseurs d'API, aucune garantie
-sur les fonds déposés chez eux. Matériel ESP32 obligatoire. Licence non déclarée.
+Pas utilisable sans matériel ESP32. README principalement en chinois.
 
 ## Alternatives
-- **百聆 (Bailing)** : robot de dialogue vocal dont ce projet s'inspire et sur lequel il est bâti.
+Aucune alternative nommée dans le README.
 
 ## Pour toi
-Hors sujet pour un profil data/MLOps, sauf curiosité domotique ; le README déconseille la prod.
+À surveiller : exemple riche de pipeline vocal complet, utile à étudier, mais à réserver à l'expérimentation et à la lecture d'architecture.
+

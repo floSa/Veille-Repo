@@ -1,11 +1,11 @@
 ---
 schema: 1
 depot: tinygrad/tinygrad
-source_readme_sha: 8f69c27c87c36fd8
-ecrite_le: 2026-09-28
+source_readme_sha: c20592a2417b38fd
+ecrite_le: 2026-11-12
 nature: bibliothèque
-deploiement: compilation
-prerequis: [aucun]
+deploiement: pip
+prerequis: [version de Python, GPU]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
@@ -15,51 +15,43 @@ verdict: surveiller
 
 # tinygrad/tinygrad
 
-> Pile d'apprentissage profond minimale : tenseurs, autograd, IR et compilateur, tous lisibles.
+> Pile de deep learning minimaliste, entre PyTorch et micrograd, dont le compilateur reste lisible.
 
 ## Le problème
-Comprendre comment un framework fusionne des kernels demande de lire des centaines de milliers de lignes de C++.
-Ajouter un accélérateur à PyTorch n'est pas un projet de week-end.
+PyTorch cache son compilateur et son IR, ce qui rend difficile de comprendre, d'optimiser ou de porter le calcul sur un nouvel accélérateur.
 
 ## Ce que ça fait vraiment
-Pile complète : bibliothèque de tenseurs avec autograd, IR et compilateur qui fusionnent et abaissent les kernels, JIT et exécution par graphe, modules `nn`/`optim`/`datasets` pour entraîner réellement.
-Laziness : une expression `reshape`/`*`/`sum` se fusionne en un seul kernel, visible avec `DEBUG=3`, et le code généré avec `DEBUG=4`.
-Autodiff sur IR comme JAX, passes de lowering, scheduling et recherche BEAM sur les kernels comme TVM, mais avec le front-end en plus.
-Accélérateurs supportés : OpenCL, CPU, METAL, CUDA, AMD, NV, QCOM, WEBGPU ; en ajouter un demande environ 25 opérations de bas niveau.
+Une bibliothèque de tenseurs paresseux avec autograd, un IR à base d'UOps, un ordonnanceur qui fusionne les noyaux, un optimiseur par heuristique ou recherche (BEAM) et un JIT (`TinyJit`). Elle fournit aussi nn, optim et jeux de données. Les accélérateurs gérés incluent OpenCL, CPU, Metal, CUDA, AMD, NV, QCOM et WebGPU, il suffit d'implémenter une vingtaine d'opérations bas niveau.
 
 ## Comment c'est branché
 ```mermaid
-graph TD
-  A[Tensor + autograd] --> B[IR lazy]
-  B --> C[Passes de lowering]
-  C --> D[Scheduling + BEAM search]
-  D --> E[Codegen par accélérateur]
-  E --> F[OpenCL / CUDA / METAL / AMD / WEBGPU]
-  A --> G[TinyJit capture et rejoue les kernels]
+flowchart TD
+  tens["Tensor tensor.py"] -->|"construit"| uop["UOp IR ops.py"]
+  uop -->|"normalise"| sym["Symbolic rewriting symbolic.py"]
+  sym -->|"planifie"| sch["Scheduler prepare.py"]
+  sch -->|"exécute"| real["Realization realize.py"]
+  real -->|"abaisse"| low["Kernel lowering simplify.py"]
+  low -->|"rend"| rend["Renderers ptx.py"]
+  rend -->|"lance"| rt["Runtime backends ops_cuda.py"]
 ```
 
 ## Essayer
-```sh
+```bash
 git clone https://github.com/tinygrad/tinygrad.git
 cd tinygrad
 python3 -m pip install -e .
-DEBUG=3 python3 -c "from tinygrad import Tensor; N = 1024; a, b = Tensor.empty(N, N), Tensor.empty(N, N); (a.reshape(N, 1, N) * b.T.reshape(1, N, N)).sum(axis=2).realize()"
-python3 -m pytest test/
+DEBUG=3 python3 -c "from tinygrad import Tensor; a = Tensor.empty(1024,1024); (a@a).realize()"
 ```
 
 ## Coût et pièges
-Gratuit. L'installation recommandée est depuis les sources, pas depuis PyPI : `pip install -e .` après clone.
-Pas de `vmap`/`pmap` complets : si vos transformations fonctionnelles en dépendent, ce n'est pas le bon outil.
+Gratuit. L'installation recommandée se fait depuis les sources, pas depuis PyPI. Un GPU n'est pas obligatoire, mais c'est l'intérêt du projet. Moins de transformations fonctionnelles que JAX (pas de vmap ni pmap complets).
 
 ## Ce que ce n'est pas
-Ce n'est pas un remplaçant de PyTorch en production : le README le positionne « entre PyTorch et micrograd », avec l'intelligibilité comme objectif.
-Ce n'est pas un framework à fonctionnalités complètes : moins de transformations que JAX, assumé.
-Ce n'est pas un projet de fondation : maintenu par tiny corp.
+Ce n'est pas un remplaçant clé en main de PyTorch pour un projet de production : l'écosystème de modèles et d'outils est bien plus restreint.
 
 ## Alternatives
-- PyTorch — API eager équivalente et écosystème complet, mais compilateur et IR opaques.
-- JAX — mêmes idées d'autodiff sur IR, avec `vmap`/`pmap` que tinygrad n'a pas.
-- TVM — compilateur et scheduling comparables, sans le front-end tenseurs/nn/optim.
+PyTorch (écosystème complet), JAX (transformations fonctionnelles) et TVM (compilation seule, sans cadre de travail).
 
 ## Pour toi
-À lire plus qu'à déployer : c'est le meilleur moyen de comprendre ce qu'un compilateur ML fait vraiment.
+À surveiller par curiosité technique ou pour viser un accélérateur atypique ; pour entraîner au quotidien, PyTorch reste plus sûr.
+
