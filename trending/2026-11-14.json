@@ -35,6 +35,7 @@
 "HKUDS/DeepTutor",
 "Leonxlnx/taste-skill",
 "Nutlope/hallmark",
+"Vincentwei1021/video-shotcraft",
 "anthropics/claude-plugins-official",
 "anthropics/knowledge-work-plugins",
 "anthropics/skills",
@@ -55,6 +56,7 @@
 "MoFeng2223/BrimDeck",
 "PowerShell/PowerShell",
 "QuantConnect/Lean",
+"RayrenSX/iPhoneMirror",
 "Tyrrrz/YoutubeDownloader",
 "bloxstraplabs/bloxstrap",
 "dotnet/skills",
@@ -72,7 +74,8 @@
 "ggml-org/whisper.cpp",
 "google/googletest",
 "microsoft/BitNet",
-"redpanda-data/redpanda"
+"redpanda-data/redpanda",
+"wszqkzqk/PvZ-Portable"
 ],
 "c": [
 "CTCaer/hekate",
