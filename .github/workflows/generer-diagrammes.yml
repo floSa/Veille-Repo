@@ -1,18 +1,27 @@
 name: generer-diagrammes
 on:
+  schedule:
+    - cron: "23 */3 * * *"
   workflow_dispatch:
     inputs:
-      depots:
-        description: "Dépôts séparés par des espaces (owner/repo)"
-        required: true
+      lot:
+        description: "Taille du lot"
+        default: "20"
 permissions:
-  contents: read
+  contents: write
+concurrency:
+  group: generer-diagrammes
+  cancel-in-progress: false
 jobs:
-  test:
+  generer:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: etat-diagrammes
+          path: etat
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -20,4 +29,12 @@ jobs:
           npm init -y >/dev/null
           npm i playwright@1.49.1
           npx playwright install --with-deps chromium
-      - run: cp .github/diagramme_test.mjs ./t.mjs && node t.mjs ${{ inputs.depots }}
+      - run: node .github/generer_diagrammes.mjs .github/file-diagrammes.txt etat/etat.json ${{ inputs.lot || '20' }}
+      - name: Enregistrer l'état
+        working-directory: etat
+        run: |
+          git config user.name "generer-diagrammes"
+          git config user.email "actions@users.noreply.github.com"
+          git add etat.json
+          git commit -m "état $(date -u +%FT%H:%M)" || exit 0
+          for i in 1 2 3; do git push origin HEAD:etat-diagrammes && break || (git pull --rebase origin etat-diagrammes; sleep 5); done
