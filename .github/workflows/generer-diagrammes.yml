@@ -1,0 +1,23 @@
+name: generer-diagrammes
+on:
+  workflow_dispatch:
+    inputs:
+      depots:
+        description: "Dépôts séparés par des espaces (owner/repo)"
+        required: true
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: |
+          npm init -y >/dev/null
+          npm i playwright@1.49.1
+          npx playwright install --with-deps chromium
+      - run: cp .github/diagramme_test.mjs ./t.mjs && node t.mjs ${{ inputs.depots }}
