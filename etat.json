@@ -1,6 +1,6 @@
 {
- "bloque_jusqua": "2026-11-18T23:51:08.767Z",
- "palier_min": 60,
+ "bloque_jusqua": null,
+ "palier_min": 30,
  "faits": {
   "moltbot/moltbot": "ok",
   "punkpeye/awesome-mcp-servers": "refus",
@@ -16,11 +16,13 @@
   "genlayerlabs/genlayer-project-boilerplate": "ok",
   "gyoogle/tech-interview-for-developer": "ok",
   "tursodatabase/libsql": "ok",
-  "terkelg/awesome-creative-coding": "ok"
+  "terkelg/awesome-creative-coding": "ok",
+  "mauriceboe/TREK": "ok"
  },
  "essais": {},
  "journal": [
-  "2026-11-18T22:51 BLOQUÉ (quota atteint) — prochain essai après 60 min"
+  "2026-11-18T22:51 BLOQUÉ (quota atteint) — prochain essai après 60 min",
+  "2026-11-19T07:38 lot terminé : 1 générés, 0 déjà en cache, 0 échecs (sonde de reprise) ; reste 2022"
  ],
  "attente": 0
 }
