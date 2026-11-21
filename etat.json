@@ -1,6 +1,6 @@
 {
- "bloque_jusqua": null,
- "palier_min": 30,
+ "bloque_jusqua": "2026-11-21T03:29:05.929Z",
+ "palier_min": 60,
  "faits": {
   "moltbot/moltbot": "ok",
   "punkpeye/awesome-mcp-servers": "refus",
@@ -53,7 +53,17 @@
   "canonical/multipass": "cache",
   "flightlessmango/MangoHud": "ok",
   "AppHouseKitchen/AlDente-Battery_Care_and_Monitoring": "cache",
-  "sohutv/cachecloud": "ok"
+  "sohutv/cachecloud": "ok",
+  "zerocore-ai/microsandbox": "ok",
+  "twitter/finagle": "ok",
+  "owncloud/core": "ok",
+  "Snouzy/workout-cool": "cache",
+  "jeecgboot/jimureport": "ok",
+  "qualcomm/nexa-sdk": "ok",
+  "mumble-voip/mumble": "ok",
+  "duixcom/Duix-Mobile": "ok",
+  "Unity-Technologies/EntityComponentSystemSamples": "cache",
+  "vudovn/antigravity-kit": "ok"
  },
  "essais": {},
  "journal": [
@@ -62,7 +72,8 @@
   "2026-11-19T18:26 BLOQUÉ (quota atteint) — prochain essai après 60 min",
   "2026-11-20T00:44 lot terminé : 1 générés, 0 déjà en cache, 0 échecs (sonde de reprise) ; reste 2003",
   "2026-11-20T11:55 BLOQUÉ (quota atteint) — prochain essai après 60 min",
-  "2026-11-20T20:36 lot terminé : 1 générés, 0 déjà en cache, 0 échecs (sonde de reprise) ; reste 1986"
+  "2026-11-20T20:36 lot terminé : 1 générés, 0 déjà en cache, 0 échecs (sonde de reprise) ; reste 1986",
+  "2026-11-21T02:29 BLOQUÉ (quota atteint) — prochain essai après 60 min"
  ],
  "attente": 0
 }
