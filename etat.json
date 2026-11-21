@@ -1,6 +1,6 @@
 {
- "bloque_jusqua": null,
- "palier_min": 30,
+ "bloque_jusqua": "2026-11-21T20:28:24.567Z",
+ "palier_min": 60,
  "faits": {
   "moltbot/moltbot": "ok",
   "punkpeye/awesome-mcp-servers": "refus",
@@ -64,7 +64,23 @@
   "duixcom/Duix-Mobile": "ok",
   "Unity-Technologies/EntityComponentSystemSamples": "cache",
   "vudovn/antigravity-kit": "ok",
-  "Graylog2/graylog2-server": "ok"
+  "Graylog2/graylog2-server": "ok",
+  "podman-desktop/podman-desktop": "ok",
+  "alphaXiv/openresearch-cli": "cache",
+  "datahaven-xyz/datahaven": "ok",
+  "ParthJadhav/app-store-screenshots": "cache",
+  "PostgresApp/PostgresApp": "cache",
+  "Light-Heart-Labs/ODS": "cache",
+  "predis/predis": "ok",
+  "ohmybash/oh-my-bash": "ok",
+  "HenryNdubuaku/maths-cs-ai-compendium": "cache",
+  "antinomyhq/forge": "cache",
+  "antinomyhq/forgecode": "cache",
+  "mnfst/manifest": "ok",
+  "refly-ai/refly": "ok",
+  "zhukunpenglinyutong/idea-claude-code-gui": "ok",
+  "anomalyco/models.dev": "cache",
+  "tabulapdf/tabula": "ok"
  },
  "essais": {},
  "journal": [
@@ -75,7 +91,8 @@
   "2026-11-20T11:55 BLOQUÉ (quota atteint) — prochain essai après 60 min",
   "2026-11-20T20:36 lot terminé : 1 générés, 0 déjà en cache, 0 échecs (sonde de reprise) ; reste 1986",
   "2026-11-21T02:29 BLOQUÉ (quota atteint) — prochain essai après 60 min",
-  "2026-11-21T11:21 lot terminé : 1 générés, 0 déjà en cache, 0 échecs (sonde de reprise) ; reste 1975"
+  "2026-11-21T11:21 lot terminé : 1 générés, 0 déjà en cache, 0 échecs (sonde de reprise) ; reste 1975",
+  "2026-11-21T19:28 BLOQUÉ (quota atteint) — prochain essai après 60 min"
  ],
  "attente": 0
 }
