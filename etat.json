@@ -1,6 +1,6 @@
 {
- "bloque_jusqua": "2026-11-21T20:28:24.567Z",
- "palier_min": 60,
+ "bloque_jusqua": null,
+ "palier_min": 30,
  "faits": {
   "moltbot/moltbot": "ok",
   "punkpeye/awesome-mcp-servers": "refus",
@@ -80,7 +80,8 @@
   "refly-ai/refly": "ok",
   "zhukunpenglinyutong/idea-claude-code-gui": "ok",
   "anomalyco/models.dev": "cache",
-  "tabulapdf/tabula": "ok"
+  "tabulapdf/tabula": "ok",
+  "apache/hertzbeat": "ok"
  },
  "essais": {},
  "journal": [
@@ -92,7 +93,8 @@
   "2026-11-20T20:36 lot terminé : 1 générés, 0 déjà en cache, 0 échecs (sonde de reprise) ; reste 1986",
   "2026-11-21T02:29 BLOQUÉ (quota atteint) — prochain essai après 60 min",
   "2026-11-21T11:21 lot terminé : 1 générés, 0 déjà en cache, 0 échecs (sonde de reprise) ; reste 1975",
-  "2026-11-21T19:28 BLOQUÉ (quota atteint) — prochain essai après 60 min"
+  "2026-11-21T19:28 BLOQUÉ (quota atteint) — prochain essai après 60 min",
+  "2026-11-22T01:25 lot terminé : 1 générés, 0 déjà en cache, 0 échecs (sonde de reprise) ; reste 1958"
  ],
  "attente": 0
 }
