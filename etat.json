@@ -1,6 +1,6 @@
 {
- "bloque_jusqua": null,
- "palier_min": 30,
+ "bloque_jusqua": "2026-11-22T12:40:48.200Z",
+ "palier_min": 60,
  "faits": {
   "moltbot/moltbot": "ok",
   "punkpeye/awesome-mcp-servers": "refus",
@@ -81,7 +81,17 @@
   "zhukunpenglinyutong/idea-claude-code-gui": "ok",
   "anomalyco/models.dev": "cache",
   "tabulapdf/tabula": "ok",
-  "apache/hertzbeat": "ok"
+  "apache/hertzbeat": "ok",
+  "craft-ai-agents/craft-agents-oss": "ok",
+  "nicotsx/zerobyte": "ok",
+  "kean/Pulse": "ok",
+  "vespa-engine/vespa": "cache",
+  "remote-android/redroid-doc": "ok",
+  "oracle/docker-images": "ok",
+  "sysown/proxysql": "ok",
+  "hyperf/hyperf": "ok",
+  "bkeepers/dotenv": "cache",
+  "redis/hiredis": "ok"
  },
  "essais": {},
  "journal": [
@@ -94,7 +104,8 @@
   "2026-11-21T02:29 BLOQUÉ (quota atteint) — prochain essai après 60 min",
   "2026-11-21T11:21 lot terminé : 1 générés, 0 déjà en cache, 0 échecs (sonde de reprise) ; reste 1975",
   "2026-11-21T19:28 BLOQUÉ (quota atteint) — prochain essai après 60 min",
-  "2026-11-22T01:25 lot terminé : 1 générés, 0 déjà en cache, 0 échecs (sonde de reprise) ; reste 1958"
+  "2026-11-22T01:25 lot terminé : 1 générés, 0 déjà en cache, 0 échecs (sonde de reprise) ; reste 1958",
+  "2026-11-22T11:40 BLOQUÉ (quota atteint) — prochain essai après 60 min"
  ],
  "attente": 0
 }
