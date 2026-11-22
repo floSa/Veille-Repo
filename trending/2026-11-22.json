@@ -60,6 +60,7 @@
 "STranslate/STranslate",
 "SubtitleEdit/subtitleedit",
 "bitwarden/server",
+"builtbybel/FluentCleaner",
 "dlsandy/Transub-Player",
 "greenshot/greenshot",
 "iOfficeAI/OfficeCLI",
@@ -252,6 +253,7 @@
 "SAP/styleguides",
 "adr/madr",
 "codecrafters-io/build-your-own-x",
+"ellisonleao/magictools",
 "ethereum/ethereum-org-website",
 "jaywcjlove/linux-command",
 "mdn/content",
@@ -317,6 +319,7 @@
 "pytorch/torchtitan",
 "superdesigndev/treg",
 "vllm-project/vllm-ascend",
+"wshobson/agents",
 "zhouxiaoka/autoclip"
 ],
 "r": [
@@ -409,6 +412,7 @@
 ],
 "swift": [
 "FrizzleM/SideInstaller",
+"Saffsanity/sill",
 "consolelabs/hidden",
 "driceroland/Search",
 "gauthierpiarrette/highball",
