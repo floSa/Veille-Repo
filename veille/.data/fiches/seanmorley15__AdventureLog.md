@@ -9,7 +9,7 @@ prerequis: [Docker, beaucoup de RAM]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence à vérifier, mainteneur unique]
+alertes: [licence copyleft, mainteneur unique]
 verdict: surveiller
 ---
 

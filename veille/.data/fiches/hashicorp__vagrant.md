@@ -9,7 +9,7 @@ prerequis: [service tiers]
 cout: gratuit
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence à vérifier]
+alertes: []
 verdict: ignorer
 ---
 

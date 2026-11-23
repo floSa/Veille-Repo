@@ -9,7 +9,7 @@ prerequis: [compte à créer, Node]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [dépend d'un SaaS, mainteneur unique]
+alertes: [licence copyleft, dépend d'un SaaS, mainteneur unique]
 verdict: ignorer
 ---
 

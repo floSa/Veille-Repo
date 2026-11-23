@@ -9,7 +9,7 @@ prerequis: [service tiers]
 cout: gratuit
 maturite: expérimental
 gouvernance: une personne
-alertes: [licence à vérifier, mainteneur unique, dépend d'un SaaS]
+alertes: [licence copyleft, mainteneur unique, dépend d'un SaaS]
 verdict: ignorer
 ---
 

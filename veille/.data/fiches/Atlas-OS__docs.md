@@ -9,7 +9,7 @@ prerequis: [version de Python]
 cout: gratuit
 maturite: utilisable
 gouvernance: communauté
-alertes: [licence copyleft]
+alertes: [licence copyleft, archivé]
 verdict: ignorer
 ---
 

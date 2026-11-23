@@ -9,7 +9,7 @@ prerequis: [beaucoup de RAM]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [mainteneur unique]
+alertes: [licence non déclarée, mainteneur unique]
 verdict: surveiller
 ---
 

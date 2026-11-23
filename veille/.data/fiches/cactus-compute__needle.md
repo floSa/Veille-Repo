@@ -9,7 +9,7 @@ prerequis: [aucun]
 cout: freemium
 maturite: utilisable
 gouvernance: entreprise
-alertes: [télémétrie]
+alertes: [licence non déclarée, télémétrie]
 verdict: surveiller
 ---
 

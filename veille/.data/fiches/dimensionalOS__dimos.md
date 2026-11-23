@@ -9,7 +9,7 @@ prerequis: [version de Python, Docker, GPU, service tiers]
 cout: freemium
 maturite: expérimental
 gouvernance: entreprise
-alertes: [licence à vérifier, dépend d'un SaaS]
+alertes: [dépend d'un SaaS]
 verdict: surveiller
 ---
 

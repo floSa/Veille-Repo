@@ -9,7 +9,7 @@ prerequis: [Docker, clé d'API, compte à créer]
 cout: freemium
 maturite: expérimental
 gouvernance: entreprise
-alertes: []
+alertes: [archivé]
 verdict: surveiller
 ---
 

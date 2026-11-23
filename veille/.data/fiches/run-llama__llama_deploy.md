@@ -9,7 +9,7 @@ prerequis: [version de Python]
 cout: gratuit
 maturite: expérimental
 gouvernance: entreprise
-alertes: [matière insuffisante]
+alertes: [archivé, matière insuffisante]
 verdict: ignorer
 ---
 

@@ -9,7 +9,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: éprouvé
 gouvernance: entreprise
-alertes: []
+alertes: [archivé]
 verdict: surveiller
 ---
 

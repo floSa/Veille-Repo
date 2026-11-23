@@ -9,7 +9,7 @@ prerequis: [Node]
 cout: gratuit
 maturite: expérimental
 gouvernance: communauté
-alertes: [licence non déclarée, mainteneur unique]
+alertes: [licence non déclarée, archivé, mainteneur unique]
 verdict: ignorer
 ---
 

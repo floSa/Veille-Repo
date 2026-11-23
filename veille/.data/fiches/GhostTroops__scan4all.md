@@ -9,7 +9,7 @@ prerequis: [version de Python, service tiers, Docker]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [dernier commit ancien, mainteneur unique]
+alertes: [mainteneur unique]
 verdict: surveiller
 ---
 

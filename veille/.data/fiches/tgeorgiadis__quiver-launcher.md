@@ -9,7 +9,7 @@ prerequis: [service tiers]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [mainteneur unique, dépend d'un SaaS]
+alertes: [licence à vérifier, mainteneur unique, dépend d'un SaaS]
 verdict: ignorer
 ---
 

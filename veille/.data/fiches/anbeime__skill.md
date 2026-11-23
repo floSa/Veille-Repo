@@ -9,7 +9,7 @@ prerequis: [version de Python]
 cout: gratuit
 maturite: expérimental
 gouvernance: une personne
-alertes: [licence non déclarée, mainteneur unique, matière insuffisante]
+alertes: [licence à vérifier, mainteneur unique, matière insuffisante]
 verdict: ignorer
 ---
 

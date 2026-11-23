@@ -9,7 +9,7 @@ prerequis: [compte à créer, clé d'API]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: communauté
-alertes: [télémétrie, dépend d'un SaaS]
+alertes: [archivé, télémétrie, dépend d'un SaaS]
 verdict: ignorer
 ---
 

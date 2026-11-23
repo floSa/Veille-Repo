@@ -1,37 +1,38 @@
 ---
 schema: 1
 depot: ahujasid/mcp-for-blender
-source_readme_sha: 4105a5bd4d4dd907
-ecrite_le: 2026-10-20
+source_readme_sha: 429ff7c0efdd16e8
+ecrite_le: 2026-11-23
 nature: outil
 deploiement: pip
-prerequis: [version de Python, service tiers]
+prerequis: [version de Python]
 cout: freemium
 maturite: utilisable
 gouvernance: une personne
-alertes: [mainteneur unique, télémétrie, dépend d'un SaaS]
-verdict: adopter
+alertes: [télémétrie, mainteneur unique]
+verdict: surveiller
 ---
 
 # ahujasid/mcp-for-blender
 
-> Serveur MCP et addon Blender qui laissent un LLM modéliser et manipuler une scène 3D, pour artistes et développeurs.
+> Serveur MCP qui laisse un assistant IA piloter Blender : scènes, matériaux, rendus, modèles 3D générés.
 
 ## Le problème
-Piloter Blender depuis un assistant IA demande de relier à la main le client, un serveur et l'interface Python de Blender.
+Modéliser ou composer une scène 3D à la main demande des heures dans Blender. Un agent ne peut pas agir dans Blender sans pont vers lui.
 
 ## Ce que ça fait vraiment
-Un serveur MCP Python (`server.py`) parle en JSON sur socket TCP à un addon Blender (`addon.py`). Neuf outils : exécution de code Python, vues de contrôle (`look`), résumé de scène, génération de modèles 3D (Tripo, Hunyuan3D, Rodin, Meshy), recherche et import d'assets (Poly Haven, Sketchfab, Poly Pizza). Un mode sûr optionnel valide les scripts avant exécution.
+Un addon (`addon.py`) ouvre un serveur socket dans Blender ; un serveur MCP (`server.py`) relaie les commandes du client IA. Neuf outils : exécution de code Python, vues (`look`), résumé de scène, génération 3D (Tripo, Hunyuan3D, Rodin, Meshy), recherche et import d'assets (Poly Haven, Sketchfab, Poly Pizza). Un mode sûr optionnel valide les scripts avant exécution.
 
 ## Comment c'est branché
 ```mermaid
-flowchart LR
-  A["Client IA"] --> B["MCP server server.py"]
-  B --> C["Blender socket"]
-  C --> D["Blender addon addon.py"]
-  B --> E["Safe mode safe_mode.py"]
-  B --> F["Asset search / generation"]
-  B --> G["Usage telemetry telemetry.py"]
+flowchart TD
+    Client(("Client IA")) --> Server["MCP Server Tools - server.py"]
+    Server --> Socket["Blender Socket"]
+    Socket --> Addon["Blender Addon - addon.py"]
+    Server --> Safe["Safe Mode - safe_mode.py"]
+    Server --> Assets["Asset Search / Model Generation"]
+    Server --> Telem["Telemetry - telemetry.py"]
+    Telem --> Supa[("Supabase")]
 ```
 
 ## Essayer
@@ -43,14 +44,14 @@ uvx mcp-for-blender install-addon
 ```
 
 ## Coût et pièges
-Gratuit avec ses propres clés (Meshy payant, Poly Pizza clé gratuite) ; une offre Premium évite d'apporter ses clés. Le serveur de l'addon n'a ni authentification ni chiffrement : garde-le sur localhost. Une télémétrie d'usage minimale est collectée sans opt-in (`DISABLE_TELEMETRY=true` pour la couper).
+Blender 3.0+, Python 3.10+ et uv requis. La génération 3D passe par l'offre Premium ou par tes propres clés (Meshy exige un plan payant). Le socket n'a ni authentification ni chiffrement et l'IA exécute du Python : garder localhost et activer `BLENDER_MCP_SAFE_MODE=1`. Télémétrie et capture de trajectoires envoyées à Supabase, désactivables (`disable_telemetry`).
 
 ## Ce que ce n'est pas
-Pas un produit Blender officiel (le README le précise). `execute_blender_code` exécute du Python arbitraire : sauvegarde ton travail avant. Le mode sûr est désactivé par défaut.
+Pas un produit Blender : tiers, non officiel. Pas un générateur 3D en soi : il délègue aux services externes. Le mode sûr n'est pas actif par défaut.
 
 ## Alternatives
 Aucune alternative nommée dans le README.
 
 ## Pour toi
-À adopter si tu fais de la 3D ou du prototypage visuel avec un agent : l'installation tient en une commande, mais active le mode sûr et coupe la télémétrie.
+Pertinent si tu pilotes Blender avec un agent pour du prototypage ou de la donnée synthétique 3D ; sinon hors périmètre data/MLOps, donc à surveiller.
 

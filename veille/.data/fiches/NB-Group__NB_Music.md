@@ -9,7 +9,7 @@ prerequis: [compte à créer]
 cout: gratuit
 maturite: utilisable
 gouvernance: communauté
-alertes: [licence copyleft, dépend d'un SaaS]
+alertes: [licence copyleft, dernier commit ancien, dépend d'un SaaS]
 verdict: ignorer
 ---
 

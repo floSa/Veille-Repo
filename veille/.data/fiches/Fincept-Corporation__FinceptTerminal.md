@@ -9,7 +9,7 @@ prerequis: [clé d'API]
 cout: freemium
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence à vérifier]
+alertes: [licence copyleft]
 verdict: surveiller
 ---
 

@@ -1,13 +1,13 @@
 ---
 schema: 1
 depot: jordan-gibbs/hyperresearch
-source_readme_sha: 548f82e3e4a842a6
-ecrite_le: 2026-09-28
+source_readme_sha: 864a33f43353d7a1
+ecrite_le: 2026-11-23
 nature: outil
 deploiement: pip
-prerequis: [version de Python, clé d'API]
+prerequis: [version de Python, service tiers]
 cout: clé d'API à ta charge
-maturite: expérimental
+maturite: utilisable
 gouvernance: une personne
 alertes: [mainteneur unique]
 verdict: surveiller
@@ -15,53 +15,44 @@ verdict: surveiller
 
 # jordan-gibbs/hyperresearch
 
-> Harnais de recherche profonde pour Claude Code, avec vault de sources persistant, pour analystes.
+> Skill de recherche approfondie pour Claude Code et Codex, avec un coffre local de sources réutilisables.
 
 ## Le problème
-Un agent de recherche jette tout après le rapport : la session suivante refait les mêmes fetchs.
-Les citations ne sont pas vérifiées, et cinq reprises d'un même communiqué comptent comme cinq sources.
+Les outils de recherche approfondie rendent un rapport puis jettent tout ce qui a été lu ; les citations restent peu vérifiées.
 
 ## Ce que ça fait vraiment
-Pipeline de 16 étapes (décomposition, balayage en largeur, graphe de contradictions, loci, enquête en
-profondeur, critiques adversariaux, patch chirurgical, cite-check, polish) routé par tiers
-`light` / `full` / `dissertation` et par « gears » de profil.
-Vault markdown + index SQLite reconstructible, recherche plein texte, PageRank, score qualité avec
-drapeaux de rétractation. Recherche savante unifiée sur OpenAlex, Crossref, CORE, DOAB,
-ClinicalTrials.gov, SEC EDGAR, FRED. Texte intégral open access via Unpaywall / Europe PMC / CORE.
+Un pipeline en 16 étapes (décomposition, balayage large, analyse de lieux, critiques adverses, patch chirurgical, vérification des citations) produit un rapport. Chaque source est stockée en Markdown avec un index SQLite reconstructible. Des garde-fous bloquent les citations de sources rétractées et les citations qui n'existent pas dans le coffre. Le README revendique la première place sur le benchmark DRACO, sans que ce soit vérifié ici. Serveur MCP et interface web locale inclus.
 
 ## Comment c'est branché
 ```mermaid
-flowchart LR
-  A[/hyperresearch prompt] --> B[step 1 decompose]
-  B --> C[step 2 width sweep<br/>fetchers]
-  C --> D[research/notes/<br/>markdown + SQLite]
-  D --> E[steps 3-9 depth]
-  E --> F[step 11 synthesize<br/>final_report.md]
-  F --> G[step 12 critics + 14 patcher]
-  G --> H[run verify: ship gate]
+flowchart TD
+    CLI["CLI - cli/main.py"] --> Skills["Skill pipeline - skills/hyperresearch.md"]
+    Skills --> Fetch["Fetcher - core/fetcher.py"]
+    Fetch --> Vault[("Vault Markdown - core/vault.py")]
+    Vault --> DB[("SQLite - core/db.py")]
+    DB --> Search["Search - search/fts.py"]
+    Skills --> Crit["Critics / Polish"]
 ```
 
 ## Essayer
 ```bash
-pip install hyperresearch && hyperresearch install
+pip install hyperresearch
+hyperresearch install
+hyperresearch install . --target codex
 hyperresearch profile use premier
-hpr scholar search "Byzantine iconoclasm" -j
 hyperresearch run status -j
 ```
+Puis `/hyperresearch <question>` dans Claude Code.
 
 ## Coût et pièges
-Python 3.11–3.13 (pas 3.14). Le coût est en appels de modèles : `run init --budget 50` plafonne
-la dépense estimée. Clés optionnelles : CORE, FRED, Exa, Tavily, Serply ; `HYPERRESEARCH_CONTACT_EMAIL`
-exigé par SEC EDGAR et utile pour les « polite pools ». Un run `premier` est visé à 3–5 h.
+Python 3.11 à 3.14. Une exécution « full » dure environ 1,5 à 2,5 h, « premier » 3 à 5 h, avec de nombreux sous-agents (Opus et Sonnet) : le coût en tokens est élevé. `run init --budget 50` plafonne la dépense. Sous Codex, les verrous d'outils ne sont que des instructions.
 
 ## Ce que ce n'est pas
-Ce n'est pas autonome : c'est un harnais qui pilote Claude Code, avec ses sous-agents et ses modèles.
-Ce n'est pas un contournement de paywall : seules des copies open access légales sont récupérées,
-et la substitution est signalée à quatre endroits. Les CAPTCHA, 2FA et logins ne sont jamais résolus
-automatiquement — ils te sont rendus.
+Pas un moteur de recherche web. Le mode « dissertation » est expérimental : ses objectifs de longueur ne sont pas encore câblés (issue #103).
 
 ## Alternatives
-Aucun dépôt concurrent nommé ; seuls des fournisseurs web (crawl4ai, Exa, Tavily, Parallel, Serply).
+Aucune alternative nommée dans le README.
 
 ## Pour toi
-Intéressant si tu produis des notes sourcées en série ; le vault markdown survit à l'outil, c'est ce qui rassure.
+Intéressant pour de la veille ou des revues de littérature outillées ; à surveiller après un essai mesuré, car le coût en tokens peut vite grimper.
+

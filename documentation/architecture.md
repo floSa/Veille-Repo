@@ -14,10 +14,10 @@ mesuré (voir [couts.md](couts.md)).
 | Chiffre | Valeur |
 |---|---|
 | Période couverte | **2024-09-01 → 2026-11-12** |
-| Dépôts au catalogue | **12 377** |
-| README stockés hors ligne | **12 136** |
-| Schémas d'architecture (GitDiagram) | **7 291** |
-| Synthèses rédigées | **7 723** |
+| Dépôts au catalogue | **12 479** |
+| README stockés hors ligne | **12 240** |
+| Schémas d'architecture (GitDiagram) | **7 627** |
+| Synthèses rédigées | **7 743** |
 
 La collecte quotidienne ne dépend pas de la machine : un workflow GitHub Actions
 (`.github/workflows/collecte-trending.yml`, deux passages par jour) écrit un relevé par jour

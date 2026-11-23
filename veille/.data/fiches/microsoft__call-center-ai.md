@@ -9,7 +9,7 @@ prerequis: [compte à créer, service tiers, clé d'API]
 cout: payant
 maturite: expérimental
 gouvernance: entreprise
-alertes: [dépend d'un SaaS]
+alertes: [archivé, dépend d'un SaaS]
 verdict: surveiller
 ---
 

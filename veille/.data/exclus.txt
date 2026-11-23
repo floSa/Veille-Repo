@@ -58,3 +58,4 @@ wpscanteam/wpscan
 yaklang/yakit
 yarrick/iodine
 zmap/zmap
+elementalsouls/Claude-BugHunter

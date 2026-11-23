@@ -9,7 +9,7 @@ prerequis: [Docker]
 cout: gratuit
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence copyleft, dernier commit ancien, mainteneur unique]
+alertes: [licence copyleft, mainteneur unique]
 verdict: ignorer
 ---
 

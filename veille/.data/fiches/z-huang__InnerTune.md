@@ -9,7 +9,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence copyleft, dépend d'un SaaS, mainteneur unique]
+alertes: [licence copyleft, dernier commit ancien, dépend d'un SaaS, mainteneur unique]
 verdict: ignorer
 ---
 

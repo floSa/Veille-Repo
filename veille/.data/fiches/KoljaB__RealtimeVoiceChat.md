@@ -9,7 +9,7 @@ prerequis: [GPU, Docker, service tiers]
 cout: gratuit
 maturite: expérimental
 gouvernance: une personne
-alertes: [licence non déclarée, dernier commit ancien, mainteneur unique]
+alertes: [mainteneur unique]
 verdict: ignorer
 ---
 

@@ -9,7 +9,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [licence copyleft, archivé, mainteneur unique]
+alertes: [licence copyleft, mainteneur unique]
 verdict: ignorer
 ---
 

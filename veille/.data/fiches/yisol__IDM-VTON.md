@@ -9,7 +9,7 @@ prerequis: [GPU, beaucoup de RAM]
 cout: gratuit
 maturite: expérimental
 gouvernance: une personne
-alertes: [licence à vérifier, dernier commit ancien, mainteneur unique]
+alertes: [licence à vérifier, mainteneur unique]
 verdict: ignorer
 ---
 

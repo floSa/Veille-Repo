@@ -9,7 +9,7 @@ prerequis: [Docker, Node]
 cout: gratuit
 maturite: expérimental
 gouvernance: entreprise
-alertes: []
+alertes: [archivé]
 verdict: ignorer
 ---
 

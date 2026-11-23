@@ -7,7 +7,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence copyleft]
+alertes: []
 verdict: surveiller
 source_readme_sha: 46bde12b6f7c547a
 ecrite_le: 2026-09-21

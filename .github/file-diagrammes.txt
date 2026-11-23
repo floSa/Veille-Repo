@@ -35,9 +35,11 @@ MDX-Tom/gpt-instruct
 Syllo/nvtop
 deployphp/deployer
 nicolaka/netshoot
+microsoft/copilot-sdk
 LMMS/lmms
 sovereign/sovereign
 StylishThemes/GitHub-Dark
+loks666/get_jobs
 rapidsai/cudf
 HugoBlox/kit
 QwenAudio/SenseVoice
@@ -47,8 +49,8 @@ orbstack/orbstack
 fenixsoft/awesome-fenix
 Tikam02/DevOps-Guide
 canonical/multipass
-flightlessmango/MangoHud
 AppHouseKitchen/AlDente-Battery_Care_and_Monitoring
+flightlessmango/MangoHud
 sohutv/cachecloud
 zerocore-ai/microsandbox
 twitter/finagle
@@ -84,6 +86,7 @@ kean/Pulse
 vespa-engine/vespa
 remote-android/redroid-doc
 oracle/docker-images
+basketikun/chatgpt2api
 sysown/proxysql
 hyperf/hyperf
 bkeepers/dotenv
@@ -136,6 +139,7 @@ amantus-ai/vibetunnel
 JamesTurland/JimsGarage
 memgraph/memgraph
 Jakubantalik/Libraries
+Minglink/dsh-infinite-gen-5
 ChuckerTeam/chucker
 xianyu110/awesome-openclaw-tutorial
 jing332/tts-server-android
@@ -159,9 +163,9 @@ jetty/jetty.project
 xubiaolin/docker-zerotier-planet
 darold/pgbadger
 RookieEnough/Orion-Store
+apple/swift-log
 bostrot/wsl2-distro-manager
 mergisi/awesome-openclaw-agents
-apple/swift-log
 vdsm/virtual-dsm
 Dimillian/Skills
 RustAudio/cpal
@@ -181,6 +185,7 @@ open-telemetry/opentelemetry-dotnet
 khcrysalis/Impactor
 npgsql/npgsql
 johnmyleswhite/ML_for_Hackers
+3441293738/creatorhub
 njbrake/agent-of-empires
 elastic/elasticsearch-net
 vernemq/vernemq
@@ -188,6 +193,7 @@ scenic-views/scenic
 kth-competitive-programming/kactl
 hcengineering/huly-selfhost
 petercorke/robotics-toolbox-python
+matomo-org/device-detector
 documentdb/documentdb
 pedramamini/Maestro
 Haleclipse/CCometixLine
@@ -248,13 +254,13 @@ slick/slick
 vercel-labs/vgpu
 AprilRobotics/apriltag
 thoughtworks/build-your-own-radar
+1sdv/TripStar
 firebase/firebase-android-sdk
 jlesage/docker-firefox
 liandu2024/Open-Box
 DrCatHicks/learning-opportunities
 codingforentrepreneurs/30-Days-of-Python
 zealvora/terraform-beginner-to-advanced-resource
-1sdv/TripStar
 vercel/workflow
 vercel/chat
 HarbourMasters/2ship2harkinian
@@ -262,6 +268,7 @@ fjall-rs/fjall
 immichFrame/ImmichFrame
 Turbo1123/roubao
 goolord/alpha-nvim
+cameroncooke/AXe
 FoedusProgramme/Gramophone
 palacms/palacms
 flyerhq/flutter_chat_ui
@@ -272,8 +279,8 @@ rust-lang/nomicon
 bmorcelli/Launcher
 ytsaurus/ytsaurus
 raphaelmansuy/edgequake
-cameroncooke/AXe
 Rainbell129/Obsidian-Homepage
+home-assistant/apps
 FossifyOrg/Calendar
 s1t5/mail-archiver
 dchristl/macless-haystack
@@ -313,12 +320,14 @@ glittercowboy/taches-cc-resources
 temidaradev/kopuz
 elastic/elasticsearch-ruby
 microsoft/DiskANN
+chocoford/ExcalidrawZ
 Sync-in/server
 feathr-ai/feathr
 Makisuo/maple
 simonw/tools
 tansu-io/tansu
 EpicGames/unreal-engine-skills-for-claude-code-plugin
+qwdwqfwq/topconf-paper-figure-gallery
 getsentry/sentry-php
 ballred/obsidian-claude-pkm
 OlaProeis/Ferrite
@@ -334,6 +343,7 @@ MiczFlor/RPi-Jukebox-RFID
 avo-hq/avo
 schej-it/timeful.app
 mogenson/PaperWM.spoon
+LodyAI/Lody
 bitwalker/timex
 AidanPark/openclaw-android
 ravitemer/mcphub.nvim
@@ -406,6 +416,7 @@ Beaver-Notes/Beaver-Notes
 GoogleCloudPlatform/kubernetes-engine-samples
 cfrs2005/claude-init
 piyushsachdeva/AzureDevOps-Zero-to-Hero
+micromatch/picomatch
 Facepunch/garrysmod
 ChaoMixian/vFlow
 alpinelinux/docker-alpine
@@ -460,9 +471,10 @@ broadinstitute/cromwell
 zhnnky329/MathModeling-skills
 harehare/mq
 rails/mission_control-jobs
+FoggedLens/deflock
 bytechefhq/bytechef
 kittors/CliRelay
-FoggedLens/deflock
+Helldez/BigMoeOnEdge
 supabase/supabase-flutter
 alphagov/whitehall
 datadog-labs/pup
@@ -501,6 +513,7 @@ marckohlbrugge/sessy
 eylenburg/linoffice
 lkimuk/ReArk
 investbrainapp/investbrain
+awaseem/foqos
 BansheeTech/HomeDockOS
 YizhengWw/HachimoDock
 hyvor/relay
@@ -519,7 +532,6 @@ AuthMe/AuthMeReloaded
 auscaster/frantic-board
 thoughtbot/parity
 unitreerobotics/unitree_ros2
-awaseem/foqos
 joelhawksley/timeframe
 zk-org/zk-nvim
 esrlabs/chipmunk
@@ -547,12 +559,14 @@ junjiem/dify-plugin-repackaging
 duhow/xiaoai-patch
 Zhou-Shilin/Aether
 L1AD/claude-task-viewer
+HuskerMinion/techo5
 libsdl-org/SDL_mixer
 citusdata/activerecord-multi-tenant
 akitaonrails/ai-usagebar
 togatoga/karukan
 crivion/laranode
 zeabur/zeabur
+LiteLDev/LeviLauncher-Android
 hstreamdb/hstream
 JohsEnevoldsen/literature-clock
 majiayu000/claude-skill-registry
@@ -600,6 +614,7 @@ AfalpHy/sylvakru
 lightonai/next-plaid
 cilium/cilium-cli
 databricks/spark-redshift
+pugarte7/spanish-top-tech-companies
 sumruler/obsidian-theme-phycat
 mardous/BoomingMusic
 sachinsenal0x64/hifi
@@ -611,6 +626,7 @@ kaishi00/hermes-conduit
 WardPearce/paaster
 karatektus/pl_mail
 PacktPublishing/Django-5-By-Example
+rusty4444/ares
 rhubarbgroup/redis-cache
 dart-lang/skills
 bnb-chain/bnb-chain.github.io
@@ -625,6 +641,7 @@ cynkra/dm
 rubys/roundhouse
 surge-synthesizer/OB-Xf
 Tencent/LoopForge
+orwa-mahmoud/nightshift
 pjasicek/OpenClaw
 ScalableCapital/scalable-cli
 proliferate-ai/proliferate
@@ -653,9 +670,9 @@ epgsql/epgsql
 truenas/truenas-proxmox-plugin
 cloudposse/terraform-aws-tfstate-backend
 stan-dev/bayesplot
+spotify/sourcekit-bazel-bsp
 notFaad/coom-dl
 Ngxba/claude-code-cli-ui
-spotify/sourcekit-bazel-bsp
 tile-ai/tilelang-ascend
 timescale/pg_vectorsearch
 Codename-11/hermes-relay
@@ -990,6 +1007,7 @@ Azure/terraform-azurerm-avm-ptn-alz-management
 snowflakedb/snowpark-java-scala
 suzuki-shunsuke/tfaction-example
 hashicorp/terraform-aws-hashicorp-vault-eks-addon
+Questie/QuestieDB
 denesdata/roem
 Azure/terraform-azurerm-avm-res-containerregistry-registry
 talk2MeGooseman/stream_closed_captioner_phoenix
@@ -1016,7 +1034,6 @@ jestjs/jest
 babel/babel
 zsh-users/zsh-autosuggestions
 Lissy93/web-check
-shadowsocks/ShadowsocksX-NG
 yewstack/yew
 dandavison/delta
 alibaba/p3c
@@ -1039,6 +1056,7 @@ nikic/PHP-Parser
 tindy2013/subconverter
 Konloch/bytecode-viewer
 CodeByZach/pace
+consolelabs/hidden
 cachethq/cachet
 tmux-plugins/tpm
 barryvdh/laravel-ide-helper
@@ -1134,11 +1152,11 @@ vercel-labs/scriptc
 aptos-labs/aptos-core
 Archmage83/tvapk
 PBH-BTN/PeerBanHelper
+rileytestut/Delta
 auth0/java-jwt
 nWidart/laravel-modules
 harfbuzz/harfbuzz
 Redot-Engine/redot-engine
-rileytestut/Delta
 hneemann/Digital
 OSGeo/gdal
 VeriorPies/ParrelSync
@@ -1171,6 +1189,7 @@ rails/thor
 datarhei/restreamer
 V4bel/dirtyfrag
 gommzystudio/device-activity-tracker
+wdcpclover/ai4paper
 MapsterMapper/Mapster
 tixl3d/tixl
 otter-sec/anchor
@@ -1183,9 +1202,9 @@ rime/home
 actions/setup-node
 skeeto/w64devkit
 Aloxaf/fzf-tab
+apple/swift-protobuf
 indiff/qttabbar
 Bodmer/TFT_eSPI
-apple/swift-protobuf
 UndeadSec/SocialFish
 simplecov-ruby/simplecov
 iterate-ch/cyberduck
@@ -1193,8 +1212,8 @@ akinomyoga/ble.sh
 jlord/git-it-electron
 urbanadventurer/Android-PIN-Bruteforce
 red-data-tools/YouPlot
-Daltron/NotificationBanner
 microsoft/fluentui-blazor
+Daltron/NotificationBanner
 201206030/novel-plus
 troydhanson/uthash
 nova-video-player/aos-AVP
@@ -1215,8 +1234,8 @@ qw3rtman/git-fire
 geoserver/geoserver
 firebase/firebase-tools
 ctran/annotate_models
-nubjs/nub
 EmergeTools/Pow
+nubjs/nub
 akinsho/bufferline.nvim
 Xabaril/AspNetCore.Diagnostics.HealthChecks
 microsoft/RulesEngine
@@ -1234,8 +1253,8 @@ kiwibrowser/src.next
 bblimke/webmock
 Cysharp/R3
 ThePrimeagen/init.lua
-apollographql/apollo-kotlin
 thebaselab/codeapp
+apollographql/apollo-kotlin
 silvia-odwyer/photon
 SpriteOvO/AirPodsDesktop
 FossifyOrg/Gallery
@@ -1244,12 +1263,12 @@ ailyProject/aily-blockly
 0x90d/videoduplicatefinder
 MattParkerDev/SharpIDE
 notscuffed/repkg
+yattee/yattee
 mollyim/mollyim-android
 sorbet/sorbet
 StuckAtPrototype/Racer
 poole/hyde
 luarocks/luarocks
-yattee/yattee
 jwt/ruby-jwt
 XTLS/Xray-install
 huxingyi/autoremesher
@@ -1289,9 +1308,9 @@ freenet/freenet-core
 rose-pine/neovim
 SamboyCoding/Cpp2IL
 babygoton/WorkDaddy
+lihaoyun6/AirBattery
 adi1090x/plymouth-themes
 netwrix/pingcastle
-lihaoyun6/AirBattery
 SnaffCon/Snaffler
 0xType/0xProto
 flozz/p0wny-shell
@@ -1304,8 +1323,8 @@ lorisleiva/laravel-actions
 authpass/authpass
 com-lihaoyi/mill
 rubysec/bundler-audit
-jaspervdj/patat
 weichsel/ZIPFoundation
+jaspervdj/patat
 romgrk/barbar.nvim
 espressif/esp-iot-solution
 yesodweb/yesod
@@ -1334,9 +1353,9 @@ dnakov/litter
 chromebrew/chromebrew
 OneKeyHQ/app-monorepo
 markusfisch/BinaryEye
+simibac/ConfettiSwiftUI
 projekt0n/github-nvim-theme
 eclipse-jdtls/eclipse.jdt.ls
-simibac/ConfettiSwiftUI
 velopack/velopack
 HDInnovations/UNIT3D
 jpsim/SourceKitten
@@ -1395,6 +1414,7 @@ Yurii0307/yurikey
 primefaces/primefaces
 mtrudel/bandit
 Shopify/packwerk
+clice-io/clice
 andrewrabert/jellium-desktop
 laravel/wayfinder
 besu-eth/besu
@@ -1414,6 +1434,7 @@ cweijan/vscode-office
 Agustinm28/Optiscaler-Client
 DimensionDev/Flare
 google-research/dex-lang
+electrikmilk/cherri
 pass-with-high-score/universal-installer
 SpartanJ/ecode
 onsails/lspkind.nvim
@@ -1421,7 +1442,6 @@ liuzq2002/Adguard-Home-For-Magisk-Mod
 woutdp/live_svelte
 danymat/neogen
 stark81/VutronMusic
-electrikmilk/cherri
 lunarmodules/busted
 polhenarejos/pico-fido
 NixOS/nixfmt
@@ -1429,8 +1449,8 @@ bootstrap-ruby/bootstrap_form
 clash-lang/clash-compiler
 t59688/arboris-novel
 elixir-lang/ex_doc
-Bekaboo/dropbar.nvim
 ProxymanApp/atlantis
+Bekaboo/dropbar.nvim
 ReVanced/revanced-cli
 richfelker/musl-cross-make
 bmax121/KernelPatch
@@ -1495,6 +1515,7 @@ GoogleChrome/modern-web-guidance-src
 soupslurpr/AppVerifier
 JetBrains/intellij-scala
 caigg188/LDStatusPro
+dlsandy/Transub-Player
 ldoubil/astral
 PKRoma/ProcessHacker
 superturtlee/gbl_root_canoe
@@ -1529,12 +1550,12 @@ graphiti-api/graphiti
 microsoft/testfx
 lm-rebooter/NuggetsBooklet
 dart-lang/site-www
+tempoxyz/tempo
 googleprojectzero/0days-in-the-wild
 android/security-samples
 tidyverse/readr
-tempoxyz/tempo
-microsoft/qdk
 apple/swift-http-types
+microsoft/qdk
 Moonholder/Wuwa_Mod_Fixer
 publiclab/plots2
 allisonhorst/palmerpenguins
@@ -1561,6 +1582,7 @@ dbpedia/extraction-framework
 ninenines/gun
 dart-lang/pub-dev
 iamaisim/ProjectAirSim
+wszqkzqk/PvZ-Portable
 Athlon1600/youtube-downloader
 sanjay-kv/Open-source-Practice
 NaGaa95/sphaira
@@ -1579,10 +1601,10 @@ kimmknight/raweb
 aws/aws-toolkit-jetbrains
 Philip2809/neato-connected
 Napster2210/ngx-spinner
+rive-app/rive-ios
 smjonas/inc-rename.nvim
 jqwik-team/jqwik
 milos-agathon/forge3d
-rive-app/rive-ios
 LibreSign/libresign
 fmrico/book_ros2
 pop-os/cosmic-comp
@@ -1638,10 +1660,12 @@ jjh42/mock
 kafka4beam/brod
 vaadin/platform
 davidgiven/ack
+vernette/warpscout
 0din-ai/ai-scanner
 google/jsir
 REditorSupport/languageserver
 skepsun/Kototoro
+AerialScreensaver/Aerial
 github/rubocop-github
 heckmon/roxum-ide
 mlmvpn/mlmvpn_android
@@ -1680,7 +1704,6 @@ dchinmay2/clangd_extensions.nvim
 gitbutlerapp/grit
 voku/portable-ascii
 musselwhizzle/Focus-Points
-AerialScreensaver/Aerial
 kassambara/survminer
 appdevforall/CodeOnTheGo
 elide-dev/elide
@@ -1780,12 +1803,13 @@ WordPress/plugin-check
 jkool702/forkrun
 MegaMek/megamek
 SikandarJODD/animations
+swellweb/targetBridge
 hashicorp/vault-ruby
+AzureAD/microsoft-authentication-library-for-objc
 comtihon/mongodb-erlang
 danielberkompas/ex_twilio
 brosssh/morphe-patches
 tidyverse/googledrive
-AzureAD/microsoft-authentication-library-for-objc
 R-nvim/R.nvim
 israel-ivase/Google-AI-Edge-Gallery
 hashicorp/vault-rails
@@ -1799,7 +1823,6 @@ gaospecial/ggVennDiagram
 rmyndharis/VSCodroid
 vapor/websocket-kit
 rzk-lang/rzk
-swellweb/targetBridge
 novaframework/nova
 tseemann/mlst
 Duecki1/CalibRaw
@@ -1817,17 +1840,18 @@ intercom/intercom-rails
 facebook/chef-utils
 Chrisimx/ScanBridge
 coinbase/temporal-ruby
+EllesmereGaming/EllesmereUI
 vectorcmdr/NMSE
 atsign-foundation/noports
 Cybereason-Public/owLSM
 DeadlyBossMods/DeadlyBossMods
 talgalili/installr
 omacom/omawrite
+yaml/yaml-test-suite
 puckzxz/NotAnotherAnimeTheme
 laanlabs/openPlan3D
 Owen-Dechow/videre.nvim
 OCA/partner-contact
-yaml/yaml-test-suite
 astarte-platform/astarte
 r-lib/httr2
 mixOmics-org/mixOmics
@@ -1837,10 +1861,9 @@ crmne/archspec
 insightsengineering/rtables
 Night-stars-1/Han1meViewer
 lestercorderomurillo/macos-tahoe-liquid-kde
-EllesmereGaming/EllesmereUI
+apple/swift-nio-extras
 ucb-bar/dsptools
 dashbitco/broadway_kafka
-apple/swift-nio-extras
 theos/logos
 leandrocp/lumis
 OAI/learn.openapis.org
@@ -1930,6 +1953,7 @@ mlr-org/mlr3extralearners
 Abdulqudus001/vue-skeleton-loader
 opensearch-project/opensearch-ruby
 pharmaR/riskassessment
+kinsamanka/OpenStick-Builder
 crimethinc/website
 plone/documentation
 runtimeverification/wasm-semantics
@@ -2033,6 +2057,7 @@ yuhonas/awesome-job-seeking
 sendgrid/ruby-http-client
 synrc/ca
 pulumi/pulumi-snowflake
+SAPTARSHI-coder/EaseMotion-css
 ArchGPT/insomnium
 ThanhNguyxn/SheerID-Verification-Tool
 Born2Root/Fast-Font

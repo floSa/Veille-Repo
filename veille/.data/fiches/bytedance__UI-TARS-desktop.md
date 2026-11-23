@@ -9,7 +9,7 @@ prerequis: [Node, clé d'API]
 cout: clé d'API à ta charge
 maturite: utilisable
 gouvernance: entreprise
-alertes: []
+alertes: [archivé]
 verdict: surveiller
 ---
 

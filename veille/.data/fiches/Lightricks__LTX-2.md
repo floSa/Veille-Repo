@@ -9,7 +9,7 @@ prerequis: [GPU, beaucoup de RAM, compte à créer]
 cout: gratuit
 maturite: utilisable
 gouvernance: entreprise
-alertes: [licence à vérifier]
+alertes: []
 verdict: surveiller
 ---
 

@@ -9,7 +9,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: utilisable
 gouvernance: une personne
-alertes: [mainteneur unique]
+alertes: [archivé, mainteneur unique]
 verdict: ignorer
 ---
 

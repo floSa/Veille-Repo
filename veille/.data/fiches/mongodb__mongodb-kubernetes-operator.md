@@ -9,7 +9,7 @@ prerequis: [service tiers]
 cout: gratuit
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence à vérifier, archivé]
+alertes: [licence à vérifier, archivé, dernier commit ancien]
 verdict: ignorer
 ---
 

@@ -332,6 +332,7 @@ HarbourMasters/2ship2harkinian
 HarbourMasters/Starship
 HarrisonKramer/optiland
 HaschekSolutions/opentrashmail
+Helldez/BigMoeOnEdge
 HenryNdubuaku/maths-cs-ai-compendium
 HermanMartinus/bearblog
 HeroTransitions/Hero
@@ -1781,6 +1782,7 @@ hneemann/Digital
 hoangsonww/Claude-Code-Agent-Monitor
 hoaxisr/awg-manager
 home-assistant/addons
+home-assistant/apps
 home-assistant/core
 home-assistant/iOS
 home-assistant/supervisor
@@ -2258,6 +2260,7 @@ microsoft/agent-academy
 microsoft/agent-host-protocol
 microsoft/azure-skills
 microsoft/copilot-for-eclipse
+microsoft/copilot-sdk
 microsoft/edge-ai
 microsoft/fara
 microsoft/generative-ai-with-javascript
@@ -2815,6 +2818,7 @@ sgl-project/sglang-omni
 shadowcz007/comfyui-mixlab-nodes
 shadowsocks/ShadowsocksX-NG
 shane-mason/FieldStation42
+shanliuling/dsh-image-gen
 shanraisshan/claude-code-best-practice
 shaobeichen/dsh-pocket
 shaun8149/sdf-js

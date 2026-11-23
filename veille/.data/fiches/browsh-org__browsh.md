@@ -9,7 +9,7 @@ prerequis: [Docker, service tiers]
 cout: gratuit
 maturite: utilisable
 gouvernance: communauté
-alertes: [licence copyleft, dernier commit ancien]
+alertes: [licence copyleft]
 verdict: ignorer
 ---
 

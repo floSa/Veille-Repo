@@ -9,7 +9,7 @@ prerequis: [compte à créer, service tiers, version de Python]
 cout: payant
 maturite: utilisable
 gouvernance: entreprise
-alertes: [dépend d'un SaaS]
+alertes: [archivé, dépend d'un SaaS]
 verdict: ignorer
 ---
 
