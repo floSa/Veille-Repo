@@ -1,6 +1,6 @@
 {
- "bloque_jusqua": "2026-11-23T02:51:52.722Z",
- "palier_min": 60,
+ "bloque_jusqua": null,
+ "palier_min": 30,
  "faits": {
   "moltbot/moltbot": "ok",
   "punkpeye/awesome-mcp-servers": "refus",
@@ -103,7 +103,8 @@
   "gsantner/markor": "ok",
   "datlechin/TablePro": "ok",
   "facontidavide/PlotJuggler": "ok",
-  "Hisn00w/ASu-skills": "cache"
+  "Hisn00w/ASu-skills": "cache",
+  "prakhar1989/docker-curriculum": "ok"
  },
  "essais": {},
  "journal": [
@@ -119,7 +120,8 @@
   "2026-11-22T01:25 lot terminé : 1 générés, 0 déjà en cache, 0 échecs (sonde de reprise) ; reste 1958",
   "2026-11-22T11:40 BLOQUÉ (quota atteint) — prochain essai après 60 min",
   "2026-11-22T19:49 lot terminé : 1 générés, 0 déjà en cache, 0 échecs (sonde de reprise) ; reste 1947",
-  "2026-11-23T01:51 BLOQUÉ (quota atteint) — prochain essai après 60 min"
+  "2026-11-23T01:51 BLOQUÉ (quota atteint) — prochain essai après 60 min",
+  "2026-11-23T13:06 lot terminé : 1 générés, 0 déjà en cache, 0 échecs (sonde de reprise) ; reste 1935"
  ],
  "attente": 0
 }
