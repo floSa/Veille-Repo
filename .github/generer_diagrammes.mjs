@@ -47,7 +47,7 @@ const dansCache = async (d) => {
 const { chromium } = await import('playwright');
 const nav = await chromium.launch({ headless: true });
 let ok = 0, cache = 0, echecs = 0, vus = 0;
-const limite = sonde ? 1 : MAX;
+const limite = MAX;   // après une sonde réussie on continue le lot : s arrêter à 1 coûtait un passage de 3 h
 for (const d of file) {
   if (ok + echecs >= limite) break;
   if (++vus > 400) break;
