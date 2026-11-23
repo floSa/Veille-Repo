@@ -49,7 +49,8 @@
 "pingdotgg/t3code",
 "sherlock-project/sherlock",
 "thedotmack/claude-mem",
-"vercel-labs/agent-browser"
+"vercel-labs/agent-browser",
+"yetone/magpie"
 ],
 "langues": {
 "c#": [
@@ -118,6 +119,7 @@
 "GhostenEditor/Ghosten-Player",
 "InlitX/GymMane",
 "KaringX/clashmi",
+"YuanDevTeam/OneXray",
 "ch6vip/novel-sound",
 "chen08209/FlClash",
 "liuchuancong/pure_live_TV",
