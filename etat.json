@@ -1,6 +1,6 @@
 {
- "bloque_jusqua": null,
- "palier_min": 30,
+ "bloque_jusqua": "2026-11-23T23:42:06.534Z",
+ "palier_min": 60,
  "faits": {
   "moltbot/moltbot": "ok",
   "punkpeye/awesome-mcp-servers": "refus",
@@ -104,7 +104,23 @@
   "datlechin/TablePro": "ok",
   "facontidavide/PlotJuggler": "ok",
   "Hisn00w/ASu-skills": "cache",
-  "prakhar1989/docker-curriculum": "ok"
+  "prakhar1989/docker-curriculum": "ok",
+  "microsoft/copilot-sdk": "ok",
+  "loks666/get_jobs": "ok",
+  "basketikun/chatgpt2api": "ok",
+  "apache/hive": "cache",
+  "Michael-A-Kuykendall/shimmy": "cache",
+  "vimeo/psalm": "ok",
+  "mui/mui-x": "ok",
+  "causefx/Organizr": "cache",
+  "malisper/pgrust": "cache",
+  "vercel/streamdown": "ok",
+  "vinvcn/mattpocock-skills-zh-CN": "ok",
+  "mpvnet-player/mpv.net": "ok",
+  "digitallyinduced/ihp": "cache",
+  "Sophia-Community/SophiApp": "cache",
+  "apachecn/sklearn-doc-zh": "cache",
+  "HermanMartinus/bearblog": "cache"
  },
  "essais": {},
  "journal": [
@@ -121,7 +137,8 @@
   "2026-11-22T11:40 BLOQUÉ (quota atteint) — prochain essai après 60 min",
   "2026-11-22T19:49 lot terminé : 1 générés, 0 déjà en cache, 0 échecs (sonde de reprise) ; reste 1947",
   "2026-11-23T01:51 BLOQUÉ (quota atteint) — prochain essai après 60 min",
-  "2026-11-23T13:06 lot terminé : 1 générés, 0 déjà en cache, 0 échecs (sonde de reprise) ; reste 1935"
+  "2026-11-23T13:06 lot terminé : 1 générés, 0 déjà en cache, 0 échecs (sonde de reprise) ; reste 1935",
+  "2026-11-23T22:42 BLOQUÉ (quota atteint) — prochain essai après 60 min"
  ],
  "attente": 0
 }
