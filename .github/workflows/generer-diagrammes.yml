@@ -1,7 +1,7 @@
 name: generer-diagrammes
 on:
   schedule:
-    - cron: "23 */3 * * *"
+    - cron: "23 * * * *"
   workflow_dispatch:
     inputs:
       lot:
