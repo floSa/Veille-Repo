@@ -1,6 +1,6 @@
 {
- "bloque_jusqua": "2026-11-24T09:06:27.122Z",
- "palier_min": 120,
+ "bloque_jusqua": "2026-11-24T23:02:21.673Z",
+ "palier_min": 240,
  "faits": {
   "moltbot/moltbot": "ok",
   "punkpeye/awesome-mcp-servers": "refus",
@@ -136,7 +136,34 @@
   "airbnb/aerosolve": "ok",
   "ankane/blazer": "cache",
   "harmonoid/harmonoid": "ok",
-  "ydb-platform/ydb": "ok"
+  "ydb-platform/ydb": "ok",
+  "yangjian102621/geekai": "ok",
+  "cf-pages/Telegraph-Image": "cache",
+  "amantus-ai/vibetunnel": "cache",
+  "JamesTurland/JimsGarage": "cache",
+  "memgraph/memgraph": "ok",
+  "Jakubantalik/Libraries": "cache",
+  "Minglink/dsh-infinite-gen-5": "ok",
+  "ChuckerTeam/chucker": "cache",
+  "xianyu110/awesome-openclaw-tutorial": "ok",
+  "jing332/tts-server-android": "ok",
+  "pgbackrest/pgbackrest": "ok",
+  "zenbu-labs/terminal-browser": "ok",
+  "isar/hive": "ok",
+  "radzenhq/radzen-blazor": "cache",
+  "facebook/Haxl": "ok",
+  "Dimillian/CodexMonitor": "cache",
+  "RhysSullivan/executor": "cache",
+  "isjiamu/gzh-design-skill": "ok",
+  "ful1e5/Bibata_Cursor": "cache",
+  "arcboxlabs/arcbox": "cache",
+  "GitJournal/GitJournal": "cache",
+  "skindhu/Build-A-Large-Language-Model-CN": "ok",
+  "ericc-ch/copilot-api": "cache",
+  "briatte/awesome-network-analysis": "cache",
+  "hotheadhacker/awesome-selfhost-docker": "ok",
+  "nowork-studio/notfair-plugin": "ok",
+  "jetty/jetty.project": "ok"
  },
  "essais": {},
  "journal": [
@@ -155,7 +182,8 @@
   "2026-11-23T01:51 BLOQUÉ (quota atteint) — prochain essai après 60 min",
   "2026-11-23T13:06 lot terminé : 1 générés, 0 déjà en cache, 0 échecs (sonde de reprise) ; reste 1935",
   "2026-11-23T22:42 BLOQUÉ (quota atteint) — prochain essai après 60 min",
-  "2026-11-24T07:06 BLOQUÉ (quota atteint) — prochain essai après 120 min"
+  "2026-11-24T07:06 BLOQUÉ (quota atteint) — prochain essai après 120 min",
+  "2026-11-24T19:02 BLOQUÉ (quota atteint) — prochain essai après 240 min"
  ],
  "attente": 0
 }
