@@ -1,6 +1,6 @@
 {
- "bloque_jusqua": "2026-11-23T23:42:06.534Z",
- "palier_min": 60,
+ "bloque_jusqua": "2026-11-24T09:06:27.122Z",
+ "palier_min": 120,
  "faits": {
   "moltbot/moltbot": "ok",
   "punkpeye/awesome-mcp-servers": "refus",
@@ -120,7 +120,23 @@
   "digitallyinduced/ihp": "cache",
   "Sophia-Community/SophiApp": "cache",
   "apachecn/sklearn-doc-zh": "cache",
-  "HermanMartinus/bearblog": "cache"
+  "HermanMartinus/bearblog": "cache",
+  "libukai/awesome-agent-skills": "ok",
+  "Jeric-X/SyncClipboard": "cache",
+  "dimthink/PriceAI": "cache",
+  "PeonPing/peon-ping": "cache",
+  "steipete/mcporter": "ok",
+  "mbleigh/acts-as-taggable-on": "ok",
+  "darrenhinde/OpenAgents": "cache",
+  "apache/age": "cache",
+  "always-further/nono": "cache",
+  "nolabs-ai/nono": "cache",
+  "rivet-dev/agent-os": "ok",
+  "thunderbird/thunderbolt": "ok",
+  "airbnb/aerosolve": "ok",
+  "ankane/blazer": "cache",
+  "harmonoid/harmonoid": "ok",
+  "ydb-platform/ydb": "ok"
  },
  "essais": {},
  "journal": [
@@ -138,7 +154,8 @@
   "2026-11-22T19:49 lot terminé : 1 générés, 0 déjà en cache, 0 échecs (sonde de reprise) ; reste 1947",
   "2026-11-23T01:51 BLOQUÉ (quota atteint) — prochain essai après 60 min",
   "2026-11-23T13:06 lot terminé : 1 générés, 0 déjà en cache, 0 échecs (sonde de reprise) ; reste 1935",
-  "2026-11-23T22:42 BLOQUÉ (quota atteint) — prochain essai après 60 min"
+  "2026-11-23T22:42 BLOQUÉ (quota atteint) — prochain essai après 60 min",
+  "2026-11-24T07:06 BLOQUÉ (quota atteint) — prochain essai après 120 min"
  ],
  "attente": 0
 }
