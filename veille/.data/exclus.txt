@@ -86,3 +86,12 @@ google/security-research
 RfidResearchGroup/ChameleonUltra
 htr-tech/nexphisher
 Adaptix-Framework/AdaptixC2
+caido/caido
+cifertech/nRFBox
+Stryker-Defense-Inc/strykerapp
+zalexdev/strykerapp
+hashtopolis/server
+SiriusScan/Sirius
+7h30th3r0n3/Evil-M5Project
+spyboy-productions/r4ven
+promptpirate-x/discord-id-bypass-tool
