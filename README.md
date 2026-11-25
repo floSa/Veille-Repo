@@ -12,7 +12,7 @@
 [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-hébergement-222222?logo=githubpages&logoColor=white)](https://pages.github.com/)
 [![Licence](https://img.shields.io/badge/licence-MIT-blue)](LICENSE)
 
-Période couverte : **2024-09-01 → 2026-11-23**.
+Période couverte : **2024-09-01 → 2026-11-25**.
 
 | Pertinence | Dépôts | README hors ligne | Schémas d'architecture | Synthèses |
 |---|---|---|---|---|
@@ -20,7 +20,7 @@ Période couverte : **2024-09-01 → 2026-11-23**.
 | périphérie | 3 315 | 3 285 | 2 031 | 1 911 |
 | hors périmètre | 2 015 | 1 980 | 615 | 262 |
 | à trier | 1 520 | 1 388 | 402 | 215 |
-| **total au 23/11** | **12 479** | **12 240** | **7 627** | **7 743** |
+| **total au 25/11** | **12 479** | **12 240** | **8 675** | **9 220** |
 
 Les lignes par pertinence datent du 12/11 ; seul le total est à jour.
 

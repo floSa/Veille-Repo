@@ -16,8 +16,8 @@ mesuré (voir [couts.md](couts.md)).
 | Période couverte | **2024-09-01 → 2026-11-12** |
 | Dépôts au catalogue | **12 479** |
 | README stockés hors ligne | **12 240** |
-| Schémas d'architecture (GitDiagram) | **7 627** |
-| Synthèses rédigées | **7 743** |
+| Schémas d'architecture (GitDiagram ou rédigés d'après l'arbre du dépôt) | **8 675** |
+| Synthèses rédigées | **9 220** |
 
 La collecte quotidienne ne dépend pas de la machine : un workflow GitHub Actions
 (`.github/workflows/collecte-trending.yml`, deux passages par jour) écrit un relevé par jour
@@ -38,6 +38,7 @@ Les scripts vivent dans le skill `veille-github`, maintenu à part. Ce dépôt c
 | `readmes.py` | Télécharge le README complet de chaque dépôt | ❌ |
 | `diagrammes.py` | Récupère les schémas d'architecture déjà calculés par GitDiagram | ❌ |
 | `declencher.mjs` | Fait générer chez GitDiagram les schémas manquants, au rythme de leur quota | ❌ |
+| `arbres.py` | Prépare l'arbre d'un dépôt (API GitHub, sans clone) et son README pour qu'un agent rédige le schéma quand GitDiagram n'en a pas ; intègre le résultat | ❌ |
 | `preparer.py` | Nettoie les README et fabrique les blocs de dépôts à synthétiser, avec leur plan de lecture | ❌ |
 | *conversation Claude Code* | Lit un bloc, écrit une synthèse par dépôt | ✅ |
 | `rapatrier.py` | Récupère les sorties des conversations, en les reconnaissant à leur contenu | ❌ |
