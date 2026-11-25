@@ -1,6 +1,6 @@
 {
- "bloque_jusqua": "2026-11-25T11:07:27.738Z",
- "palier_min": 480,
+ "bloque_jusqua": "2026-11-26T01:15:27.816Z",
+ "palier_min": 720,
  "faits": {
   "moltbot/moltbot": "ok",
   "punkpeye/awesome-mcp-servers": "refus",
@@ -185,7 +185,17 @@
   "KhronosGroup/Vulkan-Hpp": "cache",
   "graykode/abtop": "ok",
   "DataLinkDC/dinky": "cache",
-  "open-telemetry/opentelemetry-dotnet": "ok"
+  "open-telemetry/opentelemetry-dotnet": "ok",
+  "khcrysalis/Impactor": "ok",
+  "npgsql/npgsql": "ok",
+  "johnmyleswhite/ML_for_Hackers": "ok",
+  "3441293738/creatorhub": "ok",
+  "njbrake/agent-of-empires": "ok",
+  "elastic/elasticsearch-net": "cache",
+  "vernemq/vernemq": "cache",
+  "scenic-views/scenic": "ok",
+  "kth-competitive-programming/kactl": "ok",
+  "hcengineering/huly-selfhost": "ok"
  },
  "essais": {},
  "journal": [
@@ -206,7 +216,8 @@
   "2026-11-23T22:42 BLOQUÉ (quota atteint) — prochain essai après 60 min",
   "2026-11-24T07:06 BLOQUÉ (quota atteint) — prochain essai après 120 min",
   "2026-11-24T19:02 BLOQUÉ (quota atteint) — prochain essai après 240 min",
-  "2026-11-25T03:07 BLOQUÉ (quota atteint) — prochain essai après 480 min"
+  "2026-11-25T03:07 BLOQUÉ (quota atteint) — prochain essai après 480 min",
+  "2026-11-25T13:15 BLOQUÉ (quota atteint) — prochain essai après 720 min"
  ],
  "attente": 0
 }
