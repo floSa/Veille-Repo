@@ -65,3 +65,5 @@ iamj0ker/bypass-403
 Yurii0307/yurikey
 SnaffCon/Snaffler
 flozz/p0wny-shell
+califio/publications
+qwq233/OhMyKeymint
