@@ -95,3 +95,10 @@ SiriusScan/Sirius
 7h30th3r0n3/Evil-M5Project
 spyboy-productions/r4ven
 promptpirate-x/discord-id-bypass-tool
+hoo-dles/morphe-patches
+superturtlee/gbl_root_canoe
+0din-ai/ai-scanner
+aquamarine5/ChaoxingSignFaker
+zaproxy/zap-extensions
+jaylikesbunda/Ghost_ESP
+etaHEN/etaHEN
