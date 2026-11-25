@@ -61,3 +61,7 @@ zmap/zmap
 elementalsouls/Claude-BugHunter
 UndeadSec/SocialFish
 urbanadventurer/Android-PIN-Bruteforce
+iamj0ker/bypass-403
+Yurii0307/yurikey
+SnaffCon/Snaffler
+flozz/p0wny-shell
