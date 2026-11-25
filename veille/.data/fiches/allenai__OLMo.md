@@ -9,7 +9,7 @@ prerequis: [GPU, beaucoup de RAM]
 cout: gratuit
 maturite: éprouvé
 gouvernance: fondation
-alertes: []
+alertes: [dernier commit ancien]
 verdict: surveiller
 ---
 

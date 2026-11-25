@@ -71,3 +71,9 @@ brosssh/morphe-patches
 bitorscanner/Bitor
 OWASP/www-project-api-security-testing-framework
 MrDiamond64/Hydra
+MDX-Tom/gpt-instruct
+7836246/cursor2api
+Minglink/dsh-infinite-gen-5
+ItsJokerZz/FPKGi
+dinguschan-owo/Helios
+s0ld13rr/pentestcode

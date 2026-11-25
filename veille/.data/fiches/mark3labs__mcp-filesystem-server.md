@@ -9,7 +9,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: utilisable
 gouvernance: communauté
-alertes: []
+alertes: [dernier commit ancien]
 verdict: surveiller
 ---
 

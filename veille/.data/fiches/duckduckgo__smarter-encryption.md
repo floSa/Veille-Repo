@@ -9,7 +9,7 @@ prerequis: [aucun]
 cout: gratuit
 maturite: éprouvé
 gouvernance: entreprise
-alertes: [licence à vérifier, matière insuffisante]
+alertes: [licence à vérifier, dernier commit ancien, matière insuffisante]
 verdict: ignorer
 ---
 
