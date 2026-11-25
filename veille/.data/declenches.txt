@@ -2781,3 +2781,13 @@ flyerhq/flutter_chat_ui	ok
 flyerhzm/bullet	ok
 foreveryh/claude-code-switch	ok
 freshaengineering/lang_ex	ok
+ful1e5/Bibata_Cursor	ok
+geekau/mediastack	ok
+gemini-cli-extensions/security	ok
+gemini-cli-extensions/workspace	ok
+genlayerlabs/genlayer-project-boilerplate	ok
+geode-sdk/android-launcher	ok
+getsentry/XcodeBuildMCP	ok
+getsentry/sentry-dotnet	ok
+getsentry/sentry-for-ai	ok
+getsentry/sentry-php	ok
