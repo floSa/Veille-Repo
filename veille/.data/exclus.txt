@@ -77,3 +77,12 @@ Minglink/dsh-infinite-gen-5
 ItsJokerZz/FPKGi
 dinguschan-owo/Helios
 s0ld13rr/pentestcode
+quasar/Quasar
+V4bel/dirtyfrag
+gommzystudio/device-activity-tracker
+Perfare/Zygisk-Il2CppDumper
+greenbone/openvas-scanner
+google/security-research
+RfidResearchGroup/ChameleonUltra
+htr-tech/nexphisher
+Adaptix-Framework/AdaptixC2
