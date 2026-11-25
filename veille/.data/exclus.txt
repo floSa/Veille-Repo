@@ -67,3 +67,7 @@ SnaffCon/Snaffler
 flozz/p0wny-shell
 califio/publications
 qwq233/OhMyKeymint
+brosssh/morphe-patches
+bitorscanner/Bitor
+OWASP/www-project-api-security-testing-framework
+MrDiamond64/Hydra
