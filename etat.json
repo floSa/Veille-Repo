@@ -1,6 +1,6 @@
 {
- "bloque_jusqua": "2026-11-24T23:02:21.673Z",
- "palier_min": 240,
+ "bloque_jusqua": "2026-11-25T11:07:27.738Z",
+ "palier_min": 480,
  "faits": {
   "moltbot/moltbot": "ok",
   "punkpeye/awesome-mcp-servers": "refus",
@@ -163,7 +163,29 @@
   "briatte/awesome-network-analysis": "cache",
   "hotheadhacker/awesome-selfhost-docker": "ok",
   "nowork-studio/notfair-plugin": "ok",
-  "jetty/jetty.project": "ok"
+  "jetty/jetty.project": "ok",
+  "xubiaolin/docker-zerotier-planet": "ok",
+  "darold/pgbadger": "cache",
+  "RookieEnough/Orion-Store": "ok",
+  "apple/swift-log": "cache",
+  "bostrot/wsl2-distro-manager": "cache",
+  "mergisi/awesome-openclaw-agents": "cache",
+  "vdsm/virtual-dsm": "ok",
+  "Dimillian/Skills": "cache",
+  "RustAudio/cpal": "cache",
+  "DaveWoodCom/XCGLogger": "cache",
+  "cinnyapp/cinny": "cache",
+  "GCWing/BitFun": "cache",
+  "tutti-os/tutti": "ok",
+  "code-yeongyu/lazycodex": "cache",
+  "sparkjsdev/spark": "ok",
+  "stack-of-tasks/pinocchio": "cache",
+  "DavidXanatos/TaskExplorer": "cache",
+  "hoowhoami/EchoMusic": "ok",
+  "KhronosGroup/Vulkan-Hpp": "cache",
+  "graykode/abtop": "ok",
+  "DataLinkDC/dinky": "cache",
+  "open-telemetry/opentelemetry-dotnet": "ok"
  },
  "essais": {},
  "journal": [
@@ -183,7 +205,8 @@
   "2026-11-23T13:06 lot terminé : 1 générés, 0 déjà en cache, 0 échecs (sonde de reprise) ; reste 1935",
   "2026-11-23T22:42 BLOQUÉ (quota atteint) — prochain essai après 60 min",
   "2026-11-24T07:06 BLOQUÉ (quota atteint) — prochain essai après 120 min",
-  "2026-11-24T19:02 BLOQUÉ (quota atteint) — prochain essai après 240 min"
+  "2026-11-24T19:02 BLOQUÉ (quota atteint) — prochain essai après 240 min",
+  "2026-11-25T03:07 BLOQUÉ (quota atteint) — prochain essai après 480 min"
  ],
  "attente": 0
 }
