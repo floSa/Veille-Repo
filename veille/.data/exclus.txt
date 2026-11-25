@@ -102,3 +102,5 @@ aquamarine5/ChaoxingSignFaker
 zaproxy/zap-extensions
 jaylikesbunda/Ghost_ESP
 etaHEN/etaHEN
+Sor3nt/Flipper-Zero-ESP32-Port
+R0rt1z2/GrindrPlus
