@@ -29,6 +29,7 @@
 "meta/astryx",
 "mvanhorn/last30days-skill",
 "n8n-io/nod",
+"obsidianmd/obsidian-skills",
 "pookjw/HermesEnabler",
 "tradermonty/claude-trading-skills",
 "we-promise/sure"
@@ -121,6 +122,7 @@
 "GhostenEditor/Ghosten-Player",
 "InlitX/GymMane",
 "KaringX/clashmi",
+"YuanDevTeam/OneXray",
 "ch6vip/novel-sound",
 "chen08209/FlClash",
 "liuchuancong/pure_live_TV",
@@ -131,6 +133,7 @@
 "z7786/wenxi"
 ],
 "elixir": [
+"AndrewDryga/emisar",
 "Spectral-Finance/lux",
 "blockscout/blockscout",
 "elixir-lang/elixir",
@@ -152,6 +155,7 @@
 "TencentCloud/CubeSandbox",
 "agent-substrate/substrate",
 "datazip-inc/olake-go",
+"egoist/mygo",
 "gastownhall/beads",
 "getarcaneapp/arcane",
 "multica-ai/multica",
@@ -337,6 +341,7 @@
 "ruby": [
 "Homebrew/homebrew-cask",
 "Homebrew/homebrew-core",
+"antiwork/gumroad",
 "chatwoot/chatwoot",
 "citation-style-language/styles",
 "dependabot/dependabot-core",
