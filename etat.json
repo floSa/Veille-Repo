@@ -1,5 +1,5 @@
 {
- "bloque_jusqua": "2026-11-26T01:15:27.816Z",
+ "bloque_jusqua": "2026-11-26T17:14:54.736Z",
  "palier_min": 720,
  "faits": {
   "moltbot/moltbot": "ok",
@@ -195,7 +195,21 @@
   "vernemq/vernemq": "cache",
   "scenic-views/scenic": "ok",
   "kth-competitive-programming/kactl": "ok",
-  "hcengineering/huly-selfhost": "ok"
+  "hcengineering/huly-selfhost": "ok",
+  "petercorke/robotics-toolbox-python": "ok",
+  "matomo-org/device-detector": "ok",
+  "documentdb/documentdb": "cache",
+  "pedramamini/Maestro": "ok",
+  "Haleclipse/CCometixLine": "cache",
+  "Introduction-to-Autonomous-Robots/Introduction-to-Autonomous-Robots": "cache",
+  "kejilion/sh": "ok",
+  "awslabs/amazon-bedrock-agentcore-samples": "cache",
+  "yilewang/llm-for-zotero": "ok",
+  "tursodatabase/agentfs": "ok",
+  "Belphemur/SoundSwitch": "cache",
+  "reisxd/TizenTubeCobalt": "ok",
+  "Ataraxy-Labs/sem": "cache",
+  "joreilly/PeopleInSpace": "ok"
  },
  "essais": {},
  "journal": [
@@ -217,7 +231,8 @@
   "2026-11-24T07:06 BLOQUÉ (quota atteint) — prochain essai après 120 min",
   "2026-11-24T19:02 BLOQUÉ (quota atteint) — prochain essai après 240 min",
   "2026-11-25T03:07 BLOQUÉ (quota atteint) — prochain essai après 480 min",
-  "2026-11-25T13:15 BLOQUÉ (quota atteint) — prochain essai après 720 min"
+  "2026-11-25T13:15 BLOQUÉ (quota atteint) — prochain essai après 720 min",
+  "2026-11-26T05:14 BLOQUÉ (quota atteint) — prochain essai après 720 min"
  ],
  "attente": 0
 }
