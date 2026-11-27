@@ -1,0 +1,38 @@
+# giotto-suite/Giotto
+
+> R package to process, analyze and visualize spatial multi-omics data at all scales.
+
+## The problem
+Spatial technologies (Visium, Xenium, MERFISH, CODEX) produce very different formats and resolutions that must be analyzed together.
+
+## What it actually does
+Giotto Suite imports each technology's data through `convenience_*` functions, then filters, normalizes, reduces dimensions and clusters cells. Spatial analysis looks for genes and interactions; some algorithms (Leiden) go through Python scripts. The README points to a website with documentation, examples and tutorials.
+
+## How it is wired
+```mermaid
+flowchart TD
+  gen["R/convenience_general.R"] --> fil["R/filter.R"]
+  xen["R/convenience_xenium.R"] --> gen
+  fil --> nor["R/normalize.R"]
+  nor --> dim["R/dimension_reduction.R"]
+  dim --> clu["R/clustering.R"]
+  clu --> py["inst/python/python_leiden.py"]
+  clu --> sg["R/spatial_genes.R"]
+```
+
+## Trying it
+```r
+pak::pkg_install("giotto-suite/Giotto")
+```
+
+## Cost and gotchas
+Free. Requires R; some algorithms need Python, and spatial datasets are memory-heavy (not specified by the README). License present but not identified by GitHub.
+
+## What it is not
+Not a general-purpose data science tool: it targets spatial biology. The README gives few code examples; everything is on the website.
+
+## Alternatives
+No alternative named in the README.
+
+## For you
+Worth watching if you work with spatial genomics in R; outside that field, it has no interest.
