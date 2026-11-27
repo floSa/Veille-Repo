@@ -206,6 +206,7 @@
 ],
 "javascript": [
 "DietrichGebert/ponytail",
+"HaD0Yun/CozyClay",
 "affaan-m/ECC",
 "babygoton/WorkDaddy",
 "jquery/jquery",
@@ -234,6 +235,7 @@
 "rukamori/ArchiveTune"
 ],
 "lua": [
+"AnkioTomas/moon",
 "FrSkyRC/ETHOS-Feedback-Community",
 "Kong/kong",
 "PathOfBuildingCommunity/PathOfBuilding",
