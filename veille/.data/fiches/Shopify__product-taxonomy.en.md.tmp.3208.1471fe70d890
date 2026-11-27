@@ -1,0 +1,41 @@
+# Shopify/product-taxonomy
+
+> Shopify's open product taxonomy, with attributes, values and mappings, for integrators and data scientists.
+
+## The problem
+Classifying products consistently across catalogs and marketplaces requires a shared vocabulary.
+
+## What it actually does
+The repository contains the source data in YAML (categories, attributes, values, return reasons), the translations and the mappings to other taxonomies, including Google. A Ruby application (`dev/`) validates this data and generates JSON and TXT files published in dated releases.
+
+## How it is wired
+Diagram based on the code diagram.
+```mermaid
+flowchart TD
+  D["data/ (YAML)"] --> L["loader.rb"]
+  L --> M["Taxonomy models"]
+  M --> V["Validation (schémas CUE)"]
+  M --> S["Serializers"]
+  S --> X["dist/ et releases"]
+  S --> Y["docs/ (Jekyll)"]
+```
+
+## Trying it
+```bash
+curl -L https://github.com/Shopify/product-taxonomy/releases/latest/download/categories.en.json.gz | gunzip > categories.json
+cd dev
+bundle install
+bin/product_taxonomy dist
+```
+
+## Cost and gotchas
+Free. The committed `dist/` folder is deprecated and will be removed on October 31, 2026: use the files from the releases. Ruby and cue are only required to modify the project.
+
+## What it is not
+Not an API: the contract is a set of files. Not an automatic product classifier.
+
+## Alternatives
+No alternative named in the README.
+
+## For you
+Worth watching: a good reference for labeling or normalizing product catalogs in a classification project.
