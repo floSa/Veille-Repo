@@ -1,5 +1,5 @@
 {
- "bloque_jusqua": "2026-11-26T17:14:54.736Z",
+ "bloque_jusqua": "2026-11-27T12:43:54.220Z",
  "palier_min": 720,
  "faits": {
   "moltbot/moltbot": "ok",
@@ -209,7 +209,21 @@
   "Belphemur/SoundSwitch": "cache",
   "reisxd/TizenTubeCobalt": "ok",
   "Ataraxy-Labs/sem": "cache",
-  "joreilly/PeopleInSpace": "ok"
+  "joreilly/PeopleInSpace": "ok",
+  "openclaw/acpx": "ok",
+  "DamRsn/NeuralNote": "cache",
+  "ExplosiveCoderflome/AI-Novel-Writing-Assistant": "cache",
+  "SegFault42/HeliosGen": "cache",
+  "sabre-io/Baikal": "ok",
+  "kalcaddle/kodbox": "ok",
+  "pamburus/hl": "ok",
+  "cirosantilli/china-dictatorship": "refus",
+  "WecomTeam/wecom-cli": "cache",
+  "tokio-rs/toasty": "ok",
+  "nexu-io/nexu": "ok",
+  "vernu/textbee": "ok",
+  "krispo/awesome-haskell": "ok",
+  "MacRimi/ProxMenux": "cache"
  },
  "essais": {},
  "journal": [
@@ -232,7 +246,8 @@
   "2026-11-24T19:02 BLOQUÉ (quota atteint) — prochain essai après 240 min",
   "2026-11-25T03:07 BLOQUÉ (quota atteint) — prochain essai après 480 min",
   "2026-11-25T13:15 BLOQUÉ (quota atteint) — prochain essai après 720 min",
-  "2026-11-26T05:14 BLOQUÉ (quota atteint) — prochain essai après 720 min"
+  "2026-11-26T05:14 BLOQUÉ (quota atteint) — prochain essai après 720 min",
+  "2026-11-27T00:43 BLOQUÉ (quota atteint) — prochain essai après 720 min"
  ],
  "attente": 0
 }
