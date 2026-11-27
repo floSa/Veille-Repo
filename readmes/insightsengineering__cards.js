@@ -1,0 +1,1 @@
+window.__RECU={"k": "insightsengineering/cards", "g": "readmes", "t": "![](repo_redirect.png)\n\nRepository has been moved to [https://github.com/pharmaverse/cards](https://github.com/pharmaverse/cards)\n"};

@@ -1,0 +1,1 @@
+window.__RECU={"k": "awesomeWM/awesome", "g": "readmes", "t": "docs/01-readme.md"};

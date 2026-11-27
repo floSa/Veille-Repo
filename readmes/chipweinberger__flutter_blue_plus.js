@@ -1,0 +1,1 @@
+window.__RECU={"k": "chipweinberger/flutter_blue_plus", "g": "readmes", "t": "packages/flutter_blue_plus/README.md"};

@@ -1,0 +1,1 @@
+window.__RECU={"k": "ryoppippi/ccusage", "g": "readmes", "t": "./apps/ccusage/README.md"};

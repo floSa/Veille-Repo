@@ -1,0 +1,1 @@
+window.__RECU={"k": "spaceandtimefdn/sxt-proof-of-sql", "g": "readmes", "t": "crates/proof-of-sql/README.md"};

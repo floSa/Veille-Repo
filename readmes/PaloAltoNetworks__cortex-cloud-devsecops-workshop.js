@@ -1,0 +1,1 @@
+window.__RECU={"k": "PaloAltoNetworks/cortex-cloud-devsecops-workshop", "g": "readmes", "t": "# cortex-cloud-devsecops-workshop\nDevSecOps with Cortex Cloud\n"};

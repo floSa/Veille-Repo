@@ -1,0 +1,1 @@
+window.__RECU={"k": "udacity/course-collaboration-travel-plans", "g": "readmes", "t": "# Travel Destinations\n\nThis is a simple app to keep track of destinations I'd like to visit.\n"};

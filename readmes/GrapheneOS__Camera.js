@@ -1,0 +1,1 @@
+window.__RECU={"k": "GrapheneOS/Camera", "g": "readmes", "t": "This is the new GrapheneOS Camera app based on Android's modern CameraX\nlibrary. It replaces AOSP Camera for GrapheneOS.\n"};

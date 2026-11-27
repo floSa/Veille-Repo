@@ -1,0 +1,1 @@
+window.__RECU={"k": "Prayag2/drawy", "g": "readmes", "t": "> [!NOTE]\n> Drawy has moved to KDE Invent. Please follow its development on https://invent.kde.org/graphics/drawy.\n"};

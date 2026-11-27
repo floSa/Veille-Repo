@@ -1,0 +1,1 @@
+window.__RECU={"k": "madoiscool/ltsteamplugin", "g": "readmes", "t": "# before submitting PRs, keep in mind:\nthe plugin will go through a full rewrite in the near future, so if you want to contribute, wait until the rewrite is open sourced\nissues will still be open and fixed on a case by case basis.\nhttps://discord.gg/luatools\n"};

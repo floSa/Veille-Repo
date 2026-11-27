@@ -1,0 +1,1 @@
+window.__RECU={"k": "notFaad/coom-dl", "g": "readmes", "t": "# CNEX:\n\nA Modern Downloader Manager.\n\n## Support CNEX:\n### Crypto:\n- Bitcoin Address:\n  - bc1qlcyg5jdg43t222ww3fh6yq2nr04ky8g5455u3p\n- ETH & USDT Address:\n  - 0x505E3E9B2cb7023e4782059B3d46Bf3102d40a8D\n \n### Buymeacoffee:\n- [Buy me a coffee](https://buymeacoffee.com/notfaad)\n  \n"};

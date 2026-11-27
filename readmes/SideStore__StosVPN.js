@@ -1,0 +1,1 @@
+window.__RECU={"k": "SideStore/StosVPN", "g": "readmes", "t": "# StosVPN\n\nA VPN for SideStore and StikJIT that is much more stable and supports offline JIT Enabling.\n"};

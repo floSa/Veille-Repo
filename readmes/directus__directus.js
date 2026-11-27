@@ -1,0 +1,1 @@
+window.__RECU={"k": "directus/directus", "g": "readmes", "t": "directus/readme.md"};

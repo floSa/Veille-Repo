@@ -1,0 +1,1 @@
+window.__RECU={"k": "millionco/react-doctor", "g": "readmes", "t": "packages/react-doctor/README.md"};

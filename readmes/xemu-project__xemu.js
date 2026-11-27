@@ -1,0 +1,1 @@
+window.__RECU={"k": "xemu-project/xemu", "g": "readmes", "t": "Please visit [https://xemu.app](https://xemu.app) for more information.\n"};

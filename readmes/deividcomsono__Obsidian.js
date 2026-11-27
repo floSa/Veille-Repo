@@ -1,0 +1,1 @@
+window.__RECU={"k": "deividcomsono/Obsidian", "g": "readmes", "t": "# Obsidian UI Library\n**Documentation:** https://docs.mspaint.cc/obsidian\n\n**Source code to documentation site:** https://github.com/mspaint-cc/docs.mspaint.cc/tree/main/src/content/obsidian\n"};

@@ -1,0 +1,1 @@
+window.__RECU={"k": "mariadb-corporation/mariadb-docs", "g": "readmes", "t": "# The MariaDB Docs\n\nThis is the source code of the MariaDB documentation, available at https://mariadb.com/docs.\n\nContributors to the documentation, please read the (short) instructions under https://mariadb.com/docs/general-resources.\n\n\n"};

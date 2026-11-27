@@ -1,0 +1,1 @@
+window.__RECU={"k": "VATSIM-Radar/vatsim-radar", "g": "readmes", "t": "# VATSIM Radar\n\nMain website: https://vatsim-radar.com\n\nDocs: https://docs.vatsim-radar.com\n"};

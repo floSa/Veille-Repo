@@ -1,0 +1,1 @@
+window.__RECU={"k": "tokio-rs/axum", "g": "readmes", "t": "axum/README.md"};

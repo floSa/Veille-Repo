@@ -1,0 +1,1 @@
+window.__RECU={"k": "SciPhi-AI/R2R", "g": "readmes", "t": "./py/README.md\n"};

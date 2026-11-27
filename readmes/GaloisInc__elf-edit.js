@@ -1,0 +1,1 @@
+window.__RECU={"k": "GaloisInc/elf-edit", "g": "readmes", "t": "# elf-edit\n\nThe elf-edit library provides a datatype suitable for reading and writing ELF files.\n\nIt is a fork of the original elf package on Hackage, but enables modifying\nand serializing ELF files.  These changes are not backwards compatible and hence\nwe have a new name.\n"};

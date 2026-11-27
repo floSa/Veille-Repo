@@ -1,0 +1,1 @@
+window.__RECU={"k": "biomejs/biome", "g": "readmes", "t": "./packages/@biomejs/biome/README.md"};

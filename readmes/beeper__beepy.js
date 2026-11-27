@@ -1,0 +1,1 @@
+window.__RECU={"k": "beeper/beepy", "g": "readmes", "t": "# Beepy\n\n<img src=\"/img/beepy-header.png\" />\n\n\n### [Buy Now](https://forms.gle/Q3NCLSjDZwcURxrs8)\n\n\nLearn more at <a href=\"https://beepy.sqfmi.com/\" target=\"_blank\" rel=\"noopener noreferrer\">https://beepy.sqfmi.com/</a>\n"};

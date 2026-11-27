@@ -1,0 +1,1 @@
+window.__RECU={"k": "apna-college/Delta", "g": "readmes", "t": "# Delta\n\n## Please use this repo to download your in-class starter codes.\n"};

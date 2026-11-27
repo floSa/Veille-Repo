@@ -1,0 +1,1 @@
+window.__RECU={"k": "unovue/reka-ui", "g": "readmes", "t": "./packages/core/README.md"};

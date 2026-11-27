@@ -1,0 +1,1 @@
+window.__RECU={"k": "adityatandon15/Low-Level-Design-Course", "g": "readmes", "t": "# LLD\nAll Codes and Notes for System Design (LLD) Playlist of Coder Army.\nAbsolutely Free on Coder Army Youtube Channel. \n\nPlaylist Link : https://youtube.com/playlist?list=PLQEaRBV9gAFvzp6XhcNFpk1WdOcyVo9qT&si=Ihevlxfa3nczoXp0\n"};

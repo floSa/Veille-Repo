@@ -1,0 +1,1 @@
+window.__RECU={"k": "Copilot-Language/copilot", "g": "readmes", "t": "copilot/README.md"};

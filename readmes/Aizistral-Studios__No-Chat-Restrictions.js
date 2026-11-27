@@ -1,0 +1,1 @@
+window.__RECU={"k": "Aizistral-Studios/No-Chat-Restrictions", "g": "readmes", "t": "# No Chat Restrictions\n\nA Minecraft mod dedicated to removing restrictions around the use of multiplayer features, including in-game chat."};

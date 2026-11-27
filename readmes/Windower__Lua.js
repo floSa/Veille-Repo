@@ -1,0 +1,1 @@
+window.__RECU={"k": "Windower/Lua", "g": "readmes", "t": "Lua\n===\n\nThis repository contains all official Lua addons and scripts for Windower v4.\n\nLua documentation and a guide on writing and submitting addons can be found at the Windower development wiki: https://dev.windower.net/\n"};

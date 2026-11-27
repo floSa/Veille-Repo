@@ -1,0 +1,1 @@
+window.__RECU={"k": "StacDev/stac", "g": "readmes", "t": "packages/stac/README.md"};
