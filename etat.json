@@ -1,5 +1,5 @@
 {
- "bloque_jusqua": "2026-11-27T12:43:54.220Z",
+ "bloque_jusqua": "2026-11-28T07:34:52.449Z",
  "palier_min": 720,
  "faits": {
   "moltbot/moltbot": "ok",
@@ -223,7 +223,18 @@
   "nexu-io/nexu": "ok",
   "vernu/textbee": "ok",
   "krispo/awesome-haskell": "ok",
-  "MacRimi/ProxMenux": "cache"
+  "MacRimi/ProxMenux": "cache",
+  "vernu/vps-audit": "ok",
+  "thijsvanloef/palworld-server-docker": "ok",
+  "stemrollerapp/stemroller": "ok",
+  "coverlet-coverage/coverlet": "cache",
+  "Barre/ZeroFS": "cache",
+  "sopaco/deepwiki-rs": "ok",
+  "tianma-if/edgeever": "ok",
+  "hello245m/free-stockdb": "ok",
+  "jimuzhe/tiez-clipboard": "ok",
+  "hadashiA/VContainer": "ok",
+  "elastic/elasticsearch-rails": "cache"
  },
  "essais": {},
  "journal": [
@@ -247,7 +258,8 @@
   "2026-11-25T03:07 BLOQUÉ (quota atteint) — prochain essai après 480 min",
   "2026-11-25T13:15 BLOQUÉ (quota atteint) — prochain essai après 720 min",
   "2026-11-26T05:14 BLOQUÉ (quota atteint) — prochain essai après 720 min",
-  "2026-11-27T00:43 BLOQUÉ (quota atteint) — prochain essai après 720 min"
+  "2026-11-27T00:43 BLOQUÉ (quota atteint) — prochain essai après 720 min",
+  "2026-11-27T19:34 BLOQUÉ (quota atteint) — prochain essai après 720 min"
  ],
  "attente": 0
 }
