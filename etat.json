@@ -1,5 +1,5 @@
 {
- "bloque_jusqua": "2026-11-28T07:34:52.449Z",
+ "bloque_jusqua": "2026-11-29T00:02:31.405Z",
  "palier_min": 720,
  "faits": {
   "moltbot/moltbot": "ok",
@@ -234,7 +234,27 @@
   "hello245m/free-stockdb": "ok",
   "jimuzhe/tiez-clipboard": "ok",
   "hadashiA/VContainer": "ok",
-  "elastic/elasticsearch-rails": "cache"
+  "elastic/elasticsearch-rails": "cache",
+  "sdatkinson/NeuralAmpModelerPlugin": "ok",
+  "Simon-He95/markstream-vue": "cache",
+  "tekartik/sqflite": "ok",
+  "bensheldon/good_job": "cache",
+  "CodyReichert/awesome-cl": "cache",
+  "cargo-bins/cargo-binstall": "cache",
+  "BatchDrake/SigDigger": "cache",
+  "magicblack/maccms10": "ok",
+  "elixir-nx/nx": "cache",
+  "themesberg/flowbite-admin-dashboard": "ok",
+  "Y-Research-SBU/QuantAgent": "cache",
+  "containers/libkrun": "cache",
+  "nvimdev/dashboard-nvim": "ok",
+  "ComplianceAsCode/content": "cache",
+  "ZeroLu/awesome-seedance": "cache",
+  "matrix-construct/tuwunel": "ok",
+  "zed-industries/claude-agent-acp": "ok",
+  "CrossPaste/crosspaste-desktop": "cache",
+  "antares-sql/antares": "cache",
+  "slick/slick": "ok"
  },
  "essais": {},
  "journal": [
@@ -259,7 +279,8 @@
   "2026-11-25T13:15 BLOQUÉ (quota atteint) — prochain essai après 720 min",
   "2026-11-26T05:14 BLOQUÉ (quota atteint) — prochain essai après 720 min",
   "2026-11-27T00:43 BLOQUÉ (quota atteint) — prochain essai après 720 min",
-  "2026-11-27T19:34 BLOQUÉ (quota atteint) — prochain essai après 720 min"
+  "2026-11-27T19:34 BLOQUÉ (quota atteint) — prochain essai après 720 min",
+  "2026-11-28T12:02 BLOQUÉ (quota atteint) — prochain essai après 720 min"
  ],
  "attente": 0
 }
